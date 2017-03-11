@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>javascript : monoraum</title>
+<link rel="stylesheet" href="common.css" />
+<script type="text/javascript"  src="../libs/jquery-1.7.1.min.js"> </script>
+<script>
+// 1번
+jQuery(document).ready(function(){
+	jQuery("div").text("image,swf같은 내용은 로딩되지 않았지만 dom을 사용할 준비가 되었답니다.");
+});
+
+// 2번 _ 1번을 좀더 간소화 한다면?
+jQuery(function(){
+	jQuery("div").text("image,swf같은 내용은 로딩되지 않았지만 dom을 사용할 준비가 되었답니다.");
+});
+	
+// 3번 _ 1번에서 jQuery함수 대신 $함수로 변경. 좀더 간소화 됐죠?
+$(document).ready(function(){
+	$("div").text("image,swf같은 내용은 로딩되지 않았지만 dom을 사용할 준비가 되었답니다.");
+});
+
+// 4번 _ 3번을 좀더 간소화 한다면?
+$(function(){
+	$("div").text("image,swf같은 내용은 로딩되지 않았지만 dom을 사용할 준비가 되었답니다.");
+});
+</script>
+</head>
+<body>
+<div>
+	test1
+</div>	
+</body>
+</html>

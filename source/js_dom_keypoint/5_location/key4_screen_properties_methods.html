@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>javascript : monoraum</title>
+<link rel="stylesheet" href="common.css" />
+<style>
+#rect{border:10px solid #ff0000;position:fixed;left:120px;top:100px}
+</style>  
+<script>
+window.onload=function(){			
+	createData();
+	showInfo();
+}
+function createData(){
+	var main = document.getElementById("main");
+	var strInfo = "";
+	for(var i=0;i<100;i++){
+		strInfo += i+"<br>";
+	}
+	main.innerHTML = strInfo;
+}
+function showInfo(){
+	var	rect = document.getElementById("rect");
+	var strInfo	="";
+	strInfo		="screen.availWidth = "+screen.availWidth+"<br>";
+	strInfo		+="screen.availHeight = "+screen.availHeight+"<br>";
+	strInfo		+="screen.width = "+screen.width+"<br>";
+	strInfo		+="screen.height = "+screen.height+"<br>";
+	rect.innerHTML=strInfo;
+}		
+</script>
+</head>
+<body>
+<div id="main">             
+</div>
+<div id="rect">                   
+</div>
+</body>
+</html>

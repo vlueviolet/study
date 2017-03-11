@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>javascript : monoraum</title>
+<link rel="stylesheet" href="common.css" />
+<script type="text/javascript"  src="../libs/jquery-1.7.1.min.js"> </script>
+<script>
+/*
+window.onload=function(){
+	//	속성값 변경하기.
+	var test1 = document.getElementById("test_1");
+	test1.attributes.removeNamedItem("color");
+}
+*/
+$(document).ready(function(){
+	$("#test_1").removeAttr("data-role");
+	$("#test_1").removeAttr("style");
+});
+</script>
+</head>
+<body>
+<div id="test_1" style="color:#ff0000;font-size:14px" data-role="data1"> 
+	테스트1-1
+</div>
+</body>
+</html>
