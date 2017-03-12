@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Method</title>
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/common.css">
+<style>
+body{font-size:16px}
+h1{padding:10px 0;font-size:20px}
+table{table-layout:fixed;width:100%;padding:10px;margin-top:10px;border:1px solid #bdbdbd;border-spacing:0;border-collapse:collapse}
+.blind,caption span{overflow:hidden;position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px}
+th,td{padding:5px 10px;border:1px solid #bdbdbd;border-width:1px 0 0 1px;font-size:14px;font-weight:normal;word-break:keep-all;word-wrap:break-word;text-align:center}
+tr:first-child{border-left:0}
+thead th{background-color:#efefef}
+tbody th{background-color:#f8f8f8}
+td.incorrect{background-color:#009ac8;color:#fff}
+td.no{background-color:#fa2828;color:#fff}
+td.incomplete{background-color:#00882d;color:#fff}
+a{color:#009ac8}
+dl{margin-top:20px}
+dt{margin-top:10px;font-weight:bold}
+dd{font-size:14px}
+</style>
+</head>
+<body>
+<div id="container">
+	<h1>JavaScript Method 브라우저 지원</h1>
+	<div class="tbl_area">
+		<table>
+		<caption><span>method 브라우저별 지원</span></caption>
+		<colgroup><col style="width:20%"><col><col><col><col><col><col><col><col></colgroup>
+		<thead>
+		<tr>
+			<th scope="row">항목</th>
+			<th scope="row">chrome</th>
+			<th scope="row">safari</th>
+			<th scope="row">firefox</th>
+			<th scope="row">IE7</th>
+			<th scope="row">IE8</th>
+			<th scope="row">IE9</th>
+			<th scope="row">IE10</th>
+			<th scope="row">IE11</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<th scope="row">appendChild()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">childNodes()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="incorrect">incorrect</td>
+			<td class="incorrect">incorrect</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">createElement()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">createTextNode()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">firstChild()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="incorrect">incorrect</td>
+			<td class="incorrect">incorrect</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">getElementById()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">getElementsByClassName()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="no">no</td>
+			<td class="no">no</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">getElementsByTagName()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">innerHTML()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="incomplete">incomplete</td>
+			<td class="incomplete">incomplete</td>
+			<td class="incomplete">incomplete</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">insertBefore()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">item()</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th scope="row">lastChild()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="incorrect">incorrect</td>
+			<td class="incorrect">incorrect</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">nextSibling()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="incorrect">incorrect</td>
+			<td class="incorrect">incorrect</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">nodeValue()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		<tr>
+			<th scope="row">previousSibling()</th>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td class="incorrect">incorrect</td>
+			<td class="incorrect">incorrect</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<th scope="row">removeChild()</th>
+			<td colspan="8">All supported</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+	<dl>
+	<dt>참고 사이트</dt>
+	<dd>
+		<a href="http://www.quirksmode.org/compatibility.html" target="_blank">http://www.quirksmode.org/compatibility.html</a>
+	</dd>
+	<dt>innerHTML</dt>
+	<dd>대입하려는 문자열에 form태그가 있다면 동작 안함 : <a href="https://goo.gl/U6niVA" target="_blank">https://goo.gl/U6niVA</a></dd>
+	</dl>
+
+</div>
+</body>
+</html>
