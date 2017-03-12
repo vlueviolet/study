@@ -5,12 +5,13 @@ ul,li{list-style:none}
 .blind,caption span{overflow:hidden;position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px}
 #header{padding:10px}
 #container{padding:10px}
-.list{border:1px solid #000;border-width:1px 0}
+.list{border:1px solid #000;border-width:1px 0;-moz-linear-gradient(top, #8a2be2 0%, #edad91 100%);background:-webkit-linear-gradient(top, #8a2be2 0%,#edad91 100%);background:linear-gradient(to bottom, #8a2be2 0%,#edad91 100%)}
 .list li{border-bottom:1px solid #dfdfdf;}
 .list a{display:block;padding:.7em 1em .6em;font-size:16px;color:#000;text-decoration:none}
-.list .depth{background-color:#c7c6c8}
-.list .depth2{background-color:#d7d6d7}
-.list .depth3{background-color:#eaeaea}
+.list a:hover span{text-decoration:underline}
+.list .depth{}
+.list .depth2{background-color:transparent}
+.list .depth3{background-color:transparent}
 .list .depth > a{font-weight:bold}
 .list .depth2 a{padding-left:2em;color:#333}
 .list .depth3 a{padding-left:4em;color:#555}
