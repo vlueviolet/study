@@ -18,13 +18,34 @@
   <!-- container [s] -->
   <div id="container">
     <ul class="list">
-    <li class="depth"><a href="#none">lesson<span></span></a></li>
-    <li class="depth2"><a href="lesson/lesson.html">lesson<span></span></a></li>
-    <li class="depth"><a href="#none">exam<span></span></a></li>
-    <li class="depth2"><a href="exam1">exam1<span></span></a></li>
-    <li class="depth3"><a href="exam1/selector.html">selector<span></span></a></li>
-    <li class="depth3"><a href="exam1/selector2.html">selector2<span></span></a></li>
-    <li class="depth"><a href="source">source<span></span></a></li>
+    <li class="depth">
+      <a href="#none">lesson<span></span></a>
+      <ul class="list2">
+      <li class="depth2"><a href="lesson/lesson.html">lesson<span></span></a></li>
+      </ul>
+    </li>
+    
+    <li class="depth">
+      <a href="#none">exam<span></span></a>
+      <ul class="list2">
+      <li class="depth2"><a href="exam1">exam1<span></span></a></li>
+      <li class="depth3"><a href="exam1/selector.html">ㄴselector<span></span></a></li>
+      <li class="depth3"><a href="exam1/selector2.html">ㄴselector2<span></span></a></li>
+      </ul>
+      </li>
+    
+    <li class="depth">
+      <a href="#none">source<span></span></a>
+      <ul class="list2">
+      <li class="depth2"><a href="source/query_dom_keypoint/">query_dom_keypoint<span></span></a></li>
+      <li class="depth2"><a href="source/js_dom_keypoint/">js_dom_keypoint<span></span></a></li>
+      </ul>
+    </li>
+
+    <li class="depth">
+      <a href="method.html">method support<span></span></a>
+    </li>
+
     </ul>
   </div>
   <!-- container [e] -->
@@ -32,7 +53,18 @@
   
   <!-- footer [s] -->
   <div id="footer"></div>
-  <!-- footer [e] -->
+  <!-- footer [e] -->  
 </div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+  $('.depth').on('click', function(e){
+    
+    $('.depth').removeClass('on');
+    $(e.currentTarget).addClass('on');
+  });
+});
+</script>
 </body>
 </html>
