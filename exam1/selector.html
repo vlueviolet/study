@@ -6,192 +6,6 @@
 <title>exam</title>
 <link rel="stylesheet" href="../css/font.css">
 <link rel="stylesheet" href="common.css">
-<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-<script>
-
-$(function(){
-	//Q1. 모든 엘리먼트와 일치하게 하시오.
-	$(".exam_wrap:eq(0) button:eq(0)").on('click',function(e){
-		$('.exam_wrap:eq(0) .exam_q >*').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-
-	//Q2. 태그명이 span 인 엘리먼트와 일치하게 하시오.
-	$('.exam_wrap:eq(1) button:eq(0)').on('click', function(e){
-		$('.exam_wrap:eq(1) span').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-
-	//Q3. em의 자손이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
-	$('.exam_wrap:eq(2) button:eq(0)').on('click', function(e){
-		$('.exam_wrap:eq(2) em > span').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-
-	//Q4. 부모의 바로 아래 자식이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
-	$('.exam_wrap:eq(3) button:eq(0)').on('click', function(e){
-		$('.exam_wrap:eq(3) .exam_q > span').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-
-	});
-
-	//Q5. div의 형제 엘리먼트로 바로 다음에 나오는 p와 일치하게 하시오.
-	$('.exam_wrap:eq(4) button:eq(0)').on('click', function(e){
-		$('.exam_wrap:eq(4) div + p').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-
-	//Q6. div의 형제 엘리먼트로 다음에 나오는 모든 엘리먼트 span과 일치하게 하시오.
-	$('.exam_wrap:eq(5) button:eq(0)').on('click', function(e){
-		$('.exam_wrap:eq(5) div ~ span').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-
-	//Q7. 클래스명 active를 가지는 모든 엘리먼트와 일치하게 하시오.
-	$('.exam_wrap:eq(6) button:eq(0)').on('click', function(e){
-		$('.exam_wrap:eq(6) .active').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-
-	//Q8. 아이디가 active인 엘리먼트와 일치하게 하시오.
-	$('.exam_wrap:eq(7) button:eq(0)').on('click', function(e){
-		$('#active').css({
-			"background-color":"#8a2bd8"
-			,"color":"#fff"
-		});
-	});
-});
-
-window.onload=function(){
-	//Q1. 모든 엘리먼트와 일치하게 하시오.
-	var wrapQ1=document.getElementsByClassName('exam_wrap')[0];
-	var btnQ1=wrapQ1.getElementsByTagName('button')[1];
-	
-	btnQ1.onclick=function(){
-		var children=wrapQ1.getElementsByClassName('exam_q')[0].children;
-		for(var i=0;i<children.length;i++){
-			children.item(i).style.backgroundColor='pink';
-			children.item(i).style.color='#000';
-		}
-	}
-
-	//Q2. 태그명이 span 인 엘리먼트와 일치하게 하시오.
-	var wrapQ2=document.getElementsByClassName('exam_wrap')[1]
-	,btnQ2=wrapQ2.getElementsByTagName('button')[1];
-	btnQ2.onclick=function(){
-		var span=wrapQ2.getElementsByTagName('span');		
-		for(var i=0;i<span.length;i++){
-			span.item(i).style.backgroundColor='pink';
-			span.item(i).style.color='#000';
-		}
-	}
-
-	//Q3. em의 자손이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
-	var wrapQ3=document.getElementsByClassName('exam_wrap')[2]
-	, btnQ3=wrapQ3.getElementsByTagName('button')[1];
-	btnQ3.onclick=function(){
-		var emQ3=wrapQ3.getElementsByTagName('em');
-		
-		for(var i=0;i<emQ3.length;i++){
-			spanQ3=emQ3[0].getElementsByTagName('span');
-			spanQ3.item(i).style.backgroundColor="pink";
-			spanQ3.item(i).style.color='#000';
-		}
-	}
-
-	//Q4. 부모의 바로 아래 자식이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
-	var wrapQ4=document.getElementsByClassName('exam_wrap')[3];
-	var parentQ4=wrapQ4.getElementsByClassName('exam_q');
-	var btnQ4=wrapQ4.getElementsByTagName('button')[1];
-	var nodesQ4=parentQ4[0].children;
-
-	btnQ4.onclick=function(){		
-		for(var i=0;i<nodesQ4.length;i++){
-			if(nodesQ4[i].nodeName==='SPAN'){
-				nodesQ4[i].style.backgroundColor='pink';
-				nodesQ4[i].style.color='#000';
-			}
-		}
-	}
-
-	//Q5. div의 형제 엘리먼트로 바로 다음에 나오는 p와 일치하게 하시오.
-	var wrapQ5=document.getElementsByClassName('exam_wrap')[4];
-	var parentQ5=wrapQ5.getElementsByClassName('exam_q');
-	var btnQ5=wrapQ5.getElementsByTagName('button')[1];
-
-	btnQ5.onclick=function(){
-		var divQ5=parentQ5[0].getElementsByTagName('div');
-		divQ5[0].nextSibling.nextSibling.style.backgroundColor='pink';	//텍스트 노드때문에 2번씀
-		divQ5[0].nextSibling.nextSibling.style.color='#000';
-	}
-
-
-	//Q6. div의 형제 엘리먼트로 다음에 나오는 모든 엘리먼트 span과 일치하게 하시오.
-	var wrapQ6=document.getElementsByClassName('exam_wrap')[5];
-	var parentQ6=wrapQ6.getElementsByClassName('exam_q');
-	var btnQ6=wrapQ6.getElementsByTagName('button')[1];
-	var divQ6=parentQ6[0].getElementsByTagName('div');
-	var sibQ6=divQ6[0].parentNode.childNodes;
-	
-	btnQ6.onclick=function(){
-		for(var i=0;i<sibQ6.length;i++){
-			if(sibQ6[i].nodeName=='SPAN'){
-				sibQ6[i].style.backgroundColor='pink';
-				sibQ6[i].style.color='#000';
-			}
-		}
-	}
-
-	//Q7. 클래스명 active를 가지는 모든 엘리먼트와 일치하게 하시오.
-	var wrapQ7=document.getElementsByClassName('exam_wrap')[6];
-	var btnQ7=wrapQ7.getElementsByTagName('button')[1];
-	
-	btnQ7.onclick=function(){
-		var activeQ7=wrapQ7.getElementsByClassName('active');
-	
-		for(var i=0;i<activeQ7.length;i++){
-			activeQ7[i].style.backgroundColor='pink';
-			activeQ7[i].style.color='#000';
-		}
-	}
-
-	//Q8. 아이디가 active인 엘리먼트와 일치하게 하시오.
-	var wrapQ8=document.getElementsByClassName('exam_wrap')[7];
-	var btnQ8=wrapQ8.getElementsByTagName('button')[1];
-	
-	btnQ8.onclick=function(){
-		var activeQ8=document.getElementById('active');
-		activeQ8.style.backgroundColor='pink';
-		activeQ8.style.color='#000';
-	}
-}
-
-
-// javascript code
-// window.onload = function(){
-// 	var examObj1 = document.getElementsByClassName('exam_wrap')[0];
-// 	examObj1.getElementsByTagName('button')[0].onclick = function(){
-// 		var examChild = examObj1.getElementsByClassName('exam_q')[0].children;
-// 		for(var i = 0; i < examChild.length; i++){
-// 			examChild[i].style.backgroundColor = 'yellow';
-// 		}
-// 	};
-// }
-</script>
 </head>
 <body>
 <!-- wrapper [s] -->
@@ -310,5 +124,192 @@ window.onload=function(){
 	<!-- footer [e] -->
 </div>
 <!-- wrapper [e] -->
+
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script>
+
+$(function(){
+	//Q1. 모든 엘리먼트와 일치하게 하시오.
+	$(".exam_wrap:eq(0) button:eq(0)").on('click',function(e){
+		$('.exam_wrap:eq(0) .exam_q >*').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+
+	//Q2. 태그명이 span 인 엘리먼트와 일치하게 하시오.
+	$('.exam_wrap:eq(1) button:eq(0)').on('click', function(e){
+		$('.exam_wrap:eq(1) span').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+
+	//Q3. em의 자손이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
+	$('.exam_wrap:eq(2) button:eq(0)').on('click', function(e){
+		$('.exam_wrap:eq(2) em > span').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+
+	//Q4. 부모의 바로 아래 자식이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
+	$('.exam_wrap:eq(3) button:eq(0)').on('click', function(e){
+		$('.exam_wrap:eq(3) .exam_q > span').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+
+	});
+
+	//Q5. div의 형제 엘리먼트로 바로 다음에 나오는 p와 일치하게 하시오.
+	$('.exam_wrap:eq(4) button:eq(0)').on('click', function(e){
+		$('.exam_wrap:eq(4) div + p').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+
+	//Q6. div의 형제 엘리먼트로 다음에 나오는 모든 엘리먼트 span과 일치하게 하시오.
+	$('.exam_wrap:eq(5) button:eq(0)').on('click', function(e){
+		$('.exam_wrap:eq(5) div ~ span').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+
+	//Q7. 클래스명 active를 가지는 모든 엘리먼트와 일치하게 하시오.
+	$('.exam_wrap:eq(6) button:eq(0)').on('click', function(e){
+		$('.exam_wrap:eq(6) .active').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+
+	//Q8. 아이디가 active인 엘리먼트와 일치하게 하시오.
+	$('.exam_wrap:eq(7) button:eq(0)').on('click', function(e){
+		$('#active').css({
+			"background-color":"#8a2bd8"
+			,"color":"#fff"
+		});
+	});
+});
+
+window.onload=function(){
+	//Q1. 모든 엘리먼트와 일치하게 하시오.
+	var wrapQ1=document.getElementsByClassName('exam_wrap')[0];
+	var btnQ1=wrapQ1.getElementsByTagName('button')[1];
+	
+	btnQ1.onclick=function(){
+		var children=wrapQ1.getElementsByClassName('exam_q')[0].children;
+		for(var i=0;i<children.length;i++){
+			children.item(i).style.backgroundColor='pink';
+			children.item(i).style.color='#000';
+		}
+	}
+
+	//Q2. 태그명이 span 인 엘리먼트와 일치하게 하시오.
+	var wrapQ2=document.getElementsByClassName('exam_wrap')[1]
+	,btnQ2=wrapQ2.getElementsByTagName('button')[1];
+	btnQ2.onclick=function(){
+		var span=wrapQ2.getElementsByTagName('span');		
+		for(var i=0;i<span.length;i++){
+			span.item(i).style.backgroundColor='pink';
+			span.item(i).style.color='#000';
+		}
+	}
+
+	//Q3. em의 자손이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
+	var wrapQ3=document.getElementsByClassName('exam_wrap')[2]
+	, btnQ3=wrapQ3.getElementsByTagName('button')[1];
+	btnQ3.onclick=function(){
+		var emQ3=wrapQ3.getElementsByTagName('em');
+		
+		for(var i=0;i<emQ3.length;i++){
+			spanQ3=emQ3[i].getElementsByTagName('span');
+			spanQ3.item(i).style.backgroundColor="pink";
+			spanQ3.item(i).style.color='#000';
+		}
+	}
+
+	//Q4. 부모의 바로 아래 자식이면서 태그명이 span 인 엘리먼트와 일치하게 하시오.
+	var wrapQ4=document.getElementsByClassName('exam_wrap')[3];
+	var parentQ4=wrapQ4.getElementsByClassName('exam_q');
+	var btnQ4=wrapQ4.getElementsByTagName('button')[1];
+	var nodesQ4=parentQ4[0].children;
+
+	btnQ4.onclick=function(){		
+		for(var i=0;i<nodesQ4.length;i++){
+			if(nodesQ4[i].nodeName==='SPAN'){
+				nodesQ4[i].style.backgroundColor='pink';
+				nodesQ4[i].style.color='#000';
+			}
+		}
+	}
+
+	//Q5. div의 형제 엘리먼트로 바로 다음에 나오는 p와 일치하게 하시오.
+	var wrapQ5=document.getElementsByClassName('exam_wrap')[4];
+	var parentQ5=wrapQ5.getElementsByClassName('exam_q');
+	var btnQ5=wrapQ5.getElementsByTagName('button')[1];
+
+	btnQ5.onclick=function(){
+		var divQ5=parentQ5[0].getElementsByTagName('div');
+		divQ5[0].nextSibling.nextSibling.style.backgroundColor='pink';	//텍스트 노드때문에 2번씀
+		divQ5[0].nextSibling.nextSibling.style.color='#000';
+	}
+
+
+	//Q6. div의 형제 엘리먼트로 다음에 나오는 모든 엘리먼트 span과 일치하게 하시오.
+	var wrapQ6=document.getElementsByClassName('exam_wrap')[5];
+	var parentQ6=wrapQ6.getElementsByClassName('exam_q');
+	var btnQ6=wrapQ6.getElementsByTagName('button')[1];
+	var divQ6=parentQ6[0].getElementsByTagName('div');
+	var sibQ6=divQ6[0].parentNode.childNodes;
+	
+	btnQ6.onclick=function(){
+		for(var i=0;i<sibQ6.length;i++){
+			if(sibQ6[i].nodeName=='SPAN'){
+				sibQ6[i].style.backgroundColor='pink';
+				sibQ6[i].style.color='#000';
+			}
+		}
+	}
+
+	//Q7. 클래스명 active를 가지는 모든 엘리먼트와 일치하게 하시오.
+	var wrapQ7=document.getElementsByClassName('exam_wrap')[6];
+	var btnQ7=wrapQ7.getElementsByTagName('button')[1];
+	
+	btnQ7.onclick=function(){
+		var activeQ7=wrapQ7.getElementsByClassName('active');
+	
+		for(var i=0;i<activeQ7.length;i++){
+			activeQ7[i].style.backgroundColor='pink';
+			activeQ7[i].style.color='#000';
+		}
+	}
+
+	//Q8. 아이디가 active인 엘리먼트와 일치하게 하시오.
+	var wrapQ8=document.getElementsByClassName('exam_wrap')[7];
+	var btnQ8=wrapQ8.getElementsByTagName('button')[1];
+	
+	btnQ8.onclick=function(){
+		var activeQ8=document.getElementById('active');
+		activeQ8.style.backgroundColor='pink';
+		activeQ8.style.color='#000';
+	}
+}
+
+
+// javascript code
+// window.onload = function(){
+// 	var examObj1 = document.getElementsByClassName('exam_wrap')[0];
+// 	examObj1.getElementsByTagName('button')[0].onclick = function(){
+// 		var examChild = examObj1.getElementsByClassName('exam_q')[0].children;
+// 		for(var i = 0; i < examChild.length; i++){
+// 			examChild[i].style.backgroundColor = 'yellow';
+// 		}
+// 	};
+// }
+</script>
 </body>
 </html>
