@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>exam</title>
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="common.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+  var num=0;
+  var btn=$('.exam_wrap:eq(0) button');
+  //익명함수 선언
+  var changeColor=function(){
+    $('.exam_wrap:eq(0)').find('li').eq(num).css({
+      'background-color':'#8a2bd8',
+      'color':'#fff'
+    });
+    num++;
+  }
+  btn.on('click', changeColor);
+});
+</script>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+	<!-- header [s] -->
+	<div id="header">
+	</div>
+	<!-- header [e] -->
+	<hr />
+	<!-- container [s] -->
+	<div id="container">
+		<div class="exam_wrap">
+			<h1>Q1. 처음부터 순서대로 일치하게 하시오.</h1>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+					<li>one</li>
+					<li>two</li>
+					<li>three</li>
+					<li>four</li>
+					<li>five</li>
+					<li>six</li>
+					<li>seven</li>
+					<li>eight</li>
+				</ul>
+			</div>
+			<button type="button">plus</button>
+		</div>
+		<div class="exam_wrap">
+			<h1>Q2. 마지막부터 역순대로 일치하게 하시오.</h1>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+					<li>one</li>
+					<li>two</li>
+					<li>three</li>
+					<li>four</li>
+					<li>five</li>
+					<li>six</li>
+					<li>seven</li>
+				</ul>
+			</div>
+			<button type="button">minus</button>
+		</div>
+		<div class="exam_wrap">
+			<h1>Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.</h1>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+					<li style="background-color:yellow">one</li>
+					<li>two</li>
+					<li>three</li>
+					<li>four</li>
+					<li>five</li>
+					<li>six</li>
+					<li>seven</li>
+					<li>eight</li>
+					<li>nine</li>
+				</ul>
+			</div>
+			<button type="button">plus</button>
+			<button type="button">minus</button>
+		</div>
+        <div class="exam_wrap">
+            <h1>Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)</h1>
+            <div class="exam_q"><!-- 부모 -->
+                <ul>
+                    <li class="active">one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                    <li>five</li>
+                    <li>six</li>
+                    <li>seven</li>
+                    <li>eight</li>
+                    <li>nine</li>
+                </ul>
+            </div>
+            <button type="button">plus</button>
+            <button type="button">minus</button>
+        </div>
+	</div>
+	<!-- container [e] -->
+	<hr />
+	<!-- footer [s] -->
+	<div id="footer">
+	</div>
+	<!-- footer [e] -->
+</div>
+<!-- wrapper [e] -->
+</body>
+</html>
