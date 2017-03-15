@@ -13,4 +13,4 @@ hr{display:none}
 .exam_q ul:after{display:block;clear:both;content:''}
 .exam_q ul li{float:left;width:100px;margin-left:-1px;padding:5px 0;border:1px solid #ccc;text-align:center}
 .exam_q ul li:first-child{margin-left:0}
-.exam_q ul li.active{background:yellow}
+.exam_q ul li.active{background:#8a2bd8;color:#fff}

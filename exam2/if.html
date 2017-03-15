@@ -2,25 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>exam</title>
+<title>exam2 &gt; if</title>
 <link rel="stylesheet" href="../css/font.css">
 <link rel="stylesheet" href="common.css">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-$(function(){
-  var num=0;
-  var btn=$('.exam_wrap:eq(0) button');
-  //익명함수 선언
-  var changeColor=function(){
-    $('.exam_wrap:eq(0)').find('li').eq(num).css({
-      'background-color':'#8a2bd8',
-      'color':'#fff'
-    });
-    num++;
-  }
-  btn.on('click', changeColor);
-});
-</script>
 </head>
 <body>
 <!-- wrapper [s] -->
@@ -36,14 +20,14 @@ $(function(){
 			<h1>Q1. 처음부터 순서대로 일치하게 하시오.</h1>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
-					<li>one</li>
-					<li>two</li>
-					<li>three</li>
-					<li>four</li>
-					<li>five</li>
-					<li>six</li>
-					<li>seven</li>
-					<li>eight</li>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				<li>eight</li>
 				</ul>
 			</div>
 			<button type="button">plus</button>
@@ -52,13 +36,13 @@ $(function(){
 			<h1>Q2. 마지막부터 역순대로 일치하게 하시오.</h1>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
-					<li>one</li>
-					<li>two</li>
-					<li>three</li>
-					<li>four</li>
-					<li>five</li>
-					<li>six</li>
-					<li>seven</li>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
 				</ul>
 			</div>
 			<button type="button">minus</button>
@@ -67,38 +51,38 @@ $(function(){
 			<h1>Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.</h1>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
-					<li style="background-color:yellow">one</li>
-					<li>two</li>
-					<li>three</li>
-					<li>four</li>
-					<li>five</li>
-					<li>six</li>
-					<li>seven</li>
-					<li>eight</li>
-					<li>nine</li>
+				<li style="background-color:#8a2bd8;color:#fff">one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				<li>eight</li>
+				<li>nine</li>
 				</ul>
 			</div>
 			<button type="button">plus</button>
 			<button type="button">minus</button>
 		</div>
-        <div class="exam_wrap">
-            <h1>Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)</h1>
-            <div class="exam_q"><!-- 부모 -->
-                <ul>
-                    <li class="active">one</li>
-                    <li>two</li>
-                    <li>three</li>
-                    <li>four</li>
-                    <li>five</li>
-                    <li>six</li>
-                    <li>seven</li>
-                    <li>eight</li>
-                    <li>nine</li>
-                </ul>
-            </div>
-            <button type="button">plus</button>
-            <button type="button">minus</button>
-        </div>
+		<div class="exam_wrap">
+			<h1>Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)</h1>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+				<li class="active">one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				<li>eight</li>
+				<li>nine</li>
+				</ul>
+			</div>
+			<button type="button">plus</button>
+			<button type="button">minus</button>
+		</div>
 	</div>
 	<!-- container [e] -->
 	<hr />
@@ -108,5 +92,121 @@ $(function(){
 	<!-- footer [e] -->
 </div>
 <!-- wrapper [e] -->
+
+<script type="text/javascript" src="../js/libs/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+	//Q1. 처음부터 순서대로 일치하게 하시오.
+	var liQ1=$('.exam_wrap:eq(0)').find('li');
+	var numQ1=0;
+	var btnQ1=$('.exam_wrap:eq(0) button');
+	//익명함수 선언
+	var changeColoQ1=function(){
+		if(numQ1 > liQ1.length-1){
+			alert("마지막입니다.");
+			return 0;
+		}
+		$('.exam_wrap:eq(0)').find('li').eq(numQ1).css({
+			'background-color':'#8a2bd8',
+			'color':'#fff'
+		});
+		numQ1++;
+	}
+	btnQ1.on('click', changeColoQ1);
+
+	//Q2. 마지막부터 역순대로 일치하게 하시오.
+	var btnQ2=$('.exam_wrap').eq(1).find('button');
+	var numQ2=$('.exam_wrap').eq(1).find('li').length-1;
+
+	var changeCssQ2=function(){
+		var liQ2=$('.exam_wrap').eq(1).find('li').eq(numQ2);	
+		if(numQ2 < 0){
+			alert('맨 처음 입니다.');
+			return 0;
+		}else if(numQ2 % 2 === 0){
+			liQ2.css({
+				'background-color':'#8a2bd8',
+				'color':'#fff'
+			});
+		}else if(numQ2 % 2 === 1){
+			liQ2.css({
+				'background-color':'pink',
+				'color':'#000'
+			});
+		}
+		numQ2--;
+	}
+	btnQ2.on('click', changeCssQ2);
+
+	//Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.
+	var wrapQ3=$('.exam_wrap').eq(2);
+	var liQ3=wrapQ3.find('li');
+	var btnPlusQ3=wrapQ3.find('button').eq(0);
+	var btnMinusQ3=wrapQ3.find('button').eq(1);
+	var numQ3=1;
+
+	var changeNumPlusQ3=function(){
+		if(numQ3 > liQ3.length-1){
+			alert("마지막입니다.");
+			numQ3=liQ3.length;
+			console.log(numQ3);
+			return 0;
+		}
+		liQ3.eq(numQ3).css({
+			'background-color':'#8a2bd8',
+			'color':'#fff'
+		});
+		++numQ3;
+	}
+	var changeNumMinusQ3=function(){
+		--numQ3;
+		if(numQ3 === 0){
+			alert("맨 처음입니다.");
+			numQ3=1;
+			return 0;
+		}else{
+			liQ3.eq(numQ3).css({
+				'background-color':'#fff',
+				'color':'#000'
+			});
+		}
+		
+	}
+	btnPlusQ3.on('click', changeNumPlusQ3);
+	btnMinusQ3.on('click', changeNumMinusQ3);
+
+	//Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)
+	var wrapQ4=$('.exam_wrap').eq(3);
+	var liQ4=$('.exam_wrap').eq(3).find('li');
+	var numQ4=1;
+	var btnPlusQ4=wrapQ4.find('button').eq(0);
+	var btnMinusQ4=wrapQ4.find('button').eq(1);
+
+	var addClassQ4=function(){
+		if(numQ4 > liQ4.length-1){
+			alert("마지막입니다.");
+			numQ4=liQ4.length;
+			console.log(numQ4);
+			return 0;
+		}
+		liQ4.eq(numQ4).addClass('active');
+		++numQ4;
+	}
+	var removeClassQ4=function(){
+		--numQ4;
+		if(numQ4 === 0){
+			alert("맨 처음입니다.");
+			numQ4=1;
+			return 0;
+		}else{
+			liQ4.eq(numQ4).removeClass('active');
+		}
+	}
+
+	btnPlusQ4.on('click', addClassQ4);
+	btnMinusQ4.on('click', removeClassQ4);
+
+});
+</script>
 </body>
 </html>
