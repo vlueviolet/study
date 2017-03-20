@@ -47,6 +47,7 @@
 				<p>p</p>
 				<span>span</span>
 				<em>em<span>span</span></em>
+				<em>em<span>span</span></em>
 			</div>
 			<button type="button">view (jquery)</button>
 			<button type="button">view (js)</button>
@@ -223,11 +224,10 @@ window.onload=function(){
 	, btnQ3=wrapQ3.getElementsByTagName('button')[1];
 	btnQ3.onclick=function(){
 		var emQ3=wrapQ3.getElementsByTagName('em');
-		
 		for(var i=0;i<emQ3.length;i++){
 			spanQ3=emQ3[i].getElementsByTagName('span');
-			spanQ3.item(i).style.backgroundColor="pink";
-			spanQ3.item(i).style.color='#000';
+			spanQ3[0].style.backgroundColor="pink";
+			spanQ3[0].style.color='#000';
 		}
 	}
 
