@@ -17,3 +17,6 @@ h3{padding-bottom:5px}
 .exam_q ul li{float:left;width:100px;margin-left:-1px;padding:5px 0;border:1px solid #ccc;text-align:center}
 .exam_q ul li:first-child{margin-left:0}
 .exam_q ul li.active{background:#8a2bd8;color:#fff}
+.exam_wrap7 ul{display:inline-block}
+.exam_wrap7 li{float:left;margin-left:20px}
+.exam_wrap7 li:first-child{margin-left:0}

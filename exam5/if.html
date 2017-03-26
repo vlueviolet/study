@@ -2,14 +2,14 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>exam5 &gt; if</title>
+<title>exam5 &gt; if, for/while</title>
 <link rel="stylesheet" href="../css/font.css">
 <link rel="stylesheet" href="common.css">
 </head>
 <body>
 <!-- wrapper [s] -->
 <div id="wrapper">
-	<h1>객체를 활용하기</h1>
+	<h1>객체 활용하기 (if, for/while)</h1>
 	<!-- header [s] -->
 	<div id="header">
 	</div>
@@ -19,7 +19,7 @@
 	<div id="container">
 		<h2 style="border-bottom:1px solid #000">exam2, exam3</h2>
 		<div class="exam_wrap exam_wrap1">
-			<h3>Q1. 처음부터 순서대로 일치하게 하시오.</h3>
+			<h3>Q1. 처음부터 순서대로 일치하게 하시오. (Random Color)</h3>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
 				<li>one</li>
@@ -35,7 +35,7 @@
 			<button type="button">plus</button>
 		</div>
 		<div class="exam_wrap exam_wrap2">
-			<h3>Q2. 마지막부터 역순대로 일치하게 하시오.</h3>
+			<h3>Q2. 마지막부터 역순대로 일치하게 하시오. (Random Color)</h3>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
 				<li>one</li>
@@ -50,10 +50,10 @@
 			<button type="button">minus</button>
 		</div>
 		<div class="exam_wrap exam_wrap3">
-			<h3>Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.</h3>
+			<h3>Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오. (Random Color)</h3>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
-				<li style="background-color:#8a2bd8;color:#fff">one</li>
+				<li>one</li>
 				<li>two</li>
 				<li>three</li>
 				<li>four</li>
@@ -71,7 +71,7 @@
 			<h3>Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)</h3>
 			<div class="exam_q"><!-- 부모 -->
 				<ul>
-				<li class="active">one</li>
+				<li>one</li>
 				<li>two</li>
 				<li>three</li>
 				<li>four</li>
@@ -115,8 +115,13 @@
 <script type="text/javascript" src="../js/libs/jquery-3.1.1.min.js"></script>
 <script>
 (function (win, $) {
+	var randomColor = function () {	//random 컬러 공통
+		return 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ')'
+	};
 	//Q1. 처음부터 순서대로 일치하게 하시오.
-	var objFillColor = {
+	var objFillColor = { 
 		init : function () {
 			this.setElements();
 			this.bindEvents();
@@ -125,22 +130,127 @@
 			this.btn = $('.exam_wrap1 button')
 			, this.ele = $('.exam_wrap1 li')
 			, this.length = this.ele.length
-			, this.num = 0;
+			, this.curIndex = 0
+			, this.color = randomColor();
 		}
 		, bindEvents : function () {
 			this.btn.on('click', $.proxy(this.fillColor,this));
 		}
 		, fillColor : function() {
-			if(this.num < this.length){
-				this.ele.eq(this.num).css({
-					'background-color' : '#8a2bd8'
-					, 'color' : '#fff'
-				});
-				this.num++;
-			}else if(this.num === this.length){
-				alert('맨 마지막입니다.');
-				return false;
+			if(this.curIndex > this.length-1){
+				this.curIndex = 0;
+				this.color = randomColor();
 			}
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			this.curIndex++;
+		}
+	};
+
+	//Q2. 마지막부터 역순대로 일치하게 하시오.
+	var objFillColor2 = {
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btn = $('.exam_wrap2 button')
+			, this.ele = $('.exam_wrap2 li')
+			, this.length = this.ele.length
+			, this.curIndex = this.length-1
+			, this.color = randomColor();
+		}
+		, bindEvents : function () {
+			this.btn.on('click', $.proxy(this.fillColor, this));
+		}
+		, fillColor : function (){
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			if(this.curIndex <= 0){
+				this.curIndex = this.length;
+				this.color = randomColor();
+			}
+			this.curIndex--;
+		}
+
+	}
+
+	//Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.
+	var objFillColor3 = {		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btnPlus = $('.exam_wrap3 button').eq(0)
+			, this.btnMinus = $('.exam_wrap3 button').eq(1)
+			, this.ele = $('.exam_wrap3 li')
+			, this.length = this.ele.length
+			, this.curIndex = 0
+			, this.color = randomColor()
+			, this.ele.eq(0).css('background-color', this.color);
+		}
+		, bindEvents : function () {
+			this.btnPlus.on('click', $.proxy(this.fillColor, this));
+			this.btnMinus.on('click', $.proxy(this.fillColor2, this));
+		}
+		, fillColor : function () {
+			var preIndex = this.curIndex;
+			this.curIndex++;
+			if(this.curIndex >= this.length) {
+				this.curIndex = 0;
+				this.color = randomColor();
+			}
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			this.ele.eq(preIndex).css('background-color', 'transparent');
+		}
+		, fillColor2 : function () {
+			var preIndex = this.curIndex;
+			if(this.curIndex === 0) {
+				console.log("!");
+				this.curIndex = this.length;
+				this.curIndex = this.length;
+				this.color = randomColor();
+			}
+			this.curIndex--;
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			this.ele.eq(preIndex).css('background-color', 'transparent');
+		}
+	}
+
+	//Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)
+	var objFillColor4 = {
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btnPlus = $('.exam_wrap4 button').eq(0)
+			, this.btnMinus = $('.exam_wrap4 button').eq(1)
+			, this.ele = $('.exam_wrap4 li')
+			, this.length = $('.exam_wrap4 li').length
+			, this.ele.eq(0).addClass('active')
+			, this.curIndex = 0;
+		}
+		, bindEvents : function () {
+			this.btnPlus.on('click', $.proxy(this.fillColor, this));
+			this.btnMinus.on('click', $.proxy(this.fillColor2, this));
+		}
+		, fillColor : function () {
+			var preIndex = this.curIndex;
+			this.curIndex++;
+			if(this.curIndex > this.length-1){
+				this.curIndex = 0
+			}
+			this.ele.eq(preIndex).removeClass('active');
+			this.ele.eq(this.curIndex).addClass('active');
+			
+		}
+		, fillColor2 : function () {
+			var preIndex = this.curIndex;
+			if(this.curIndex === 0) {
+				this.curIndex = this.length;
+			}
+			this.curIndex--;
+			this.ele.eq(preIndex).removeClass('active');
+			this.ele.eq(this.curIndex).addClass('active');
 		}
 	};
 
@@ -198,13 +308,16 @@
 		}
 		, multipleNumAll : function () {
 			var i=1;
+			this.str2 += '<ul>';
 			while(i <= 9){
+				this.str2 +='<li>*****'+ i + '단*****<br>';
 				for(var j=1 ; j <= 9 ; j++){
 					this.str2 += i + ' * ' + j + ' = ' + i*j + '<br>';
 				}
-				this.str2 += '<br>';
+				this.str2 += '</li>';
 				i++;
 			}
+			this.str2 += '</ul>';
 			this.ele2.html(this.str2);
 		}
 	};
@@ -212,9 +325,11 @@
 
 	$(function(){
 		objFillColor.init();	//Q1
+		objFillColor2.init();	//Q2
+		objFillColor3.init();	//Q3
+		objFillColor4.init();	//Q4
 		objMakeInput.init();	//Q5
 		objMultiNum.init();	//Q6,Q7
-		
 	});
 })(window, window.jQuery);
 </script>
