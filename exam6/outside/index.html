@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - outside</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+.btn_pos{padding:10px}
+.btn_pos button{margin:0;padding:0;width:100px;height:100px;border:1px solid #ccc;}
+.layer_area{display:none;position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%}
+.layer_area .layer_dimmed{position:absolute;left:0;top:0;right:0;bottom:0;width:100%;height:100%;background:#000;opacity:0.3;filter:alpha(opacity=30);}
+.layer_pos{position:absolute;left:50%;top:50%;width:400px;height:400px;margin:-220px 0 0 -220px;padding:20px;background:#fff}
+.layer_close{position:absolute;right:20px;top:20px}
+/* //temporary css */
+</style>
+</head>
+<body>
+<div class="btn_pos js-btn_pos"><button>레이어 띄우기</button></div>
+<div class="layer_area js-layer_area">
+    <span class="layer_dimmed">&nbsp;</span>
+    <div class="layer_pos">
+        <ul>
+            <li>내용1<a href="#">링크</a></li>
+            <li>내용2</li>
+            <li>내용3</li>
+            <li>내용4</li>
+            <li>내용5</li>
+        </ul>
+        <p class="layer_close"><button>닫기</button></p>
+    </div>
+</div>
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../../js/libs/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.ba-outside-events.min.js"></script>
+<!-- Apps -->
+<script src="../js/apps/common.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    win.examProject = win.examProject || {};
+    win.examProject.common = win.examProject.common || {};
+
+    var UTIL = win.examProject.common.util;
+
+    win.examProject.layerPop = function () {
+        this.init();
+    };
+    win.examProject.layerPop.prototype = {
+        init : function () {
+            this.setElements();
+            this.setLayout();
+            this.bindEvents();
+        },
+        setElements : function () {
+            this.btnObj = $('.js-btn_pos button');
+            this.layerArea = $('.js-layer_area');
+            this.layerPos = this.layerArea.find('.layer_pos');
+            this.layerClose = this.layerPos.find('.layer_close button');
+        },
+        setLayout : function () {
+            // focus 를 구현하기 위한 속성 추가
+            this.layerPos.attr('tabindex', 0);
+            // focusout 을 잡아내기 위한 태그 추가
+            var focusOutTag = '<span class="js-focusout" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
+            this.layerPos.before(focusOutTag);
+            this.layerPos.after(focusOutTag);
+        },
+        bindEvents : function () {
+            this.btnObj.on('click', $.proxy(this.layerViewFunc, this));
+            this.layerClose.on('click', $.proxy(this.layerHideFunc, this));
+        },
+        bindOutsideEvents : function () {
+            this.layerPos.on('keydown keyup focusoutside', $.proxy(this.keyboardFunc, this));
+            this.layerPos.on('clickoutside', $.proxy(this.layerHideFunc, this));
+        },
+        layerViewFunc : function () {
+            this.layerArea.fadeIn('fast', $.proxy(function () {
+                this.bindOutsideEvents();
+            }, this));
+            this.layerPos.focus();
+        },
+        layerHideFunc : function () {
+            this.keyShift = false;
+            this.layerPos.off('keydown keyup focusoutside clickoutside');
+            this.layerArea.fadeOut('fast');
+            this.btnObj.focus();
+        },
+        keyboardFunc : function (e) {
+            if(e.type === 'keydown'){
+                if(e.keyCode !== 16 || e.which !== 16) return;
+                this.keyShift = true;
+            }else if(e.type === 'keyup'){
+                if(e.keyCode !== 16 || e.which !== 16) return;
+                this.keyShift = false;
+            }else if(e.type === 'focusoutside'){
+                (this.keyShift) ? this.layerClose.focus() : this.layerPos.focus();
+            }
+        }
+    };
+
+    $(function () {
+        win.examLayerPop = new win.examProject.layerPop();
+    });
+})(window, window.jQuery);
+</script>
+</body>
+</html>
