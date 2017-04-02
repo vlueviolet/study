@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Trigger</title>
+<link rel="stylesheet" type="text/css" href="css/swiper.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<style>
+body{background:#eee;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:14px;color:#000;margin:0;padding:0}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}
+h1{padding:10px;font-size:18px}
+.swiper-container{position:relative;width:500px;height:300px;margin:20px auto;background:#fff}
+.swiper-container h2{position:absolute;top:0;left:0;z-index:10;width:100%;margin:0;padding:0 10px;border-bottom:1px solid #ebeef3;font-size:20px;font-weight:normal;line-height:50px}
+.swiper-wrapper{padding-top:50px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.swiper-slide{text-align:center;font-size:18px;background:#fff;line-height:250px;}
+.swiper-button-prev,.swiper-button-next{position:absolute;top:0;width:15px;height:50px;margin:0;-webkit-background-size:100% auto;background-position:50% 50%;background-size:100% auto;}
+.swiper-button-next{right:10px}
+.swiper-button-prev{right:45px;left:auto}
+.swiper-pagination-current{font-weight:bold;color:#2565d0}
+</style>
+</head>
+<body>
+<h1>새로고침 하더라도, 보던 슬라이드가 보이게 하고 싶어요.</h1>
+<div class="swiper-container">
+	<h2>04.03 (월)</h2>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<!-- [ Javascript Area ] -->
+<!-- Common Libs -->
+<script src="js/libs/jquery-3.1.1.min.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    pagination: '.swiper-pagination',
+    paginationType: 'fraction'
+});
+</script>
+</body>
+</html>
