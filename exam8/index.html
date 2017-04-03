@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam8 - 랜덤, 그러나 중복없이</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{overflow:visible;border:0 none;background-color:transparent;cursor:pointer}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+.btn_random,.btn_more{display:inline-block;margin:1.6rem auto 0;padding:0 1rem;border:0.14rem solid #00ce23;border-top-left-radius:0.36rem;border-top-right-radius:0.36rem;border-bottom-left-radius:0.36rem;border-bottom-right-radius:0.36rem;font-size:0.86rem;color:#00ce23}
+.btn_random:after,.btn_more:after{display:inline-block;position:relative;width:1.2rem;height:0.86rem;margin-left:0.4rem;background:url(http://lp.play.line.me/imgs/sp.png) no-repeat;background-size:12.57rem auto;background-position:-7.79rem -1.93rem;vertical-align:middle;content:''}
+.btn_random span,.btn_more span{display:inline-block;padding:0.7rem 0;white-space:nowrap;vertical-align:middle}
+.view{overflow:hidden;width:500px;height:500px;border:1px solid pink;}
+.list_avatar{position:relative}
+.list_avatar li{display:none;position:absolute;top:0;left:0;width:500px;height:500px;background:#fff;line-height:500px;font-size:50px;font-weight:bold;text-align:center}
+/* //temporary css */
+</style>
+</head>
+<body>
+<div class="view">
+    <ul class="list_avatar">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    </ul>
+</div>
+<button type="button" class="btn_random"><span>다른 아바타 보기</span></button>
+
+<!-- [ Javascript Area ] -->
+<!-- Common Libs -->
+<script src="../js/libs/jquery-3.1.1.min.js"></script>
+<script src="../js/libs/jquery.ba-outside-events.min.js"></script>
+<!-- Common Apps -->
+<script src="../js/apps/common.js"></script>
+<!-- Local JS -->
+<script type="text/javascript" src="js/study.js"></script>
+</body>
+</html>
