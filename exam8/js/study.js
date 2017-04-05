@@ -4,49 +4,55 @@
     var avatarObj = {
         init : function () {
             this.setElements();
-            this.setArray();
-            // this.setOption();
+            this.initArr();
             this.bindEvents();
         },
         setElements : function () {
             this.btn = $('.btn_random');
-            this.obj = $('.swiper-wrapper .swiper-slide');
-        },
-        setArray : function () {
-            this.arr=[];
-            for(var i=0, max=this.obj.length ; i < max ; i++){
-                this.arr.push(this.obj.eq(i));
-            }
-        },
-        setOption : function () {
-            this.curNum;
-            this.prevNum;
+            this.obj = $('.swiper-wrapper .swiper-slide')
         },
         bindEvents : function () {
-            this.btn.on('click', $.proxy(this.randomView,this));
+            this.btn.on('click', $.proxy(this.viewArray,this));
         },
-        makeRandom : function () {
-            this.prevNum=this.curNum;
-            this.curNum = Math.floor(Math.random()*this._length);
-            
-        },
-        randomView : function () {
-            this._length = this.arr.length;
-             this.makeRandom();
-             console.log('after===prevNum : ' + this.prevNum + ' '+' / curNum : ' + this.curNum);
-
-             if(this._length > 0){
-               
-                for(var i=0, max=this.arr.length ; i < max ; i++){
-                    this.arr[i].hide();
-                }
-
-                this.arr[this.curNum].show();
-                this.arr.splice(this.curNum,1);
-            }else if(this._length === 0){
-                this.setArray();
+        setArray : function () {
+            this.arr = [];
+            for(var i=0, max = this.obj.length ; i < max ; i++){
+                this.obj.eq(i).hide();
+                this.arr.push(i);
             }
         },
+        makeRandomNum : function () {
+            this._length = this.arr.length;
+            this.randomNum = Math.floor(Math.random()*this._length);
+            this.curIndex = this.arr[this.randomNum];
+            // console.log('pre : ' + this.prevIndex+', cur : '+this.curIndex);
+        },
+        initArr : function () {
+            this.setArray();
+            this.makeRandomNum();
+            this.checkRandomNum();
+            this.obj.eq(this.randomNum).show();
+        },
+        spliceArray : function () {
+            if(this._length === 1){
+                this.initArr();
+            }
+            this.arr.splice(this.randomNum,1);
+        },
+        viewArray : function () {
+            this.spliceArray();
+            this.prevIndex = this.curIndex;
+            this.obj.eq(this.prevIndex).hide();
+            this.makeRandomNum();
+            this.obj.eq(this.curIndex).show();
+        },
+        checkRandomNum : function () {
+            console.log('pre : ' + this.prevIndex+', cur : '+this.curIndex);
+            while(this.prevIndex === this.curIndex){
+                this.makeRandomNum();
+            }
+            console.log('pre : ' + this.prevIndex+', cur : '+this.curIndex);
+        }
     };
     $(function(){
         avatarObj.init();
