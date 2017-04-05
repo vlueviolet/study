@@ -29,7 +29,6 @@
         },
         initArr : function () {
             this.setArray();
-            this.makeRandomNum();
             this.checkRandomNum();
             this.obj.eq(this.randomNum).show();
         },
@@ -43,7 +42,7 @@
             this.spliceArray();
             this.prevIndex = this.curIndex;
             this.obj.eq(this.prevIndex).hide();
-            this.makeRandomNum();
+            this.checkRandomNum();
             this.obj.eq(this.curIndex).show();
         },
         checkRandomNum : function () {
