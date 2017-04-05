@@ -4,28 +4,30 @@
     var avatarObj = {
         init : function () {
             this.setElements();
+            this.setArray();
             this.bindEvents();
         },
         setElements : function () {
             this.btn = $('.btn_random');
-            this.obj = $('.list_avatar li');
+            this.obj = $('.swiper-wrapper .swiper-slide');
+        },
+        setArray : function () {
+            this._length = this.obj.length;
+            this.arr=[];
+            for(var i=0, max=this.obj.length ; i < max ; i++){
+                this.arr.push(this.obj.eq(i));
+            }
         },
         bindEvents : function () {
-            this.btn.on('click', $.proxy(this.setArray,this));
+            this.btn.on('click', $.proxy(this.randomView,this));
         },
         setOption : function () {
             
         },
-        setArray : function () {
-            var _length = this.obj.length;
-            var arr = [0,1,2,3,4,5];
-            var randomNum = Math.floor(Math.random()*_length);  //배열 길이 이내 랜덤값
-            
-            console.log(arr);
-            arr.splice(randomNum,1);
-            var arr2 = arr;
-            console.log(arr2);
-            
+        makeRandomNum : function () {
+            var curNum = Math.floor(Math.random()*this._length);
+            var prevNum=curNum;
+            return curNum;
         },
     };
     $(function(){
