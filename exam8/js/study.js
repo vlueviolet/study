@@ -5,6 +5,7 @@
         init : function () {
             this.setElements();
             this.setArray();
+            // this.setOption();
             this.bindEvents();
         },
         setElements : function () {
@@ -24,20 +25,27 @@
         bindEvents : function () {
             this.btn.on('click', $.proxy(this.randomView,this));
         },
+        makeRandom : function () {
+            this.prevNum=this.curNum;
+            this.curNum = Math.floor(Math.random()*this._length);
+            
+        },
         randomView : function () {
             this._length = this.arr.length;
-            this.curNum = Math.floor(Math.random()*this._length);
-            console.log(this._length);
+             this.makeRandom();
+             console.log('after===prevNum : ' + this.prevNum + ' '+' / curNum : ' + this.curNum);
 
-            for(var i=0, max=this.arr.length ; i < max ; i++){
-                this.arr[i].hide();
+             if(this._length > 0){
+               
+                for(var i=0, max=this.arr.length ; i < max ; i++){
+                    this.arr[i].hide();
+                }
+
+                this.arr[this.curNum].show();
+                this.arr.splice(this.curNum,1);
+            }else if(this._length === 0){
+                this.setArray();
             }
-            this.arr[this.curNum].show();
-            this.arr.splice(this.curNum,1);
-            this.prevNum=this.curNum;
-
-            console.log(this.curNum);
-            console.log(this.prevNum);
         },
     };
     $(function(){
