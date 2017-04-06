@@ -29,6 +29,7 @@
         },
         initArr : function () {
             this.setArray();
+            this.makeRandomNum();
             this.checkRandomNum();
             this.obj.eq(this.randomNum).show();
         },
@@ -40,17 +41,20 @@
         },
         viewArray : function () {
             this.spliceArray();
+            console.log(this.arr)
             this.prevIndex = this.curIndex;
             this.obj.eq(this.prevIndex).hide();
+            this.makeRandomNum();
             this.checkRandomNum();
             this.obj.eq(this.curIndex).show();
         },
         checkRandomNum : function () {
-            console.log('pre : ' + this.prevIndex+', cur : '+this.curIndex);
+            console.log('현재 보이는 obj : ' + this.prevIndex+', 곧 보일 obj : '+this.curIndex);
             while(this.prevIndex === this.curIndex){
                 this.makeRandomNum();
+                console.log("돈다 무한히?");
             }
-            console.log('pre : ' + this.prevIndex+', cur : '+this.curIndex);
+            console.log('이전 인덱스 : ' + this.prevIndex+', 현재 인덱스 : '+this.curIndex);
         }
     };
     $(function(){
