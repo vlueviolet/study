@@ -15,9 +15,9 @@
             this.btn.on('click', $.proxy(this.viewArray,this));
         },
         setArray : function () {
+            this.obj.hide();
             this.arr = [];
             for(var i=0, max = this.obj.length ; i < max ; i++){
-                this.obj.eq(i).hide();
                 this.arr.push(i);
             }
         },
@@ -29,23 +29,21 @@
         },
         initArr : function () {
             this.setArray();
-            this.makeRandomNum();
-            this.checkRandomNum();
-            this.obj.eq(this.randomNum).show();
+            this.viewArray();
         },
         spliceArray : function () {
             this.arr.splice(this.randomNum,1);
-              if (this.arr.length) return;
-            this.initArr();
+            if (this.arr.length) return;
+            this.setArray();
         },
         viewArray : function () {
-            this.spliceArray();
             console.log(this.arr)
-            this.prevIndex = this.curIndex;
-            this.obj.eq(this.prevIndex).hide();
             this.makeRandomNum();
             this.checkRandomNum();
+            this.spliceArray();
             this.obj.eq(this.curIndex).show();
+            this.obj.eq(this.prevIndex).hide();
+            this.prevIndex = this.curIndex;
         },
         checkRandomNum : function () {
             console.log('현재 보이는 obj : ' + this.prevIndex+', 곧 보일 obj : '+this.curIndex);
