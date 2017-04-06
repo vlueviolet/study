@@ -34,10 +34,9 @@
             this.obj.eq(this.randomNum).show();
         },
         spliceArray : function () {
-            if(this._length === 1){
-                this.initArr();
-            }
             this.arr.splice(this.randomNum,1);
+              if (this.arr.length) return;
+            this.initArr();
         },
         viewArray : function () {
             this.spliceArray();
