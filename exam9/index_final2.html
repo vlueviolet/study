@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - thema</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+.cast_box{width:880px;margin:0 auto;border:1px solid #ccc}
+.cast_tab{}
+.cast_tab ul{zoom:1}
+.cast_tab ul:after{display:block;clear:both;content:''}
+.cast_tab ul li{float:left;width:12.5%;text-align:center}
+.cast_tab ul li a{display:block;padding:10px;border-left:1px solid #ccc;background:#f3f3f3;color:#000;text-decoration:none}
+.cast_tab ul li:first-child a{border-left:0 none}
+.cast_tab ul li.active a{background:#ccc;color:#000}
+.cast_cont{border-top:1px solid #ccc}
+.cast_article{display:none;height:500px}
+.cast_article.active{display:block}
+.cast_setting{padding:10px;border-top:1px solid #ccc;zoom:1}
+.cast_setting:after{display:block;clear:both;content:''}
+.cast_setting .cast_btn{float:left}
+.cast_setting .cast_num{float:right;margin-right:5px}
+.cast_num .total{font-weight:bold}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+    <!-- header [s] -->
+    <div id="header">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <div class="cast_box">
+            <div class="cast_tab">
+                <ul>
+                    <li class="active"><a href="#thema1">테마1</a></li>
+                    <li><a href="#thema2">테마2</a></li>
+                    <li><a href="#thema3">테마3</a></li>
+                    <li><a href="#thema4">테마4</a></li>
+                    <li><a href="#thema5">테마5</a></li>
+                    <li><a href="#thema6">테마6</a></li>
+                    <li><a href="#thema7">테마7</a></li>
+                    <li><a href="#thema8">테마8</a></li>
+                </ul>
+            </div>
+            <div class="cast_cont">
+                <div id="thema1" class="cast_article active">컨텐츠1</div>
+                <div id="thema2" class="cast_article">컨텐츠2</div>
+                <div id="thema3" class="cast_article">컨텐츠3</div>
+                <div id="thema4" class="cast_article">컨텐츠4</div>
+                <div id="thema5" class="cast_article">컨텐츠5</div>
+                <div id="thema6" class="cast_article">컨텐츠6</div>
+                <div id="thema7" class="cast_article">컨텐츠7</div>
+                <div id="thema8" class="cast_article">컨텐츠8</div>
+            </div>
+            <div class="cast_setting">
+                <div class="cast_btn">
+                    <button type="button">이전</button><button type="button">다음</button>
+                </div>
+                <div class="cast_num"><span class="current">1</span> / <span class="total">8</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer">@</div>
+    <!-- footer [e] -->
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    var themaPlay = {
+        init : function () {
+            this.setElements();
+            this.initLayout();
+            this.bindEvents();
+        },
+        setElements : function () {
+            this.castBox = $('.cast_box');
+            this.castTab = this.castBox.find('.cast_tab ul');
+            this.castTabChild = this.castTab.children();
+            this.castCont = this.castBox.find('.cast_cont');
+            this.castContChild = this.castCont.children();
+            this.castBtnBox = this.castBox.find('.cast_btn');
+            this.castPrevBtn = this.castBtnBox.find('button').eq(0);
+            this.castNextBtn = this.castBtnBox.find('button').eq(1);
+            this.castNumBox = this.castBox.find('.cast_num');
+            this.castNumCurrent = this.castNumBox.find('.current');
+            this.castNumTotal = this.castNumBox.find('.total');
+        },
+        initLayout : function () {
+            var initHash = win.location.hash,
+                hashTarget = this.castContChild.filter(initHash);
+            this.currentIndex = (hashTarget.length) ? hashTarget.index() : 0;
+            this.castTabChild.removeClass('active');
+            this.castContChild.hide();
+            this.castNumTotal.text(this.castTabChild.length);
+            this.viewLayout();
+            this.indexUpdate();
+        },
+        bindEvents : function () {
+            this.castTabChild.on('click', '>a', $.proxy(this.onClickFunc, this));
+            this.castPrevBtn.on('click', $.proxy(this.onPrevFunc, this));
+            this.castNextBtn.on('click', $.proxy(this.onNextFunc, this));
+            $(win).on('hashchange', $.proxy(this.onHashChangeFunc, this));
+        },
+        onClickFunc : function (e) {
+            e.preventDefault();
+            var target = $(e.currentTarget);
+            this.currentIndex = target.closest('li').index();
+            if (this.currentIndex === this.oldIndex) return;
+            this.hashUpdate();
+        },
+        onPrevFunc : function () {
+            this.currentIndex -= 1;
+            if (this.currentIndex < 0) {
+                this.currentIndex = this.castTabChild.length - 1;
+            }
+            this.hashUpdate();
+        },
+        onNextFunc : function () {
+            this.currentIndex += 1;
+            if (this.currentIndex >= this.castTabChild.length) {
+                this.currentIndex = 0;
+            }
+            this.hashUpdate();
+        },
+        onHashChangeFunc : function () {
+            var initHash = win.location.hash,
+                hashTarget = this.castContChild.filter(initHash);
+            this.currentIndex = (hashTarget.length) ? hashTarget.index() : 0;
+            this.viewLayout();
+            this.indexUpdate();
+        },
+        viewLayout : function () {
+            this.castTabChild.eq(this.currentIndex).addClass('active');
+            this.castContChild.eq(this.currentIndex).show();
+            this.castTabChild.eq(this.oldIndex).removeClass('active');
+            this.castContChild.eq(this.oldIndex).hide();
+            this.oldIndex = this.currentIndex;
+        },
+        indexUpdate : function () {
+            var indexNum = this.currentIndex + 1;
+            this.castNumCurrent.text(indexNum);
+        },
+        hashUpdate : function () {
+            var hashName = this.castContChild.eq(this.currentIndex).attr('id');
+            win.location.hash = '#' + hashName;
+        }
+    };
+    $(function () {
+        themaPlay.init();
+    });
+})(window, window.jQuery);
+</script>
+</div>
+</body>
+</html>

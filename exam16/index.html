@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - custom scroll</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+.blind{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+.sample{width:600px;margin:0 auto;padding:10px 0}
+.sample h1{margin-bottom:5px}
+.sample_info{margin-top:10px}
+.scroll_wrap{overflow:auto;position:relative;width:580px;height:180px;padding:10px 0 50px;background:#f1f1f1}
+.history{width:950px;padding:0 10px}
+.history table th{font-size:13px;text-align:left}
+.history table td{width:220px;padding:5px 15px 5px 0;font-size:12px;vertical-align:top}
+.history table td dl{overflow:hidden}
+.history table td dt{float:left;margin-right:10px}
+.history table td dd{overflow:hidden}
+.scroll_bar_wrap{position:relative;width:600px;height:10px;margin:10px auto 0}
+.scroll_bar_wrap .bar_area{position:absolute;top:0;left:0;width:600px;height:12px;border-radius:6px;background:#ddd}
+.scroll_bar_wrap .bar_area .bar{position:absolute;top:2px;left:2px;width:350px;height:8px;border-radius:4px;background:#fff;box-shadow:1px 1px 1px 0 #ccc}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrap">
+    <!-- header [s] -->
+    <div id="header" role="banner">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <div class="sample">
+            <h1>Hivelab History</h1>
+            <div class="scroll_wrap">
+                <!-- 스크롤 컨텐츠 영역 [s] -->
+                <div class="scroll_view_wrap">
+                    <div class="history">
+                        <table>
+                            <caption class="blind">하이브랩 연혁 요약</caption>
+                            <thead>
+                                <tr>
+                                <th scope="col">2012년</th>
+                                <th scope="col">2013년</th>
+                                <th scope="col">2014년</th>
+                                <th scope="col">2015년</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>
+                                    <dl>
+                                    <dt>05월</dt>
+                                    <dd>(주)하이브랩 설립</dd>
+                                    <dt>06월</dt>
+                                    <dd>NHN Business Platform 웹 표준화 개발 계약 체결</dd>
+                                    <dt>10월</dt>
+                                    <dd>SBS 웹 접근성 개선 업무 계약 체결</dd>
+                                    <dt>11월</dt>
+                                    <dd>NHN Business Platform UI 디자인 계약 체결</dd>
+                                    </dl>                                    
+                                </td>
+                                <td>
+                                    <dl>
+                                    <dt>02월</dt>
+                                    <dd>판교테크노밸리 사무실 이전</dd>
+                                    <dt>02월</dt>
+                                    <dd>기업부설연구소 설립 (웹접근성 개발)</dd>
+                                    <dt>04월</dt>
+                                    <dd>벤처기업 인증</dd>
+                                    </dl>
+                                </td>
+                                <td>
+                                    <dl>
+                                    <dt>01월</dt>
+                                    <dd>㈜신세계,이마트 웹 표준화 개발 연간 운영 계약 체결</dd>
+                                    <dt>01월</dt>
+                                    <dd>카카오 커머스 서비스 디자인, 웹표준화 개발 운영 계약 체결</dd>
+                                    <dt>02월</dt>
+                                    <dd>NHN Entertainment 디자인,웹표준화 개발 운영 계약 체결</dd>
+                                    <dt>03월</dt>
+                                    <dd>이베이코리아 웹 표준화 개발 연간 운영 계약 체결</dd>
+                                    <dt>03월</dt>
+                                    <dd>CJ오쇼핑 웹 표준화 개발 연간 운영 계약 체결</dd>
+                                    <dt>04월</dt>
+                                    <dd>SK 텔레콤 ‘Myshop’ 반응형 웹 리뉴얼 계약 체결</dd>
+                                    <dt>04월</dt>
+                                    <dd>㈜하이브랩 에듀웍스 설립 / ‘모노라움’ ( <a href="#">www.monoraum.com</a> ) 학원</dd>
+                                    <dt>05월</dt>
+                                    <dd>잡코리아 신규 프로젝트 계약 체결</dd>
+                                    <dt>10월</dt>
+                                    <dd>판교테크노벨리 유스페이스1 A동 406호 사무실 이전</dd>
+                                    </dl>
+                                </td>
+                                <td>
+                                    <dl>
+                                    <dt>01월</dt>
+                                    <dd>㈜넷마블 게임즈 디자인 운영 계약 체결</dd>
+                                    <dt>01월</dt>
+                                    <dd>King.com 온라인 마케팅 수행 계약 체결 및 연간 유지운영 계약 체결</dd>
+                                    <dt>04월</dt>
+                                    <dd>벤처기업 재인증</dd>
+                                    <dt>10월</dt>
+                                    <dd>인덕대학교 미디어아트앤디자인학과 산학협동 협정서(MOU) 체결</dd>
+                                    <dt>10월</dt>
+                                    <dd>삼성전자 Enhancement Project 수주</dd>
+                                    <dt>12월</dt>
+                                    <dd>2016 제일기획 협력회사 선정</dd>
+                                    </dl>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 스크롤 컨텐츠 영역 [e] -->
+
+            </div>
+            <!-- 스크롤 바 커스텀 [s] -->
+            <div class="scroll_bar_wrap">
+                <div class="bar_area">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <!-- 스크롤 바 커스텀 [e] -->
+        </div>
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer" role="contentinfo">@</div>
+    <!-- footer [e] -->
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    $(function () {
+    });
+})(window, window.jQuery);
+</script>
+</div>
+</body>
+</html>

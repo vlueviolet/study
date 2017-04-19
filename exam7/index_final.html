@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - outside</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+.btn_pos{padding:10px}
+.btn_pos button{margin:0;padding:0;width:100px;height:100px;border:1px solid #ccc;}
+.layer_area{display:none;position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%}
+.layer_area .layer_dimmed{position:absolute;left:0;top:0;right:0;bottom:0;width:100%;height:100%;background:#000;opacity:0.3;filter:alpha(opacity=30);}
+.layer_pos{position:absolute;left:50%;top:50%;width:400px;height:400px;margin:-220px 0 0 -220px;padding:20px;background:#fff}
+.layer_close{position:absolute;right:20px;top:20px}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+    <!-- header [s] -->
+    <div id="header">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <div class="btn_pos js-btn_pos"><button>레이어 띄우기</button></div>
+        <div class="layer_area js-layer_area">
+            <span class="layer_dimmed">&nbsp;</span>
+            <div class="layer_pos">
+                <ul>
+                    <li>내용1<a href="#">링크</a></li>
+                    <li>내용2</li>
+                    <li>내용3</li>
+                    <li>내용4</li>
+                    <li>내용5</li>
+                </ul>
+                <p class="layer_close"><button>닫기</button></p>
+            </div>
+        </div>
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer">@</div>
+    <!-- footer [e] -->
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ba-outside-events.min.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    var layerObj = {
+        init : function () {
+            this.setElements();
+            this.initLayout();
+            this.bindEvents();
+        },
+        setElements : function () {
+            this.btn = $('.js-btn_pos button');
+            this.objWrap = $('.js-layer_area');
+            this.obj = $('.layer_pos');
+            this.closeBtn = this.obj.find('.layer_close button');
+        },
+        initLayout : function () {
+            // focusout 을 잡아내기 위한 태그 추가
+            var focusOutTag = '<span class="js-focusout" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
+            this.obj.before(focusOutTag);
+            this.obj.after(focusOutTag);
+            this.prevFocus = this.obj.prev();
+            this.nextFocus = this.obj.next();
+            this.obj.attr('tabIndex', 0);
+        },
+        bindEvents : function () {
+            this.btn.on('click', $.proxy(this.layerView, this));
+            this.closeBtn.on('click', $.proxy(this.layerClickOutside, this));
+            this.prevFocus.on('focusin', $.proxy(this.prevFocusFunc, this));
+            this.nextFocus.on('focusin', $.proxy(this.nextFocusFunc, this));
+        },
+        outSideEvents : function () {
+            this.obj.on('clickoutside', $.proxy(this.layerClickOutside, this));
+        },
+        layerView : function () {
+            this.objWrap.fadeIn(100, $.proxy(function () {
+                this.outSideEvents();
+            }, this));
+            this.obj.focus();
+        },
+        layerClickOutside : function () {
+            this.objWrap.fadeOut(100);
+            this.btn.focus();
+            this.obj.off('clickoutside');
+        },
+        prevFocusFunc : function () {
+            this.closeBtn.focus();
+        },
+        nextFocusFunc : function () {
+            this.obj.focus();
+        }
+    };
+    $(function () {
+        layerObj.init();
+    });
+})(window, window.jQuery);
+</script>
+</div>
+</body>
+</html>

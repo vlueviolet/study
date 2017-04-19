@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - sort</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+p{margin-bottom:30px;padding-bottom:10px;border-bottom:2px solid #da0707;font-size:20px}
+#container{width:880px;margin:0 auto}
+table{width:100%;background-color:#efefef;table-layout:fixed;border-collapse:collapse}
+th,td{height:50px;text-align:center}
+.num{text-align:center}
+.tit{padding-left:10px}
+.name{text-align:center}
+.btn_sort{display:block;margin:0 auto}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+    <!-- header [s] -->
+    <div id="header">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <table>
+        <thead>
+        <tr>
+        <th>번호<button type="button" class="btn_sort">정렬</button></th>
+        <th>제목<button type="button" class="btn_sort">정렬</button></th>
+        <th>작성자<button type="button" class="btn_sort">정렬</button></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>1</td>
+        <td>ccccc</td>
+        <td>하이브랩</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>zzzzz</td>
+        <td>사내교육</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>aaaa</td>
+        <td>개발1팀</td>
+        </tr>
+        <tr>
+        <td>4</td>
+        <td>ffff</td>
+        <td>김민재</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer">@</div>
+    <!-- footer [e] -->
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    $(function () {
+    });
+})(window, window.jQuery);
+</script>
+</div>
+</body>
+</html>

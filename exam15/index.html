@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - sticky</title>
+<style>
+/* temporary css */
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,pre{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body{position:relative;min-width:1280px}
+body,input,select,textarea,button,th,td{font-family:'돋움','Dotum',sans-serif,'Apple SD Gothic Neo';font-size:11px;color:#555}
+fieldset,img{border:0 none}
+ul,ol,dl,li{list-style:none}
+li{vertical-align:top}
+.grid-wrap:after{display:block;content:"";clear:both}
+.grid-item{float:left;width:100px;height:100px;background-color:#e5e5e5;border:3px solid #666;border-radius:5px}
+.grid-item--width2{width:200px}
+.grid-item--width3{width:300px}
+.grid-item--width4{width:400px}
+.grid-item--height2{height:200px}
+.grid-item--height3{height:300px}
+.grid-item--height4{height:400px}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrap">
+    <!-- header [s] -->
+    <div id="header" role="banner">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <div class="grid-wrap">
+          <!-- width of .grid-sizer used for columnWidth -->
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--width2"></div>
+          <div class="grid-item grid-item--width2 grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--width3 grid-item--height4"></div>
+          <div class="grid-item grid-item--width2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height3"></div>
+          <div class="grid-item grid-item--width2 grid-item--height2"></div>
+          <div class="grid-item grid-item--width2"></div>
+          <div class="grid-item grid-item--height4"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--height2"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item grid-item--width3 grid-item--height4"></div>
+          <div class="grid-item grid-item--width4 grid-item--height3"></div>
+          <div class="grid-item"></div>
+        </div>
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer" role="contentinfo">@</div>
+    <!-- footer [e] -->
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    $(function () {
+    });
+})(window, window.jQuery);
+</script>
+</div>
+</body>
+</html>

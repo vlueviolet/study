@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - form check</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+a,a:focus,a:active,a:hover{text-decoration:none;color:#333}
+.tree_wrap{width:400px;margin:30px auto;padding:20px;border:1px solid #ccd3d9}
+.tree_wrap .title{padding:5px 0 5px 19px;border-bottom:1px solid #ccd3d9;background:#f8f8f9}
+.tree_wrap .title strong{margin-right:12px}
+.tree_menu li.last{background:none}
+.tree_menu li.end{background:url(img/tree_dot_last.gif) no-repeat 0 0}
+.depth_1{margin-top:10px}
+.depth_1:first-child{margin-top:0}
+.depth_1 strong{padding-left:19px;background:url(img/tree_icon_depth1_on.gif) no-repeat 0px 50%}
+.depth_2{padding:5px 0}
+.depth_2 li{margin-top:-5px;padding-bottom:10px;background:url(img/tree_dot_depth1.gif) no-repeat 5px 0px}
+.depth_2 li:first-child{margin-top:0}
+.depth_3{display:none;padding-left:23px}
+.depth_3 li{margin-top:0;padding:0 0 0 14px;background:url(img/tree_bg.gif) no-repeat 0 0;line-height:24px}
+.depth_3 li a{display:block;padding-left:15px;background:url(img/tree_icon_txt.gif) no-repeat 0 50%}
+.depth2_tit:before{display:inline-block;width:31px;height:11px;margin-right:5px;background:url(img/tree_bg3.gif) 100% 0;content:''}
+.depth2_tit span{font-weight:normal;color:#aaa}
+.tree_open .depth2_tit:before{background-position:0 100%}
+.tree_open .depth_3{display:block}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+    <!-- header [s] -->
+    <div id="header">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <!-- 트리메뉴-->
+        <div class="tree_wrap">
+            <ul id="tree_menu" class="tree_menu">
+            <li class="depth_1">
+                <strong class="depth_tit">1 Depth</strong>
+                <ul class="depth_2" >
+                <li class="tree_open"> <!--[D] menu 오픈시 .tree_open 추가 -->
+                    <a href="#" class="depth2_tit">2Depth <span>:: menu 열릴시 .tree_open 추가</span></a>
+                    <ul class="depth_3">
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li class="end"><a href="#">3 Depth</a></li>
+                    </ul>
+                </li>
+                <li class="last">
+                    <a href="#" class="depth2_tit"> 2Depth</a>
+                    <ul class="depth_3">
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li class="end"><a href="#">3 Depth</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li class="depth_1">
+                <strong class="depth_tit">1 Depth</strong>
+                <ul class="depth_2" >
+                <li>
+                    <a href="#" class="depth2_tit">2Depth</a>
+                    <ul class="depth_3">
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li class="end"><a href="#">3 Depth</a></li>
+                    </ul>
+                </li>
+                <li class="last tree_open"> <!--[D] menu 오픈시 .tree_open 추가 -->
+                    <a href="#" class="depth2_tit">2Depth <span>:: menu 열릴시 .tree_open 추가</span></a>
+                    <ul class="depth_3">
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li><a href="#">3 Depth</a></li>
+                    <li class="end"><a href="#">3 Depth</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <!--//트리메뉴-->
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer">@</div>
+    <!-- footer [e] -->
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script>
+(function (win, $) {
+    'use strict';
+    var folderTree = {
+        init : function () {
+            this.setElements();
+            this.initLayout();
+            this.bindEvents();
+        },
+        setElements : function () {
+            this.obj = $('.depth_2');
+            this.objChild = this.obj.children();
+        },
+        initLayout : function () {
+            // this.objChild.removeClass('tree_open');
+            this.obj.filter(function () {
+                var target = $(this),
+                    targetChild = target.children();
+                target.data('oldIndex', targetChild.filter('.tree_open').index());
+            });
+        },
+        bindEvents : function () {
+            this.objChild.on('click', '> .depth2_tit', $.proxy(this.onClickFunc, this));
+        },
+        onClickFunc : function (e) {
+            e.preventDefault();
+            var target = $(e.currentTarget),
+                targetParentLi = target.closest('li'),
+                targetParentLiIndex = targetParentLi.index(),
+                targetParentUl = targetParentLi.parent(),
+                targetParentUlOldIndex = parseInt(targetParentUl.data('oldIndex'));
+            target.closest('li').toggleClass('tree_open');
+
+            if (targetParentLiIndex === targetParentUlOldIndex) return;
+            targetParentUl.children().eq(targetParentUlOldIndex).removeClass('tree_open');
+            targetParentUl.data('oldIndex', targetParentLiIndex);
+        }
+    };
+    $(function () {
+        folderTree.init();
+    });
+})(window, window.jQuery);
+</script>
+</div>
+</body>
+</html>
