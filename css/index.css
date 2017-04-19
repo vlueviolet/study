@@ -7,7 +7,7 @@ ul,li{list-style:none}
 #container{padding:10px}
 .list{border:1px solid #000;border-width:1px 0}
 .list li{border-bottom:1px solid #dfdfdf;}
-.list a{display:block;padding:.7em 1em .6em;font-size:16px;color:#000;text-decoration:none}
+.list a{display:block;padding:.7em 1em .6em;font-size:14px;color:#000;text-decoration:none}
 .list a:hover{text-decoration:underline}
 .list .depth{background-color:#c7c6c8}
 .list .depth2{background-color:#d7d6d7}
