@@ -14,7 +14,7 @@ ul,li{list-style:none}
 .list .depth3{background-color:#eaeaea}
 .list .depth > a{font-weight:bold}
 .list .depth2 a{padding-left:2em;color:#333}
-.list .depth3 a{padding-left:4em;color:#555}
+.list .depth3 a{padding-left:2em;background:#fff;color:#555}
 .list2{display:none;border-top:1px solid #dfdfdf}
 .on .list2{display:block}
 .list2 li:last-child{border-bottom:0}
