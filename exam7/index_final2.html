@@ -84,10 +84,24 @@ button::-moz-focus-inner{padding:0;border:0}
 <script src="js/jquery.ba-outside-events.min.js"></script>
 <script>
 (function (win, $) {
+    //즉시 실행 함수, 함수를 정의하는 즉시 실행하는 문법으로 한번만 실행하는 함수
+    //window약어로 win, $문자를 jquery로 사용하겠다는 의미로, 여러 개발언어 중 $이 중복되지 않도록 하기 위함
+    //$별칭을 다른 라이브러리와 충돌에 대한 염려없이 사용가능
+
     'use strict';
+    //strict 모드 : 코딩실수를 잡아준다. 함수를 예로들면 함수 호출구문 다음에 함수 선언문을 적어도 기존은 에러가 안났지만 stric롤 할 경우에는 에러가 발생된다. 또한 안전하지 않은 액션 발생 방지하는데 도움이 된다. 파일 전체에 적용시킬수도 있고, 특정 함수 안에서만 적용할 수도 있다고 한다.
+
     win.examProject = win.examProject || {};
+    //examProject라는 네임스페이스를 정의하는 구문
+    //var examProjet = {} 와 유사한 의미인데 이걸 window용으로 사용하겠다는 의미다.
+    //examProject가 있다면 examProject를 넣고 없다면 {}를 생성하라는 구문
+    //맨처음 실행했다면 당연히 {}가 실행되어 객체를 생성하게되고, 이후 examProject가 생겼기때문에 자기 자신을 계속 넣게 된다.
+    //win을 사용하면 어떤 위치에서도 이 객체를 사용할 수 있기때문에 효율측면에 좋다. 다른 개발자들도 사용할 수 있음.
+
     win.examProject.commonLayer = function (args) {
-        var defParams = {
+    //commonLayer 함수를 선언함
+
+        var defParams = {   //args로 넘어오는 파라메터를 정의해준다. args로 넘어온 값이 있다면 그 값이 새롭게 정의가 되지만 없다면, 아래 미리 정의해둔 값이 적용될거다.
             type : 'default', // default, fade, slide
             btnElements : '.js-layer-btn',
             layerWrapElement : '.js-layer-wrap',
@@ -99,9 +113,23 @@ button::-moz-focus-inner{padding:0;border:0}
             closeBefore : null,
             closeAfter : null
         };
+
         this.opts = $.extend({}, defParams, (args || {}));
+        //여기서 this는 win.examProject를 가리킨다.
+        //extend는 2개 이상의 객체를 합칠때 사용한다.
+        //args || {} : args로 넘어오는게 있다면, args를 deParams에 병합하고, 없으면 빈 객체를 defParams에 넣으라는 의미
+        //defParams+위의 결과값이 병합되어 {}에 병합되어 opts 객체 유지
+        //지금처럼 첫 인자에 {} 빈 객체가 있다면 defParams가 변하지는 않는다.
+        //빈 객체를 첫번째 인자값으로 정의하는 방법은 플러그인 작성시에 default인 옵션값(defParams 위에 정의한것)들을 정의해두고, 사용자가 임의로 옶션값을 주었을때 default로 정의된 옵션값을 사용자 정의의 옵션값으로 merge하는데 사용된다.
+        //참고링크 : http://webclub.tistory.com/108
+
+
         if (!(this.btnObj = $(this.opts.btnElements)).length) return;
+        //this.btnObj = $(this.opts.btnElements), btnObj변수에 '레이어 띄우기' 버튼을 넣어놨는데, 이 버튼들의 길이가 없다면 return하라는건
+        //즉, 레이어 띄울게 없다면, 끝내버리라는 뜻
+
         this.init();
+        //init함수 실행하시오
     };
     win.examProject.commonLayer.prototype = {
         init : function () {
