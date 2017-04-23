@@ -228,7 +228,7 @@ button::-moz-focus-inner{padding:0;border:0}
         },
         
         //레이어가 열리고 나서 outside이벤트를 감지하는 함수를 실행하는 함수
-        //처음부터 실행할 필요하면 성능이슈도 있으니, 레이어가 열리고 실행하는것이 효율적
+        //처음부터 실행할 필요하면 성능이슈도 있으니, 레이어가 열리고 실행하는것이 효율적이다.
         showAfterBugFunc : function () {
             //clearTimeout을 먼저 실행시켜 성능이슈 줄이자. setTimeout한 대상이 다음 구문에 나와도 에러없음
             win.clearTimeout(this.showAfterTimeout);
@@ -261,7 +261,7 @@ button::-moz-focus-inner{padding:0;border:0}
                 //레이어 팝업 닫기
                 this.layerWrap.stop(true, true).hide();
                 
-                //이 함수는 왜 있는걸까? 그냥 this.layerClose(); 하면 안되나요?
+                //이 함수는 왜 있는걸까요? 그냥 this.layerClose(); 하면 안되나요?
                 this.hideAfterBugFunc();
             } else if (this.opts.type === 'fade') {
                 this.layerWrap.stop(true, true).fadeOut(this.opts.speed, $.proxy(this.layerCloseAfter, this));
@@ -290,11 +290,11 @@ button::-moz-focus-inner{padding:0;border:0}
         },
         outCallback : function (type) {
             //이게 멀까?
-            //찍어보면 함수가 나옴? this.opts[type]??
+            //찍어보면 함수가 나온다. this.opts[type]??
             var callbackObject = this.opts[type];
 
             if (callbackObject !== null) {
-                callbackObject();
+                callbackObject();   //재귀함수 인가요?
             }
         }
     };
