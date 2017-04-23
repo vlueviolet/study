@@ -80,7 +80,7 @@ button::-moz-focus-inner{padding:0;border:0}
 <!-- [ Javascript Area ] -->
 <!-- Libs -->
 <script src="../js/libs/jquery-1.12.4.min.js"></script>
-<script src="../js/libs/jquery.animate-enhanced.min.js"></script>
+<!-- <script src="../js/libs/jquery.animate-enhanced.min.js"></script> -->
 <script src="js/jquery.ba-outside-events.min.js"></script>
 <script>
 (function (win, $) {
@@ -98,15 +98,15 @@ button::-moz-focus-inner{padding:0;border:0}
     //맨처음 실행했다면 당연히 {}가 실행되어 객체를 생성하게되고, 이후 examProject가 생겼기때문에 자기 자신을 계속 넣게 된다.
     //win을 사용하면 어떤 위치에서도 이 객체를 사용할 수 있기때문에 효율측면에 좋다. 다른 개발자들도 사용할 수 있음.
 
+    //prototype 호출구문
     win.examProject.commonLayer = function (args) {
-    //commonLayer 함수를 선언함
 
         var defParams = {   //args로 넘어오는 파라메터를 정의해준다. args로 넘어온 값이 있다면 그 값이 새롭게 정의가 되지만 없다면, 아래 미리 정의해둔 값이 적용될거다.
             type : 'default', // default, fade, slide
-            btnElements : '.js-layer-btn',
+            btnElements : '.js-layer-btn',  //레이어팝업 이벤트 발생 버튼
             layerWrapElement : '.js-layer-wrap',
-            layerElement : '.js-layer',
-            closeElements : '.js-layer-close',
+            layerElement : '.js-layer', //레이어 팝업
+            closeElements : '.js-layer-close',  //레이어 팝업 닫기버튼
             speed : 150,
             viewBefore : null,
             viewAfter : null,
@@ -127,17 +127,25 @@ button::-moz-focus-inner{padding:0;border:0}
         if (!(this.btnObj = $(this.opts.btnElements)).length) return;
         //this.btnObj = $(this.opts.btnElements), btnObj변수에 '레이어 띄우기' 버튼을 넣어놨는데, 이 버튼들의 길이가 없다면 return하라는건
         //즉, 레이어 띄울게 없다면, 끝내버리라는 뜻
+        //유효성 검사 같은 것, 없으면 굳이 실행할 필요가 없으니까.
+        //this.init() 이전에 해주는게 좋다.
 
+        //prototype 함수를 호출
         this.init();
-        //init함수 실행하시오
     };
+
+    //prototype 선언구문
     win.examProject.commonLayer.prototype = {
-        init : function () {
-            this.setElements();
-            this.initLayout();
-            this.bindEvents();
+    //함수는 prototype을 기본적으로 갖고 있다.
+    //아래 함수들은 위에 this.init(); 라인에서 선언할 수 있는데, 그렇게 되면 이 함수들을 호출하는 구문을 $(function(){});의 new 다음에 호출구문이 필요하다. 이런 점에 대한 관리차원에서 prototype에서 함수를 선언하고, 위에서 함수 초기함수(init)를 호출하는 방식으로 한다.
+
+        //이 아래부터는 일반적으로 하던 방식이다.
+        init : function () {    //초기 실행함수
+            this.setElements(); //엘리먼트 셋팅을 위한 함수 호출
+            this.initLayout(); //초기 한번 실행하기위한 함수
+            this.bindEvents();  //이벤트 발생관련 함수 호출
         },
-        reInit : function () {
+        reInit : function () {  //개발자에게 주는 함수라는데 잘 모르겠다.
             this.nextFocusFunc();
         },
         setElements : function () {
@@ -146,40 +154,69 @@ button::-moz-focus-inner{padding:0;border:0}
             this.closeBtn = this.layerWrap.find(this.opts.closeElements);
         },
         initLayout : function () {
+            //focus가 .js-layer를 벗어났는지 확인하기위해 앞뒤에 임의 태그를 만들어 붙이기 위한 용도이다.
             var focusOutTagClass = 'js-focusout',
                 focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
+
+            //만약 .js-layer 앞에 .js-focusout클래스가 없다면?
+            //.js-layer앞에 focusOutTag를 넣어라.
             if (!this.layerObj.prev().hasClass(focusOutTagClass)) {
                 this.layerObj.before(focusOutTag);
             }
+
+            //만약 .js-layer 뒤에 .js-focusout 클래스가 없다면?
+            //js-layer 뒤에 focusOutTag를 넣어라.
             if (!this.layerObj.next().hasClass(focusOutTagClass)) {
                 this.layerObj.after(focusOutTag);
             }
+
+            //.js-layer 이전 엘리멘트를 this.prevFocus로 저장함. .js-focusout이겠지?
             this.prevFocus = this.layerObj.prev();
+            //.js-layer 다음 엘리멘트를 this.prevFocus로 저장함. .js-focusout이겠지?
             this.nextFocus = this.layerObj.next();
+            //.js-layer에 키보드 초점이 이동하도록 tabindex=0으로 정함
             this.layerObj.attr('tabIndex', 0);
         },
         bindEvents : function () {
+            //.js-layer-btn 버튼에 클릭 이벤트가 발생한다면 layerView() 실행
             this.btnObj.on('click', $.proxy(this.layerView, this));
+            //.layer_close 버튼에 클릭 이벤트가 발생한다면 layerClose() 실행
             this.closeBtn.on('click', $.proxy(this.layerClose, this));
+            //.js-layer 앞에 임의 생성된 .js-focusout에 키보드 포커스가 간다면, prevFocusFunc() 실행
             this.prevFocus.on('focusin', $.proxy(this.prevFocusFunc, this));
+            //.js-layer 뒤에 임의 생성된 .js-focusout에 키보드 포커스가 간다면, nextFocusFunc() 실행
             this.nextFocus.on('focusin', $.proxy(this.nextFocusFunc, this));
+            //.js-layer에 tabindex=0이기때문에 키보드 포커스가 이동하는데, 레이어에 키보드 입력이 발생하면 escapeFunc() 실행
             this.layerObj.on('keydown', $.proxy(this.escapeFunc, this));
         },
         layerClose : function () {
+           //레이어 팝업에 clickoutside 이벤트가 발생했을때와 같은 동작을 한다.
+           //잘 모르겠다.
+           //outside이벤트 감지구문이 있는 outSideEvents()가 실행될 줄 알았는데, 이 함수에서 호출하는 layerClickOutside()가 실행된다.
+           //trigger()와 차이는 없는듯 하다.
            this.layerObj.triggerHandler('clickoutside');
         },
         outSideEvents : function () {
+            //레이어 영역 밖에 마우스로 클릭하거나, 키보드 초점이 있다면 layerClickOutside() 실행시킴
             this.layerObj.on('clickoutside touchendoutside', $.proxy(this.layerClickOutside, this));
         },
+
+        //ESC 키를 누르면 레이어가 닫히도록 하는 함수
         escapeFunc : function (e) {
+            //현재 키값이 ESC(27)인지 확인하기 위함.
             var keyCode = e.which || e.keyCode;
+            //레이어팝업 닫기 함수 호출 전에 유효성 검사
             if (keyCode !== 27) return;
             this.layerClose();
         },
         layerView : function (e) {
+            //현재 클릭된 타겟을 btnTarget에 저장함
             this.btnTarget = $(e.currentTarget);
+            //outCallback함수를 호출하면서 'viewBefore' 문자열 전달
             this.outCallback('viewBefore');
-            if (this.opts.type === 'default') {
+
+            if (this.opts.type === 'default') { //슬라이드 타입이 단순 default일때
+                //레이어 단순 show() 실행, animation 관련 함수 실행하기 전에 stop()을 넣어주자.
                 this.layerWrap.stop(true, true).show();
                 this.showAfterBugFunc();
             } else if (this.opts.type === 'fade') {
@@ -189,23 +226,42 @@ button::-moz-focus-inner{padding:0;border:0}
             }
             this.layerObj.focus();
         },
+        
+        //레이어가 열리고 나서 outside이벤트를 감지하는 함수를 실행하는 함수
+        //처음부터 실행할 필요하면 성능이슈도 있으니, 레이어가 열리고 실행하는것이 효율적
         showAfterBugFunc : function () {
+            //clearTimeout을 먼저 실행시켜 성능이슈 줄이자. setTimeout한 대상이 다음 구문에 나와도 에러없음
             win.clearTimeout(this.showAfterTimeout);
+            //레이어 팝업이 열리고 조금이따가 layerViewAfter()를 실행
             this.showAfterTimeout = win.setTimeout($.proxy(this.layerViewAfter, this), 30);
         },
         layerViewAfter : function () {
-            this.outSideEvents();
-            this.outCallback('viewAfter');
+            this.outSideEvents();   //outside 이벤트 감지 관련 함수 호출
+            this.outCallback('viewAfter');  //이건 왜 할까?
         },
         layerClickOutside : function () {
-            this.outCallback('closeBefore');
+            this.outCallback('closeBefore');    //멀까?
+            
+            //여기도 마찬가지로 clearTimeout을 먼저 실행 시킴
             win.clearTimeout(this.closeBeforeTimeout);
+
+
+            //outside이벤트가 발생후 hideBeforeBugFunc() 레이어를 닫는 함수 실행
             this.closeBeforeTimeout = win.setTimeout($.proxy(this.hideBeforeBugFunc, this), 30);
+
+
+            //outside 관련 이벤트 모두 off 시킴, 레이어 팝업 열때 outside 이벤트 감지 함수를 실행시켰기때문에, 레이어 팝업 닫을때 outside를 꺼주는 거임
+            //성능이슈도 있기때문에 off에 대한 습관을 들이자
+            //off 함수의 위치가 여기인건, 위에 hideBeforeBugFunc() 즉 레이어를 닫고 나서 outside이벤트를 off해야하기때문이다.
             this.layerObj.off('clickoutside touchendoutside');
         },
         hideBeforeBugFunc : function () {
+            //layerView()와 반대 동작 함수
             if (this.opts.type === 'default') {
+                //레이어 팝업 닫기
                 this.layerWrap.stop(true, true).hide();
+                
+                //이 함수는 왜 있는걸까? 그냥 this.layerClose(); 하면 안되나요?
                 this.hideAfterBugFunc();
             } else if (this.opts.type === 'fade') {
                 this.layerWrap.stop(true, true).fadeOut(this.opts.speed, $.proxy(this.layerCloseAfter, this));
@@ -216,52 +272,69 @@ button::-moz-focus-inner{padding:0;border:0}
         },
         hideAfterBugFunc : function () {
             win.clearTimeout(this.closeAfterTimeout);
+
+            //layerCloseAfter() 실행
             this.closeAfterTimeout = win.setTimeout($.proxy(this.layerCloseAfter, this), 30);
         },
         layerCloseAfter : function (e) {
-            this.layerClose();
+            this.layerClose();  //layerClose() 호출
             this.outCallback('closeAfter');
         },
         prevFocusFunc : function () {
+            //레이어 이전 임의 요소인 .js-focusout으로 초점이 이동했을때 팝업 닫기버튼으로 초점을 이동시킨다.
             this.closeBtn.focus();
         },
         nextFocusFunc : function () {
+            //레이어 다음 임의 요소인 .js-focusout으로 초점이 이동했을때 팝업으로 초점을 이동시킨다.
             this.layerObj.focus();
         },
         outCallback : function (type) {
+            //이게 멀까?
+            //찍어보면 함수가 나옴? this.opts[type]??
             var callbackObject = this.opts[type];
+
             if (callbackObject !== null) {
                 callbackObject();
             }
         }
     };
 
+    //yoursObject 함수
     win.examProject.yoursObject = function () {
         this.init();
     };
+    //yoursObject함수 prototype 선언구문
     win.examProject.yoursObject.prototype = {
+        //초기 실행함수
         init : function () {
             this.setElements();
             this.bindEvents();
             this.setLayer();
         },
+        //엘리먼트 정의
         setElements : function () {
             this.btnis = $('.btn_is');
             this.youris = $('.your_tag');
         },
+        //클릭 이벤트 발생시 함수 실행
         bindEvents : function () {
             this.btnis.on('click', $.proxy(this.btnisFunc, this));
         },
         btnisFunc : function (e) {
             e.preventDefault();
-            this.youris.eq(0).hide();
-            this.youris.eq(1).show();
+            this.youris.eq(0).hide();   //1번째 youris 숨김
+            this.youris.eq(1).show();   //2번쨰 youris 보여줌
+            
+            //요소가 hide되면서 초점이 날아가기때문에 layer로 초점이 가도록 reInit() 실행
             this.posLayer.reInit();
             this.posLayer2.reInit();
             this.posLayer3.reInit();
         },
         setLayer : function () {
+            //posLayer를 win.examProject.commonLayer의 객체로 생성
+            //this.posLayer를 사용해서 commonLayer에서 정의한 함수를 다 사용할 수 있음
             this.posLayer = new win.examProject.commonLayer({
+                //defParams에 재정의될 속성값
                 type : 'fade',
                 btnElements : '.js-btn-fade button',
                 layerWrapElement : '.js-layer_area',
@@ -274,6 +347,7 @@ button::-moz-focus-inner{padding:0;border:0}
                 closeAfter : $.proxy(this.closeAfter, this)
             });
             this.posLayer2 = new win.examProject.commonLayer({
+                //defParams에 재정의될 속성값
                 btnElements : '.js-btn-default button',
                 layerWrapElement : '.js-layer_area',
                 layerElement : '.layer_pos',
@@ -284,6 +358,7 @@ button::-moz-focus-inner{padding:0;border:0}
                 closeAfter : $.proxy(this.closeAfter, this)
             });
             this.posLayer3 = new win.examProject.commonLayer({
+                //defParams에 재정의될 속성값
                 type : 'slide',
                 btnElements : '.js-btn-slide button',
                 layerWrapElement : '.js-layer_area',
@@ -297,19 +372,22 @@ button::-moz-focus-inner{padding:0;border:0}
             });
         },
         viewBefore : function () {
-            if (win.console) win.console.log('layer View Before');
+            //console을 사용할 수 있다면 ''사이의 텍스트를 console.log로 보여줘라?
+            //왜 이렇게 해야하나요?
+            if (win.console) win.console.log('layer View Before2');
         },
         viewAfter : function () {
-            if (win.console) win.console.log('layer View After');
+            if (win.console) win.console.log('layer View After2');
         },
         closeBefore : function () {
-            if (win.console) win.console.log('layer Close Before');
+            if (win.console) win.console.log('layer Close Before2');
         },
         closeAfter : function () {
-            if (win.console) win.console.log('layer Close After');
+            if (win.console) win.console.log('layer Close After2');
         }
     };
     $(function () {
+        //함수 호출구문
         win.examYours = new win.examProject.yoursObject();
     });
 })(window, window.jQuery);
