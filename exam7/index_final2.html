@@ -233,6 +233,8 @@ button::-moz-focus-inner{padding:0;border:0}
         
         //레이어가 열리고 나서 outside이벤트를 감지하는 함수를 실행하는 함수
         //처음부터 실행할 필요하면 성능이슈도 있으니, 레이어가 열리고 실행하는것이 효율적이다.
+        //show의 경우 시스템적 순서 오류로 열리기전에 다른 함수를 실행할 수 있기때문에 시간차를 두어 버튼 클릭을 겹치지 않게 하기 위함
+        //fadeIn같은 애니메이션은 애니메이션 실행 후 함수가 실행되기때문에 이 함수가 
         showAfterBugFunc : function () {
             //clearTimeout을 먼저 실행시켜 성능이슈 줄이자. setTimeout한 대상이 다음 구문에 나와도 에러없음
             win.clearTimeout(this.showAfterTimeout);
@@ -379,6 +381,7 @@ button::-moz-focus-inner{padding:0;border:0}
 
         //Q. 아래 4개 함수를 쓰는 이유?
         //A. 외부에서 해당시간차에 특정함수를 실행할수 있도록 제공하는 부분입니다. swiper 를 예로 들면, swiper 가 생성이 되기 위해서는 해당태그들이 보여지고 넓이/높이가 모두 잡혀져 있어야 제대로 생성이 가능합니다. 하지만, display:none 상태이면 넓이/높이를 잡을수 없기 때문에, 오류가 나는 현상이 보여집니다. 처음부터 swiper 를 생성하게 되면, 레이어가 display:none 상태이기 때문에 제대로 구현이 안됩니다. 그래서 레이어가 보여진 이후에 swiper 를 생성할수 있도록 메서드로 제공을 하는 부분입니다.
+        //예를들면 레이어가 열리고 나서 레이어의 높이, 넓이가 잘 잡힌 상태에서 특정 다른 함수나 플러그인(swiper)이 실행되게 하려고 사용하는 구문
         viewBefore : function () {
             //console을 사용할 수 있다면 ''사이의 텍스트를 console.log로 보여줘라?
             //왜 이렇게 해야하나요?
