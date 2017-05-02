@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>exam5 &gt; if, for/while</title>
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+	<h1>객체 활용하기 (if, for/while)</h1>
+	<!-- header [s] -->
+	<div id="header">
+	</div>
+	<!-- header [e] -->
+	<hr />
+	<!-- container [s] -->
+	<div id="container">
+		<h2 style="border-bottom:1px solid #000">exam2, exam3</h2>
+		<div class="exam_wrap exam_wrap1">
+			<h3>Q1. 처음부터 순서대로 일치하게 하시오. (Random Color)</h3>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				<li>eight</li>
+				</ul>
+			</div>
+			<button type="button">plus</button>
+		</div>
+		<div class="exam_wrap exam_wrap2">
+			<h3>Q2. 마지막부터 역순대로 일치하게 하시오. (Random Color)</h3>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				</ul>
+			</div>
+			<button type="button">minus</button>
+		</div>
+		<div class="exam_wrap exam_wrap3">
+			<h3>Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오. (Random Color)</h3>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				<li>eight</li>
+				<li>nine</li>
+				</ul>
+			</div>
+			<button type="button">plus</button>
+			<button type="button">minus</button>
+		</div>
+		<div class="exam_wrap exam_wrap4">
+			<h3>Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)</h3>
+			<div class="exam_q"><!-- 부모 -->
+				<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+				<li>six</li>
+				<li>seven</li>
+				<li>eight</li>
+				<li>nine</li>
+				</ul>
+			</div>
+			<button type="button">plus</button>
+			<button type="button">minus</button>
+		</div>
+
+		<h2 style="border-bottom:1px solid #000">exam4</h2>
+		<div class="exam_wrap exam_wrap5">
+			<h3>Q5. 5개의 input 중 짝수는 text / 홀수는 checkbox 를 만들어보기</h3>
+			<div class="q_area"></div>
+			<button type="button">click</button>
+		</div>
+		<div class="exam_wrap exam_wrap6">
+			<h3>Q6. 구구단 7단을 반복문을 이용해 만들어보기</h3>
+			<div class="q_area"></div>
+			<button type="button">click</button>
+		</div>
+		<div class="exam_wrap exam_wrap7">
+			<h3>Q7. 반복문 for/while 문을 이용해 모든 구구단 만들어보기</h3>
+			<div class="q_area"></div>
+			<button type="button">click</button>
+		</div>
+	</div>
+	<!-- container [e] -->
+	<hr />
+	<!-- footer [s] -->
+	<div id="footer">
+	</div>
+	<!-- footer [e] -->
+</div>
+<!-- wrapper [e] -->
+
+<script type="text/javascript" src="../../js/libs/jquery-1.12.4.min.js"></script>
+<script>
+(function (win, $) {
+	var randomColor = function () {	//random 컬러 공통
+		return 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ','
+                 + (Math.floor((256-199)*Math.random()) + 200) + ')'
+	};
+	//Q1. 처음부터 순서대로 일치하게 하시오.
+	var objFillColor = { 
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btn = $('.exam_wrap1 button')
+			, this.ele = $('.exam_wrap1 li')
+			, this.length = this.ele.length
+			, this.curIndex = 0
+			, this.color = randomColor();
+		}
+		, bindEvents : function () {
+			this.btn.on('click', $.proxy(this.fillColor,this));
+		}
+		, fillColor : function() {
+			if(this.curIndex > this.length-1){
+				this.curIndex = 0;
+				this.color = randomColor();
+			}
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			this.curIndex++;
+		}
+	};
+
+	//Q2. 마지막부터 역순대로 일치하게 하시오.
+	var objFillColor2 = {
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btn = $('.exam_wrap2 button')
+			, this.ele = $('.exam_wrap2 li')
+			, this.length = this.ele.length
+			, this.curIndex = this.length-1
+			, this.color = randomColor();
+		}
+		, bindEvents : function () {
+			this.btn.on('click', $.proxy(this.fillColor, this));
+		}
+		, fillColor : function (){
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			if(this.curIndex <= 0){
+				this.curIndex = this.length;
+				this.color = randomColor();
+			}
+			this.curIndex--;
+		}
+
+	}
+
+	//Q3. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.
+	var objFillColor3 = {		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btnPlus = $('.exam_wrap3 button').eq(0)
+			, this.btnMinus = $('.exam_wrap3 button').eq(1)
+			, this.ele = $('.exam_wrap3 li')
+			, this.length = this.ele.length
+			, this.curIndex = 0
+			, this.color = randomColor()
+			, this.ele.eq(0).css('background-color', this.color);
+		}
+		, bindEvents : function () {
+			this.btnPlus.on('click', $.proxy(this.fillColor, this));
+			this.btnMinus.on('click', $.proxy(this.fillColor2, this));
+		}
+		, fillColor : function () {
+			var preIndex = this.curIndex;
+			this.curIndex++;
+			if(this.curIndex >= this.length) {
+				this.curIndex = 0;
+				this.color = randomColor();
+			}
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			this.ele.eq(preIndex).css('background-color', 'transparent');
+		}
+		, fillColor2 : function () {
+			var preIndex = this.curIndex;
+			if(this.curIndex === 0) {
+				console.log("!");
+				this.curIndex = this.length;
+				this.curIndex = this.length;
+				this.color = randomColor();
+			}
+			this.curIndex--;
+			this.ele.eq(this.curIndex).css('background-color', this.color);
+			this.ele.eq(preIndex).css('background-color', 'transparent');
+		}
+	}
+
+	//Q4. 순서대로 일치하게 하시고, 바로 전에 일치됐던 엘리먼트는 색을 지우시오.(클래스 제어)
+	var objFillColor4 = {
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btnPlus = $('.exam_wrap4 button').eq(0)
+			, this.btnMinus = $('.exam_wrap4 button').eq(1)
+			, this.ele = $('.exam_wrap4 li')
+			, this.length = $('.exam_wrap4 li').length
+			, this.ele.eq(0).addClass('active')
+			, this.curIndex = 0;
+		}
+		, bindEvents : function () {
+			this.btnPlus.on('click', $.proxy(this.fillColor, this));
+			this.btnMinus.on('click', $.proxy(this.fillColor2, this));
+		}
+		, fillColor : function () {
+			var preIndex = this.curIndex;
+			this.curIndex++;
+			if(this.curIndex > this.length-1){
+				this.curIndex = 0
+			}
+			this.ele.eq(preIndex).removeClass('active');
+			this.ele.eq(this.curIndex).addClass('active');
+			
+		}
+		, fillColor2 : function () {
+			var preIndex = this.curIndex;
+			if(this.curIndex === 0) {
+				this.curIndex = this.length;
+			}
+			this.curIndex--;
+			this.ele.eq(preIndex).removeClass('active');
+			this.ele.eq(this.curIndex).addClass('active');
+		}
+	};
+
+	//Q5. 5개의 input 중 짝수는 text / 홀수는 checkbox 를 만들어보기
+	var objMakeInput = {
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btn = $('.exam_wrap5 button');
+			this.ele = $('.exam_wrap5 .q_area');
+			this.str = '';
+		}
+		, bindEvents : function () {
+			this.btn.on('click', $.proxy(this.makeInput, this));
+		}
+		, makeInput : function () {	//input 만들기
+			for(var i=1 ; i <= 5 ; i++){
+				if(i % 2 ===0){
+					this.str += '<input type="text" value="짝수' + i + '">';
+				}else{
+					this.str += '<input type="checkbox"><label>홀수'+ i + '</label>';
+				}
+				this.str+='<br>';
+				this.ele.html(this.str);
+			}
+		}
+	};
+
+	//Q6. 구구단 7단을 반복문을 이용해 만들어보기
+	//Q7. 반복문 for/while 문을 이용해 모든 구구단 만들어보기
+	var objMultiNum = {
+		init : function () {
+			this.setElements();
+			this.bindEvents();
+		}
+		, setElements : function () {
+			this.btn = $('.exam_wrap6 button')
+			, this.btn2 = $('.exam_wrap7 button')
+			, this.ele = $('.exam_wrap6 .q_area')
+			, this.ele2 = $('.exam_wrap7 .q_area')
+			, this.str=''
+			, this.str2='';
+		}
+		, bindEvents : function () {
+			this.btn.on('click', $.proxy(this.multipleNum7, this));
+			this.btn2.on('click', $.proxy(this.multipleNumAll, this));
+		}
+		, multipleNum7 : function () {
+			for(var i = 1, max = 7 ; i <= 9 ; i++){
+				this.str += max + ' * ' + i + ' = ' + i*max + '<br>';	
+			}
+			this.ele.html(this.str);
+		}
+		, multipleNumAll : function () {
+			var i=1;
+			this.str2 += '<ul>';
+			while(i <= 9){
+				this.str2 +='<li>*****'+ i + '단*****<br>';
+				for(var j=1 ; j <= 9 ; j++){
+					this.str2 += i + ' * ' + j + ' = ' + i*j + '<br>';
+				}
+				this.str2 += '</li>';
+				i++;
+			}
+			this.str2 += '</ul>';
+			this.ele2.html(this.str2);
+		}
+	};
+	
+
+	$(function(){
+		objFillColor.init();	//Q1
+		objFillColor2.init();	//Q2
+		objFillColor3.init();	//Q3
+		objFillColor4.init();	//Q4
+		objMakeInput.init();	//Q5
+		objMultiNum.init();	//Q6,Q7
+	});
+})(window, window.jQuery);
+</script>
+</body>
+</html>
