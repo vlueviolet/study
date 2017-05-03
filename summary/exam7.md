@@ -7,18 +7,22 @@
   * 레이어 닫기버튼 클릭시, 레이어를 호출했던 버튼으로 초점 이동함
 <br>
 
-## View Code
+## 코드보기
 * [https://vlueviolet.github.io/study/exam/exam7/index_final2.html](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
 <br>
 
-## Necessary Plugin
+## 필수 플러그인
 * Outside Event<br>[http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html](http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html)
+<br>
+
+## 추가하면 좋은 플러그인
 * Jquery Animate Enhanced : css3 사용성을 높여주는 플러그인<br>
   [https://github.com/benbarnett/jquery-animate-enhanced](https://github.com/benbarnett/jquery-animate-enhanced)
 <br>
 
-## Support Browsers
+## 지원 브라우저
 IE7+, CR/FF/SR Lately
 <br>
+
 
 ##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
