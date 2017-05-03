@@ -8,8 +8,10 @@
 <br>
 
 ## View Code
-Outside Event [https://vlueviolet.github.io/study/exam/exam7/index_final2.html](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
-
+* Outside Event
+  [https://vlueviolet.github.io/study/exam/exam7/index_final2.html](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
+* Jquery Animate Enhanced : css3 사용성을 높여주는 플러그인
+  [https://github.com/benbarnett/jquery-animate-enhanced](https://github.com/benbarnett/jquery-animate-enhanced)
 
 ## Necessary Plugin
 [Outside Event](http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html)
