@@ -8,6 +8,11 @@
 * [https://vlueviolet.github.io/study/exam/exam7/index_final2.html](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
 <br>
 
+## Key Point
+레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
+![](/img/summary/exam7/1.png)
+<br>
+
 ## A11Y
 * KWCAG 1.1.1, 1.1.2
   * 버튼 클릭시 레이어로 키보드 초점 이동
