@@ -9,12 +9,17 @@
 <br>
 
 ## Key Point
-레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
+* 레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
 ```javascript
 var focusOutTagClass = 'js-focusout';
 var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
 ```
 ![](/img/summary/exam7/1.png)
+* trigger와 triggerHandler
+
+  * trigger : 기본 이벤트(click, focus등)와 관련함수모두실행
+  * triggerHandler : 기본 이벤트만 실행하고 관련 함수는 실행하지않음
+  * 여기에서 쓰인 이유는, 클릭해서 레이어팝업을 닫을때 clickoutside 이벤트가 발생함으로 다른곳에 영향을 주지않으면서 레이어를 닫는 함수를 실행할 수 있기때문
 <br>
 
 ## A11Y
@@ -38,4 +43,5 @@ IE7+, CR/FF/SR Lately
 
 
 
-<br><br>##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
+<br><br>
+##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
