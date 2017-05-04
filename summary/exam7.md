@@ -10,12 +10,12 @@
 <br>
 
 ## Key Point
-* 레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
-```javascript
-var focusOutTagClass = 'js-focusout';
-var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
-```
-![](/img/summary/exam7/1.png)
++ 레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
+  ```javascript
+  var focusOutTagClass = 'js-focusout';
+  var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
+  ```
+  ![](/img/summary/exam7/1.png)
 + trigger와 triggerHandler
   + trigger : 기본 이벤트(click, focus등)와 관련함수모두실행
   + triggerHandler : 기본 이벤트만 실행하고 관련 함수는 실행하지않음
@@ -34,10 +34,10 @@ var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="ov
 <br>
 
 ## A11Y
-* KWCAG 1.1.1, 1.1.2
-  * 버튼 클릭시 레이어로 키보드 초점 이동
-  * 키보드 초점이 레이어 내에 계속 머무르게 되고, 닫기버튼을 클릭해야만 닫힘
-  * 레이어 닫기버튼 클릭시, 레이어를 호출했던 버튼으로 초점 이동함
++ KWCAG 1.1.1, 1.1.2
+  + 버튼 클릭시 레이어로 키보드 초점 이동
+  + 키보드 초점이 레이어 내에 계속 머무르게 되고, 닫기버튼을 클릭해야만 닫힘
+  + 레이어 닫기버튼 클릭시, 레이어를 호출했던 버튼으로 초점 이동함
 <br>
 
 ## Plugin
