@@ -5,7 +5,7 @@
 <br>
 
 ## 예제코드보기
-* [](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
+* [예제](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
 * [코드보기](https://github.com/vlueviolet/study/blob/gh-pages/exam/exam7/index_final2.html)
 <br>
 
