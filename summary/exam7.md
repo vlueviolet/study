@@ -4,7 +4,7 @@
 
 <br>
 
-## 코드보기
+## 예제코드보기
 * [https://vlueviolet.github.io/study/exam/exam7/index_final2.html](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
 <br>
 
