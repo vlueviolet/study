@@ -4,7 +4,7 @@
 
 <br>
 
-## 예제코드보기
+## Code
 * [예제](https://vlueviolet.github.io/study/exam/exam7/index_final2.html)
 * [코드보기](https://github.com/vlueviolet/study/blob/gh-pages/exam/exam7/index_final2.html)
 <br>
@@ -40,16 +40,16 @@ var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="ov
   * 레이어 닫기버튼 클릭시, 레이어를 호출했던 버튼으로 초점 이동함
 <br>
 
-## 필수 플러그인
+## Plugin
 * Outside Event<br>[http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html](http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html)
 <br>
 
-## 추가하면 좋은 플러그인
+## Better
 * Jquery Animate Enhanced : css3 사용성을 높여주는 플러그인<br>
   [https://github.com/benbarnett/jquery-animate-enhanced](https://github.com/benbarnett/jquery-animate-enhanced)
 <br>
 
-## 지원 브라우저
+## Support Browsers
 IE7+, CR/FF/SR Lately
 
 
