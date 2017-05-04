@@ -10,7 +10,8 @@
 
 ## Key Point
 레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
-![](/img/summary/exam7/1.png)
+
+!(/img/summary/exam7/1.png)
 <br>
 
 ## A11Y
