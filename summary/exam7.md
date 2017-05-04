@@ -37,5 +37,7 @@ var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="ov
 IE7+, CR/FF/SR Lately
 <br>
 
+['test'](http://www.example.com/){: .btn.btn-default target="_blank" }
+
 
 ##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
