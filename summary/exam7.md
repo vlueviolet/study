@@ -10,10 +10,10 @@
 
 ## Key Point
 레이어 앞뒤로 가상의 태그(.js-focusout)를 추가
-'''javascript
+```javascript
 var focusOutTagClass = 'js-focusout',
                 focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="overflow:hidden;position:absolute;left:0;top:0;z-index:-1;width:1px;height:1px;font-size:0;line-height:0"></span>';
-'''
+```
 ![](/img/summary/exam7/1.png)
 <br>
 
