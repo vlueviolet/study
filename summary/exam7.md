@@ -21,11 +21,14 @@ var focusOutTag = '<span class="' + focusOutTagClass + '" tabindex="0" style="ov
   + 여기에서 쓰인 이유는, 클릭해서 레이어팝업을 닫을때 clickoutside 이벤트가 발생함으로 다른곳에 영향을 주지않으면서 레이어를 닫는 함수를 실행할 수 있기때문
 + 레이어를 보여주는 함수에 setTimeout을 쓰는 이유?
     아래와 같이 코드가 작성되어 있다면
-```javascript
-obj.show();
-alert("안녕");
-```
-   실제순서는 alert → show순으로 실행된다. 이는 시스템적오류이기때문에 먼저 show()를하고 시간차를 두고 이후 실행할 함수를 호출해주는게 좋다.
+  ```javascript
+  obj.show();
+  alert("안녕");
+  ```
+   실제순서는 alert → show순으로 실행된다.
+   이는 시스템적오류이기때문에 먼저 show()를 실행하고 시간차를 두고 이후 실행할 함수를 호출해주는게 좋다.
+   코드상 시간차 함수는 showAfterBugFunc()를 확인해보길
+   
 
 <br>
 
