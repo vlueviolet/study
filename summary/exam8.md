@@ -37,6 +37,7 @@
 
 + while문 활용
   연속으로 같은 이미지가 나오지 않게 하기위해 while문을 사용했다.
+  
   ```javascript
   while(this.prevIndex === this.curIndex){
     this.makeRandomNum();
@@ -47,19 +48,15 @@
 <br>
 
 ## A11Y
-+ KWCAG 1.1.1, 1.1.2
-  + 버튼 클릭시 레이어로 키보드 초점 이동
-  + 키보드 초점이 레이어 내에 계속 머무르게 되고, 닫기버튼을 클릭해야만 닫힘
-  + 레이어 닫기버튼 클릭시, 레이어를 호출했던 버튼으로 초점 이동함
+없음
 <br>
 
 ## Plugin
-* Outside Event<br>[http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html](http://benalman.com/code/projects/jquery-outside-events/docs/files/jquery-ba-outside-events-js.html)
+없음
 <br>
 
 ## Better
-* Jquery Animate Enhanced : css3 사용성을 높여주는 플러그인<br>
-  [https://github.com/benbarnett/jquery-animate-enhanced](https://github.com/benbarnett/jquery-animate-enhanced)
+없음
 <br>
 
 ## Support Browsers
