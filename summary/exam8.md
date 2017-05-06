@@ -18,6 +18,7 @@
 
 ## Key Point
 + 정해진 범위 내 랜덤숫자 출력?
+
   ```javascript
     this.randomNum = Math.floor(Math.random()*this._length);
   ```
@@ -25,6 +26,7 @@
 
 + setArray()
   arr 배열에는 이미지 개수만큼의 숫자가 for문으로 0부터 차례대로 들어간다.
+  
   ```javascript
   this.curIndex = this.arr[this.randomNum];
   ```
