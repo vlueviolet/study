@@ -32,9 +32,11 @@
 
 + off 시키기
   outside event가 더이상 필요하지 않은 경우 이벤트를 off 해줘야 한다. 이는 click, focus등 모든 이벤트에 해당한다.
-
-  outside 이벤트는 레이어가 열리고 닫히는 순간까지만 필요하기때문에, 레이어가 닫히는 함수 마지막에 this.layerObj.off('clickoutside touchendoutside');와 같이 넣어주면 된다.
-
+  outside 이벤트는 레이어가 열리고 닫히는 순간까지만 필요하기때문에, 레이어가 닫히는 함수 마지막에 아래와 같이 넣어주면 된다.
+  
+  ```javascript
+  this.layerObj.off('clickoutside touchendoutside');
+  ```
   만약 off를 하지 않는다면 계속 outside 이벤트가 발생하는지 체크하기때문에 성능이슈가 발생한다.
 
 
