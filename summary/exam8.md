@@ -40,7 +40,7 @@
 + while문 활용
   연속으로 같은 이미지가 나오지 않게 하기위해 while문을 사용했다.
   
-  ```javascript
+  ```javascript
   while(this.prevIndex === this.curIndex){
     this.makeRandomNum();
   }
