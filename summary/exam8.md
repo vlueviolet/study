@@ -14,6 +14,7 @@
 ## Code
 * [예제](https://vlueviolet.github.io/study/exam/exam8/index.html)
 * [코드보기](https://github.com/vlueviolet/study/blob/gh-pages/exam/exam8/js/study.js)
+* [코드보기2](https://github.com/vlueviolet/study/blob/gh-pages/exam/exam8/index_final.html)
 <br>
 
 ## Key Point
