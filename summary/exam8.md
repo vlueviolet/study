@@ -22,6 +22,7 @@
   ```javascript
     this.randomNum = Math.floor(Math.random()*this._length);
   ```
+  
   this._length=6이라면, 6미만의 숫자 0,1,2,3,4,5가 랜덤하게 노출됨
 
 + setArray()
@@ -30,6 +31,7 @@
   ```javascript
   this.curIndex = this.arr[this.randomNum];
   ```
+  
   이 구문을 통해 기억할 것은,<br>
   이전, 다음 이미지가 겹치지 않기위해 현재 인덱스에 배열값이 들어가는데,<br>
   arr[0], arr[1]..arr[n]이 어떤 오브젝트를 갖고 있는 것이 아니라, 숫자값을 갖고 있다는 것이다.
@@ -43,6 +45,7 @@
     this.makeRandomNum();
   }
   ```
+  
   while문은 조건을 만족하면 구문을 빠져나오기때문에, 이전 인덱스와 현재 인덱스가 다를때까지 랜덤 숫자를 만드는 함수가 실행되는 것이다.
 
 <br>
