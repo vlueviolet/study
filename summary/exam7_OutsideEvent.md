@@ -30,17 +30,15 @@
   이는 시스템적 오류이기 때문에 먼저 show()를 실행하고 시간차를 두고 이후 실행할 함수를 호출해주는게 좋다.
   코드상 시간차 함수는 showAfterBugFunc()를 확인해보길
 
-+ off 시키기
-
-  outside event가 더이상 필요하지 않은 경우 이벤트를 off 해줘야 한다. 이는 click, focus등 모든 이벤트에 해당한다.
-  outside 이벤트는 레이어가 열리고 닫히는 순간까지만 필요하기때문에, 레이어가 닫히는 함수 마지막에 아래와 같이 넣어주면 된다.
++ outside 이벤트의 시작(.on)과 끝(.off)
+  
+  페이지가 로드되고부터 outside 이벤트를 시작한다면, 모은 요소를 체크하기때문에 성능이슈가 발생할 수 있다.<br>outside 이벤트는 레이어가 열렸을때 감지를 시작하고, 레이어가 닫히는 순간 off 해주어야 한다.<br><br>이는 outside 이벤트만 해당하는 것은 아니다. 많이 사용하는 click, focus 등 이벤트에 관한 부분은 해당 영역이 필요할 경우만을 잘 고려해서 줘야한다.
   
   ```javascript
+  this.layerObj.on('clickoutside touchendoutside', clickFunc());
   this.layerObj.off('clickoutside touchendoutside');
   ```
-  만약 off를 하지 않는다면 계속 outside 이벤트가 발생하는지 체크하기때문에 성능이슈가 발생한다.
-
-
+  
 <br>
 
 ## A11Y
