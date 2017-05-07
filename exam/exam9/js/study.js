@@ -35,11 +35,10 @@
         },
         clickFunc : function (e) {
             e.preventDefault();
-            var pos = $(window).scrollTop();
+            if (this.currentIndex === this.tab.index($(e.currentTarget))) return;
             this.currentIndex = this.tab.index($(e.currentTarget));
             this.changeIndex();
             this.setHash();
-            $(window).scrollTop(pos);
         },
         viewContent : function () {
              this.tab_cont.removeClass('active').eq(this.currentIndex).addClass('active');
