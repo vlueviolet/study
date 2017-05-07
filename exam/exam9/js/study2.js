@@ -24,7 +24,7 @@
             this.currentIndex = 0;
             this.prevIndex = this.currentIndex;
             this.tab.removeClass('active').eq(this.currentIndex).addClass('active');
-            this.tab_cont.css('left','-100%').eq(this.currentIndex).css('left', 0);
+            this.tab_cont.css('left','-100%').attr('tabindex',-1).eq(this.currentIndex).css('left', 0).attr('tabindex', 0);
         },
         clickFunc : function (e) {
             e.preventDefault()
@@ -42,15 +42,15 @@
             this.tab.eq(this.prevIndex).removeClass('active');
             if(this.direction == 'prev'){
                 this.tab_cont.css('left', '-100%');
-                this.tab_cont.eq(this.prevIndex).css('left','0').animate({'left' : '100%'});
-                this.tab_cont.eq(this.currentIndex).animate({'left' : '0'});
+                this.tab_cont.eq(this.prevIndex).css('left','0').animate({'left' : '100%'}).attr('tabindex', -1);
+                this.tab_cont.eq(this.currentIndex).animate({'left' : '0'}).attr('tabindex', 0);
                 
             }else if(this.direction == 'next'){
                 this.tab_cont.css({
                     'left' : '100%'
                 });
-                this.tab_cont.eq(this.prevIndex).css('left','0').animate({'left' : '-100%'});
-                this.tab_cont.eq(this.currentIndex).animate({'left' : '0'});
+                this.tab_cont.eq(this.prevIndex).css('left','0').animate({'left' : '-100%'}).attr('tabindex', -1);
+                this.tab_cont.eq(this.currentIndex).animate({'left' : '0'}).attr('tabindex', 0);
             }
             this.prevIndex = this.currentIndex;
         },
@@ -65,7 +65,6 @@
         },
         nextFunc : function () {
             this.direction = 'next';
-            console.log(this.currentIndex);
             if(this.currentIndex >= this.tab.length-1) {
                 this.currentIndex = 0;
             }else{
