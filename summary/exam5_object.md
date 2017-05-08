@@ -35,7 +35,7 @@ $(function () {
 </script>
 ```
 
-## proxy를 사용하는 이유
+### proxy를 사용하는 이유
 객체 내에 this를 선언했을때 모두 obj로 인식하게 하기위해
 
 ## bind말고 on을 써야하는이유
