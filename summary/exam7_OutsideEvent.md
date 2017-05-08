@@ -32,13 +32,14 @@
 
 + outside 이벤트의 시작(.on)과 끝(.off)
   
-  페이지가 로드되고부터 outside 이벤트를 시작한다면, 모은 요소를 체크하기때문에 성능이슈가 발생할 수 있다.<br>outside 이벤트는 레이어가 열렸을때 감지를 시작하고, 레이어가 닫히는 순간 off 해주어야 한다.<br><br>이는 outside 이벤트만 해당하는 것은 아니다. 많이 사용하는 click, focus 등 이벤트에 관한 부분은 해당 영역이 필요할 경우만을 잘 고려해서 줘야한다.
+  페이지가 로드되고부터 outside 이벤트를 시작한다면, 모은 요소를 체크하기때문에 성능이슈가 발생할 수 있다.<br>outside 이벤트는 레이어가 열렸을때 감지를 시작하고, 레이어가 닫히는 순간 off 해주어야 한다.<br><br>이는 outside 이벤트만 해당하는 것은 아니다. 많이 사용하는 click, focus 등 이벤트에 관한 부분은 해당 영역이 필요할 경우만을 잘 고려해서 줘야한다.
   
   ```javascript
-  this.layerObj.on('clickoutside touchendoutside', clickFunc());
+  this.layerObj.on('clickoutside touchstartoutside', clickFunc());
   this.layerObj.off('clickoutside touchendoutside');
   ```
-  
++ ** touchstartoutside, touchendoutside **
+iOS10 이하 버전에서 clickoutside 이벤트가 적용되지 않아 추가된 이벤트
 <br>
 
 ## A11Y
