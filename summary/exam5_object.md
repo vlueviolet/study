@@ -42,7 +42,7 @@ $(function () {
 ```javscript
 $.proxy(this.함수명, this);
 ```
-
+[proxy 관련 코드예시 참고글](http://mylife365.tistory.com/122)
 <br>
 
 #### bind말고 on을 써야하는이유
