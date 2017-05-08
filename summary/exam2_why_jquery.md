@@ -7,13 +7,13 @@
 
   + javascript의 선택자
   ```javascript
-  document.getElementById('container'); //id가 있어야함
-  document.getElementsByClass('box');	  //IE8이상 지원 안됨
+  document.getElementById('container'); 	//id가 있어야함
+  document.getElementsByClass('box');		//IE8이상 지원 안됨
   ```
   + jquery의 선택자
   ```javascript
-  $('#container');
-  $('.box');  
+  $('#container');
+  $('.box');
   ```
   
 ## 이벤트와 이벤트에 의한 행동
