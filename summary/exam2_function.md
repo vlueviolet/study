@@ -76,5 +76,5 @@ var company = function company() {
 })(window, window.jQuery);
 ```
 
-### 참고글
+#### 참고글
 [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
