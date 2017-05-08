@@ -1,5 +1,6 @@
 # 함수
 <br>
+
 ### 함수선언과 함수표현
 
 1. 함수선언식(선언함수, function declaration)
