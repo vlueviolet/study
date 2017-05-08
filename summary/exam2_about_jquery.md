@@ -10,12 +10,14 @@
   document.getElementById('container');	//id가 있어야함
   document.getElementsByClass('box');	//IE8이상 지원 안됨
   ```
+  javascript method 브라우저 지원 : method.html
+  
   + jquery의 선택자
   ```javascript
   $('#container');
   $('.box');
   ```
-  
+<br>
 ## 이벤트와 이벤트에 의한 행동
 + 이벤트를 주는 방법 (선언함수, 익명함수)
 1. 선언함수<br>
