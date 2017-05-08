@@ -1,6 +1,6 @@
 # 객체
 
-#### 객체를 이용한 함수선언
+#### 객체를 이용한 함수
 ```javascript
 <script>
 var obj = {
@@ -60,7 +60,7 @@ $(function () {
 	// 즉시 실행함수는 다시 호출못함
 	var isDevice = function(){
 
-	}();
+	}();	// 끝에 () 붙이는 형태
 })(window, window.jQuery);
 ```
 <br><br>
