@@ -38,7 +38,7 @@
   this.layerObj.on('clickoutside touchstartoutside', clickFunc());
   this.layerObj.off('clickoutside touchendoutside');
   ```
-**touchstartoutside, touchendoutside**
++ **touchstartoutside, touchendoutside**<br>
 iOS10 이하 버전에서 clickoutside 이벤트가 적용되지 않아 추가된 이벤트
 <br>
 
