@@ -25,6 +25,7 @@
             this._length = this.arr.length;
             this.randomNum = Math.floor(Math.random()*this._length);
             this.curIndex = this.arr[this.randomNum];
+            console.log(this.curIndex);
             // console.log('pre : ' + this.prevIndex+', cur : '+this.curIndex);
         },
         initArr : function () {

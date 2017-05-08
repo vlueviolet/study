@@ -20,7 +20,7 @@
 	<div id="container">
 		<ul class="list">
 		<li class="depth">
-			<a href="#none"><span>Lesson</span></a>
+			<a href="javascript:;"><span>Lesson</span></a>
 			<ul class="list2">
 			<li class="depth3"><a href="lesson/lesson.html"><span>lesson : 자바스크립트, jquery</span></a></li>
 			<li class="depth3"><a href="lesson/lesson2.html"><span>lesson2 : 자바스크립트, jquery</span></a></li>
@@ -30,7 +30,7 @@
 			</ul>
 		</li>
 		<li class="depth">
-			<a href="#none"><span>Exam</span></a>
+			<a href="javascript:;"><span>Exam</span></a>
 			<ul class="list2">
 			<li class="depth2"><a href="exam/exam1"><span>exam1</span></a></li>
 			<li class="depth3"><a href="exam/exam1/selector.html"><span>ㄴ selector</span></a></li>
@@ -117,13 +117,13 @@
 			</ul>
 		</li>
 		<li class="depth">
-			<a href="#none"><span>Summary</span></a>
+			<a href="javascript:;"><span>Summary</span></a>
 			<ul class="list2">
 			<li class="depth2"><a href="https://github.com/vlueviolet/study/blob/gh-pages/summary/exam7.md"><span>exam7 : Outside Event</span></a></li>
 			</ul>
 		</li>
 		<li class="depth">
-			<a href="#none"><span>Source</span></a>
+			<a href="javascript:;"><span>Source</span></a>
 			<ul class="list2">
 			<li class="depth3"><a href="source/jquery_dom_keypoint/"><span>jquery_dom_keypoint</span></a></li>
 			<li class="depth3"><a href="source/js_dom_keypoint/"><span>js_dom_keypoint</span></a></li>
@@ -131,7 +131,7 @@
 		</li>
 
 		 <li class="depth">
-			<a href="#none"><span>Git</span></a>
+			<a href="javascript:;"><span>Git</span></a>
 			<ul class="list2">
 			<li class="depth3"><a href="https://github.com/telltrue33/study" target="_blank"><span>이환</span></a></li>
 			<li class="depth3"><a href="https://hollmini.github.io/study/" target="_blank"><span>김민재</span></a></li>
@@ -178,7 +178,7 @@
 			this.listObj.on('click', $.proxy(this.clickFunc,this));
 		},
 		clickFunc : function (e) {
-			e.preventDefault();
+			e.stopPropagation();
 			this._this = $(e.currentTarget);
 			this._this.parent().toggleClass('on');
 		}
