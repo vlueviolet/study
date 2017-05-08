@@ -38,7 +38,10 @@ $(function () {
 <br>
 
 #### proxy를 사용하는 이유
-객체 내에 this를 선언했을때 모두 obj로 인식하게 하기위해
+객체 내에 this를 선언했을때 obj 내 선언된 함수를 사용하기 위해 사용한다.
+```javscript
+$.proxy(this.함수명, this);
+```
 
 <br>
 
