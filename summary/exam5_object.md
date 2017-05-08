@@ -35,15 +35,17 @@ $(function () {
 </script>
 ```
 
-### proxy를 사용하는 이유
+#### proxy를 사용하는 이유
 객체 내에 this를 선언했을때 모두 obj로 인식하게 하기위해
 
-## bind말고 on을 써야하는이유
+
+#### bind말고 on을 써야하는이유
 + dom 로드후, 요소가 바뀔경우,<br>
     + bind는 이벤트 핸들러를 처리하지 않는다.<br>
     + 반면 on은 이벤트 핸들러를 통한 처리를 계속한다. ajax로 로딩된 동적 엘리먼트에도 이벤트 핸들러 처리가 가능하다.<br>핸들러 삭제시에는 off()를 사용한다.
 + 또한 bind() jquery 1.7 이후부터 on 매소드 사용을 권장하고 있으며, on이 나오면서 새로운 기능적용이 안될 예정이며 사라질 수도 있기 때문이다
 
-## 즉시 실행함수
+
+#### 즉시 실행함수
 <br><br>
 ##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
