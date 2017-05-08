@@ -4,7 +4,7 @@
 <script>
 var obj = {
     init : function () {  // 처음 실행되는 함수
-        this.setElements(); // this는 obj. 즉 객체를 가리킨다.
+        this.setElements(); // this는 obj. 즉 객체를 가리킨다. this로 선언하면 obj 객체 안에서 다 사용할 수 있다.
         this.bindEvents();
         this.newObject.init();
     },
@@ -13,6 +13,7 @@ var obj = {
     },
     bindEvents : function () {  // click, focus등 이벤트 관련 함수 모음
         // obj내 선언된 함수를 사용하고 싶다면 $.proxy를 사용하면 된다.
+        //$.proxy(this.함수명, this);
         this.obj.on(‘click’,$.proxy(this.viewFunc), this));
     },
     reinit : function () {
