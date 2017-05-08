@@ -36,7 +36,9 @@ foo(); // 함수호출이 선언 다음에 위치해야 에러없이 실행된�
 
 **※ 하이브랩 컨벤션에서는 익명함수로 함수를 표현한다. 함수 호이스팅을 지양한다.**
 
-3.그외 함수표현식
+<br>
+
+3. 그외 함수표현식
 ```javascript
 // 기명 함수표현식(named function expression) 
 var company = function company() {  
