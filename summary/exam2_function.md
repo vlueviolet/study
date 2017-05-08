@@ -77,6 +77,11 @@ var company = function company() {
 	}();	// 끝에 () 붙이는 형태
 })(window, window.jQuery);
 ```
+<br>
 
 #### 참고글
 [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
+
+
+<br><br>
+##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
