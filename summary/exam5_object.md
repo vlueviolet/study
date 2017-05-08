@@ -22,7 +22,7 @@ var obj = {
     },
     newObject : { // 객체 안에서 또 다른 함수 선언이 가능함
         init : function () {
-            this.어쩌구 // 이건 obj이 아닌 newObject를 가리킴
+            this.어쩌구 // 여기서 this는 obj가 아닌 newObject를 가리킴
         }
     }
 }
