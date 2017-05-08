@@ -6,7 +6,7 @@
 + 선택자 사용이 유리하다.
 
   + javascript의 선택자
-  ```javascript
+  ```javascript
   document.getElementById('container'); //id가 있어야함
   document.getElementsByClass('box');	//IE8이상 지원 안됨
   ```
