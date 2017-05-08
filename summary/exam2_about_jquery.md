@@ -8,7 +8,7 @@
   + javascript의 선택자
   ```javascript
   document.getElementById('container');	//id가 있어야함
-  document.getElementsByClass('box');	//IE8이상 지원 안됨
+  document.getElementsByClassName('box');	//IE8이상 지원 안됨
   ```
   cf) [javascript method 브라우저 지원](https://vlueviolet.github.io/study/method.html)
   
