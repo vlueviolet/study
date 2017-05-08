@@ -4,6 +4,7 @@
   + IE7 대응을 위한 버전
 + 모든 브라우저 대응이 가능하다.
 + 선택자 사용이 유리하다.
+
   + javascript의 선택자
   ```javascript
   document.getElementById('container'); //id가 있어야함
