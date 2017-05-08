@@ -28,7 +28,7 @@ var obj = {
 }
 $(function () {
   obj.init();
-  obj.newObject.init(); //이렇게 obj밖에서 호출하진 않는다. 그럴려면 여기에 모아놓을 필요 없음
+  obj.newObject.init(); //이렇게 obj밖에서 호출하진 않는다. 보통 obj.init()이나 obj 내부에서 함
 });
 </script>
 ```
