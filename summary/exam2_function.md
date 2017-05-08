@@ -61,5 +61,5 @@ var company = function company() {
 ```
 <br>
 
-### 읽어보면 좋은글
+### 참고글
 [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
