@@ -47,21 +47,8 @@ $(function () {
     + bind는 이벤트 핸들러를 처리하지 않는다.<br>
     + 반면 on은 이벤트 핸들러를 통한 처리를 계속한다. ajax로 로딩된 동적 엘리먼트에도 이벤트 핸들러 처리가 가능하다.<br>핸들러 삭제시에는 off()를 사용한다.
 + 또한 bind() jquery 1.7 이후부터 on 매소드 사용을 권장하고 있으며, on이 나오면서 새로운 기능적용이 안될 예정이며 사라질 수도 있기 때문이다
-<br>
 
-#### 즉시 실행함수
-```javascript
-<script>
-//다른 언어에서 $를 쓰는것을 방지하기 위함
-(function (win, $){
-	// 한번만 실행하고 버리는 함수
-	// 예를들면, 이게 반응형 브라우저 인지 아닌지 체크하는건 1번만 하면 되니까 이럴때 사용함
-	// 메모리랑 관련없고, 개발자끼리 명시적인 의미로 사용함
-	// 즉시 실행함수는 다시 호출못함
-	var isDevice = function(){
 
-	}();	// 끝에 () 붙이는 형태
-})(window, window.jQuery);
-```
+
 <br><br>
 ##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
