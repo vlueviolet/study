@@ -12,7 +12,8 @@ var obj = {
         ...
     },
     bindEvents : function () {  // click, focus등 이벤트 관련 함수 모음
-        ...
+        // obj내 선언된 함수를 사용하고 싶다면 $.proxy를 사용하면 된다.
+        this.obj.on(‘click’,$.proxy(this.viewFunc), this));
     },
     reinit : function () {
         /* 스크립트는 DOM이 없으면 적용이 되지 않는다.
