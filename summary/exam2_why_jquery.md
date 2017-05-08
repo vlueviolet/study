@@ -8,9 +8,28 @@
   + javascript의 선택자
   ```javascript
   document.getElementById('container'); //id가 있어야함
-  document.getElementsByClass('box');	//IE8이상 지원 안됨
+  document.getElementsByClass('box');	  //IE8이상 지원 안됨
   ```
   + jquery의 선택자
   ```javascript
-  $('.box');
+  $('#container');
+  $('.box');  
   ```
+  
+## 이벤트와 이벤트에 의한 행동
++ 이벤트를 주는 방법 (선언함수, 익명함수)
+	1. 선언함수
+	```javascript
+	function 함수명 () {
+		...
+	}
+	```
+	2. 익명함수
+	```javascript
+	var 함수명 = function () {
+		내용
+	};
+	```
+
+<br><br>
+##### [Github Markdown](https://guides.github.com/features/mastering-markdown/)
