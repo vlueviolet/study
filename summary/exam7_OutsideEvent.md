@@ -18,8 +18,8 @@
   ![](/img/summary/exam7/1.png)
 + trigger와 triggerHandler
   + trigger : 기본 이벤트(click, focus등)와 관련함수모두실행
-  + triggerHandler : 기본 이벤트만 실행하고 관련 함수는 실행하지않음  
-  + trigger 대신 triggerHandler를 사용한 이유는, 레이어팝업을 닫을때 click, focus, clickoutside같은 이벤트까지 전달했을때 의도치 않은 곳에서 이벤트가 발생 및 다른 곳에 영향을 주지않기위해서 사용됨
+  + triggerHandler : 기본 이벤트만 실행하고 관련 함수는 실행하지않음
+  + trigger 대신 triggerHandler를 사용한 이유는, 레이어팝업을 닫을때 click, focus, clickoutside같은 이벤트까지 전달했을때 의도치 않은 곳에서 이벤트가 발생 및 다른 곳에 영향을 주지않기위해서 사용됨
 + 레이어를 보여주는 함수에 setTimeout을 쓰는 이유?<br>
   아래와 같이 코드가 작성되어 있다면
   ```javascript
