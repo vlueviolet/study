@@ -10,7 +10,7 @@
   document.getElementById('container');	//id가 있어야함
   document.getElementsByClass('box');	//IE8이상 지원 안됨
   ```
-  + [javascript method 브라우저 지원](method.html)
+  + [javascript method 브라우저 지원](../method.html)
   
   + jquery의 선택자
   ```javascript
