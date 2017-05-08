@@ -34,7 +34,7 @@ if (this.currentIndex === this.tab.index($(e.currentTarget))) return;
 ```
 + 자식으로부터 인덱스 체크 방법
 ```javascript
-var tabObj = $(‘.cast_tab ul li a’);
+var tabObj = $('.cast_tab ul li a');
 tabObj.on('click', function(e){
   var target = $(e.currentTarget);
   tabObj.index(target);
