@@ -46,6 +46,7 @@
 *하이브랩 컨벤션에서는 익명함수로 함수를 표현한다. 함수 호이스팅을 지양한다.*
 
 <br>
+
 ### 읽어보면 좋은글
 [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
 
