@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>exam - outside</title>
+<style>
+/* temporary css */
+*{margin:0;padding:0}
+body{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-size:14px}
+ul,li{list-style:none}
+button{font-size:14px;font-family:"나눔고딕",NanumGothic,"굴림",Gulim,Sans-serif;line-height:1.5;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+.btn_pos{padding:10px}
+.btn_pos button{margin:0;padding:0;width:100px;height:100px;border:1px solid #ccc;}
+.layer_area{display:none;position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%}
+.layer_area .layer_dimmed{position:absolute;left:0;top:0;right:0;bottom:0;width:100%;height:100%;background:#000;opacity:0.3;filter:alpha(opacity=30);}
+.layer_pos{position:absolute;left:50%;top:50%;width:400px;height:400px;margin:-220px 0 0 -220px;padding:20px; background:#fff}
+.layer_pos2{width:200px;height:200px;margin:-100px 0 0 -100px}
+.layer_close{position:absolute;right:20px;top:20px}
+/* //temporary css */
+</style>
+</head>
+<body>
+<!-- wrapper [s] -->
+<div id="wrapper">
+    <!-- header [s] -->
+    <div id="header">@</div>
+    <!-- header [e] -->
+    <hr />
+    <!-- container [s] -->
+    <div id="container">
+        <div class="btn_pos js-btn_pos b1"><button>레이어 띄우기1</button></div>
+        <div class="layer_area js-layer_area">
+            <div class="layer_pos">
+                <ul>
+                    <li>내용1<a href="#">링크</a></li>
+                    <li>내용2</li>
+                    <li>내용3</li>
+                    <li>내용4</li>
+                    <li>내용5</li>
+                </ul>
+                <div><a href="#" class="btn_test">test</a></div>
+                <p class="layer_close"><button>닫기</button></p>
+            </div>
+        </div>
+        <div class="layer_area js-layer_area2">
+            <span class="layer_dimmed">&nbsp;</span>
+            <div class="layer_pos layer_pos2">
+                <ul>
+                    <li>내용1<a href="#">링크</a></li>
+                    <li>내용2</li>
+                    <li>내용3</li>
+                    <li>내용4</li>
+                    <li>내용5</li>
+                </ul>
+                <p class="layer_close"><button>닫기</button></p>
+            </div>
+        </div>
+    </div>
+    <!-- container [e] -->
+    <hr />
+    <!-- footer [s] -->
+    <div id="footer">@</div>
+    <!-- footer [e] -->
+</div>
+<!-- [ Javascript Area ] -->
+<!-- Libs -->
+<script src="../../js/libs/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ba-outside-events.min.js"></script>
+<script>
+(function (win, $) {
+    win.layerPopup = function (container, opt) {
+        var defParams = {
+            btn : container || '.js-btn_pos button',
+            layer : '.js-layer_area',
+            closeBtn : '.layer_close button',
+            layerIn : '.layer_pos'
+        };
+        this.opts = $.extend({}, defParams, opt || {});
+        if (!(this.layerBtn = $(this.opts.btn)).length) return;
+        this.init();
+    };
+    win.layerPopup.prototype = {
+        init: function () {
+            this.setElements();
+            this.initLayout();
+            this.bindEvents();
+        },
+        setElements : function () {
+            this.layerArea = $(this.opts.layer);
+            this.closeBtn = this.layerArea.find(this.opts.closeBtn);
+            this.layerPos = this.layerArea.find(this.opts.layerIn);
+        },
+        initLayout : function () {
+            var wrapAreaTag = '<span style="position:absolute;width:1px;height:1px;" tabindex="0"></span>';
+            this.layerArea.hide();
+            this.layerPos.attr('tabindex', '0');
+            this.layerPos.before(wrapAreaTag);
+            this.layerPos.after(wrapAreaTag);
+            this.prevTag = this.layerPos.prev();
+            this.nextTag = this.layerPos.next();
+        },
+        bindEvents : function () {
+            this.layerBtn.on('click', $.proxy(this.onClickFunc, this));
+            this.closeBtn.on('click', $.proxy(this.layerOutside, this));
+            this.prevTag.on('focusin', $.proxy(this.prevFocusFunc, this));
+            this.nextTag.on('focusin', $.proxy(this.nextFocusFunc, this));
+        },
+        outsideEvent : function (type) {
+            console.log('layer1 : ' + type);
+            if (type) {
+                this.layerPos.on('clickoutside', $.proxy(this.layerOutside, this));
+            } else {
+                this.layerPos.off('clickoutside');
+            }
+        },
+        onClickFunc : function (e) {
+            this.target = $(e.currentTarget);
+            this.layerArea.show();
+            this.layerPos.focus();
+            var outsideTime = setTimeout($.proxy(function () {
+                this.outsideEvent(true);
+            }, this), 30);
+        },
+        layerOutside : function () {
+            this.layerArea.hide();
+            this.target.focus();
+            this.outsideEvent(false);
+        },
+        prevFocusFunc : function () {
+            this.closeBtn.focus();
+        },
+        nextFocusFunc : function () {
+            this.layerPos.focus();
+        }
+    };
+
+    win.layerPopup2 = function (container, opt) {
+        var defParams = {
+            btn : container || '.js-btn_pos button',
+            layer : '.js-layer_area2',
+            closeBtn : '.layer_close button',
+            layerIn : '.layer_pos',
+            showBefore : null,
+            showAfter : null
+        };
+        this.opts = $.extend({}, defParams, opt || {});
+        if (!(this.layerBtn = $(this.opts.btn)).length) return;
+        this.init();
+    };
+    win.layerPopup2.prototype = {
+        init: function () {
+            this.setElements();
+            this.initLayout();
+            this.bindEvents();
+        },
+        setElements : function () {
+            this.layerArea = $(this.opts.layer);
+            this.closeBtn = this.layerArea.find(this.opts.closeBtn);
+            this.layerPos = this.layerArea.find(this.opts.layerIn);
+        },
+        initLayout : function () {
+            var wrapAreaTag = '<span style="position:absolute;width:1px;height:1px;" tabindex="0"></span>';
+            this.layerArea.hide();
+            this.layerPos.attr('tabindex', '0');
+            this.layerPos.before(wrapAreaTag);
+            this.layerPos.after(wrapAreaTag);
+            this.prevTag = this.layerPos.prev();
+            this.nextTag = this.layerPos.next();
+        },
+        bindEvents : function () {
+            this.layerBtn.on('click', $.proxy(this.onClickFunc, this));
+            this.closeBtn.on('click', $.proxy(this.layerOutside, this));
+            this.prevTag.on('focusin', $.proxy(this.prevFocusFunc, this));
+            this.nextTag.on('focusin', $.proxy(this.nextFocusFunc, this));
+        },
+        outsideEvent : function (type) {
+            console.log('layer2 : ' + type);
+            if (type) {
+                this.layerPos.on('clickoutside', $.proxy(this.layerOutside, this));
+            } else {
+                this.layerPos.off('clickoutside');
+            }
+        },
+        onClickFunc : function (e) {
+            this.target = $(e.currentTarget);
+            if (this.opts.showBefore != null) {
+                this.opts.showBefore();
+            }
+            this.layerArea.show();
+            this.layerPos.focus();
+            var outsideTime = setTimeout($.proxy(function () {
+                this.outsideEvent(true);
+            }, this), 30);
+        },
+        layerOutside : function () {
+            console.log(this.opts.showAfter);
+            if (this.opts.showAfter != null) {
+                console.log(111);
+                this.opts.showAfter();
+            }
+            this.layerArea.hide();
+            this.target.focus();
+            this.outsideEvent(false);
+        },
+        prevFocusFunc : function () {
+            this.closeBtn.focus();
+        },
+        nextFocusFunc : function () {
+            this.layerPos.focus();
+        }
+    };
+    $(function () {
+        var layer1 = new layerPopup('.js-btn_pos', {
+            layer : '.js-layer_area'
+        });
+
+
+        var layer2 = new layerPopup2('.btn_test', {
+            layer : '.js-layer_area2',
+            showBefore : function () {
+                layer1.outsideEvent(false);
+            },
+            showAfter : function () {
+                layer1.outsideEvent(true);
+            }
+        });
+    });
+})(window, window.jQuery);
+</script>
+</body>
+</html>
