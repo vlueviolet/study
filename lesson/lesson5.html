@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="../css/lesson.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+<title>Lesson 5</title>
+</head>
+<body>
+<section>
+	<h1>5차</h1>
+	<hr>
+
+	<h2>객체</h2>
+	<pre><code>var obj = {
+	init : function () {		//내가 쓰고싶은 함수를 모두 실행해놓음, 걍 내가 만들어놓은거임, 예약어 아님
+		this.setElements();	//this는 obj을 가리킴, 즉 객체를 가리킴
+		this.newObject.init();	// 이게  obj밖에서 호출하진 않는다. 그럴려면 여기에 모아놓을 필요 없음
+	},
+	setElements : function () {
+		this.obj = $(‘.btn);
+		this.btn = $(‘.obj);
+	}
+	bindEvents : function () {
+		this.obj.on(‘click), this.viewFunc);
+		//obj를 가리키고 싶다면
+		this.obj.on(‘click’,$.proxy(this.viewFunc), this));
+		this.staticNum = 2;	// this로 선언하면, this를 가리키는 obj객체 안에서 다 사용할 수 있음
+	}
+	viewFunction : function () {
+		console.log(this);	//이건 bindEvents를 가리킴, obj가 아님
+		console.log(‘click’);
+		console.log(this.staticNum);	다른 함수지만 obj객체 안에서 다 사용가능함.
+	}
+	newObject : {
+		init : function () {
+			this.어쩌구 // 이건 obj이 아닌 newObject를 가리킴
+		}
+	}
+}
+obj.init();</code></pre>
+
+	<ul>
+	<li>$변수명 : 개발자 마음</li>
+	<li>$(‘선택자’).each == $.each()와 같다. 즉 jquery에서 선언된 함수를 사용할때 이렇게 해도 됨</li>
+	<li>proxy를 사용하는 이유
+		<ul>
+		<li>객체 내에 this를 선언했을때 모두 obj로 인식하게 하기위해</li>
+		<li>$.proxy(this.vewFunc, this);</li>
+		</ul>
+	</li>
+
+	<li>bind말고 on을 써야하는이유
+		<ul>
+		<li>on은 dom을 계속 탐색하게 해준다.</li>
+		<li>html내에 선택자가 없는데, on은 그걸 가능하게 해준다.</li>
+		<li>클릭할때마다 찾아주는데 bind는 그걸 안한다.</li>
+		</ul>
+	</li>
+	</ul>
+	
+
+
+	<br><br>
+	<h2>함수</h2>
+	<ul>
+	<li>선언함수 : 함수호출을 선언보다 먼저 위치하더라도 오류없이 실행됨 (=함수 호이스팅)</li>
+	<li>익명함수 : 함수 호이스팅을 방지하기 위해 익명함수를 쓰자, 유지관리에 용이하게 하기 위함</li>
+	</ul>
+	
+	<br><br>
+	<h3>리턴</h3>
+	<pre><code>function sum(a,b){
+	var c = a + b;
+	return c;
+	return false;	//결과 없을때는 이케써도 됨
+	return 
+}
+var resultNum=sum(3,8);
+</code></pre>
+
+	<br><br>
+
+	<h3>즉시 실행함수</h3>
+	<pre><code>&lt;script&gt;
+//다른 언어에서 $를 쓰는것을 방지하기 위함
+(function (win, $){
+	//한번만 실행하고 버리는 함수
+	//예를들면, 이게 반응형 브라우저 인지 아닌지 체크하는건 1번만 하면 되니까 이럴때 사용함
+	//메모리랑 관련없고, 개발자끼리 명시적인 의미로 사용함
+	//즉시 실행함수는 다시 호출못함
+	var isDevice = function(){
+
+	}();
+})(window, window.jQuery);
+&lt;/script&gt;</code></pre>
+https://github.com/telltrue33/study/tree/gh-pages/exam5
+
+	<br><br>
+	<h2>과제</h2>
+	<ul>
+	<li>2차~4차 과제를 모두 객체로 선언해서 해보자</li>
+	</ul>
+</section>
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+</body>
+</html>

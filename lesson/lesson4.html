@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="../css/lesson.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+<title>Lesson 4</title>
+</head>
+<body>
+<section>
+	<h1>4차</h1>
+	<hr>
+
+	<h2>조건문</h2>
+	<ul>
+	<li>if문</li>
+	<li>switch문</li>
+	</ul>
+
+	<h3>switch문</h3>
+	<p>값이 정해졌을때 사용하면 됨</p>
+	<pre><code>var a = 74;
+switch (a) {
+	case 10 : 
+		console.log(’10’);
+		break;
+	case 74 : 
+		console.log(’10’);
+		break;
+	default : 		//값이 없을 경우
+		console.log(’default’);
+		break;
+}</code></pre>
+
+<h2>반복문</h2>
+<h3>while문</h3>
+<p>특정 값을 구할때 사용하면 유용함</p>
+<pre><code>var a = 0;
+while (a <10) {
+	console.log(a);
+	a++;
+}</code></pre>
+<br><br>
+<h3>for문</h3>
+<pre><code>for (var a = 0 ; a < $(‘li’).length ; a++) {
+	console.log(a);
+}</code></pre>
+<p>이렇게 하게되면 성능이슈가 발생함, 계속 li를 찾고, 길이를 계산하게됨<br>
+var a=0;은 한번만 읽고 더 안읽지만 li길이는 계속 체크하게됨</p>
+<br>
+<p>그래서 성능이슈 해결하기 위한 방법은</p>
+<pre><code>for (var a = 0 ; max = $(‘li’).length; a < max ; a++) {	//이렇게 하면 됨
+	console.log(a);
+}</code></pre>
+<br>
+<p>또는 변수로 미리 선언해서 for문을 돌리면됨</p>
+<pre><code>var max = $(‘li’).length;
+for (; a < max;){
+}</code></pre>
+<br>
+
+<pre><code>for(){var i=0, max=arr.length ; i&lt;max ; i++){
+
+}
+$('#data_tbody').get(0)하면 자바스크립트 선택자로 인식되어서
+$('#data_tbody').get(0).innerHTML = tagPush;	//innerHTML같은 자바스크립트 구문을 쓸수 있음
+</code></pre>
+<br>
+<h4>for문을 사용해 마크업 쉽게 하기</h4>
+<p>배열은 기본으로 배열안에 배열을 써야함<br>tr안에 td가 여러개라면 for문 2개 쓰면됨</p>
+<pre><code>var arr = [[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],
+var tagPush = ‘’;
+
+for(var i=0;,max=arr.length;i&lt;max;i++){
+	tagPush += ‘&lt;tr’&gt;;
+	for(td=0, tax = 5 ; td &lt; tmax ; td++){
+		tagPush += ’&lt;td&gt;’ + arr[i][td] + ‘&lt;/td&gt;’;
+	}
+	tagPush += ‘&lt;/tr’&gt;;
+}
+$('#data_tgody').get(0).innerHTML = tagPush; //javascript구문
+$('#data_tgody').html(tagPush);	//jquery구문
+</code></pre>
+<br><br>
+
+<h2>객체 = 오브젝트</h2>
+<p>속성과 값을 담을수 있는 그릇</p>
+<pre><code>var obj = {
+	//속성 : 값
+	a : ‘text’
+	,b : 3
+	,c : function () {
+		
+	}
+	,d : [‘1’]
+	,e : {
+	
+	}
+};
+console.log(obj.a);	//text
+console.log(obj.c);	//객체함수
+
+obj.c();	함수 실행</code></pre>
+<br>
+<pre><code>var obj = {
+	init : function () {		//내가 쓰고싶은 함수를 모두 실행해놓음, 걍 내가 만들어놓은거임, 예약어 아님
+		this.setElements();	//this는 obj을 가리킴, 즉 객체를 가리킴
+		this.newObject.init();	// 이게  obj밖에서 호출하진 않는다. 그럴려면 여기에 모아놓을 필요 없음
+	},
+	setElements : function () {
+		this.obj = $(‘.btn);
+		this.btn = $(‘.obj);
+	}
+	bindEvents : function () {
+		this.obj.on(‘click), this.viewFunc);
+		//obj를 가리키고 싶다면
+		this.ogbj.on(‘click’,$.proxy(this.viewFunc), this));	//proxy를 쓰면 obj 객체를 가리키게됨
+	}
+	viewFunction : function () {
+		console.log(this);	//이건 bindEvents를 가리킴, obj가 아님
+		console.log(‘click’);
+	}
+	newObject : {
+		init : function () {
+			this.어쩌구 // 이건 obj이 아닌 newObject를 가리킴
+		}
+	}
+}
+
+obj.init();</code></pre>
+https://github.com/telltrue33/study/tree/gh-pages/exam4
+</section>
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>javascript : monoraum</title>
+<link rel="stylesheet" href="common.css" />
+<script type="text/javascript"  src="../libs/jquery-1.7.1.min.js"> </script>
+<script>
+$(document).ready(function(){
+	var $btn_1 = $("#btn_1");
+	$btn_1.bind("click",function(e){
+		//1.이벤트 생성.
+		var myEvent = jQuery.Event("myEvent")
+		//2.  이벤트 객체에 이벤트와 함께 실어서 보낼 데이터 추가
+		myEvent.data1 = "이 정보를 이벤트에 담아서 보내주세요.";
+		//3.이벤트 발생.
+		$btn_1.trigger(myEvent);
+	});
+	$btn_1.bind("myEvent",function(e){
+		alert("myEvent 이벤트 발생 , target = "+e.target.id+", data1 = "+e.data1);
+	});
+});
+</script>
+</head>
+<body>
+<div> 버튼1이 클릭되면 커스텀 이벤트인 myEvent가 발생합니다. </div>
+<button id="btn_1">버튼1</button>   
+</body>
+</html>

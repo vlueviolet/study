@@ -1,0 +1,1029 @@
+@charset "utf-8";
+a:active,
+a:focus,
+a:hover,
+button {
+    background-color: transparent
+}
+#header,
+.blind,
+legend {
+    position: absolute;
+    top: 0
+}
+.btn_icon,
+.campaign_area,
+.ly_box,
+.value_lst li,
+.visual_area {
+    box-sizing: border-box
+}
+#footer .info .contact dt:before,
+#footer .sns_lst:after,
+.btn_icon:after,
+.campaign_area .btn_email:after,
+.campaign_guide li:before,
+.ly_box:after,
+.ly_box:before,
+.value_lst li .value_txt dt:before {
+    content: ''
+}
+article,
+aside,
+body,
+button,
+dd,
+dialog,
+div,
+dl,
+dt,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+input,
+legend,
+li,
+main,
+nav,
+ol,
+p,
+section,
+select,
+table,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block
+}
+body,
+html {
+    height: 100%
+}
+body,
+button,
+input,
+select,
+textarea {
+    font-family: NanumBarunGothic, '나눔바른고딕', 'Nanum BarunGothic', 'Malgun Gothic', '맑은고딕', 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif;
+    font-size: 14px;
+    color: #444
+}
+fieldset,
+img,
+li {
+    border: 0;
+    vertical-align: top
+}
+ol,
+ul {
+    list-style: none
+}
+button {
+    overflow: visible;
+    border: 0;
+    cursor: pointer
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+address,
+caption,
+em {
+    font-style: normal
+}
+a,
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.blind,
+legend {
+    overflow: hidden;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 100px;
+    white-space: nowrap
+}
+.btn_icon:after,
+.campaign_area .btn_email:after,
+.campaign_guide li:after,
+.campaign_guide li:before,
+.sp {
+    display: inline-block;
+    overflow: hidden;
+    background: url(http://ahncs.kr/assets/img/sp.png) no-repeat;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    text-indent: 9999px;
+    white-space: nowrap
+}
+.campaign_area .tit,
+.declaration_area .tit,
+.ly_declaration .tit,
+.ly_declaration h3,
+.value_area .tit,
+.visual_area .tit,
+.wrap_ready .txt {
+    font-family: NanumMyeongjo, '나눔명조', 'Nanum Myeongjo';
+    font-weight: 300;
+    color: #004a2f;
+    letter-spacing: -3px
+}
+#wrap {
+    position: relative;
+    min-width: 1100px
+}
+#header {
+    left: 50%;
+    width: 1080px;
+    margin-left: -540px
+}
+#header .logo .sp {
+    width: 310px;
+    height: 70px;
+    background-position: 0 0
+}
+#footer {
+    background-color: #ebecee;
+    font-size: 0
+}
+#footer .inner {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 46px 0 53px
+}
+#footer .sns_box {
+    margin-bottom: 36px;
+    text-align: center
+}
+#footer .sns_box .tit {
+    font-size: 16px;
+    font-weight: 300;
+    color: #3b3b3b;
+    letter-spacing: -.5px
+}
+#footer .sns_lst {
+    display: inline-block;
+    margin-top: 25px
+}
+#footer .sns_lst:after {
+    display: block;
+    position: relative;
+    left: 3px;
+    width: 405px;
+    height: 4px;
+    margin: 22px auto 0;
+    background-color: #bdc6c9
+}
+#footer .sns_lst li {
+    display: inline-block
+}
+#footer .sns_lst li:first-child {
+    margin-left: 0
+}
+#footer .sns_lst li:last-child {
+    margin-right: 0
+}
+#footer .sns_lst li a {
+    display: block;
+    width: 42px
+}
+#footer .sns_lst li.facebook {
+    margin-right: 50px
+}
+#footer .sns_lst li.twitter {
+    margin-right: 55px
+}
+#footer .sns_lst li.blog {
+    margin-right: 47px
+}
+#footer .sns_lst li.youtube {
+    margin-right: 50px
+}
+#footer .sns_lst li .sp {
+    height: 42px;
+    vertical-align: top
+}
+#footer .sns_lst li.facebook .sp {
+    width: 18px;
+    background-position: 0 -72px
+}
+#footer .sns_lst li.twitter .sp {
+    width: 36px;
+    background-position: -20px -72px
+}
+#footer .sns_lst li.blog .sp {
+    width: 42px;
+    background-position: -58px -72px
+}
+#footer .sns_lst li.youtube .sp {
+    width: 40px;
+    background-position: -102px -72px
+}
+#footer .sns_lst li.instar .sp {
+    width: 40px;
+    background-position: -144px -72px
+}
+#footer .logo {
+    display: block;
+    width: 109px;
+    height: 54px;
+    margin: 0 auto;
+    background-position: -312px 0
+}
+#footer .info {
+    display: block;
+    margin-top: 18px;
+    font-size: 14px;
+    text-align: center
+}
+#footer .info .contact {
+    margin-top: 7px
+}
+#footer .info .contact dt {
+    display: inline-block;
+    margin-right: 2px
+}
+#footer .info .contact dt:before {
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    margin: 0 10px;
+    background-color: #bebfc0;
+    vertical-align: middle
+}
+#footer .info .contact dt:first-child:before {
+    display: none
+}
+#footer .info .contact dd,
+#footer .share_lst li {
+    display: inline-block
+}
+#footer .share_box {
+    position: absolute;
+    right: 0;
+    bottom: 76px;
+    text-align: center
+}
+#footer .share_box .tit {
+    font-size: 14px;
+    font-weight: 400
+}
+#footer .share_lst {
+    margin-top: 9px
+}
+#footer .share_lst li a {
+    display: block
+}
+#footer .share_lst li.twitter {
+    margin: 0 28px 0 38px
+}
+#footer .share_lst li .sp {
+    height: 29px;
+    vertical-align: top
+}
+#footer .share_lst li.facebook .sp {
+    width: 14px;
+    background-position: -186px -72px
+}
+#footer .share_lst li.twitter .sp {
+    width: 26px;
+    background-position: -202px -72px
+}
+#footer .share_lst li.blog .sp {
+    width: 32px;
+    background-position: -230px -72px
+}
+.btn_icon {
+    display: inline-block;
+    position: relative;
+    width: 341px;
+    height: 73px;
+    padding: 0 24px;
+    text-align: left;
+    background-color: #19e252
+}
+.btn_icon .btn {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00483d;
+    line-height: 20px
+}
+.btn_icon.size_s {
+    width: 306px;
+    height: 66px;
+    padding: 0 22px
+}
+.btn_icon:after {
+    position: absolute
+}
+.btn_icon.icon_lst,
+.btn_icon.icon_play {
+    background: #18e252;
+    background: -moz-linear-gradient(-45deg, #18e252 0, #8fe60c 100%);
+    background: -webkit-linear-gradient(-45deg, #18e252 0, #8fe60c 100%);
+    background: linear-gradient(135deg, #18e252 0, #8fe60c 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#18e252', endColorstr='#8fe60c', GradientType=1)
+}
+.btn_icon.icon_play:after {
+    top: -8px;
+    right: -7px;
+    width: 74px;
+    height: 73px;
+    background-position: 0 -213px
+}
+.btn_icon.icon_lst .btn {
+    font-size: 18px;
+    letter-spacing: -.5px
+}
+.btn_icon.icon_lst:after {
+    top: -6px;
+    right: -6px;
+    width: 66px;
+    height: 66px;
+    background-position: -76px -213px
+}
+.btn_icon.icon_facebook {
+    padding-top: 15px;
+    background-color: #3b5998
+}
+.btn_icon.icon_facebook .btn {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff
+}
+.btn_icon.icon_facebook:after {
+    top: -6px;
+    right: -6px;
+    width: 66px;
+    height: 66px;
+    background-color: rgba(79, 92, 117, .5);
+    background-position: -144px -213px
+}
+.visual_area {
+    height: 800px;
+    padding: 160px 0 0;
+    background:#e6d5ce url(http://ahncs.kr/assets/img/@img_visual.jpg) 50% 100% no-repeat
+}
+.visual_area .inner {
+    position:relative;
+    max-width: 1080px;
+    margin: 0 auto
+}
+.visual_area .tit {
+    font-size: 60px;
+    line-height: 86px
+}
+.visual_area .tit em {
+    display: block;
+    margin-top: -6px;
+    font-size: 80px
+}
+.visual_area .txt {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -.3px
+}
+.visual_area .btn_icon {
+    margin-top: 43px
+}
+.visual_area .end,
+.visual_area .live {
+    background: #18e252;
+    background: -moz-linear-gradient(-45deg, #18e252 0, #60d923 99%);
+    background: -webkit-linear-gradient(-45deg, #18e252 0, #60d923 99%);
+    background: linear-gradient(135deg, #18e252 0, #60d923 99%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#18e252', endColorstr='#61d922', GradientType=1)
+}
+.visual_area .end:focus,
+.visual_area .end:hover,
+.visual_area .live:focus,
+.visual_area .live:hover {
+    background: #22e75b;
+    background: -moz-linear-gradient(-45deg, #22e75b 0, #7be459 99%);
+    background: -webkit-linear-gradient(-45deg, #22e75b 0, #7be459 99%);
+    background: linear-gradient(135deg, #22e75b 0, #7be459 99%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#22e75b', endColorstr='#7be459', GradientType=1)
+}
+.visual_area .live {
+    padding: 17px 0 0 78px
+}
+.visual_area .live .btn {
+    font-size: 18px
+}
+.visual_area .live .icon_live {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    width: 53px;
+    height: 40px;
+    background-position: -282px -213px;
+    vertical-align: middle
+}
+.visual_area .end {
+    padding: 27px 19px 0
+}
+.visual_area .end .btn {
+    font-size: 19px
+}
+.declaration_area {
+    padding: 57px 0 108px;
+    text-align: center
+}
+.declaration_area .tit {
+    margin-top: 5px;
+    font-size: 64px;
+    letter-spacing: -5px
+}
+.declaration_area .tit_txt {
+    display: block;
+    margin-top: 21px;
+    font-size: 16px;
+    color: #004a2f;
+    line-height: 23px;
+    letter-spacing: -.5px
+}
+.declaration_area .txt_box {
+    overflow: hidden;
+    max-width: 1080px;
+    margin: 63px auto 0;
+    color: #414141;
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: -1px
+}
+.declaration_area .txt_box.tablet {
+    display: none
+}
+.declaration_area .txt_l {
+    float: left;
+    width: 386px;
+    letter-spacing: -.5px
+}
+.declaration_area .txt_l2 {
+    float: left;
+    width: 360px;
+    letter-spacing: -.5px
+}
+.declaration_area .txt_l3 {
+    float: left;
+    width: 334px;
+    letter-spacing: -.5px
+}
+.declaration_area .txt_r {
+    float: right;
+    width: 500px;
+    letter-spacing: -.5px
+}
+.declaration_area .btn_icon {
+    margin-top: 33px
+}
+.value_area {
+    padding: 68px 0 80px;
+    background-color: #ebecee;
+    text-align: center
+}
+.value_area .tit {
+    font-size: 64px
+}
+.value_area .tit_txt {
+    display: block;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #004a2f;
+    line-height: 23px;
+    letter-spacing: -.5px
+}
+.value_lst {
+    width: 1092px;
+    margin: 19px auto 0;
+    font-size: 0;
+    text-align: left
+}
+.value_lst li {
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 524px;
+    margin: 10px 7px;
+    padding: 184px 0 0 12px;
+    background-color: #fff
+}
+.value_lst li .img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 350px;
+    height: 197px;
+    background-color: #000
+}
+.value_lst li .value_txt {
+    position: relative;
+    z-index: 1
+}
+.value_lst li .value_txt dt {
+    width: 70px;
+    font-size: 22px;
+    color: #00483d;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+    background: #08ea46;
+    background: -moz-linear-gradient(-45deg, #08ea46 0, #77e913 100%);
+    background: -webkit-linear-gradient(-45deg, #08ea46 0, #77e913 100%);
+    background: linear-gradient(135deg, #08ea46 0, #77e913 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#08ea46', endColorstr='#77e913', GradientType=1)
+}
+.value_lst li .value_txt dt:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(http://ahncs.kr/assets/img/bg_patturn01.png);
+    background-repeat: repeat
+}
+.value_lst li .value_txt dd {
+    padding: 20px 13px;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -.5px
+}
+.value_lst li.v_box1 {
+    background: url(http://ahncs.kr/assets/img/bg_value1.png) 50% 100% no-repeat #fff
+}
+.value_lst li.v_box2 {
+    background: url(http://ahncs.kr/assets/img/bg_value2.png) 50% 100% no-repeat #fff
+}
+.value_lst li.v_box3 {
+    background: url(http://ahncs.kr/assets/img/bg_value3.png) 50% 100% no-repeat #fff
+}
+.value_lst li.v_box4 {
+    background: url(http://ahncs.kr/assets/img/bg_value4.png) 50% 100% no-repeat #fff
+}
+.value_lst li.v_box5 {
+    background: url(http://ahncs.kr/assets/img/bg_value5.png) 50% 100% no-repeat #fff
+}
+.campaign_area {
+    height: 857px;
+    padding-top: 73px;
+    background: url(http://ahncs.kr/assets/img/bg_campaign.jpg) 50% 0 no-repeat #beebc4;
+    text-align: center
+}
+.campaign_area .tit {
+    font-size: 64px;
+    letter-spacing: -5.5px
+}
+.campaign_area .tit .than {
+    margin: 0 21px;
+    color: #008591
+}
+.campaign_area .tit_txt {
+    display: block;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3b3b3b;
+    line-height: 23px;
+    letter-spacing: -.5px
+}
+.campaign_area .btn_icon {
+    margin-top: 31px
+}
+.campaign_guide {
+    font-size: 0
+}
+.campaign_guide .cg1 {
+    margin-left: -27px
+}
+.campaign_guide .cg1,
+.campaign_guide .cg2,
+.campaign_guide .cg3 {
+    display: inline-block;
+    position: relative;
+    height: 167px;
+    margin-top: 65px
+}
+.campaign_guide .cg1 .num,
+.campaign_guide .cg2 .num,
+.campaign_guide .cg3 .num {
+    position: relative;
+    top: 3px;
+    height: 55px;
+    vertical-align: top
+}
+.campaign_guide .cg1 .num {
+    width: 13px;
+    margin-right: 26px;
+    background-position: -308px -116px
+}
+.campaign_guide .cg2 .num {
+    width: 36px;
+    margin-right: 11px;
+    background-position: -323px -116px
+}
+.campaign_guide .cg3 .num {
+    width: 37px;
+    margin-right: 11px;
+    background-position: -361px -116px
+}
+.campaign_guide .cg4 .num {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    width: 43px;
+    height: 55px;
+    margin-right: 11px;
+    background-position: -400px -116px
+}
+.campaign_guide li .txt {
+    display: inline-block;
+    font-size: 16px;
+    color: #3b3b3b;
+    line-height: 21px;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -.5px
+}
+.campaign_guide .cg1:after,
+.campaign_guide .cg2:after {
+    position: relative;
+    top: 76px;
+    width: 28px;
+    height: 28px;
+    background-position: -308px -173px;
+    content: ''
+}
+.campaign_guide li.cg1:after {
+    margin: 0 79px 0 61px
+}
+.campaign_guide li.cg2:after {
+    margin: 0 45px 0 74px
+}
+.campaign_guide li:before {
+    position: absolute;
+    bottom: 0;
+    height: 95px
+}
+.campaign_guide li.cg1:before {
+    left: 38px;
+    width: 94px;
+    background-position: 0 -116px
+}
+.campaign_guide li.cg2:before {
+    left: 51px;
+    width: 98px;
+    background-position: -96px -116px
+}
+.campaign_guide li.cg3:before {
+    left: 47px;
+    width: 110px;
+    background-position: -196px -116px
+}
+.campaign_guide li.cg4:before {
+    display: none
+}
+.campaign_area .btn_email {
+    display: inline-block;
+    position: relative;
+    width: 459px;
+    height: 79px;
+    padding: 13px 18px 0 72px;
+    margin-top: 45px;
+    border: 2px solid #008591;
+    text-align: left;
+    box-sizing: border-box
+}
+.campaign_area .btn_email:after {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    width: 68px;
+    height: 42px;
+    background-position: -264px -72px
+}
+.campaign_area .btn_email .txt {
+    font-size: 16px;
+    color: #006a74
+}
+.campaign_area .btn_email .txt .txt_num {
+    width: 39px;
+    height: 17px;
+    background-position: -338px -173px;
+    vertical-align: middle
+}
+.campaign_area .btn_email .txt_email {
+    display: block;
+    margin-top: 4px;
+    font-size: 22px;
+    color: #3b3b3b
+}
+.campaign_area .txt_btn {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #005d65;
+    letter-spacing: -.5px
+}
+.campaign_area .txt_btn+.txt_btn {
+    margin-top: 0
+}
+.body_lock {
+    overflow: hidden
+}
+.ly_wrapper {
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: url(http://ahncs.kr/assets/img/bg_dimd.png)
+}
+.ly_box {
+    position: absolute;
+    left: 50%
+}
+.ly_box:before {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: url(http://ahncs.kr/assets/img/bg_patturn01.png) #18e252
+}
+.ly_box:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff
+}
+.ly_box * {
+    position: relative;
+    z-index: 1
+}
+.ly_close {
+    position: absolute;
+    top: -81px;
+    right: 50%;
+    margin-right: -517px
+}
+.ly_close .sp {
+    position: relative;
+    width: 68px;
+    height: 68px;
+    background-position: -212px -213px
+}
+.ly_declaration .ly_close {
+    top: 20px;
+    margin-right: -517px
+}
+.ly_declaration .ly_box {
+    top: 25px;
+    width: 830px;
+    margin-left: -415px;
+    padding-bottom: 25px
+}
+.ly_declaration .ly_box:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: transparent
+}
+.ly_declaration .ly_box:after {
+    bottom: 25px;
+    background: #18e252;
+    background: -moz-linear-gradient(top, #18e252 0, #8fe60c 100%);
+    background: -webkit-linear-gradient(top, #18e252 0, #8fe60c 100%);
+    background: linear-gradient(to bottom, #18e252 0, #8fe60c 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#18e252', endColorstr='#8fe60c', GradientType=1)
+}
+.ly_box_in {
+    position: relative;
+    z-index: 20;
+    margin: 5px;
+    padding: 50px 66px;
+    background-color: #fff
+}
+.ly_live .ly_box:after,
+.ly_video .ly_box:after {
+    background-color: #000
+}
+.ly_declaration h3 {
+    margin-top: 19px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    letter-spacing: 0
+}
+.ly_declaration .tit {
+    font-size: 40px;
+    letter-spacing: -.5px
+}
+.ly_declaration .tit_txt {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #004a2f
+}
+.ly_declaration .txt_area {
+    margin-top: 24px
+}
+.ly_declaration .txt_area p {
+    color: #000;
+    line-height: 21px;
+    letter-spacing: -.5px
+}
+.ly_declaration .txt_area p+p {
+    margin-top: 21px
+}
+.ly_declaration .txt_area .txt_sign {
+    margin-top: 46px;
+    font-size: 13px
+}
+.ly_declaration .txt_area .txt_sign .sp {
+    width: 64px;
+    height: 36px;
+    margin-right: 5px;
+    background-position: -334px -56px;
+    vertical-align: top
+}
+.ly_declaration .txt_area .txt_sign span {
+    display: inline-block;
+    margin-top: 13px
+}
+.ly_video .ly_close {
+    top: -81px
+}
+.ly_video .ly_box {
+    top: 148px;
+    width: 1024px;
+    height: 576px;
+    margin-left: -512px
+}
+#player {
+    width: 100%;
+    height: 100%
+}
+.ly_live .ly_close {
+    margin-right: -565px
+}
+.ly_live .ly_box {
+    top: 148px;
+    width: 1120px;
+    height: 616px;
+    margin-left: -560px
+}
+#player2 {
+    width: 100%;
+    height: 100%
+}
+@media screen and (min-width: 1080px) {
+    .blind_pc {
+        display: none
+    }
+}
+@media screen and (max-width: 1079px) {
+    .blind_t {
+        display: none
+    }
+    .blind_pc {
+        display: block
+    }
+    #wrap {
+        overflow: hidden;
+        min-width: 768px
+    }
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0
+    }
+    #footer .inner {
+        padding-right: 10px;
+        padding-left: 10px
+    }
+    .visual_area {
+        height: 690px;
+        padding-top: 163px;
+        background-image: url(http://ahncs.kr/assets/img/@img_visual_s.jpg)
+    }
+    .visual_area .inner {
+        padding: 0 13px
+    }
+    .visual_area .tit {
+        font-size: 43px;
+        line-height: 62px
+    }
+    .visual_area .tit em {
+        margin-top: 0;
+        font-size: 59px
+    }
+    .visual_area .txt {
+        margin-top: 27px
+    }
+    .visual_area .btn_icon {
+        margin-top: 52px;
+        letter-spacing: -.5px
+    }
+    .declaration_area {
+        padding: 52px 10px 108px
+    }
+    .declaration_area .tit {
+        font-size: 54px
+    }
+    .declaration_area .tit_txt {
+        margin-top: 8px
+    }
+    .declaration_area .txt_box.pc {
+        display: none
+    }
+    .declaration_area .txt_box.tablet {
+        display: block;
+        margin-top: 85px
+    }
+    .declaration_area .txt_l {
+        width: 52%
+    }
+    .declaration_area .txt_r {
+        width: 48%
+    }
+    .declaration_area .btn_icon {
+        margin-top: 89px
+    }
+    .value_area {
+        padding-bottom: 41px
+    }
+    .value_lst {
+        width: 728px
+    }
+    .campaign_guide li.cg1:after {
+        margin: 0 23px 0 20px
+    }
+    .campaign_guide li.cg2:after {
+        margin: 0 20px 0 10px
+    }
+    .ly_live .ly_box,
+    .ly_video .ly_box {
+        top: 100px;
+        width: 732px;
+        height: 412px;
+        margin-left: -366px
+    }
+    .ly_live .ly_close,
+    .ly_video .ly_close {
+        margin-right: -371px
+    }
+    .ly_declaration .ly_close {
+        top: 15px;
+        margin-right: -376px
+    }
+    .ly_declaration .ly_box {
+        top: 96px;
+        width: 742px;
+        margin-left: -371px
+    }
+}

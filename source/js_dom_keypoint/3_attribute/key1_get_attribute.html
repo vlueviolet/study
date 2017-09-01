@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>javascript : monoraum</title>
+<link rel="stylesheet" href="common.css" />
+<script>
+window.onload=function(){			
+	var test1 = document.getElementById("test_1");
+	// 모든 속성값이 담겨있는 객체
+	alert(test1.attributes);
+	alert(test1.getAttribute("id"));			// 결과 : test_1
+	alert(test1.getAttribute("data-value"));	// 결과 : data1
+	// 바로 접근하기.
+	alert(test1.id);							// 결과 : test_1
+}
+</script>
+</head>
+<body>
+<div id="test_1" style="color:#ff0000;font-size:14px" data-value="data1"> 
+	테스트1-1
+</div>
+</body>
+</html>

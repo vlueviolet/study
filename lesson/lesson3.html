@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="../css/lesson.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+<title>Lesson 3</title>
+</head>
+<body>
+<section>
+	<h1>3차</h1>
+	<hr>
+
+	<h2>jQuery api 참고</h2>
+	<ul>
+	<li><a href="https://oscarotero.com/jquery/" target="_blank">https://oscarotero.com/jquery/</a></li>
+	</ul>
+	<br><br>
+	<h2>console.log</h2>
+
+	<ul>
+	<li>변수 및 다양한 정보들을 확인할 수 있는 매우 중요한 함수</li>
+	<li>IE(Internet Explorer)는 8.x 이상에서만 지원되고, 이외의 웹 브라우저는 대부분 지원됨.</li>
+	<li>프로그램에 영향을 주지 않음</li>
+	<li>디버깅 용도로 사용 (디버깅이란 버그를 해결하다라는 의미)</li>
+	</ul>
+	<pre><code>&lt;script&gt;
+var currentIndex = 0;
+console.log(currentIndex);
+&lt;/script&gt;
+</code></pre>
+	<br><br>
+
+	<h2>주석(Comment)</h2>
+	<ul>
+	<li>프로그램 작성시 코드를 설명하거나 기타 개발자의 참조 사항을 기록하기 위해 사용</li>
+	<li>한 줄 코딩의 주석은 '//'</li>
+	<li>여러 줄을 한 번에 주석 처리 하기 위해서는 '/ * 주석 * /'</li>
+	<li>프로그램에 영향을 주지 않음</li>
+	</ul>
+
+	<pre><code>&lt;script&gt;
+// 초기 index 설정
+var currentIndex = 0;
+
+/*
+ 선택자를 움직이게 하는 함수
+ 객체를 만들경우 파라미터에 대한 상세설명 담는방법으로 주석 활용
+ */
+var funcName = function () {
+    ...
+};
+&lt;/script&gt;</code></pre>
+	<br><br>
+	<h2>주요 선택자 비교</h2>
+	<table>
+	<thead>
+	<tr>
+		<th scope="col">javascript</th>
+		<th scope="col">jQuery</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>document.getElementById('id');</td>
+		<td>$('#id');</td>
+	</tr>
+	<tr>
+		<td>document.getElementsByClassName('class');</td>
+		<td>$('.class');</td>
+	</tr>
+	<tr>
+		<td>document.getElementsByName('names');</td>
+		<td>$('[name="names"]');</td>
+	</tr>
+	<tr>
+		<td>document.getElementsByTagName('tagname');</td>
+		<td>$('tagname');</td>
+	</tr>
+	</tbody>
+	</table>
+	<br><br>
+	<h2>주요 탐색자 비교</h2>
+	<table>
+	<thead>
+	<tr>
+		<th scope="col">javascript</th>
+		<th scope="col">jQuery</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>.parentNode</td>
+		<td>.parent()<br>.parents()<br>.parentsUntil()</td>
+	</tr>
+
+	<tr>
+		<td>.childNodes / .children</td>
+		<td>.children()<br>.find()</td>
+	</tr>
+	<tr>
+		<td>.nextSibling / .previousSibling<br>.nextSibling<br><br><br>.previousSibling</td>
+		<td>.siblings()<br>.next()<br>.nextAll()<br>.nextUntil()<br>.prev()<br>.prevAll()<br>.prevUntil()</td>
+	</tr>
+	<tr>
+		<td>.firstChild</td>
+		<td>.first()</td>
+	</tr>
+	<tr>
+		<td>.lastChild</td>
+		<td>.last()</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>.eq()<br>.filter()<br>.not()</td>
+	</tr>
+	</tbody>
+	</table>
+
+https://github.com/telltrue33/study/tree/gh-pages/exam3
+</section>
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>javascript : monoraum</title>
+<link rel="stylesheet" href="common.css" />
+<script type="text/javascript"  src="../libs/jquery-1.7.1.min.js"> </script>
+<script>
+/*
+window.onload=function(){		
+	var test1 = document.getElementById("test_1");
+	test1.style.removeProperty("border");
+	test1.style.removeProperty("margin");
+}
+*/
+$(document).ready(function(){		
+	$("#test_1")[0].style.removeProperty("border");
+	$("#test_1")[0].style.removeProperty("margin");
+});
+</script>
+</head>
+<body>
+<div id="test_1" style="margin:20px;border:1px #000000 solid"> 
+	테스트1-1
+</div>
+</body>
+</html>

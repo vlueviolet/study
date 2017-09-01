@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="../css/lesson.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+<title>Lesson 1</title>
+</head>
+<body>
+<section>
+	<h1>1차</h1>
+	<hr>
+
+	<h2>JavaScript vs. JQuery</h2>
+	<ul>
+	<li>자바스크립트는 모든 브라우저 대응이 안되지만, jquery는 가능하다.</li>
+	<li>특히 선택자 사용이 편리하다는게 가장 큰 장점</li>
+	</ul>
+
+	<h3>자바스크립트의 요소 선택</h3>
+	<pre><code>
+	document.getElementById(‘container’);
+	document.getElementsByClass(‘box);	//IE8이상 지원 안됨
+	</code></pre>
+
+	<h3>jquery의 요소 선택</h3>
+	<pre><code>
+	$(‘.box’), $(‘#container’);
+	</code></pre>
+
+	<h2>이벤트와 이벤트에 의한 행동</h2>
+	<h3>이벤트를 주는 방법</h3>
+	<pre><code>
+	$('.box').on('click', function(){
+
+	});</code></pre>
+
+	<h2>함수 선언</h2>
+	<h3>선언함수</h3>
+	<pre><code>
+	changeCss(); 	//함수선언 이전에 호출해도 에러가 나지 않는다.
+	function changeCss(){
+		$('.box').css('border','1px solid red');
+	}
+	</code></pre>
+	<h3>익명함수</h3>
+	<p><em class="red">호출하는 위치의 혼란을 줄이기위해 익명함수로 함수를 선언한다. (회사 컨벤션)</em></p>
+	<pre><code>
+	var changeCss = function(){
+		$(‘.box’).css();
+	}
+	changeCss();	//함수호출이 선언보다 위에 있다면 에러남
+	</code></pre>
+
+	<h2>jquery 시작</h2>
+	<ul>
+	<li>dom태그를 모두 읽고 시작해라란 의미, 라이브러리 읽는 성능때문에 하단에 두긴함</li>
+	<li>head에 두더라도 얘는 읽고 저장해놓는거지 돔읽고 다시 위로 올라와서 해석하는건 아님</li>
+	</ul>
+	<pre><code>	$(function(){});
+	또는
+	$(document).ready{}
+	</code></pre>
+	<h2>jqueyr의 사용</h2>
+	jquery나 자바스크립트를 사용하면 성능이슈가 있기때문에 마크업에서 표현할 수 있는 것들은 다하고, jquery에서는 겸손하게만 쓰자.
+
+	<h2>참고</h2>
+	<ul>
+	<li>선택자 정리 : http://crosstheline.tistory.com/41</li>
+	</ul>
+</section>
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+</body>
+</html>

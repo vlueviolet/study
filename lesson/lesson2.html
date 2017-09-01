@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="../css/lesson.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+<title>Lesson 2</title>
+</head>
+<body>
+<section>
+	<h1>2차</h1>
+	<hr>
+
+	<h2>JQuery</h2>
+	<ul>
+	<li>라이브러리가 필요함</li>
+	</ul>
+
+	<h2>JavaScript</h2>
+	<ul>
+	<li>window.onload : dom과 리소스를 모두 읽고 실행하게 됨</li>
+	</ul>
+
+	<h2>선언 순서</h2>
+	<ul>
+	<li>선택자끼리 먼저 선언</li>
+	<li>그 다음에 함수 선언, 계속 함수는 연결해서 선언</li>
+	</ul>
+
+	<h2>eq 사용 관련</h2>
+	<ul>
+	<li>li$(‘li:eq(0)’) 보다 $(‘li’).eq(0)을 쓰자.</li>
+	<li>.eq(0)을 쓰는게 더 성능이 좋다</li>
+	</ul>
+</section>
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+</body>
+</html>
