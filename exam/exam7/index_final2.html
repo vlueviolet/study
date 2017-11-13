@@ -230,11 +230,11 @@ button::-moz-focus-inner{padding:0;border:0}
             }
             this.layerObj.focus();
         },
-        
+
         //레이어가 열리고 나서 outside이벤트를 감지하는 함수를 실행하는 함수
         //처음부터 실행할 필요하면 성능이슈도 있으니, 레이어가 열리고 실행하는것이 효율적이다.
         //show의 경우 시스템적 순서 오류로 열리기전에 다른 함수를 실행할 수 있기때문에 시간차를 두어 버튼 클릭을 겹치지 않게 하기 위함
-        //fadeIn같은 애니메이션은 애니메이션 실행 후 함수가 실행되기때문에 이 함수가 
+        //fadeIn같은 애니메이션은 애니메이션 실행 후 함수가 실행되기때문에 이 함수가
         showAfterBugFunc : function () {
             //clearTimeout을 먼저 실행시켜 성능이슈 줄이자. setTimeout한 대상이 다음 구문에 나와도 에러없음
             win.clearTimeout(this.showAfterTimeout);
@@ -247,7 +247,7 @@ button::-moz-focus-inner{padding:0;border:0}
         },
         layerClickOutside : function () {
             this.outCallback('closeBefore');    //멀까?
-            
+
             //여기도 마찬가지로 clearTimeout을 먼저 실행 시킴
             win.clearTimeout(this.closeBeforeTimeout);
 
@@ -266,7 +266,7 @@ button::-moz-focus-inner{padding:0;border:0}
             if (this.opts.type === 'default') {
                 //레이어 팝업 닫기
                 this.layerWrap.stop(true, true).hide();
-                
+
                 //Q. 이 함수는 왜 있는걸까요? 그냥 this.layerClose(); 하면 안되나요?
                 //A. 구문 순서를 보면, hide() 된 후에 layerClose() 가 실행이 되어야 합니다. 하지만, 스크립트에서, layerClose() 가 먼저 실행이 되고, hide() 가 실행이 되는 현상이 발견이 됩니다. (alert 으로 확인 가능) 해당 부분은 스크립트 자체의 시스템적 순서오류로 인한 현상입니다. ( 원인은 개인적으로 찾아보세요. ) 그래서, 시스템적 순서오류를 해결하기 위해 임의로 시간차를 두고 함수를 실행하도록 하는 구문을 추가한 부분입니다.
                 this.hideAfterBugFunc();
@@ -331,7 +331,7 @@ button::-moz-focus-inner{padding:0;border:0}
             e.preventDefault();
             this.youris.eq(0).hide();   //1번째 youris 숨김
             this.youris.eq(1).show();   //2번쨰 youris 보여줌
-            
+
             //요소가 hide되면서 초점이 날아가기때문에 layer로 초점이 가도록 reInit() 실행
             this.posLayer.reInit();
             this.posLayer2.reInit();
