@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Map</title>
+<script type="text/javascript" src="js_top.js"></script>
+</head>
+<body>
+<!-- [D] WRAP -->
+<div id="wrap">
+	<div class="map_area">
+		<h1 class="blind">월드맵</h1>
+		<span class="map"></span>
+		<div class="map2">
+			<div class="btnOnMap">
+				<button type="button" id="area1" class="btn_inner">지역1</button>
+				<button type="button" id="area2" class="btn_inner">지역2</button>
+				<button type="button" id="area3" class="btn_inner">지역3</button>
+				<button type="button" id="area4" class="btn_inner">지역4</button>
+				<button type="button" id="area5" class="btn_inner">지역5</button>
+				<button type="button" id="area6" class="btn_inner">지역6</button>
+				<button type="button" id="area7" class="btn_inner">지역7</button>
+				<button type="button" id="area8" class="btn_inner">지역8</button>
+				<button type="button" id="area9" class="btn_inner">지역9</button>
+			</div>
+			<img src="img/map.jpg" class="mapImg" alt="">
+		</div>
+		<span class="mask"></span>
+
+		<div class="area_info_wrap">
+			<div id="area0" class="area_info">
+				<h2 class="tit">지역1: 오비스 군도</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area1" class="area_info">
+				<h2 class="tit">지역2: 인벤투스</h2>
+				<div class="txt_area">누스가르드의 과학과 마법기술의 결정체. 탐험대 본부와 일부 마을 주민들을 수용할 수 있는 이 대형 함선은 강인한 개척정신을 상징한다.</div>
+			</div>
+			<div id="area2" class="area_info">
+				<h2 class="tit">지역3: 안개의 정체</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area3" class="area_info">
+				<h2 class="tit">지역4: 누스가르드 대륙</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area4" class="area_info">
+				<h2 class="tit">지역5: RVR 상륙작전</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area5" class="area_info">
+				<h2 class="tit">지역6: RVR 북풍의 영역</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area6" class="area_info">
+				<h2 class="tit">지역7: 이루사의 둥지</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area7" class="area_info">
+				<h2 class="tit">지역8: 아카눔 전장</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+			<div id="area8" class="area_info">
+				<h2 class="tit">지역9: 고블린 동굴</h2>
+				<div class="txt_area">네이샤르 영주가 다스리는 평화로운 공중도시인 누스가르드는 제국 누스페리움 산하의 여러 부유도 중 하나이다. 별의 아이들의 탄생지이자 과거의 탈출선 엠브리온의 추락지로 유명한 곳이다.</div>
+			</div>
+		</div>
+		<div class="paging">
+			<div class="inner">
+				<div class="info">
+					<div class="page_num"><span class="cur"></span>/<span class="total"></span></div>
+				</div>
+				<div class="nav_area">
+					<ul class="nav">
+					<li>
+						<button type="button">1</button>
+						<p class="tit">지역 1</p>
+					</li>
+					<li>
+						<button type="button">2</button>
+						<p class="tit">지역 2</p>
+					</li>
+					<li>
+						<button type="button">3</button>
+						<p class="tit">지역 3</p>
+					</li>
+					<li>
+						<button type="button">4</button>
+						<p class="tit">지역 4</p>
+					</li>
+					<li>
+						<button type="button">5</button>
+						<p class="tit">지역 5</p>
+					</li>
+					<li>
+						<button type="button">6</button>
+						<p class="tit">지역 6</p>
+					</li>
+					<li>
+						<button type="button">7</button>
+						<p class="tit">지역 7</p>
+					</li>
+					<li>
+						<button type="button">8</button>
+						<p class="tit">지역 8</p>
+					</li>
+					<li>
+						<button type="button">9</button>
+						<p class="tit">지역 9</p>
+					</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="btn_area">
+			<button type="button" class="btn_prev">이전</button>
+			<button type="button" class="btn_next">다음</button>
+		</div>
+		<button type="button" class="btn_whole_area">전체 맵 보기</button>
+	</div>
+</div>
+<!-- //[D] WRAP -->
+<script type="text/javascript" src="js_bottom.js"></script>
+</body>
+</html>
