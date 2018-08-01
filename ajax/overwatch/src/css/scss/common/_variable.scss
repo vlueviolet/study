@@ -1,0 +1,45 @@
+$screen-xsm: 640px; // Mobile Minimum Size
+$screen-sm: 720px;  // Mobile
+$screen-md: 1280px;
+$screen-lg: 1366px; // Tablet Maximum Size (ipad Pro)
+$screen-xlg: 1920px; // Desktop Maximum Size
+
+$screen-maxheight: 972px;  // Screen Maximum Height Size
+$screen-minheight: 360px;  // Screen Minimum Height Size
+
+$pop-pc-width: 900px;
+$pop-pc-height: 600px;
+$pop-mobile-width: 77.34375%;
+$pop-mobile-width2: 97.22222222222221%;
+$pop-mobile-height: 330px;
+$pop-mobile-height2: 450px;
+$pop-mobile-max-width: 360px;
+$pop-mobile-min-width: 300px;
+$pop-mobile-min-height: 300px;
+
+$max-width: 1920px;
+$min-width: 640px;
+$content-width: 1280px;
+
+/* font */
+$nanumsquare:'NanumSquare';
+$fontPath: '../font';
+$fontSize: 12px;
+$fontSize2: 16px;
+
+/* color */
+$color:#a48566;
+$color2: #f4d090;
+
+/* sprite */
+$pc-sp:url(../img/sprite.png) no-repeat;
+$pc-sp-num:url(../img/sp_num.png) no-repeat;
+$pc-sp-num4:url(../img/sp_num4.png) no-repeat;
+$mobile-sp:url(../img/sprite_m.png) no-repeat;
+
+/* responsive */
+$break-point: 1279px;
+$break-point2: 1024px;
+$break-point3: 800px;
+$break-point4: 639px;
+$break-point5: 480px;

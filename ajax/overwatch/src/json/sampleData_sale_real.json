@@ -1,0 +1,146 @@
+[
+	{
+		"area": 84.45,
+		"year": 2014,
+		"month": 1,
+		"division": "매매",
+		"price": 76000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2014,
+		"month": 4,
+		"division": "매매",
+		"price": 76000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2014,
+		"month": 10,
+		"division": "매매",
+		"price": 79000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 1,
+		"division": "매매",
+		"price": 75500,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 3,
+		"division": "매매",
+		"price": 77000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 3,
+		"division": "매매",
+		"price": 72000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 4,
+		"division": "매매",
+		"price": 77000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 10,
+		"division": "매매",
+		"price": 80000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 11,
+		"division": "매매",
+		"price": 80000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 12,
+		"division": "매매",
+		"price": 80200,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2016,
+		"month": 12,
+		"division": "매매",
+		"price": 90000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 5,
+		"division": "매매",
+		"price": 90000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 5,
+		"division": "매매",
+		"price": 92000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 6,
+		"division": "매매",
+		"price": 90000,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 9,
+		"division": "매매",
+		"price": 88800,
+		"deposit": 0,
+		"monthly": 0
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 11,
+		"division": "매매",
+		"price": 94500,
+		"deposit": 0,
+		"monthly": 0
+	}
+]

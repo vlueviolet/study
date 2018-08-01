@@ -1,0 +1,2530 @@
+{
+    "score": [
+        {
+            "no": "1",
+            "season_no" : "10",
+            "title" : "정규시즌 1경기",
+            "date" : "2018.03.19 7:00 오후",
+            "teamA_name": "BlossoM",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamB_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=G8aYT6KhmkA&t=3s",
+            "video_title" : "BlossoM VS Meta Athena 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/240460227"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "3",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/240460978"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/240461478"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/240462030"
+            }]
+        },{
+            "no": "1-2",
+            "season_no" : "10",
+            "title" : "정규시즌 1경기",
+            "date" : "2018.03.19 7:00 오후",
+            "teamB_name": "BlossoM",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "Meta Athena",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamA_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=G8aYT6KhmkA&t=3s",
+            "video_title" : "BlossoM VS Meta Athena 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/240460227"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "3",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/240460978"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/240461478"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/240462030"
+            }]
+        },{
+            "no": "2",
+            "season_no" : "10",
+            "title" : "정규시즌 2경기",
+            "date" : "2018.03.19 9:00 오후",
+            "teamA_name": "Runaway",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "MVP Space",
+            "teamB_no": "10",
+            "teamB_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamB_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=6TDAK_WeFVE&t=3s",
+            "video_title" : "RunAway VS MVP Space 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/240462712"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/240463379"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/240464316"
+            }, {
+                "field_no": "4",
+                "field_name": "감시기지:지브롤터",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/240464651"
+            }]
+        },{
+            "no": "2-2",
+            "season_no" : "10",
+            "title" : "정규시즌 2경기",
+            "date" : "2018.03.19 9:00 오후",
+            "teamB_name": "Runaway",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamB_score" : "4",
+            "teamA_name": "MVP Space",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamA_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=6TDAK_WeFVE&t=3s",
+            "video_title" : "RunAway VS MVP Space 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/240462712"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreB": "5",
+                "scoreA": "4",
+                "video_url" : "https://www.twitch.tv/videos/240463379"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/240464316"
+            }, {
+                "field_no": "4",
+                "field_name": "감시기지:지브롤터",
+                "scoreB": "4",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/240464651"
+            }]
+        },
+        {
+            "no": "3",
+            "season_no" : "10",
+            "title" : "정규시즌 3경기",
+            "date" : "2018.03.20 7:00 오후",
+            "teamA_name": "Foxes",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Seven",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=FQbf957T4gQ",
+            "video_title" : "Foxes VS Seven 경기 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/240817133"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "4",
+                "scoreB": "5",
+                "video_url" : "https://www.twitch.tv/videos/240817797"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/240818349"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/240818745"
+            }]
+        },
+        {
+            "no": "3-2",
+            "season_no" : "10",
+            "title" : "정규시즌 3경기",
+            "date" : "2018.03.20 7:00 오후",
+            "teamB_name": "Foxes",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "Seven",
+            "teamA_no": "9",
+            "teamA_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=FQbf957T4gQ",
+            "video_title" : "Foxes VS Seven 경기 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/240817133"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "4",
+                "scoreA": "5",
+                "video_url" : "https://www.twitch.tv/videos/240817797"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/240818349"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/240818745"
+            }]
+        },
+        {
+            "no": "4",
+            "season_no" : "10",
+            "title" : "정규시즌 4경기",
+            "date" : "2018.03.20 9:00 오후",
+            "teamA_name": "Kongdoo Panthera",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Meta Bellum",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=Z6eTzycJ8Ns&t=80s",
+            "video_title" : "Kongdoo Panthera VS Meta Bellum 경기 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/240819328"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의 길",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/240819877"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/240820521"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/240821732"
+            }]
+        },
+        {
+            "no": "4-2",
+            "season_no" : "10",
+            "title" : "정규시즌 4경기",
+            "date" : "2018.03.20 9:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Kongdoo Panthera",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamB_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=Z6eTzycJ8Ns&t=80s",
+            "video_title" : "Kongdoo Panthera VS Meta Bellum 경기 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/240819328"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의 길",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/240819877"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/240820521"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/240821732"
+            }]
+        },
+        {
+            "no": "5",
+            "season_no" : "10",
+            "title" : "정규시즌 5경기",
+            "date" : "2018.03.21 7:00 오후",
+            "teamA_name": "Element Mystic",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "X6 Gaming",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamB_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=PVX63zgFP5Y",
+            "video_title" : "Element Mystic VS X6 Gaming 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/241154387"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/241155090"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/241158639"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/241162263"
+            }]
+        },
+        {
+            "no": "5-2",
+            "season_no" : "10",
+            "title" : "정규시즌 5경기",
+            "date" : "2018.03.21 7:00 오후",
+            "teamA_name": "X6 Gaming",
+            "teamA_no": "7",
+            "teamA_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Element Mystic",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=PVX63zgFP5Y",
+            "video_title" : "Element Mystic VS X6 Gaming 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/241154387"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/241155090"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/241158639"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/241162263"
+            }]
+        },
+        {
+            "no": "6",
+            "season_no" : "10",
+            "title" : "정규시즌 6경기",
+            "date" : "2018.03.21 9:00 오후",
+            "teamA_name": "WGS LaurelS Nine",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "O2 Ardeont",
+            "teamB_no": "8",
+            "teamB_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=PP8j78fLEEs",
+            "video_title" : "WGS VS O2 Ardeont 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/241169182"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "4",
+                "scoreB": "5",
+                "video_url" : "https://www.twitch.tv/videos/241175810"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/241182377"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/241183626"
+            }]
+        },
+        {
+            "no": "6-2",
+            "season_no" : "10",
+            "title" : "정규시즌 6경기",
+            "date" : "2018.03.21 9:00 오후",
+            "teamB_name": "WGS LaurelS Nine",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "O2 Ardeont",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=PP8j78fLEEs",
+            "video_title" : "WGS VS O2 Ardeont 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/241169182"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "4",
+                "scoreA": "5",
+                "video_url" : "https://www.twitch.tv/videos/241175810"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/241182377"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/241183626"
+            }]
+        },
+        {
+            "no": "7",
+            "season_no" : "10",
+            "title" : "정규시즌 7경기",
+            "date" : "2018.03.26 7:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "9",
+            "teamA_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Runaway",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamB_score" : "2",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=baOqPvEvcZc",
+            "video_title" : "Seven VS RunAway 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243049381"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/243052387"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/243056792"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/243060388"
+            },
+            {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243063038"
+            }]
+        },
+         {
+            "no": "7-2",
+            "season_no" : "10",
+            "title" : "정규시즌 7경기",
+            "date" : "2018.03.26 7:00 오후",
+            "teamA_name": "Runaway",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamA_score" : "2",
+            "teamB_name": "Seven",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=baOqPvEvcZc",
+            "video_title" : "Seven VS RunAway 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243049381"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243052387"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243056792"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243060388"
+            },
+            {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243063038"
+            }]
+        },
+        {
+            "no": "8",
+            "season_no" : "10",
+            "title" : "정규시즌 8경기",
+            "date" : "2018.03.26 9:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "11",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "BlossoM",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamB_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=b69EqMz42T0",
+            "video_title" : "Meta Bellum VS BlossoM 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/243071111"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/243076808"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "4",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243086981"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/243091788"
+            }]
+        },
+        {
+            "no": "8-2",
+            "season_no" : "10",
+            "title" : "정규시즌 8경기",
+            "date" : "2018.03.26 9:00 오후",
+            "teamA_name": "BlossoM",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Meta Bellum",
+            "teamB_no": "11",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=b69EqMz42T0",
+            "video_title" : "Meta Bellum VS BlossoM 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243071111"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/243076808"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/243086981"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243091788"
+            }]
+        },
+        {
+            "no": "9",
+            "season_no" : "10",
+            "title" : "정규시즌 9경기",
+            "date" : "2018.03.27 7:00 오후",
+            "teamA_name": "X6 Gaming",
+            "teamA_no": "7",
+            "teamA_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamB_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=JamojiE2bvg",
+            "video_title" : "X6-Gaming VS VS Meta Athena 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243430972"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243431443"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/243432215"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243433979"
+            }]
+        },
+        {
+            "no": "9-2",
+            "season_no" : "10",
+            "title" : "정규시즌 9경기",
+            "date" : "2018.03.27 7:00 오후",
+            "teamB_name": "X6 Gaming",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamB_score" : "4",
+            "teamA_name": "Meta Athena",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamA_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=JamojiE2bvg",
+            "video_title" : "X6-Gaming VS VS Meta Athena 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/243430972"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/243431443"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/243432215"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/243433979"
+            }]
+        },
+        {
+            "no": "10",
+            "season_no" : "10",
+            "title" : "정규시즌 10경기",
+            "date" : "2018.03.27 9:00 오후",
+            "teamA_name": "O2 Ardeont",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "MVP Space",
+            "teamB_no": "10",
+            "teamB_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamB_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=5TLN6YWB6D4",
+            "video_title" : "MVP SPACE VS O2 Ardeont 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243444031"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243449210"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243454537"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243457807"
+            }]
+        },
+        {
+            "no": "10-2",
+            "season_no" : "10",
+            "title" : "정규시즌 10경기",
+            "date" : "2018.03.27 9:00 오후",
+            "teamB_name": "O2 Ardeont",
+            "teamB_no": "8",
+            "teamB_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "MVP Space",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamA_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=5TLN6YWB6D4",
+            "video_title" : "MVP SPACE VS O2 Ardeont 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/243444031"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/243449210"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/243454537"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/243457807"
+            }]
+        },
+        {
+            "no": "11",
+            "season_no" : "10",
+            "title" : "정규시즌 11경기",
+            "date" : "2018.03.28 7:00 오후",
+            "teamA_name": "WGS LaurelS Nine",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Foxes",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=fDKc-dznzus",
+            "video_title" : "WGS Laurels Nine vs Foxes 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243810565"
+            }, {
+                "field_no": "2",
+               "field_name": "눔바니",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/243814460"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/243852524"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/243852962"
+            }]
+        },
+        {
+            "no": "11-2",
+            "season_no" : "10",
+            "title" : "정규시즌 11경기",
+            "date" : "2018.03.28 7:00 오후",
+            "teamB_name": "WGS LaurelS Nine",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "Foxes",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=fDKc-dznzus",
+            "video_title" : "WGS Laurels Nine vs Foxes 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/243810565"
+            }, {
+                "field_no": "2",
+               "field_name": "눔바니",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/243814460"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243852524"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243852962"
+            }]
+        },
+        {
+            "no": "12",
+            "season_no" : "10",
+            "title" : "정규시즌 12경기",
+            "date" : "2018.03.28 9:00 오후",
+            "teamA_name": "Element Mystic",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Kongdoo Panthera",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamB_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=_JBZM4wPCCc",
+            "video_title" : "Element Mysic vs Kongdoo Panthera 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/243853647"
+            }, {
+                "field_no": "2",
+               "field_name": "눔바니",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/243854350"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243854583"
+            }, {
+                "field_no": "4",
+                "field_name": "감시기지:지브롤터",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/243855100"
+            }]
+        },
+        {
+            "no": "12-2",
+            "season_no" : "10",
+            "title" : "정규시즌 12경기",
+            "date" : "2018.03.28 9:00 오후",
+            "teamB_name": "Element Mystic",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "Kongdoo Panthera",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamA_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=_JBZM4wPCCc",
+            "video_title" : "Element Mysic vs Kongdoo Panthera 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/243853647"
+            }, {
+                "field_no": "2",
+               "field_name": "눔바니",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/243854350"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/243854583"
+            }, {
+                "field_no": "4",
+                "field_name": "감시기지:지브롤터",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/243855100"
+            }]
+        },
+        {
+            "no": "13",
+            "season_no" : "10",
+            "title" : "정규시즌 13경기",
+            "date" : "2018.04.02 7:00 오후",
+            "teamB_name": "BlossoM",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamB_score" : "1",
+            "teamA_name": "X6 Gaming",
+            "teamA_no": "7",
+            "teamA_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamA_score" : "3",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "0",
+                "scoreA": "2"
+            }, {
+                "field_no": "2",
+               "field_name": "할리우드",
+                "scoreB": "1",
+                "scoreA": "2"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreB": "3",
+                "scoreA": "2"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "2",
+                "scoreA": "3"
+            }]
+        },
+        {
+            "no": "13-2",
+            "season_no" : "10",
+            "title" : "정규시즌 13경기",
+            "date" : "2018.04.02 7:00 오후",
+            "teamB_name": "X6 Gaming",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "BlossoM",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamA_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "2",
+                "scoreA": "0"
+            }, {
+                "field_no": "2",
+               "field_name": "할리우드",
+                "scoreB": "2",
+                "scoreA": "1"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreB": "2",
+                "scoreA": "3"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "3",
+                "scoreA": "2"
+            }]
+        },
+        {
+            "no": "14",
+            "season_no" : "10",
+            "title" : "정규시즌 14경기",
+            "date" : "2018.04.02 9:00 오후",
+            "teamB_name": "Runaway",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "O2 Ardeont",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamA_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "2",
+                "scoreA": "0"
+            }, {
+                "field_no": "2",
+               "field_name": "할리우드",
+                "scoreB": "4",
+                "scoreA": "5"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "2",
+                "scoreA": "1"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "3",
+                "scoreA": "2"
+            }]
+        },
+        {
+            "no": "14-2",
+            "season_no" : "10",
+            "title" : "정규시즌 14경기",
+            "date" : "2018.04.02 9:00 오후",
+            "teamB_name": "O2 Ardeont",
+            "teamB_no": "8",
+            "teamB_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamB_score" : "1",
+            "teamA_name": "Runaway",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamA_score" : "3",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "0",
+                "scoreA": "2"
+            }, {
+                "field_no": "2",
+               "field_name": "할리우드",
+                "scoreB": "5",
+                "scoreA": "4"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "1",
+                "scoreA": "2"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "2",
+                "scoreA": "3"
+            }]
+        },
+        {
+            "no": "15",
+            "season_no" : "10",
+            "title" : "정규시즌 15경기",
+            "date" : "2018.04.03 7:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "9",
+            "teamA_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "WGS LaurelS Nine",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamB_score" : "0",
+            "video_type" : "youtube",
+            "video_title" : "Seven vs WGS Laurels nine 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=ryMYzQZidq4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/246115282"
+            }, {
+                "field_no": "2",
+               "field_name": "눔바니",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/246115869"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/246121023"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/246126136"
+            }]
+        },
+        {
+            "no": "15-2",
+            "season_no" : "10",
+            "title" : "정규시즌 15경기",
+            "date" : "2018.04.03 7:00 오후",
+            "teamB_name": "Seven",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamB_score" : "4",
+            "teamA_name": "WGS LaurelS Nine",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamA_score" : "0",
+            "video_type" : "youtube",
+            "video_title" : "Seven vs WGS Laurels nine 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=ryMYzQZidq4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/246115282"
+            }, {
+                "field_no": "2",
+               "field_name": "눔바니",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/246115869"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "4",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/246121023"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/246126136"
+            }]
+        },
+        {
+            "no": "16",
+            "season_no" : "10",
+            "title" : "정규시즌 16경기",
+            "date" : "2018.04.03 9:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Element Mystic",
+            "teamB_no": "11",
+            "teamB_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "Meta Bellum vs Element Mystic 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=pCI-7OCh3e4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/246132403"
+            }, {
+                "field_no": "2",
+               "field_name": "왕의길",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/246137516"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/246145281"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/246152646"
+            }]
+        },
+        {
+            "no": "16-2",
+            "season_no" : "10",
+            "title" : "정규시즌 16경기",
+            "date" : "2018.04.03 9:00 오후",
+            "teamB_name": "Meta Bellum",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamB_score" : "1",
+            "teamA_name": "Element Mystic",
+            "teamA_no": "11",
+            "teamA_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamA_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "Meta Bellum vs Element Mystic 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=pCI-7OCh3e4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/246132403"
+            }, {
+                "field_no": "2",
+               "field_name": "왕의길",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/246137516"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/246145281"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/246152646"
+            }]
+        },
+        {
+            "no": "17",
+            "season_no" : "10",
+            "title" : "정규시즌 17경기",
+            "date" : "2018.04.04 7:00 오후",
+            "teamA_name": "Meta Athena",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamA_score" : "2",
+            "teamB_name": "Kongdoo Panthera",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "Meta Athena vs Kongdoo Panthera 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=kmP3_yW5ARQ",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/246489503"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/246494113"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/246496333"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/246500154"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "field_type" : "tie",
+                "video_url" : "https://www.twitch.tv/videos/246502359"
+            }]
+        },
+        {
+            "no": "17-2",
+            "season_no" : "10",
+            "title" : "정규시즌 17경기",
+            "date" : "2018.04.04 7:00 오후",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamB_score" : "2",
+            "teamA_name": "Kongdoo Panthera",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamA_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "Meta Athena vs Kongdoo Panthera 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=kmP3_yW5ARQ",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/246489503"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/246494113"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/246496333"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/246500154"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "scoreB": "0",
+                "scoreA": "2",
+                "field_type" : "tie",
+                "video_url" : "https://www.twitch.tv/videos/246502359"
+            }]
+        },
+        {
+            "no": "18",
+            "season_no" : "10",
+            "title" : "정규시즌 18경기",
+            "date" : "2018.04.04 9:00 오후",
+            "teamA_name": "MVP Space",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Foxes",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "MVP SPACE vs Foxes 하이라이트",
+            "video_url" : " https://www.youtube.com/watch?v=eQAtkEvpi-Q",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/246510670"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의 길",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/246522128"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/246525980"
+            }, {
+                "field_no": "4",
+               "field_name": "감시기지:지브롤터",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/246532779"
+            }]
+        },
+        {
+            "no": "18-2",
+            "season_no" : "10",
+            "title" : "정규시즌 18경기",
+            "date" : "2018.04.04 9:00 오후",
+            "teamB_name": "MVP Space",
+            "teamB_no": "10",
+            "teamB_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamB_score" : "1",
+            "teamA_name": "Foxes",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamA_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "MVP SPACE vs Foxes 하이라이트",
+            "video_url" : " https://www.youtube.com/watch?v=eQAtkEvpi-Q",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/246510670"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의 길",
+                "scoreB": "3",
+                "scoreA": "4",
+                "video_url" : "https://www.twitch.tv/videos/246522128"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/246525980"
+            }, {
+                "field_no": "4",
+               "field_name": "감시기지:지브롤터",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/246532779"
+            }]
+        },
+        {
+            "no": "19",
+            "season_no" : "10",
+            "title" : "정규시즌 19경기",
+            "date" : "2018.04.09 7:00 오후",
+            "teamA_name": "WGS LaurelS Nine",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Runaway",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_title" : "RunAway vs WGS Laurels Nine 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=dg63oLew7XQ",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/248378716"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248380894"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248383494"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248386564"
+            }]
+        },
+        {
+            "no": "19-2",
+            "season_no" : "10",
+            "title" : "정규시즌 19경기",
+            "date" : "2018.04.09 7:00 오후",
+            "teamB_name": "WGS LaurelS Nine",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "Runaway",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_title" : "RunAway vs WGS Laurels Nine 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=dg63oLew7XQ",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/248378716"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/248380894"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/248383494"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/248386564"
+            }]
+        },
+        {
+            "no": "20",
+            "season_no" : "10",
+            "title" : "정규시즌 20경기",
+            "date" : "2018.04.09 9:00 오후",
+            "teamA_name": "Element Mystic",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "BlossoM",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamB_score" : "0",
+            "video_type" : "youtube",
+            "video_title" : "Element Mystic vs BlossoM 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=yn30BQwxRDE",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/248394266"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/248398372"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248402208"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/248407406"
+            }]
+        },
+        {
+            "no": "20-2",
+            "season_no" : "10",
+            "title" : "정규시즌 20경기",
+            "date" : "2018.04.09 9:00 오후",
+            "teamB_name": "Element Mystic",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamB_score" : "4",
+            "teamA_name": "BlossoM",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamA_score" : "0",
+            "video_type" : "youtube",
+            "video_title" : "Element Mystic vs BlossoM 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=yn30BQwxRDE",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/248394266"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/248398372"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/248402208"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/248407406"
+            }]
+        },
+        {
+            "no": "21",
+            "season_no" : "10",
+            "title" : "정규시즌 21경기",
+            "date" : "2018.04.10 7:00 오후",
+            "teamB_name": "Kongdoo Panthera",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "X6 Gaming",
+            "teamA_no": "7",
+            "teamA_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_title" : "Kongdoo Panthera vs X6 Gaming 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=b-sM4Zp_Wbc",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/248738565"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "1",
+                "scoreA": "2"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "3",
+                "scoreA": "4"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreB": "1",
+                "scoreA": "2"
+            }]
+        },
+        {
+            "no": "21-2",
+            "season_no" : "10",
+            "title" : "정규시즌 21경기",
+            "date" : "2018.04.10 7:00 오후",
+            "teamB_name": "X6 Gaming",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamB_score" : "4",
+            "teamA_name": "Kongdoo Panthera",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamA_score" : "0",
+            "video_type" : "youtube",
+            "video_title" : "Kongdoo Panthera vs X6 Gaming 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=b-sM4Zp_Wbc",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "2",
+                "scoreA": "0"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "2",
+                "scoreA": "1"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "4",
+                "scoreA": "3"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreB": "2",
+                "scoreA": "1"
+            }]
+        },
+       {
+            "no": "22",
+            "season_no" : "10",
+            "title" : "정규시즌 22경기",
+            "date" : "2018.04.10 9:00 오후",
+            "teamA_name": "Foxes",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "O2 Ardeont",
+            "teamB_no": "8",
+            "teamB_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamB_score" : "2",
+            "video_type" : "youtube",
+            "video_title" : "Foxes vs O2 Ardeont 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=u8RzYR5BMHM",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/248759472"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248762983"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/248769622"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248773842"
+            },{
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "0"
+            }]
+        },
+        {
+            "no": "22-2",
+            "season_no" : "10",
+            "title" : "정규시즌 22경기",
+            "date" : "2018.04.10 9:00 오후",
+            "teamA_name": "O2 Ardeont",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamA_score" : "2",
+            "teamB_name": "Foxes",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamB_score" : "3",
+            "video_type" : "youtube",
+            "video_title" : "Foxes vs O2 Ardeont 하이라이트",
+            "video_url" : "https://www.youtube.com/watch?v=u8RzYR5BMHM",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/248759472"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/248762983"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/248769622"
+            }, {
+                "field_no": "4",
+               "field_name": "쓰레기촌",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/248773842"
+            },{
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "0",
+                "scoreB": "2"
+            }]
+        },
+       {
+            "no": "23",
+            "season_no" : "10",
+            "title" : "정규시즌 23경기",
+            "date" : "2018.04.11 7:00 오후",
+            "teamA_name": "MVP Space",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Seven",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamB_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/249107215"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/249111545"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/249117005"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/249121056"
+            }]
+        },
+        {
+            "no": "23-2",
+            "season_no" : "10",
+            "title" : "정규시즌 23경기",
+            "date" : "2018.04.11 7:00 오후",
+            "teamB_name": "MVP Space",
+            "teamB_no": "10",
+            "teamB_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "Seven",
+            "teamA_no": "9",
+            "teamA_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamA_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/249107215"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "5",
+                "scoreA": "4",
+                "video_url" : "https://www.twitch.tv/videos/249111545"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "3",
+                "scoreA": "4",
+                "video_url" : "https://www.twitch.tv/videos/249117005"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/249121056"
+            }]
+        },
+        {
+            "no": "24",
+            "season_no" : "10",
+            "title" : "정규시즌 24경기",
+            "date" : "2018.04.11 9:00 오후",
+            "teamA_name": "Meta Athena",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Meta Bellum",
+            "teamB_no": "11",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamB_score" : "3",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/249130991"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/249136196"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/249141193"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/249144418"
+            }]
+        },
+        {
+            "no": "24-2",
+            "season_no" : "10",
+            "title" : "정규시즌 24경기",
+            "date" : "2018.04.11 9:00 오후",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamB_score" : "1",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "11",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamA_score" : "3",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/249130991"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/249136196"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/249141193"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/249144418"
+            }]
+        },
+        {
+            "no": "25",
+            "season_no" : "10",
+            "title" : "정규시즌 25경기",
+            "date" : "2018.04.16 7:00 오후",
+            "teamA_name": "BlossoM",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Kongdoo Panthera",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=Xj2S9CZTNn8",
+            "video_title" : "BlossoM vs Kongdoo Panthera 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/250976278"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/250979596"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/250980662"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/250983649"
+            }]
+        },
+        {
+            "no": "25-2",
+            "season_no" : "10",
+            "title" : "정규시즌 25경기",
+            "date" : "2018.04.16 7:00 오후",
+            "teamB_name": "BlossoM",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/contenders/contenders_blossom_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "Kongdoo Panthera",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=Xj2S9CZTNn8",
+            "video_title" : "BlossoM vs Kongdoo Panthera 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/250976278"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/250979596"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/250980662"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/250983649"
+            }]
+        },
+        {
+            "no": "26",
+            "season_no" : "10",
+            "title" : "정규시즌 26경기",
+            "date" : "2018.04.16 9:00 오후",
+            "teamA_name": "Runaway",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Foxes",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamB_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=i4T9JKXwook",
+            "video_title" : "RunAway vs Foxes 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/250989705"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/250994547"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/250999997"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/251006476"
+            }]
+        },
+        {
+            "no": "26-2",
+            "season_no" : "10",
+            "title" : "정규시즌 26경기",
+            "date" : "2018.04.16 9:00 오후",
+            "teamB_name": "Runaway",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/contenders/contenders_Runaway_200.png",
+            "teamB_score" : "4",
+            "teamA_name": "Foxes",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/contenders/contenders_foxes_200.png",
+            "teamA_score" : "0",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=i4T9JKXwook",
+            "video_title" : "RunAway vs Foxes 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/250989705"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "4",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/250994547"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/250999997"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "4",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/251006476"
+            }]
+        },
+        {
+            "no": "27",
+            "season_no" : "10",
+            "title" : "정규시즌 27경기",
+            "date" : "2018.04.17 7:00 오후",
+            "teamA_name": "MVP Space",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "WGS LaurelS Nine",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamB_score" : "2",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=Wp1jtypuRrE",
+            "video_title" : "MVP SPACE vs WGS Laurels Nine 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/251331793"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/251334511"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/251338467"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251342224"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/251344861"
+            }]
+        },
+        {
+            "no": "27-2",
+            "season_no" : "10",
+            "title" : "정규시즌 27경기",
+            "date" : "2018.04.17 7:00 오후",
+            "teamB_name": "MVP Space",
+            "teamB_no": "10",
+            "teamB_img" : "/resources/images/contenders/contenders_mvp-space_200.png",
+            "teamB_score" : "3",
+            "teamA_name": "WGS LaurelS Nine",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/contenders/contenders_WGS_200.png",
+            "teamA_score" : "2",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=Wp1jtypuRrE",
+            "video_title" : "MVP SPACE vs WGS Laurels Nine 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/251331793"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/251334511"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreB": "2",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/251338467"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251342224"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/251344861"
+            }]
+        },
+        {
+            "no": "28",
+            "season_no" : "10",
+            "title" : "정규시즌 28경기",
+            "date" : "2018.04.17 9:00 오후",
+            "teamA_name": "Meta Athena",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Element Mystic",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=duMtXo-AKco",
+            "video_title" : "Element Mystic vs Meta Athena 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251353408"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251357155"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251366777"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/251367024"
+            }]
+        },
+        {
+            "no": "28-2",
+            "season_no" : "10",
+            "title" : "정규시즌 28경기",
+            "date" : "2018.04.17 9:00 오후",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "Element Mystic",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/contenders/contenders_element-mystic_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=duMtXo-AKco",
+            "video_title" : "Element Mystic vs Meta Athena 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251353408"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251357155"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251366777"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreB": "0",
+                "scoreA": "1",
+                "video_url" : "https://www.twitch.tv/videos/251367024"
+            }]
+        },
+        {
+            "no": "29",
+            "season_no" : "10",
+            "title" : "정규시즌 29경기",
+            "date" : "2018.04.18 7:00 오후",
+            "teamA_name": "X6 Gaming",
+            "teamA_no": "7",
+            "teamA_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Meta Bellum",
+            "teamB_no": "11",
+            "teamB_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamB_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=ABISgHsWT48",
+            "video_title" : "X6 Gaming vs Meta Bellum 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/251692249"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251694539"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/251697403"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/251701596"
+            }]
+        },
+        {
+            "no": "29-2",
+            "season_no" : "10",
+            "title" : "정규시즌 29경기",
+            "date" : "2018.04.18 7:00 오후",
+            "teamB_name": "X6 Gaming",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "teamB_score" : "3",
+            "teamAB_name": "Meta Bellum",
+            "teamA_no": "11",
+            "teamA_img" : "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "teamA_score" : "1",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=ABISgHsWT48",
+            "video_title" : "X6 Gaming vs Meta Bellum 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "2",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/251692249"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "3",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251694539"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreB": "1",
+                "scoreA": "0",
+                "video_url" : "https://www.twitch.tv/videos/251697403"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/251701596"
+            }]
+        },
+        {
+            "no": "30",
+            "season_no" : "10",
+            "title" : "정규시즌 30경기",
+            "date" : "2018.04.18 9:00 오후",
+            "teamA_name": "O2 Ardeont",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Seven",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamB_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=rzQmE4AnECs",
+            "video_title" : "O2 Ardeont vs Seven 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251708550"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/251712836"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/251717247"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "4",
+                "scoreB": "5",
+                "video_url" : "https://www.twitch.tv/videos/251725124"
+            }]
+        },
+        {
+            "no": "30-2",
+            "season_no" : "10",
+            "title" : "정규시즌 30경기",
+            "date" : "2018.04.18 9:00 오후",
+            "teamB_name": "O2 Ardeont",
+            "teamB_no": "8",
+            "teamB_img" : "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "teamB_score" : "0",
+            "teamA_name": "Seven",
+            "teamA_no": "9",
+            "teamA_img" : "/resources/images/contenders/contenders_seven_200.png",
+            "teamA_score" : "4",
+            "video_type" : "youtube",
+            "video_url" : "https://www.youtube.com/watch?v=rzQmE4AnECs",
+            "video_title" : "O2 Ardeont vs Seven 하이라이트",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreB": "0",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251708550"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreB": "2",
+                "scoreA": "3",
+                "video_url" : "https://www.twitch.tv/videos/251712836"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreB": "1",
+                "scoreA": "2",
+                "video_url" : "https://www.twitch.tv/videos/251717247"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreB": "4",
+                "scoreA": "5",
+                "video_url" : "https://www.twitch.tv/videos/251725124"
+            }]
+        }
+    ]
+}

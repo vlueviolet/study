@@ -1,0 +1,34 @@
+{
+    "seasons": [
+    {
+        "season_no": "10",
+        "season": "SEASON 1",
+        "title": "오버워치 컨텐더스 코리아",
+        "begin_date": "2018. 03. 19",
+        "end_date" : "2018. 05. 12",
+        "logo_image_path": "/resources/images/logo/logo_contenders.png",
+        "status": "",
+        "content": "대한민국 최고의 오버워치 팀들이 격돌하는 꿈의 무대 오버워치 컨덴더스 코리아.<br>매년 3번의 시즌이 개최되며, 12개 팀이 2개의 디비전으로 나뉘어 치열한 경합을 벌이고, 8강 플레이오프를 거쳐 파이널 무대를 통해 챔피언을 가리게됩니다.<br>오버워치 컨텐더스 코리아는 최고의 스포츠 전문 채널, MBC스포츠 플러스와 함께 합니다."
+    },
+    {
+        "season_no": "20",
+        "season": "SEASON 1",
+        "title": "오버워치 컨텐더스 트라이얼 코리아",
+        "begin_date": "2018. 02. 12",
+        "end_date" : "2018. 02. 28 ",
+        "logo_image_path": "/resources/images/logo/logo_trials.png",
+        "status": "",
+        "content": "차기 시즌 컨텐더스 진출을 위한 단 4개의 자리를 두고 펼치는 치열한 경쟁!<br>오픈디비전 상위 4팀과 이전 컨텐더스에서 플레이오프 진출에 실패한  컨텐더스 4팀, 총 8팀이 컨텐더스 진출을 두고 펼치는 승강리그입니다.<br>컨텐더스 트라이얼은 컨텐더스 시즌 전 약3 주 간 진행되며 8팀 풀리그를 통해 상위 4팀은 컨텐더스 출전권을 획득합니다."
+    },
+    {
+        "season_no": "30",
+        "season": "SEASON 2",
+        "title": "오버워치 오픈 디비전 코리아",
+        "begin_date": "2018. 04. 28",
+        "end_date" : "2018. 05. 26",
+        "logo_image_path": "/resources/images/logo/logo_division.png",
+        "status": "",
+        "content": "오버워치 오픈디비전 코리아는 세계적인 오버워치 스타 선수가 되기 위한 첫 여정입니다.<br>프로 선수가 되고 싶은 유저들이 팀으로 모여 그 능력을 시험해 볼 수 있는 공간으로, 프로가 되기 위한 길로 향하는 첫 번째 관문입니다."
+    }
+    ]
+}

@@ -1,0 +1,46 @@
+// #footer .list_partner li a {
+//     @include sprite(pc, '../img/sprite.png', 1px, 1px);
+// }
+
+// .hourly_bonus{
+//     .num{
+//         @include sprite(pc, '../img/sp_hourly_bonus.png', 1px, 1px);
+//     }
+//     &.on{
+//         .num{
+//             background-image: url(../img/sp_hourly_bonus2.png);
+//         }
+//     }
+// }
+
+// .special_offer{
+//     .num{
+//         @include sprite(pc, '../img/sp_special_offer.png', 1px, 1px);
+//     }
+// }
+
+// .special_money{
+//     .num{
+//         @include sprite(pc, '../img/sp_special_money.png', 1px, 1px);
+//     }
+// }
+
+// .welcome_money{
+//     .num{
+//         @include sprite(pc, '../img/sp_welcome.png', 1px, 1px);
+//     }
+// }
+
+// .mobile{
+//     .time_info .time:before,
+//     #footer li a{
+//         @include background-size(250px, auto);
+//     }
+//     .layer_specialoffer{
+//         .special_money{
+//             .num{
+//                 @include sprite(mobile, '../img/sp_special_money_m.png', 275px, auto);
+//             }
+//         }
+//     }
+// }

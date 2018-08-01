@@ -1,0 +1,784 @@
+{
+    "teams": [
+        {
+            "team_no": "1",
+            "team_name": "BlossoM",
+            "logo_img": "/resources/images/contenders/contenders_blossom_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, BlossoM 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "권동현",
+                "battle_tag": "iNSANE",
+                "role_code": "CG0006010", 
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/BlossoM_03.png"
+            }, {
+                "player_name": "박제민",
+                "battle_tag": "ILLICIT",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/BlossoM_04.png"
+            }, {
+                "player_name": "신동훈",
+                "battle_tag": "SeeYa",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/BlossoM_02.png"
+            }, {
+                "player_name": "신현종",
+                "battle_tag": "dotori",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/BlossoM_05.png"
+            }, {
+                "player_name": "이성우",
+                "battle_tag": "Mineral",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/BlossoM_01.png"
+            }, {
+                "player_name": "이선창",
+                "battle_tag": "ANS",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/BlossoM_07.png"
+            }, {
+                "player_name": "장성원",
+                "battle_tag": "Swoon",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/BlossoM_06.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/teamblossom1014/"},
+                {"twitter" : "https://twitter.com/teamblossom1014"},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "5",
+            "team_name": "Element Mystic",
+            "logo_img": "/resources/images/contenders/contenders_element-mystic_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Element Mystic 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "김영한",
+                "battle_tag": "SP9RK1E",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_04.png"
+            }, {
+                "player_name": "김준근",
+                "battle_tag": "Rapel",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_03.png"
+            }, {
+                "player_name": "박현준",
+                "battle_tag": "Pokpo",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_07.png"
+            }, {
+                "player_name": "서동형",
+                "battle_tag": "DACO",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_05.png"
+            }, {
+                "player_name": "이승수",
+                "battle_tag": "Jecse",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_02.png"
+            }, {
+                "player_name": "이희동",
+                "battle_tag": "Guard",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_01.png"
+            }, {
+                "player_name": "정기효",
+                "battle_tag": "Xzi",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Element-Mystic_06.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/ElementMystic/"},
+                {"twitter" : "https://twitter.com/ElementMystic"},
+                {"instagram" : ""},
+                {"youtube" : "https://www.youtube.com/channel/UCn6W0S7aQM3XkA18QvJ36Yw/featured"},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "4",
+            "team_name": "Foxes",
+            "logo_img": "/resources/images/contenders/contenders_foxes_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Foxes 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "강재환",
+                "battle_tag": "Adora",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Foxes_01.png"
+            }, {
+                "player_name": "김근형",
+                "battle_tag": "E1kino",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Foxes_02.png"
+            }, {
+                "player_name": "김민철",
+                "battle_tag": "NEED",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Foxes_03.png"
+            }, {
+                "player_name": "박현준",
+                "battle_tag": "Oparochi",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Foxes_04.png"
+            }, {
+                "player_name": "송상현",
+                "battle_tag": "Sasin",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Foxes_05.png"
+            }, {
+                "player_name": "서지원",
+                "battle_tag": "Stand1",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Foxes_06.png"
+            }, {
+                "player_name": "최대한",
+                "battle_tag": "JeungMac",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Foxes_07.png"
+            }, {
+                "player_name": "이정훈",
+                "battle_tag": "Pumple",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Foxes_09.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/FOXESOW/"},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "3",
+            "team_name": "Kongdoo Panthera",
+            "logo_img": "/resources/images/contenders/contenders_kongdoo-panthera_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Kongdoo Panthera 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "계창훈",
+                "battle_tag": "r0ar",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_02.png"
+            }, {
+                "player_name": "문창식",
+                "battle_tag": "ChangSik",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_03.png"
+            }, {
+                "player_name": "손경우",
+                "battle_tag": "CoMa",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_04.png"
+            }, {
+                "player_name": "양성현",
+                "battle_tag": "Luffy",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_05.png"
+            }, {
+                "player_name": "양진혁",
+                "battle_tag": "DDing",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_06.png"
+            }, {
+                "player_name": "장귀운",
+                "battle_tag": "Decay",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_07.png"
+            }, {
+                "player_name": "진영진",
+                "battle_tag": "YOUNGJIN",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member_default.png"
+            }, {
+                "player_name": "방민준",
+                "battle_tag": "Shubil",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_08.png"
+            }, {
+                "player_name": "최세환",
+                "battle_tag": "ChoiSehwan",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Kongdoo-Panthera_09.png"
+            }],
+            "social" :
+            [
+                {"homepage" : "https://kongdoo.com/"},
+                {"facebook" : "https://www.facebook.com/teamkongdoo/"},
+                {"twitter" : "https://twitter.com/teamKONGDOO"},
+                {"instagram" : "https://www.instagram.com/kongdoo_/"},
+                {"youtube" : "https://www.youtube.com/channel/UCjUnGEpXa5xddXeofsY05jw"},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "8",
+            "team_name": "O2 Ardeont",
+            "logo_img": "/resources/images/contenders/contenders_o2-ardeont_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, O2 Ardeont 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "맹주호",
+                "battle_tag": "climax",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_01.png"
+            }, {
+                "player_name": "박민기",
+                "battle_tag": "Viol2t",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_02.png"
+            }, {
+                "player_name": "박재호",
+                "battle_tag": "RaiN",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_03.png"
+            }, {
+                "player_name": "이대현",
+                "battle_tag": "HOOMBABA",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_04.png"
+            }, {
+                "player_name": "이도형",
+                "battle_tag": "Stellar",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_05.png"
+            }, {
+                "player_name": "이승현",
+                "battle_tag": "ivy",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_06.png"
+            }, {
+                "player_name": "이주협",
+                "battle_tag": "WhyNot",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_07.png"
+            }, {
+                "player_name": "조경무",
+                "battle_tag": "Yakpung",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/O2Ardeont_08.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/O2Ardeont-183386172418156/"},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "2",
+            "team_name": "Runaway",
+            "logo_img": "/resources/images/contenders/contenders_Runaway_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Runaway 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "김효종",
+                "battle_tag": "Haksal",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Runaway_01.png"
+            }, {
+                "player_name": "박상범",
+                "battle_tag": "BUMPER",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Runaway_02.png"
+            }, {
+                "player_name": "이충희",
+                "battle_tag": "Stitch",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Runaway_04.png"
+            }, {
+                "player_name": "이주석",
+                "battle_tag": "TwilighT",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Runaway_05.png"
+            }, {
+                "player_name": "최현우",
+                "battle_tag": "Jjanu",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Runaway_06.png"
+            }, {
+                "player_name": "김성준",
+                "battle_tag": "slime",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Runaway_08.png"
+            }],
+            "social" :
+            [
+                {"homepage" : "http://cafe.naver.com/runawaycafe"},
+                {"facebook" : ""},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "6",
+            "team_name": "WGS LaurelS Nine",
+            "logo_img": "/resources/images/contenders/contenders_WGS_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, WGS LaurelS Nine 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "김영재",
+                "battle_tag": "Order",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/4_WGS_04.png"
+            }, {
+                "player_name": "신세원",
+                "battle_tag": "BERNAR",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/4_WGS_05.png"
+            }, {
+                "player_name": "이정헌",
+                "battle_tag": "MonsterZEBAG",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/4_WGS_06.png"
+            }, {
+                "player_name": "이주영",
+                "battle_tag": "JuYoung",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/4_WGS_03.png"
+            }, {
+                "player_name": "정형진",
+                "battle_tag": "Sky",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/4_WGS_02.png"
+            }, {
+                "player_name": "김진",
+                "battle_tag": "JINI",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/4_WGS_07.png"
+            }, {
+                "player_name": "박민석",
+                "battle_tag": "Arrow",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/4_WGS_08.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/WGS_Laurels-Nine-2061785377383353/"},
+                {"twitter" : ""},
+                {"instagram" : "https://www.instagram.com/world_game_star"},
+                {"youtube" : "https://www.youtube.com/channel/UCkO-Jm20SpGGGiocz7Y8G0g?view_as=subscriber"},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "7",
+            "team_name": "X6 Gaming",
+            "logo_img": "/resources/images/contenders/contenders_X6-Gaming_200.png",
+            "team_type" : "fixed",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, X6 Gaming 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "김경보",
+                "battle_tag": "GODSB",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_02.png"
+            }, {
+                "player_name": "박민호",
+                "battle_tag": "ARCHITECT",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_06.png"
+            }, {
+                "player_name": "박주성",
+                "battle_tag": "ROKI",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_03.png"
+            }, {
+                "player_name": "윤희창",
+                "battle_tag": "BEBE",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_01.png"
+            }, {
+                "player_name": "이상범",
+                "battle_tag": "BQB",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_07.png"
+            }, {
+                "player_name": "정다운",
+                "battle_tag": "NOSMITE",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_05.png"
+            }, {
+                "player_name": "최효빈",
+                "battle_tag": "CHOIHYOBIN",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_04.png"
+            }, {
+                "player_name": "박성욱",
+                "battle_tag": "Ria",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_08.png"
+            }, {
+                "player_name": "임길성",
+                "battle_tag": "Glister",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/X6-Gaming_09.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/X6gaming.GCELL/"},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "9",
+            "team_name": "Seven",
+            "team_type" : "temp",
+            "logo_img": "/resources/images/contenders/contenders_seven_200.png",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Seven 입니다",
+            "location": "",
+            "team_picture": "/resources/images/contenders/Seven.png",
+            "players": [{
+                "player_name": "김영준",
+                "battle_tag": "Mika",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Seven_01.png"
+            }, {
+                "player_name": "박준기",
+                "battle_tag": "Bazzi",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Seven_02.png"
+            }, {
+                "player_name": "신윤호",
+                "battle_tag": "Ukn0w",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Seven_04.png"
+            },{
+                "player_name": "안형근",
+                "battle_tag": "Revenge",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Seven_05.png"
+            }, {
+                "player_name": "윤태인",
+                "battle_tag": "FR3E",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Seven_06.png"
+            }, {
+                "player_name": "이유석",
+                "battle_tag": "eVo",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Seven_07.png"
+            }, {
+                "player_name": "이호성",
+                "battle_tag": "Ttuba",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Seven_08.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/sevengaiming/"},
+                {"twitter" : "https://twitter.com/TeamSeven7_"},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "10",
+            "team_name": "MVP Space",
+            "team_type" : "temp",
+            "logo_img": "/resources/images/contenders/contenders_mvp-space_200.png",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, MVP Space 입니다",
+            "location": "",
+            "team_picture": "/resources/images/contenders/MVP.png",
+            "players": [{
+                "player_name": "김동욱",
+                "battle_tag": "BiaNcA",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/MVP_01.png"
+            }, {
+                "player_name": "김준기",
+                "battle_tag": "Yaki",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/MVP_02.png"
+            }, {
+                "player_name": "김진흥",
+                "battle_tag": "OneFact",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/MVP_03.png"
+            }, {
+                "player_name": "김태훈",
+                "battle_tag": "Fuze",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/MVP_04.png"
+            }, {
+                "player_name": "손영우",
+                "battle_tag": "Undine",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/MVP_05.png"
+            }, {
+                "player_name": "유성준",
+                "battle_tag": "QoQ",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/MVP_06.png"
+            },  {
+                "player_name": "정승민",
+                "battle_tag": "Tydolla",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/MVP_07.png"
+            }, {
+                "player_name": "함은상",
+                "battle_tag": "Oberon",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/MVP_09.png"
+            }],
+            "social" :
+            [
+                {"homepage" : "http://teammvp.gg/"},
+                {"facebook" : "https://www.facebook.com/MVPSC2"},
+                {"twitter" : "https://twitter.com/mvp_gg"},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "11",
+            "team_name": "Meta Bellum",
+            "team_type" : "temp",
+            "logo_img": "/resources/images/contenders/contenders_Meta-Bellum_200.png",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Meta Bellum 입니다",
+            "location": "",
+            "team_picture": "/resources/images/contenders/Meta-Bellum.png",
+            "players": [{
+                "player_name": "권민석",
+                "battle_tag": "AimGod",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_01.png"
+            }, {
+                "player_name": "김정연",
+                "battle_tag": "Chara",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_02.png"
+            }, {
+                "player_name": "오승표",
+                "battle_tag": "Rio",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_03.png"
+            }, {
+                "player_name": "이호성",
+                "battle_tag": "Na1st",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_04.png"
+            }, {
+                "player_name": "장민기",
+                "battle_tag": "CCJ",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_05.png"
+            }, {
+                "player_name": "조현우",
+                "battle_tag": "Hyeonu",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_06.png"
+            }, {
+                "player_name": "최재훈",
+                "battle_tag": "Hoon",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Meta-Bellum_07.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/themetagaming/"},
+                {"twitter" : "https://twitter.com/TheMetaGaming"},
+                {"instagram" : "https://www.instagram.com/themetagaming/"},
+                {"youtube" : ""},
+                {"twitch" : "https://www.twitch.tv/the_metagaming"}
+            ]
+        },
+        {
+            "team_no": "12",
+            "team_name": "Meta Athena",
+            "team_type" : "temp",
+            "logo_img": "/resources/images/contenders/contenders_Meta-Athena_200.png",
+            "mobile_img": "",
+            "team_introduction": "안녕하세요, Meta Athena 입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "권순빈",
+                "battle_tag": "BigBox",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_01.png"
+            }, {
+                "player_name": "김지석",
+                "battle_tag": "LukB",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_11.png"
+            }, {
+                "player_name": "김향기",
+                "battle_tag": "Sansam",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_04.png"
+            }, {
+                "player_name": "오석현",
+                "battle_tag": "Innovation",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_10.png"
+            }, {
+                "player_name": "윤창식",
+                "battle_tag": "dissme",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_08.png"
+            }, {
+                "player_name": "최성환",
+                "battle_tag": "SonGBoos",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_09.png"
+            }, {
+                "player_name": "최준수",
+                "battle_tag": "Kris",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/contenders/Meta-Athena_06.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/themetagaming/"},
+                {"twitter" : "https://twitter.com/TheMetaGaming"},
+                {"instagram" : "https://www.instagram.com/themetagaming/"},
+                {"youtube" : ""},
+                {"twitch" : "https://www.twitch.tv/the_metagaming"}
+            ]
+        }
+    ]
+}

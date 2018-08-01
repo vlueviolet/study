@@ -1,0 +1,785 @@
+{
+    "teams": [
+        {
+            "team_no": "1",
+            "team_name": "Afresh",
+            "logo_img": "/resources/images/division/OpenDivision_Afresh_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_Afresh_58.png",
+            "team_introduction": "안녕하세요. Afresh 팀입니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "이영현",
+                "battle_tag": "ashtakoyaki",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "신승민",
+                "battle_tag": "SSM",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "차동규",
+                "battle_tag": "ashslay",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이승준",
+                "battle_tag": "Rvladiz",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "손찬영",
+                "battle_tag": "PLAYMAKER",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "안지성",
+                "battle_tag": "GH2HIKS",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }],
+            "social" : 
+            [
+                {"homepage" : "https://valiant.overwatchleague.com/en-us"},
+                {"facebook" : "https://www.facebook.com/LAValiant/"},
+                {"twitter" : "https://twitter.com/lavaliant"},
+                {"instagram" : "https://www.instagram.com/lavaliant/"},
+                {"youtube" : "https://www.youtube.com/LAValiant"},
+                {"twitch" : "https://www.twitch.tv/lavaliant"}
+            ]
+        },
+        {
+            "team_no": "2",
+            "team_name": "BWW",
+            "logo_img": "/resources/images/division/OpenDivision_BWW_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_BWW_58.png",
+            "team_introduction": "BWW는 Black Wolf Warrior 의 약자입니다. 6명 정규멤버로 출전합니다. 우승을 목표로 많은 팀들과의 경쟁에서 저흰 살아남을 것 입니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "김규호",
+                "battle_tag": "구원은희생을동반",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "오민주",
+                "battle_tag": "mutoo",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "홍민철",
+                "battle_tag": "C0DENAME92",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김민서",
+                "battle_tag": "충렬고민겐지",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "오태환",
+                "battle_tag": "Omnipotent",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "최준영",
+                "battle_tag": "OLNL",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }],
+            "social" : 
+            [
+                {"homepage" : "https://valiant.overwatchleague.com/en-us"},
+                {"facebook" : "https://www.facebook.com/LAValiant/"},
+                {"twitter" : "https://twitter.com/lavaliant"},
+                {"instagram" : "https://www.instagram.com/lavaliant/"},
+                {"youtube" : "https://www.youtube.com/LAValiant"},
+                {"twitch" : "https://www.twitch.tv/lavaliant"}
+            ]
+        },
+        {
+            "team_no": "3",
+            "team_name": "코코 양치해또",
+            "logo_img": "/resources/images/division/OpenDivision_coco_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_coco_58.png",
+            "team_introduction": "",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "정윤관",
+                "battle_tag": "xqc",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이수빈",
+                "battle_tag": "ZERO",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이윤혁",
+                "battle_tag": "absolutezero",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김다한",
+                "battle_tag": "CDTAWP",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "권홍신",
+                "battle_tag": "awewatch",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김태곤",
+                "battle_tag": "CDTNYANG",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }],
+            "social" : 
+            [
+                {"homepage" : "https://valiant.overwatchleague.com/en-us"},
+                {"facebook" : "https://www.facebook.com/LAValiant/"},
+                {"twitter" : "https://twitter.com/lavaliant"},
+                {"instagram" : "https://www.instagram.com/lavaliant/"},
+                {"youtube" : "https://www.youtube.com/LAValiant"},
+                {"twitch" : "https://www.twitch.tv/lavaliant"}
+            ]
+        },
+        {
+            "team_no": "4",
+            "team_name": "CRusher",
+            "logo_img": "/resources/images/division/OpenDivision_CRusher_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_CRusher_58.png",
+            "team_introduction": "안녕하세요. CRusher 입니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "오상민",
+                "battle_tag": "Insight",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김태완",
+                "battle_tag": "Brush",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김민찬",
+                "battle_tag": "Jindol",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김대현",
+                "battle_tag": "JaMonge",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "서원중",
+                "battle_tag": "Named",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정영훈",
+                "battle_tag": "Krillin",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }],
+            "social" : 
+            [
+                {"homepage" : "https://valiant.overwatchleague.com/en-us"},
+                {"facebook" : "https://www.facebook.com/LAValiant/"},
+                {"twitter" : "https://twitter.com/lavaliant"},
+                {"instagram" : "https://www.instagram.com/lavaliant/"},
+                {"youtube" : "https://www.youtube.com/LAValiant"},
+                {"twitch" : "https://www.twitch.tv/lavaliant"}
+            ]
+        },
+        {
+            "team_no": "5",
+            "team_name": "EXL-CLEA",
+            "logo_img": "/resources/images/division/OpenDivision_EXLCLEA_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_EXLCLEA_200.png",
+            "team_introduction": "Exl clea 팀입니다. 잘 부탁드립니다.",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "이성종",
+                "battle_tag": "Crix",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, { 
+                "player_name": "임재혁",
+                "battle_tag": "F4zE",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "장석영",
+                "battle_tag": "Victorious",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이동훈",
+                "battle_tag": "Xer0eR",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "김건",
+                "battle_tag": "Espresso",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "김동현",
+                "battle_tag": "Joy",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }],
+            "social" : 
+            [
+                {"homepage" : "https://valiant.overwatchleague.com/en-us"},
+                {"facebook" : "https://www.facebook.com/LAValiant/"},
+                {"twitter" : "https://twitter.com/lavaliant"},
+                {"instagram" : "https://www.instagram.com/lavaliant/"},
+                {"youtube" : "https://www.youtube.com/LAValiant"},
+                {"twitch" : "https://www.twitch.tv/lavaliant"}
+            ]
+        },
+        {
+            "team_no": "6",
+            "team_name": "Extream Gamer",
+            "logo_img": "/resources/images/division/OpenDivision_ExtreamGamer_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_ExtreamGamer_200.png",
+            "team_introduction": "친구들과 함께 추억을 만들기위한 팀입니다!",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "오대민",
+                "battle_tag": "카이저",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "전명진",
+                "battle_tag": "Vonrenfrew",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정성용",
+                "battle_tag": "Project3",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김도현",
+                "battle_tag": "LEED",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "이효준",
+                "battle_tag": "ryujehong",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정민우",
+                "battle_tag": "jamba",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "7",
+            "team_name": "FatCat",
+            "logo_img": "/resources/images/division/OpenDivision_FatCat_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_FatCat_200.png",
+            "team_introduction": "안녕하세요, Apex 챌린저스 시즌 4에 참가했던 FatCat 팀 입니다. (前 Nc Wolves)",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "손동호",
+                "battle_tag": "DPS",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이영회",
+                "battle_tag": "반가워오리츠애오",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김태훈",
+                "battle_tag": "Ncedison",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "조명흠",
+                "battle_tag": "갓세정",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "최용주",
+                "battle_tag": "JJANGGU",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "권준",
+                "battle_tag": "Fielder",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "8",
+            "team_name": "LEOS",
+            "logo_img": "/resources/images/division/OpenDivision_LEOS_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_LEOS_58.png",
+            "team_introduction": "레오스팀 디비전 우승을 목표로 지원했습니다 열심히 하겠습니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "김민욱",
+                "battle_tag": "Nix",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "강보현",
+                "battle_tag": "Juru",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이동재",
+                "battle_tag": "Bling",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이주연",
+                "battle_tag": "SHADE",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "안준영",
+                "battle_tag": "UMR",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "지상운",
+                "battle_tag": "WHY",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "9",
+            "team_name": "Mad Dogs",
+            "logo_img": "/resources/images/division/OpenDivision_MadDogs_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_MadDogs_58.png",
+            "team_introduction": "미친개처럼 물어뜯어서 우승까지 달리도록 하겠습니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "곽민서",
+                "battle_tag": "OIEI",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이준호",
+                "battle_tag": "Onlyparah",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정승용",
+                "battle_tag": "TopDragon",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "탁후익",
+                "battle_tag": "MadHMP",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "김채환",
+                "battle_tag": "MaD1SS",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "탁후익",
+                "battle_tag": "Madrico",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "10",
+            "team_name": "MAXTILL TK",
+            "logo_img": "/resources/images/division/OpenDivision_MAXTILLTK_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_MAXTILLTK_58.png",
+            "team_introduction": "디비전 겐르시 1위팀 입니다. 겐르시는 이겨드리겠습니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "배지혁",
+                "battle_tag": "Enocass",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "황석현",
+                "battle_tag": "화현",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정희수",
+                "battle_tag": "h1imgosu",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정다운",
+                "battle_tag": "정다운",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "신동재",
+                "battle_tag": "녹떼님",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이병용",
+                "battle_tag": "Maxtilldaero",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "11",
+            "team_name": "Milky way",
+            "logo_img": "/resources/images/division/OpenDivision_MilkyWay_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_MilkyWay_58.png",
+            "team_introduction": "저희는 정말 정말 프로가 되고 싶은 사람들로 모아진 신생팀이에요. 연습은 많이 하지 않았지만 ! 우승할거에요.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "이민석",
+                "battle_tag": "kago",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "조성현",
+                "battle_tag": "MwHyuOeng",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "안예승",
+                "battle_tag": "Perfact",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "박규민",
+                "battle_tag": "MwB3lievE",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "전종운",
+                "battle_tag": "MWPuRin",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김민재",
+                "battle_tag": "MwUlsanGuy",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "12",
+            "team_name": "Requiem Six",
+            "logo_img": "/resources/images/division/OpenDivision_RequiemSix_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_RequiemSix_58.png",
+            "team_introduction": "우린 최강이다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "심재환",
+                "battle_tag": "Lowell",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "최종혁",
+                "battle_tag": "R6Ta1ent",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "심석호",
+                "battle_tag": "R6TYG",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "오윤성",
+                "battle_tag": "R6HeiMish",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "이상현",
+                "battle_tag": "R6Waffle",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "임환",
+                "battle_tag": "R6FixMe",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "13",
+            "team_name": "RMG",
+            "logo_img": "/resources/images/division/OpenDivision_RMG_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_RMG_58.png",
+            "team_introduction": "저희의 모토는 즐거운게임이지만 그 모토와는 다르게 다른팀을 다 패버리는 이상한팀입니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "서준원",
+                "battle_tag": "Metamont",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이주형",
+                "battle_tag": "루트",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "민정기",
+                "battle_tag": "Effect",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "박영민",
+                "battle_tag": "Mintong",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "강성민",
+                "battle_tag": "FRODO",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "국선기",
+                "battle_tag": "모브",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "14",
+            "team_name": "Team Nexus",
+            "logo_img": "/resources/images/division/OpenDivision_TeamNexus_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_TeamNexus_58.png",
+            "team_introduction": "즐겁게 싸울줄 아는 아재들이 뭉쳤다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "이재근",
+                "battle_tag": "TaKaGi",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "안호진",
+                "battle_tag": "TMNXSSONZ",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "김재호",
+                "battle_tag": "자두꺼",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "류용현",
+                "battle_tag": "TMNXCracker",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "원수민",
+                "battle_tag": "TMNXSoomin",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "황정훈",
+                "battle_tag": "TMNXCRO",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "15",
+            "team_name": "The Face",
+            "logo_img": "/resources/images/division/OpenDivision_TheFace_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_TheFace_58.png",
+            "team_introduction": "안녕하세요. The Face입니다. 즐기고 최선을 다하겠습니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "박성건",
+                "battle_tag": "onlyglory",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "서석규",
+                "battle_tag": "서석규",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "손민효",
+                "battle_tag": "Drowsy",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이민성",
+                "battle_tag": "WaterFlame",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "김정민",
+                "battle_tag": "icecake",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이호민",
+                "battle_tag": "WhoAmI",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        },
+        {
+            "team_no": "16",
+            "team_name": "veritas",
+            "logo_img": "/resources/images/division/OpenDivision_veritas_200.png",
+            "mobile_img": "/resources/images/division/OpenDivision_veritas_58.png",
+            "team_introduction": "안녕하세요. veritas 팀입니다.",
+            "location": "",
+            "team_picture": "/resources/images/division/@team_logo_big.png",
+            "players": [{
+                "player_name": "원지섭",
+                "battle_tag": "JiSeuBi",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "이종수",
+                "battle_tag": "whereru",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "권동현",
+                "battle_tag": "iNSANE",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "오동호",
+                "battle_tag": "보신탕집멍멍이",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            },{
+                "player_name": "송지훈",
+                "battle_tag": "daydream",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }, {
+                "player_name": "정현우",
+                "battle_tag": "정현우",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "/resources/images/team/@team_member.png"
+            }]
+        }
+    ]
+}

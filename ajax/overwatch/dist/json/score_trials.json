@@ -1,0 +1,1143 @@
+{
+    "score": [
+        {
+            "no": "1",
+            "season_no" : "20",
+            "title" : "정규시즌 1경기",
+            "date" : "2018.02.12 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236079689"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236079974"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236080215"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236080452"
+            }]
+        },{
+            "no": "2",
+            "season_no" : "20",
+            "title" : "정규시즌 2경기",
+            "date" : "2018.02.12 3:00 오후",
+            "teamA_name": "MVP SPACE",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "BSG",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamB_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236080970"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236081335"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236081848"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236082611"
+            }]
+        },
+        {
+            "no": "3",
+            "season_no" : "20",
+            "title" : "정규시즌 3경기",
+            "date" : "2018.02.12 3:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamB_score" : "2",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236083254"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236083465"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야 인더스트리",
+                "scoreA": "3",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236083755"
+            }, {
+                "field_no": "4",
+                "field_name": "지브롤터 감시기지",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236084247"
+            }]
+        },
+        {
+            "no": "4",
+            "season_no" : "20",
+            "title" : "정규시즌 4경기",
+            "date" : "2018.02.13 3:00 오후",
+            "teamA_name": "EXL-CLEA",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "CRusher",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236084845"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236085213"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236085501"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236085856"
+            }]
+        },
+        {
+            "no": "5",
+            "season_no" : "20",
+            "title" : "정규시즌 5경기",
+            "date" : "2018.02.13 3:00 오후",
+            "teamA_name": "BSG",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236087596"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236087826"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "4",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236088078"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236097727"
+            }]
+        },
+        {
+            "no": "6",
+            "season_no" : "20",
+            "title" : "정규시즌 6경기",
+            "date" : "2018.02.13 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamB_score" : "4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236088928"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236089140"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236089339"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236089622"
+            }]
+        },
+        {
+            "no": "7",
+            "season_no" : "20",
+            "title" : "정규시즌 7경기",
+            "date" : "2018.02.14 3:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "CRusher",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236090902"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236091403"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236091859"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236092353"
+            }]
+        },
+        {
+            "no": "8",
+            "season_no" : "20",
+            "title" : "정규시즌 8경기",
+            "date" : "2018.02.14 3:00 오후",
+            "teamA_name": "MVP SPACE",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236092705"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236092950"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236093098"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236093326"
+            }]
+        },
+        {
+            "no": "9",
+            "season_no" : "20",
+            "title" : "정규시즌 9경기",
+            "date" : "2018.02.14 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "BSG",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamB_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236093619"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/236093896"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236094100"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236094311"
+            }]
+        },
+        {
+            "no": "10",
+            "season_no" : "20",
+            "title" : "정규시즌 10경기",
+            "date" : "2018.02.19 3:00 오후",
+            "teamA_name": "CRusher",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamB_score" : "4",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/230576660",
+            "video_title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 4일차 ㅣ Crusher vs Meta Athena",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236095688"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236095920"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236096461"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236096711"
+            }]
+        },
+        {
+            "no": "11",
+            "season_no" : "20",
+            "title" : "정규시즌 11경기",
+            "date" : "2018.02.19 3:00 오후",
+            "teamA_name": "EXL-CLEA",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamA_score" : "2",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "3",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236097133"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236097334"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236097533"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236097727"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "1",
+                "scoreB": "2"
+            }]
+        },
+        {
+            "no": "12",
+            "season_no" : "20",
+            "title" : "정규시즌 12경기",
+            "date" : "2018.02.19 3:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "MVP SPACE",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamB_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236098288"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/236098473"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236098760"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236098954"
+            }]
+        },
+        {
+            "no": "13",
+            "season_no" : "20",
+            "title" : "정규시즌 13경기",
+            "date" : "2018.02.20 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "CRusher",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamB_score" : "0",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/230910465",
+            "video_title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 5일차 ㅣ Seven vs Crusher",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236099619"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236099861"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236100071"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236100354"
+            }]
+        },
+        {
+            "no": "14",
+            "season_no" : "20",
+            "title" : "정규시즌 14경기",
+            "date" : "2018.02.20 3:00 오후",
+            "teamA_name": "EXL-CLEA",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "BSG",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamB_score" : "4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236100544"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/236100689"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236100831"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236100970"
+            }]
+        },
+        {
+            "no": "15",
+            "season_no" : "20",
+            "title" : "정규시즌 15경기",
+            "date" : "2018.02.20 3:00 오후",
+            "teamA_name": "MVP SPACE",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamB_score" : "1",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236101187"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236101358"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236101544"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236101734"
+            }]
+        },
+        {
+            "no": "16",
+            "season_no" : "20",
+            "title" : "정규시즌 16경기",
+            "date" : "2018.02.20 3:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236095688"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236095920"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236096461"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236096711"
+            }]
+        },
+        {
+            "no": "17",
+            "season_no" : "20",
+            "title" : "정규시즌 17경기",
+            "date" : "2018.02.21 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamB_score" : "0",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/231229862",
+            "video_title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 6일차 ㅣ SEVEN vs EXL CLEA",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236103880"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236104076"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236104489"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236104821"
+            }]
+        },
+        {
+            "no": "18",
+            "season_no" : "20",
+            "title" : "정규시즌 18경기",
+            "date" : "2018.02.21 3:00 오후",
+            "teamA_name": "MVP SPACE",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "CRusher",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236105334"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236105535"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236105639"
+            }, {
+                "field_no": "4",
+                "field_name": "감시기지 지브롤터",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236105788"
+            }]
+        },
+        {
+            "no": "19",
+            "season_no" : "20",
+            "title" : "정규시즌 19경기",
+            "date" : "2018.02.21 3:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "BSG",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamB_score" : "2",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236106028"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236106207"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌달기지",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236106501"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236106692"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "0"
+            }]
+        },
+        {
+            "no": "20",
+            "season_no" : "20",
+            "title" : "정규시즌 20경기",
+            "date" : "2018.02.26 3:00 오후",
+            "teamA_name": "Meta Bellum",
+            "teamA_no": "5",
+            "teamA_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "3",
+            "teamB_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamB_score" : "0",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/232962783",
+            "video_title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 7일차 ㅣ Meta Bellum vs EXL CLEA",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236107422"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236107592"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236107702"
+            }, {
+                "field_no": "4",
+                "field_name": "66번국도",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236107858"
+            }]
+        },
+        {
+            "no": "21",
+            "season_no" : "20",
+            "title" : "정규시즌 21경기",
+            "date" : "2018.02.26 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "MVP SPACE",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamB_score" : "2",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236108685"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236108301"
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236108430"
+            }, {
+                "field_no": "4",
+                "field_name": "지브롤터",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/236108685"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "1"
+            }]
+        },
+        {
+            "no": "22",
+            "season_no" : "20",
+            "title" : "정규시즌 22경기",
+            "date" : "2018.02.26 3:00 오후",
+            "teamA_name": "Meta Athena",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "일리오스",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236109357"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236109673"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236109834"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236110063"
+            }]
+        },
+        {
+            "no": "23",
+            "season_no" : "20",
+            "title" : "정규시즌 23경기",
+            "date" : "2018.02.27 3:00 오후",
+            "teamA_name": "CRusher",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamA_score" : "2",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "3",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/233283398",
+            "video_title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 8일차 ㅣ Crusher vs Requiem Six",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236110646"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "4",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236110755"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236111027"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236111205"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "1",
+                "scoreB": "2"
+            }]
+        },
+        {
+            "no": "24",
+            "season_no" : "20",
+            "title" : "정규시즌 24경기",
+            "date" : "2018.02.27 3:00 오후",
+            "teamA_name": "BSG",
+            "teamA_no": "1",
+            "teamA_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236111603"
+            }, {
+                "field_no": "2",
+                "field_name": "눔바니",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236111764"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236111886"
+            }, {
+                "field_no": "4",
+                "field_name": "쓰레기촌",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/236112134"
+            }]
+        },
+        {
+            "no": "25",
+            "season_no" : "20",
+            "title" : "정규시즌 25경기",
+            "date" : "2018.02.27 3:00 오후",
+            "teamA_name": "Seven",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/trials/trial_seven_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Meta Bellum",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/trials/trial_meta-bellum_200.png",
+            "teamB_score" : "2",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236112357"
+            }, {
+                "field_no": "2",
+                "field_name": "할리우드",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236112505"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236112753"
+            }, {
+                "field_no": "4",
+                "field_name": "66번국도",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236112963"
+            }, {
+                "field_no": "5",
+                "field_name": "오아시스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "1"
+            }]
+        },
+        {
+            "no": "26",
+            "season_no" : "20",
+            "title" : "정규시즌 26경기",
+            "date" : "2018.02.28 3:00 오후",
+            "teamA_name": "CRusher",
+            "teamA_no": "2",
+            "teamA_img" : "/resources/images/trials/trial_crusher_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "BSG",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/trials/trial_bsg_200.png",
+            "teamB_score" : "4",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/233616654",
+            "video_title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 9일차 ㅣ Crusher vs BSG",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236113670"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236113830"
+            }, {
+                "field_no": "3",
+                "field_name": "하나무라",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236114040"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_url" : "https://www.twitch.tv/videos/236114225"
+            }]
+        },
+        {
+            "no": "27",
+            "season_no" : "20",
+            "title" : "정규시즌 27경기",
+            "date" : "2018.02.28 3:00 오후",
+            "teamA_name": "EXL-CLEA",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/trials/trial_exl-clea_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Meta Athena",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/trials/trial_meta-athena_200.png",
+            "teamB_score" : "4",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236114516"
+            }, {
+                "field_no": "2",
+                "field_name": "왕의길",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236114723"
+            }, {
+                "field_no": "3",
+                "field_name": "볼스카야",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_url" : "https://www.twitch.tv/videos/236114906"
+            }, {
+                "field_no": "4",
+                "field_name": "도라도",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_url" : "https://www.twitch.tv/videos/236115074"
+            }]
+        },
+        {
+            "no": "28",
+            "season_no" : "20",
+            "title" : "정규시즌 28경기",
+            "date" : "2018.02.28 3:00 오후",
+            "teamA_name": "MVP SPACE",
+            "teamA_no": "6",
+            "teamA_img" : "/resources/images/trials/trial_mvp-space_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "7",
+            "teamB_img" : "/resources/images/trials/trial_requiem-six_200.png",
+            "teamB_score" : "0",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "오아시스",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236115327"
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨발데",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_url" : "https://www.twitch.tv/videos/236115507"
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236115675"
+            }, {
+                "field_no": "4",
+                "field_name": "66번 국도",
+                "scoreA": "1",
+                "scoreB": "0",
+                "video_url" : "https://www.twitch.tv/videos/236115827"
+            }]
+        }
+    ]
+}

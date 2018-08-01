@@ -1,0 +1,122 @@
+[
+	{
+		"area": 84.45,
+		"year": 2018,
+		"month": 1,
+		"division": "전세",
+		"price": 0,
+		"deposit": 80000,
+		"monthly": 0,
+		"count": 3
+	},
+	{
+		"area": 84.45,
+		"year": 2014,
+		"month": 2,
+		"division": "전세",
+		"price": 0,
+		"deposit": 57000,
+		"monthly": 0,
+		"count": 3
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 3,
+		"division": "전세",
+		"price": 0,
+		"deposit": 52000,
+		"monthly": 0,
+		"count": 7
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 4,
+		"division": "전세",
+		"price": 0,
+		"deposit": 55000,
+		"monthly": 0,
+		"count": 8
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 5,
+		"division": "전세",
+		"price": 0,
+		"deposit": 63000,
+		"monthly": 0,
+		"count": 4
+	},
+	{
+		"area": 84.45,
+		"year": 2016,
+		"month": 6,
+		"division": "전세",
+		"price": 0,
+		"deposit": 70000,
+		"monthly": 0,
+		"count": 1
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 7,
+		"division": "전세",
+		"price": 0,
+		"deposit": 80000,
+		"monthly": 0,
+		"count": 3
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 8,
+		"division": "전세",
+		"price": 0,
+		"deposit": 80000,
+		"monthly": 0,
+		"count": 7
+	},
+	{
+		"area": 84.45,
+		"year": 2015,
+		"month": 9,
+		"division": "전세",
+		"price": 0,
+		"deposit": 65000,
+		"monthly": 0,
+		"count": 11
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 10,
+		"division": "전세",
+		"price": 0,
+		"deposit": 78000,
+		"monthly": 0,
+		"count": 3
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 11,
+		"division": "전세",
+		"price": 0,
+		"deposit": 80000,
+		"monthly": 0,
+		"count": 7
+	},
+	{
+		"area": 84.45,
+		"year": 2017,
+		"month": 12,
+		"division": "전세",
+		"price": 0,
+		"deposit": 75000,
+		"monthly": 0,
+		"count": 5
+	}
+]
