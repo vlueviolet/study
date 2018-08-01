@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>Shopping API Response</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,article,aside,dialog,footer,header,section,footer,nav,figure,main{margin:0;padding:0}
+article,aside,dialog,footer,header,section,footer,nav,figure,main{display:block}
+html,body{height:100%;-webkit-text-size-adjust:none;-ms-text-size-adjust:none}
+body,input,select,textarea,button{font-family:'Apple SD Gothic Neo', '돋움', Dotum, sans-serif; font-size:12px} 
+fieldset,li,img{border:0;vertical-align:top}
+ul,ol{list-style:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+address,caption,em{font-style:normal}
+a,a:focus,a:active,a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+.blind,caption span,legend{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:1px;line-height:100px;white-space:nowrap}
+
+.skip{height:0}
+.skip a{display:block;position:absolute;left:0;top:-100px;width:100%;height:25px;text-align:center}
+.skip a:focus,#skip a:active{position:absolute;top:0;z-index:100;padding:10px 0;background:#000;font-weight:bold;color:#fff;font-size:20px;text-decoration:none}
+
+body{padding:20px}
+#content{max-width:1200px;margin:0 auto}
+
+table{display:none;width:100%;border:0;border-top:1px solid #ccc;border-spacing:0;font-size:11px}
+caption{visibility:hidden;overflow:hidden;width:1px;height:1px;font-size:0;line-height:0}
+table td,table th{border:0;border-bottom:1px solid #ccc}
+table th{padding:6px 0 5px;background:#eee;text-align:center}
+table td{overflow:hidden;padding:6px 4px 5px;text-overflow:ellipsis;white-space:nowrap}
+table tbody td:nth-child(1){max-width:300px}
+table tbody td:nth-child(2){max-width:100px}
+table tbody td:nth-child(3){text-align:center}
+table tbody td:nth-child(4){text-align:right}
+table tbody td:nth-child(5),table tbody td:nth-child(6),table tbody td:nth-child(7){max-width:100px}
+table strong{color:#FF3E3E}
+.dataTables_wrapper{margin-top:20px}
+
+.row{display:none;padding:20px 0;text-align:center}
+
+.icon-spin {
+  display: inline-block;
+  animation: spin 2s infinite linear;
+}
+
+.icon-spin-cross-platform {
+  display: inline-block;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+  
+
+@-moz-keyframes spin{
+    0%{-moz-transform:rotate(0deg)}
+    100%{-moz-transform:rotate(359deg)}
+}
+@-webkit-keyframes spin{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(359deg)}
+}
+@-o-keyframes spin{
+    0%{-o-transform:rotate(0deg)}
+    100%{-o-transform:rotate(359deg)}
+}
+@-ms-keyframes spin{
+    0%{-ms-transform:rotate(0deg)}
+    100%{-ms-transform:rotate(359deg)}
+}
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(359deg)}
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="content">
+    <form action="#" method="post">
+        <fieldset>
+            <legend>네이버 키워드 검색</legend>
+            <input type="text">
+            <input type="submit" value="검색">
+        </fieldset>
+    </form>
+	<table cellspacing="0" border="1">
+        <caption>Shopping Data</caption>
+        <colgroup>
+            <col width="1000"><col width="100"><col width="100"><col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">상품명</th>
+                <th scope="col">최저가</th>
+                <th scope="col">이미지</th>
+            </tr>
+        </thead> 
+        <tbody></tbody> 
+	</table>
+</div>
+<div class="row">
+    Now Loading..
+    <span class="glyphicon glyphicon-repeat icon-spin"></span>
+</div>
+
+<script type="text/javascript">
+    // 3자리수 콤마
+	var comma = function(str) {
+		str = String(str);
+		return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+    }
+    
+    // Form submit 기능 해제
+    $('form').submit(function(){
+        return false;
+    });
+
+    // History 관리
+    window.onpageshow = function (event) {
+        if($('form input[type="text"]').val().length > 0){
+            $('form input[type="submit"]').trigger('click');
+        }
+    };
+	
+    // 키워드 검색
+    $('form input[type="submit"]').click(function(){
+        if($('table tbody tr').length > 0){
+            $('table tbody').empty();
+        }
+
+        var userVal = $('form input[type="text"]').val();
+        
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "response.php",
+            data: {query : userVal},
+            success: function(data) {
+                $('.row').hide();
+                for(var i in data.items){
+                    $('tbody').append(
+                        '<tr><td><a href="'+data.items[i].link+'" title="'+data.items[i].title+'">'+data.items[i].title+'</td><td>'+comma(data.items[i].lprice)+'</a></td><td><a href="'+data.items[i].link+'" title="'+data.items[i].link+'"><img src='+data.items[i].image+' width="100" height="100"></a></td></tr>'
+                    );
+                }
+            },complete : function(){
+                if($('table').css('display')=='none'){
+                    $('table').show();
+                }
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    });
+</script>
+</body>
+</html>

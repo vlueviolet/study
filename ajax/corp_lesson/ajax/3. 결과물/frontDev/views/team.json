@@ -1,0 +1,92 @@
+{
+    "getSeasonTeamList": [
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 33,
+            "teamNameKr": "LA �۷���������a",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 34,
+            "teamNameKr": "LA�߸���Ʈ",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 41,
+            "teamNameKr": "���� ���̳ʽ�Ƽ",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 42,
+            "teamNameKr": "�÷θ��� ������",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 43,
+            "teamNameKr": "�ʶ��Ǿ� ǻ��",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 44,
+            "teamNameKr": "�޽��� �ƿ����",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 45,
+            "teamNameKr": "abc",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        },
+        {
+            "insertId": null,
+            "insertDate": null,
+            "updateId": null,
+            "updateDate": null,
+            "teamNo": 40,
+            "teamNameKr": "�������ý��� ��ũ",
+            "teamLogoImageFilePath": "/resources/images/division/",
+            "teamLogoImageFileName": "20180227142516_4e99f7973ba54269bf2a2895e938b34e_5e434dd6f83f49a7814244e8cc9a30a8.jpg",
+            "teamLogoImageFileOrgName": "logo.jpg"
+        }
+    ]
+}
