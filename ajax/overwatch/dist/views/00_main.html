@@ -1,108 +1,1145 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="esports">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>단지정보 : 메인 : 더비즈</title>
-<link rel="stylesheet" href="../css/libs.min.css">	
+<meta name="robots" content="all">
+<title>메인 : 오버워치 e스포츠 : 오버워치 e스포츠</title>
+<meta name="keywords" content="오버워치">
+<meta name="description" content="오버워치의 박진감 넘치는 게임플레이를 자세히 살펴보세요.">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Overwatch E-Sports">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="오버워치 이스포츠">
+<meta property="og:description" content="오버워치의 박진감 넘치는 게임플레이를 자세히 살펴보세요.">
+<!-- Icon & Favicon -->
+<link rel="shortcut icon" href="https://d3hmvhl7ru3t12.cloudfront.net/img/favicon-bb6200267bbdea6fdc9eb498a88722007dad6eb3b3c6437440025c66cb055fefdd1fbedf3886bd069fc3547c79fa8afee4795a278a644f6cfe10a7b1144f48bb.ico">
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon/favicon-180x180.png"> -->
+<!-- // Icon & Favicon -->
+<link rel="stylesheet" href="../css/libs/libs.css">
 <link rel="stylesheet" href="../css/overwatch.css">
 </head>
 <body>
-<div id="wrap">
-	<!-- [D] contents -->
-	<main id="container">
-		<section class="info_house">
+<!-- [D] 전페이지 공통 건너띄기 링크 제공 -->
+<ul class="skip">
+<li><a href="#header" onclick="document.getElementById('header').tabIndex=-1;document.getElementById('header').focus();return false;">주 메뉴 바로가기</a></li>
+<li><a href="#content" onclick="document.getElementById('content').tabIndex=-1;document.getElementById('content').focus();return false">본문 바로가기</a></li>
+</ul>
+<!-- //[D] 전페이지 공통 건너띄기 링크 제공 -->
+<div id="wrap" class="main contenders"><!--사이트 메인-->
+	<!--[D] HEADER -->
+	<header id="header" class="header">
+		<!-- [D] global navigation bar -->
+		<div class="header_top">
 			<div class="inner">
-				<h1 class="h_tit">단지정보</h1>
-				<div class="tbl_area">
-					<table class="tbl">
-					<caption><span>매물 정보</span></caption>
-					<thead>
-					<tr>
-						<th scope="col">지역</th>
-						<th scope="col">업데이트 날짜</th>
-						<th scope="col">전세/매매</th>
-						<th scope="col">가격</th>
-						<th scope="col">조회수</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>1</td>
-					</tr>
-					<tr>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>84.45</td>
-						<td>3</td>
-					</tr>
-					</tbody>
-					</table>
+				<div class="nav_wrap">
+					<h1 class="logo_overwatch"><a href="#"><img src="../images/logo/logo_overwatch.png" alt="OVERWATCH"></a></h1>
+					<nav id="nav">
+						<div class="nav_area">
+							<a href="#" class="nav_cont">
+								<span class="tit">오버워치<span class="blank"></span>e스포츠 소개</span>
+							</a>
+							<a href="#" class="nav_cont">
+								<img src="../images/logo/logo_contenders2.png" alt="">
+								<span class="tit">오버워치<br>컨텐더스</span>
+							</a>
+							<a href="#" class="nav_cont">
+								<img src="../images/logo/logo_trials2.png" alt="">
+								<span class="tit">컨텐더스<br>트라이얼</span>
+							</a>
+							<a href="#" class="nav_cont">
+								<img src="../images/logo/logo_division2.png" alt="">
+								<span class="tit">오버워치<br>오픈 디비전</span>
+							</a>
+						</div>
+					</nav>
 				</div>
-
-				<h1 class="h_tit">단지정보 (by for in loop)</h1>
-				<div id="forInLoop" class="tbl_area"></div>
-				
-				<h1 class="h_tit">단지정보 (by handelbars)</h1>
-				<div id="handlebars" class="tbl_area"></div>
-				
-				<h1 class="h_tit">단지정보 (by promise)</h1>
-				<div id="promise" class="tbl_area"></div>
+				<div class="nav_utill">
+					<ul class="list_link">
+					<!-- <li class="link_item">
+						<a href="#">
+							<img src="../images/logo/logo_division2.png" alt="오버워치 여성부 리그">
+							<span class="tit">오버워치<br>여성부 리그</span>
+						</a>
+					</li>-->
+					<li class="link_item">
+						<a href="https://worldcup.playoverwatch.com/ko-kr/" target="_blank">
+							<img src="../images/logo/logo_worldcup.png" alt="오버워치 월드컵">
+							<span class="tit">오버워치<br>월드컵</span>
+						</a>
+					</li>
+					<li class="link_item">
+						<a href="https://overwatchleague.com/ko-kr/" target="_blank">
+							<img src="../images/logo/logo_league2.png" alt="오버워치 리그">
+							<span class="tit">오버워치<br>리그</span>
+						</a>
+					</li>
+					</ul>
+					<ul class="list_utill">
+					<!-- <li class="utill_item"><a href="#" class="tit store" target="_blank">기어 스토어</a></li> -->
+					<li class="utill_item">
+						<a href="http://ticket.interpark.com/Contents/Sports/GoodsInfo?SportsCode=07032" class="tit" target="_blank">티켓예매</a>
+					</li>
+					<li class="utill_item">
+						<a href="#" class="tit partner">대회후원</a>
+					</li>
+					</ul>
+				</div>
 			</div>
-		</section>
+		</div>
+		<!-- //[D] global navigation bar -->
+	</header>
+	
+	<!--//[D] HEADER -->
+
+	<!-- [D] CONTENTS -->
+	<main id="content">
+		<div class="visual_area">
+			<!-- Main Visual -->
+			<h2 class="blind">Main Visual 영역</h2>
+			<div class="slide_container swiper-container">
+				<div class="slide_wrap swiper-wrapper">
+					<div class="slide swiper-slide">
+						<div class="text_area">
+							<div class="in">
+								<p class="tit">영상 팝업 테스트</p>
+								<p class="sub">자세히 보기 버튼을 클릭하세요</p>
+								<a href="#" class="btn_view btn_pop" data-media-no="5">자세히 보기</a><!-- 팝업 콘텐츠 .btn_pop, data-media-no : 메인 하단 영상 순서 (0부터)-->
+							</div>
+						</div>
+						<img src="../images/key_visual1.jpg" alt="">
+					</div>
+					<div class="slide swiper-slide">
+						<div class="text_area">
+							<div class="in">
+								<p class="tit">오버워치 컨텐더스 티켓예매</p>
+								<p class="sub">3월12일 오후 6시 예매시작</p>
+								<a href="http://ticket.interpark.com/Contents/Sports/GoodsInfo?SportsCode=07032" class="btn_view" target="_blank">예매하러 가기</a>
+							</div>
+						</div>
+						<img src="../images/key_visual1.jpg" alt="">
+					</div>
+					<div class="slide swiper-slide">
+						<div class="text_area">
+							<div class="in">
+								<p class="tit">오버워치 컨텐더스 코리아 쇼케이스</p>
+								<a href="https://overwatch-esports.kr/newsDetail4?seasonNo=10" class="btn_view">자세히 보기</a>
+							</div>
+						</div>
+						<img src="../images/key_visual2.jpg" alt="">
+					</div>
+				</div>
+				<div class="top_control">
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<div class="btn_area">
+						<button type="button" class="btn_play">재생</button>
+						<button type="button" class="btn_pause">정지</button>
+					</div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!-- //Main Visual -->
+		</div>
+		<hr>
+		<div class="main_matchup">
+			<!-- 대회 타이틀 -->
+			<a href="/bracket" class="title_area" id="season_no" data-season="10">
+				<div class="title_in">
+					<span class="logo"><img src="../images/logo/logo_contenders.png" alt=""></span>
+					<h2 class="h_tit">오버워치 컨텐더스</h2>
+					<span class="state">정규시즌</span><!--[D] .end 시즌종료-->
+					<span class="date">2018. 03. 19 – 2018. 05. 05</span>
+				</div>
+			</a>
+			<!-- //대회 타이틀 -->
+			<div class="inner">
+				<!-- 최근 경기결과 -->
+				<div class="recently_result">
+					<h3 class="h_tit">최근 경기결과</h3>
+					<div class="slide_wrap">
+						<a href="#" class="slide">
+							<div class="versus_board">
+								<div class="txt_bx">
+									<span class="match_title">컨텐더스<br>트라이얼 시즌1</span>
+									<span class="match_date">2018.02.28</span>
+								</div>
+								<div class="team_bx team_bx1 win">
+									<span class="state"></span>
+									<span class="team team1">MVP Space</span>
+									<span class="score score1">4</span>
+									<span class="team_logo"><img src="../images/trials/trial_mvp-space_200.png" alt=""></span>
+								</div>
+								<div class="team_bx team_bx2 lose">
+									<span class="state"></span>
+									<span class="team team2">Requiem Six</span>
+									<span class="score score2">0</span>
+									<span class="team_logo"><img src="../images/trials/trial_requiem-six_200.png" alt=""></span>
+								</div>
+							</div>
+							<button type="button" class="btn_view" tabindex="0">전적보기</button>
+							<div class="match_detail">
+								<div class="score_wrap">
+									<ul class="score_list">
+									<li class="score_item">
+										<div class="score_cont">
+											<div class="score score1">0</div>
+											<div class="field">
+												<div class="field_in">네팔</div>
+											</div>
+											<div class="score score2 win">2</div><!--[D] 승자 .win 추가-->
+										</div>
+									</li>
+									<li class="score_item">
+										<div class="score_cont">
+											<div class="score score1 win">2</div>
+											<div class="field">
+												<div class="field_in">할리우드</div>
+											</div>
+											<div class="score score2">1</div><!--[D] 승자 .win 추가-->
+										</div>
+									</li>
+									<li class="score_item">
+										<div class="score_cont">
+											<div class="score score1">0</div>
+											<div class="field">
+												<div class="field_in">아누비스 신전</div>
+											</div>
+											<div class="score score2 win">2</div><!--[D] 승자 .win 추가-->
+										</div>
+									</li>
+									<li class="score_item">
+										<div class="score_cont">
+											<div class="score score1">0</div>
+											<div class="field tie"><!--[D] 승자 결정전 셋트일 경우 .tie 추가-->
+												<div class="field_in">도라도</div>
+											</div>
+											<div class="score score2 win">2</div><!--[D] 승자 .win 추가-->
+										</div>
+									</li>
+									</ul>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- //최근 경기결과 -->
+				<!-- 다음 경기 일정 -->
+				<div class="next_schedule">
+					<h3 class="h_tit">다음 경기 일정</h3>
+					<div class="slide_wrap">
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.19</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">BlossoM</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_blossom_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Meta Athena</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Athena_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.19</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Runaway</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Runaway_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">MVP Space</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_mvp-space_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.20</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Foxes</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_foxes_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Seven</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_seven_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.20</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Kongdoo Panthera</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_kongdoo-panthera_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Meta Bellum</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Bellum_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.21</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Element Mystic</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_element-mystic_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">X6 Gaming</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_X6-Gaming_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.21</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">WGS</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_WGS_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">O2 Ardeont</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_o2-ardeont_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.26</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Seven</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_seven_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Runaway</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Runaway_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.26</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Meta Bellum</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Bellum_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">BlossoM</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_blossom_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.27</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">X6 Gaming</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_X6-Gaming_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Meta Athena</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Athena_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.27</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">O2 Ardeont</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_o2-ardeont_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">MVP Space</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_mvp-space_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.28</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">WGS</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_WGS_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Foxes</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_foxes_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.03.28</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Element Mystic</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_element-mystic_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Kongdoo Panthera</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_kongdoo-panthera_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.02</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">BlossoM</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_blossom_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">X6 Gaming</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_X6-Gaming_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.02</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Runaway</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Runaway_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">O2 Ardeont</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_o2-ardeont_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.03</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Seven</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_seven_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">WGS</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_WGS_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.03</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Meta Bellum</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Bellum_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Element Mystic</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_element-mystic_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.04</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Meta Athena</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Athena_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Kongdoo Panthera</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_kongdoo-panthera_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.04</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">MVP Space</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_mvp-space_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Foxes</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_foxes_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.09</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">WGS</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_WGS_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Runaway</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Runaway_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.09</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Element Mystic</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_element-mystic_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">BlossoM</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_blossom_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.10</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Kongdoo Panthera</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_kongdoo-panthera_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">X6 Gaming</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_X6-Gaming_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.10</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Foxes</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_foxes_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">O2 Ardeont</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_o2-ardeont_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.11</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">MVP Space</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_mvp-space_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Seven</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_seven_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.11</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Meta Athena</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Athena_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Meta Bellum</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Bellum_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.16</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">BlossoM</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_blossom_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Kongdoo Panthera</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_kongdoo-panthera_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.16</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Runaway</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Runaway_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Foxes</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_foxes_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.17</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">MVP Space</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_mvp-space_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">WGS</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_WGS_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.17</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">Meta Athena</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Athena_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Element Mystic</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_element-mystic_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.18</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">X6 Gaming</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_X6-Gaming_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Meta Bellum</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_Meta-Bellum_200.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.18</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">O2 Ardeont</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_o2-ardeont_200.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">Seven</span>
+									<span class="team_logo"><img src="../images/contenders/contenders_seven_200.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<!-- 여기서부터 복붙 -->
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.22</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.22</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<!-- 여기서부터 복붙 -->
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.23</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.23</span></p>
+									<p><span>9:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<!-- 여기서부터 복붙 -->
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.24</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.04.25</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+						<!-- 여기서부터 복붙 -->
+						<div class="slide">
+							<div class="slide_cont">
+								<div class="match_date">
+									<p><span>2018.05.05</span></p>
+									<p><span>7:00 <span class="kr">오후</span></span></p>
+								</div>
+								<div class="team_bx team_bx1">
+									<span class="team team1">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+								<span class="txt">VS</span>
+								<div class="team_bx team_bx2">
+									<span class="team team2">-</span>
+									<span class="team_logo"><img src="../images/team/@team_logo_big_default.png" alt=""></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //다음 경기 일정 -->
+			</div>
+		</div>
+		<hr>
+		<!-- Main Standing -->
+		<div class="standing_board">
+			<div class="inner">
+				<h3 class="h_tit">컨텐더스 시즌 1 디비전</h3>
+				<div class="slide_wrap">
+					<div class="slide">
+						<div class="slide_cont">
+							<h4 class="tit">DIVISION A</h4>
+							<ol class="list_standing">
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_blossom_58.png" alt=""></span>
+								<span class="team">BlossoM</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_kongdoo-panthera_58.png" alt=""></span>
+								<span class="team">Kongdoo Panthera</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_element-mystic_58.png" alt=""></span>
+								<span class="team">Element Mystic</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_X6-Gaming_58.png" alt=""></span>
+								<span class="team">X6 Gaming</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_Meta-Bellum_58.png" alt=""></span>
+								<span class="team">Meta Bellum</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_Meta-Athena_58.png" alt=""></span>
+								<span class="team">Meta Athena</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							</ol>
+						</div>
+						<div class="slide_cont">
+							<h4 class="tit">DIVISION B</h4>
+							<ol class="list_standing">
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_Runaway_58.png" alt=""></span>
+								<span class="team">Runaway</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_foxes_58.png" alt=""></span>
+								<span class="team">Foxes</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_WGS_58.png" alt=""></span>
+								<span class="team">WGS</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_o2-ardeont_58.png" alt=""></span>
+								<span class="team">O2 Ardeont</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_seven_58.png" alt=""></span>
+								<span class="team">Seven</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							<li class="standing_item">
+								<span class="rank"><em>-</em>위</span>
+								<span class="team_logo"><img src="../images/contenders/contenders_mvp-space_58.png" alt=""></span>
+								<span class="team">MVP Space</span>
+								<div class="result_bx">
+									<span class="result win">0</span>
+									<span class="result lose">0</span>
+								</div>
+							</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Main Standing -->
+		<!-- 띠배너 -->
+		<a href="http://ticket.interpark.com/Contents/Sports/GoodsInfo?SportsCode=07032" class="banner_wrap" target="_blank" style="background-color:#90ba3a">
+			<div class="inner">
+				<div class="text_area">
+					<p class="tit">오버워치 컨텐더스 시즌1 티켓 판매 중, 지금 바로 예매하세요!</p>
+					<p class="sub"></p>
+				</div>
+			</div>
+			<img src="../images/banner2.jpg" alt="">
+		</a>
+		<!-- //띠배너 -->
+		<!-- Main Media -->
+		<div class="main_media">
+			<div class="inner">
+				<h3 class="h_tit">영상 & 뉴스</h3>
+				<ul class="media_lst media_cont2">
+				<li class="media_item">
+					<a href="#" class="news contenders">
+						<span class="thumb"><img src="../images/thumb_default.png" alt="이미지"></span>
+						<div class="media_info">
+							<ul class="list">
+								<li class="sort">컨텐더스</li>
+								<li class="time">2018.02.02</li>
+							</ul>
+							<span class="tit">‘2018 오버워치 오픈 디비전 코리아’, 4일 결선 개최</span>
+						</div>
+					</a>
+				</li>
+				<li class="media_item">
+					<a href="#" class="news">
+						<span class="thumb"><img src="../images/thumb_default.png" alt="이미지"></span>
+						<div class="media_info">
+							<ul class="list">
+								<li class="sort">오픈 디비전</li>
+								<li class="time">2018.01.12</li>
+							</ul>
+							<span class="tit">‘2018 오버워치 오픈 디비전 코리아’13일 개막</span>
+						</div>
+					</a>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //Main Media -->
+		<!-- 띠배너 -->
+		<a href="https://playoverwatch.com/ko-kr/" target="_blank" class="banner_wrap2" style="background-color:#839cd9">
+			<div class="inner">
+				<div class="text_area">
+					<p class="tit"><img src="../images/txt_overwatch.png" alt="overwatch"></p>
+					<p class="sub">미래의 전장에서 궁극의 팀 기반 슈팅 게임을 플레이하십시오.</p>
+				</div>
+			</div>
+			<img src="../images/banner4.jpg" alt="">
+		</a>
+		<!-- //띠배너 -->
 	</main>
-	<!-- //[D] contents -->
+	<!-- // [D] CONTENTS -->
+	<!--[D] FOOTER -->
+	<footer id="footer">
+		<div class="footer_area">
+			<ul class="menu">
+			<li class="menu_item"><a href="http://kr.blizzard.com/ko-kr/company/about/privacy.html" class="menu_txt" target="_blank">PRIVACY</a></li>
+			<li class="menu_item"><a href="http://kr.blizzard.com/ko-kr/company/legal/" class="menu_txt" target="_blank">TERMS</a></li>
+			<li class="menu_item"><a href="https://playoverwatch.com/ko-kr/esports/" class="menu_txt" target="_blank">오버워치 e스포츠</a></li>
+			<li class="menu_item family"> <!-- [D] 패밀리사이트 클릭할 때 클래스 on 추가 -->
+				<a href="#" class="menu_txt">패밀리 사이트</a>
+				<ul class="family_lst">
+					<li class="family_item"><a href="https://overwatchleague.com/ko-kr/" target="_blank" class="family_txt">오버워치 리그</a></li>
+					<li class="family_item"><a href="https://www.overwatchcontenders.com" target="_blank" class="family_txt">오버워치 컨텐더스 글로벌</a></li>
+					<li class="family_item"><a href="https://worldcup.playoverwatch.com/ko-kr/" target="_blank" class="family_txt">오버워치 월드컵 글로벌</a></li>
+					<li class="family_item"><a href="https://www.blizzard.com/ko-kr/" target="_blank" class="family_txt">블리자드</a></li>
+				</ul>
+			</li>
+			</ul>
+			<div class="footer_info">
+				<em>블리자드 엔터테인먼트 유한 회사</em>
+				<ul class="info_lst">
+					<li class="first">주소 : 06164 서울시 강남구 테헤란로 521 파르나스타워 15층</li>
+					<li>대표 번호 : 1644-0727</li>
+					<li>팩스 번호 : (02)544-3038</li>
+					<li>이메일 : <a href="mailto:websupport@blizzard.co.kr">websupport@blizzard.co.kr</a></li>
+					<li class="first">사업자 등록 번호 : 211-87-49910 </li>
+					<li>통신 판매업 신고 번호 : 강남-6017호</li>
+					<li class="link"><a href="http://ftc.go.kr/bizCommPop.do?wrkr_no=&apv_perm_no=2004322008330206017" target="_blank">사업자정보확인</a></li>
+					<li class="first">대표이사 :  마이클 모하임, 전동진</li>
+					<li>개인정보 보호책임자 : 전동진 대표이사</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_content">
+			<ul class="social">
+			<li><a href="https://www.facebook.com/OverwatchKR" class="facebook" target="_blank"><span class="blind">페이스북</span></a></li>
+			<li><a href="https://twitter.com/OverwatchKR" class="twitter" target="_blank"><span class="blind">트위터</span></a></li>
+			<li><a href="https://www.youtube.com/OverwatchKR" class="youtube" target="_blank"><span class="blind">유투브</span></a></li>
+			<li><a href="https://www.twitch.tv/playoverwatch_kr" class="twitch" target="_blank"><span class="blind">트위치</span></a></li>
+			<li><a href="http://tv.naver.com/overwatchkr" class="naver" target="_blank"><span class="blind">네이버TV</span></a></li>
+			</ul>
+			<p class="copyright">&copy;2018 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All trademarks referenced herein are the properties of their respective owners.</p>
+			<a href="#" class="logo">오버워치</a>
+		</div>
+	</footer> 
 
-	<hr>
-
-	<!-- [D] FOOTER -->
-
-	<!-- //[D] FOOTER -->
+	<a href="#" class="btn_top">TOP</a>
+	<!--// [D] FOOTER -->
 </div>
-
-
-<!-- Javascript -->
-<script src="../js/libs/jquery-1.12.4.min.js"></script>
-<script src="../js/libs/vendor.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js'></script>
-<script type="text/x-handlebars-template" id="handlebars-template">
-    <table class="tbl">
-    <caption><span>테이블 정보</span></caption>
-    <thead>
-    <tr>
-        <th scope="col">지역</th>
-        <th scope="col">업데이트 날짜</th>
-        <th scope="col">전세/매매</th>
-        <th scope="col">가격</th>
-        <th scope="col">예금</th>
-    </tr>
-    </thead>
-    <tbody></tbody>
-    {{#each data}}
-    <tr>
-        <td>{{area}}</td>
-        <td>{{year}}</td>
-        <td>{{division}}</td>
-        <td>{{price}}</td>
-        <td>{{bank deposit}}</td>
-    </tr>
+	<!-- [D] LAYER -->
+<!-- 미디어 레이어 -->
+<div id="layer_media" class="layer_wrap">
+	<div class="layer_content">
+		<h2 class="layer_tit">Title</h2>
+		<ul class="top_match_info">
+		<li class="match_score">
+			<span class="team team1">Team A</span>
+			<span class="score score1 win">0</span>
+			<span class="txt">:</span>
+			<span class="score score2">0</span>
+			<span class="team team2">Team B</span>
+		</li>
+		<li class="match_date">DATE</li>
+		</ul>
+		<ul class="share_area">
+		<li class="share_bx"><a href="#" class="btn_highlight"><span class="txt"><span class="in">영상 더보기</span></span></a></li>
+		</ul>
+		<div class="video_wrap">
+			<h3 class="blind">영상 보기</h3>
+			<div id="mainVideo" class="main_video"></div>
+		</div>
+	</div>
+	<button type="button" class="btn_close">CLOSE</button>
+</div>
+<!-- // 미디어 레이어 -->
+	<!-- [D] LAYER -->
+	<!-- Javascript -->
+	<script src="../js/libs/jquery-1.12.4.min.js"></script>
+	<!--Libs-->
+	<script src="../js/libs/jquery.animate-enhanced.custom.js"></script>
+	<script src="../js/libs/jquery.ba-outside-events.js"></script>
+	<script src="../js/libs/slick.js"></script>
+	<script src="../js/libs/jquery.bxslider.js"></script>
+	<script src="../js/libs/swiper.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js'></script>
+	<script src="../js/libs/moment.js"></script>
+	<!--Template-->
+	<script type="text/x-handlebars-template" id="teamList-template">
+    <ul class="list_team">
+    {{#each teams}}
+    <li class="team_item">
+        <a href="#" class="team_logo" data-team-no="{{team_no}}">
+            <span class="team_img">
+                {{#if logo_img.length}}
+                <img src="{{logo_img}}" alt="{{team_name}}">
+                {{else}}
+                <img src="../images/team/@team_logo_big_default.png" alt="팀">
+                {{/if}}
+            </span>
+            {{#teamName}}
+            <em class="team">{{team_name}}</em>
+            {{/teamName}}
+            <span class="btn_view">상세 정보 보기</span>
+        </a>
+    </li>
     {{/each}}
+    </ul>
 </script>
-<script src="../js/apps/overwatch.js"></script>
-<!-- // Javascript -->
+	<!--Apps-->
+	<script src="../js/apps/common.js"></script>
+	<script src="../js/apps/common_ui.js"></script>
+	<script src="../js/apps/main.js"></script>
+	<script src="../js/apps/bracket.js"></script>
+	<script src="../js/apps/standing.js"></script>
+	<script src="../js/apps/schedule.js"></script>
+	<script src="../js/apps/team.js"></script>
+	<script src="../js/apps/media.js"></script>
+	<!-- // Javascript -->
 </body>
 </html>

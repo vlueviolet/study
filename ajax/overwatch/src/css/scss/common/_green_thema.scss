@@ -1,0 +1,572 @@
+/* 그린 테마 */
+.trials, .contenders{
+	/* 메인 */
+	.header_top .inner .nav_wrap:before{
+		border-top-color:$main-green;
+	}
+	#nav{
+		.nav_cont{
+			&.on{
+				&:after{
+					background-color:$main-green;
+				}
+			}
+		}
+	}
+	.list_link{
+		.tit{
+			&:after{
+				background-image:inline-svg('icon_window',$main-green) !important;
+			}
+		}
+
+	}
+	.utill_item{
+		.store:hover:after{
+			background-image:inline-svg('icon_window', $main-green);
+		}
+		.partner:hover:after{
+			background-image:inline-svg('icon_arr_right', $main-green) !important;
+		}
+	}
+	.partner_item{
+		.name:after{
+			background-image:url(../images/icon_window4.png) !important;
+		}
+	}
+	.visual_area{
+		[class^="swiper-button"]{
+			&:hover{
+				&.swiper-button-prev{
+					&:before{
+						background-image:inline-svg('icon_arr_left', $main-green);
+					}
+				}
+				&.swiper-button-next{
+					&:before{
+						background-image:inline-svg('icon_arr_right', $main-green);
+					}
+				}
+			}
+		}
+	}
+	.title_area{
+		&:hover{
+			.h_tit{
+				&:after{
+					background-image:inline-svg('icon_arr_right', $main-green);
+				}
+			}
+		}
+	}
+	.main_matchup{
+		.title_area{
+			.state{
+				background:$main-green;
+			}
+			.btn_view{
+				&:before{
+					background:$main-green !important;
+				}
+				&:hover:before{
+					background-color:#7dac01 !important;
+				}
+			}
+		}
+		.recently_result{
+			.macth_notyet{
+				.btn_view{
+					color:#1f1e24;
+					&:before{
+						background:$main-green !important;
+					}
+				}
+			}
+		}
+	}
+	/* 서브 */
+	.list_sub_nav{
+		li.on{
+			a{
+				border-color:$main-green !important;
+				background-color:$main-green !important;
+			}
+		}
+	}
+	/* standing */
+	.standing{
+		.rank{
+			&.rank1:before{
+				background-image:inline-svg('bg_hexa_line',#598708) !important;
+				content:'';
+			}
+			&.rank_top:before{
+				background-image:inline-svg('bg_hexa_line',$main-green)!important;
+				content:'';
+			}
+		}
+		.team_link{
+			&:after{
+				background-image:inline-svg('icon_arr_right', $main-green);
+			}
+		}
+	}
+	/* braket */
+	.bracket_area{
+		.round{
+			&.on{
+				.tit{
+					color:$main-green;
+				}
+				.state{
+					&:before{
+						background-color:$main-green;
+					}
+					.line{
+						background-color:#c6dc9c;
+					}
+				}
+			}
+		}
+		.team{
+			&.win{
+				&:before{
+					background-color:$main-green;
+				}
+			}
+			&.soon{
+				&:before{
+					background-color:$main-green !important;
+				}
+			}
+			&.ing{
+				&:before{
+					background-color:$main-green !important;
+				}
+			}
+			&.lose{
+				&.bye{
+					&:before{
+						background-color:$main-green;
+					}
+				}
+			}
+			&.bye{
+				.team_name{
+					.in{
+						&:before{
+							color:$main-green;
+						}
+					}
+				}
+			}
+			&.finalwinner{
+				&:before{
+					background-color:#598708;
+				}
+			}
+		}
+		.team_wrap{
+			.over{
+				.team{
+					&:before{
+						background-color:#558108 !important;
+					}
+				}
+			}
+			&:only-child{
+				.team{
+					&.ing{
+						background-image:inline-svg('bracket_last', $main-green);
+						&.team_b{
+							background-image:inline-svg('bracket_last2', $main-green);
+						}
+					}
+					&.win{
+						background-image:inline-svg('bracket_final', #598708);
+						&.team_b{
+							background-image:inline-svg('bracket_final2', #598708);
+						}
+						 .team_name{
+						 	.in{
+						 		&:before{
+						 			color:$main-green;
+						 		}
+						 	}
+						 }
+					}
+				}
+				.over{
+					.team{
+						background-image:inline-svg('bracket_final', #558108) !important;
+						&.team_b{
+							background-image:inline-svg('bracket_final2', #558108) !important;
+						}
+					}
+				}
+			}
+		}
+		.round4{
+			.win, .bye{
+				.connector1{
+					background:inline-svg('connector_top',$main-green);
+				}
+				.connector2{
+					background:inline-svg('connector_bottom',$main-green);
+				}
+				.connector3{
+					background:inline-svg('connector_top2',$main-green);
+				}
+				.connector4{
+					background:inline-svg('connector_bottom2',$main-green);
+				}
+			}
+			.finalwinner{
+				.connector1{
+					background:inline-svg('connector_top', #598708);
+				}
+				.connector2{
+					background:inline-svg('connector_bottom', #598708);
+				}
+				.connector3{
+					background:inline-svg('connector_top2',#598708);
+				}
+				.connector4{
+					background:inline-svg('connector_bottom2', #598708);
+				}
+			}
+		}
+		.round3{
+			.win, .bye{
+				.connector1{
+					background:inline-svg('connector_top_2',$main-green);
+				}
+				.connector2{
+					background:inline-svg('connector_bottom_2',$main-green);
+				}
+				.connector3{
+					background:inline-svg('connector_top2_2',$main-green);
+				}
+				.connector4{
+					background:inline-svg('connector_bottom2_2',$main-green);
+				}
+			}
+			.lose{
+				&.bye{
+					.connector1{
+						background:inline-svg('connector_top_2',$main-green);
+					}
+					.connector2{
+						background:inline-svg('connector_bottom_2',$main-green);
+					}
+					.connector3{
+						background:inline-svg('connector_top2_2',$main-green);
+					}
+					.connector4{
+						background:inline-svg('connector_bottom2_2',$main-green);
+					}
+				}
+			}
+			.finalwinner{
+				.connector1{
+					background:inline-svg('connector_top_2', #598708);
+				}
+				.connector2{
+					background:inline-svg('connector_bottom_2', #598708);
+				}
+				.connector3{
+					background:inline-svg('connector_top2_2',#598708);
+				}
+				.connector4{
+					background:inline-svg('connector_bottom2_2', #598708);
+				}
+			}
+		}
+		.round2{
+			.win, .bye{
+				.connector1{
+					background:inline-svg('connector_top_3',$main-green);
+				}
+				.connector2{
+					background:inline-svg('connector_bottom_3',$main-green);
+				}
+				.connector3{
+					background:inline-svg('connector_top2_3',$main-green);
+				}
+				.connector4{
+					background:inline-svg('connector_bottom2_3',$main-green);
+				}
+			}
+			.lose{
+				&.bye{
+					.connector1{
+						background:inline-svg('connector_top_3',$main-green);
+					}
+					.connector2{
+						background:inline-svg('connector_bottom_3',$main-green);
+					}
+					.connector3{
+						background:inline-svg('connector_top2_3',$main-green);
+					}
+					.connector4{
+						background:inline-svg('connector_bottom2_3',$main-green);
+					}
+				}
+			}
+			.finalwinner{
+				.connector1{
+					background:inline-svg('connector_top_3', #598708);
+				}
+				.connector2{
+					background:inline-svg('connector_bottom_3', #598708);
+				}
+				.connector3{
+					background:inline-svg('connector_top2_3',#598708);
+				}
+				.connector4{
+					background:inline-svg('connector_bottom2_3', #598708);
+				}
+			}
+		}
+	}
+	.btn_download{
+		&:hover{
+			&:before, &:after{
+				background-color:$main-green;
+			}
+		}
+	}
+	/* 일정 */
+	.schedule{
+		.week_item{
+			.summary{
+				&:hover{
+					&:after{
+						background-image:inline-svg('icon_arr_down',$main-green);
+					}
+				}
+			}
+			&.on{
+				.summary{
+					&:after{
+						background-image:inline-svg('icon_arr_up',$main-green);
+					}
+					&:hover{
+						&:after{
+							background-image:inline-svg('icon_arr_up',$main-green);
+						}
+					}
+				}
+			}
+		}
+		.filter_area{
+			&.on{
+				.btn_filter:before{
+					background-image:inline-svg('icon_arr_down', $main-green);
+				}
+			}
+		}
+		.btn_filter{
+			&:before{
+				background-image:inline-svg('icon_arr_up', $main-green);
+			}
+		}
+	}
+	/* 영상 */
+	&:not(.main){
+		.media_cont1{
+			a{
+				&:hover{
+					&.video:before{
+						background-image:inline-svg('icon_play_line', $main-green);
+					}
+					&.news:before{
+						background-image:inline-svg('icon_news', $main-green);
+					}
+					&.noti:before{
+						background-image:inline-svg('icon_noti', $main-green);
+					}
+				}
+			}
+			.list{
+				li{
+					&.sort{
+						color:$main-green;
+					}
+				}
+			}
+		}
+		.media_cont2{
+			a{
+				&:hover{
+					&.video:after{
+						background-image:inline-svg('icon_play_line', $main-green);
+					}
+					&.news:after{
+						background-image:inline-svg('icon_news', $main-green);
+					}
+					&.noti:after{
+						background-image:inline-svg('icon_noti', $main-green);
+					}
+				}
+			}
+			.list{
+				li{
+					&.sort{
+						color:$main-green;
+					}
+				}
+			}
+		}
+	}
+	/* 뉴스 */
+	.news{
+		.info{
+			li{
+				&.sort{
+					color:$main-green;
+				}
+			}
+		}
+	}
+	.news_detail{
+		.txt_info{
+			li{
+				&.sort{
+					color:$main-green;
+				}
+			}
+		}
+		.btn_list{
+			&:hover{
+				color:$main-green !important;
+				&:before{
+					background-image:inline-svg('icon_list', $main-green) !important;
+				}
+			}
+		}
+		.lst_btn{
+			&:hover{
+				.btn{
+					&.btn_prev{
+						&:before{
+							background-image:inline-svg('icon_arr_left', $main-green);
+						}
+					}
+					&.btn_next{
+						&:after{
+							background-image:inline-svg('icon_arr_right', $main-green);
+						}
+					}
+				}
+			}
+		}
+	}
+	/* 대회후원 */
+	.introduce{
+		.info_link{
+			color:$main-green;
+		}
+	}
+	/* 레이어 */
+	.btn_highlight{
+		&:hover{
+			&:before{
+				background-color:$main-green;
+			}
+			&:after{
+				background-color:$main-green;
+			}
+
+		}
+	}
+	/* 버튼 */
+	.btn_more{
+		&:hover{
+			&:after{
+				background-image:inline-svg('icon_arr_down', $main-green);
+			}
+		}
+	}
+	.btn_more2{
+		&:hover{
+			color:#999;
+			&:after{
+				background-image:inline-svg('icon_arr_right', $main-green);
+			}
+		}
+	}
+	/* 셀렉트 박스 */
+	.sel_bx{
+		.sel_tit{
+			&:hover{
+				&:after{
+					background-image:inline-svg('icon_arr_down', $main-green);
+				}
+			}
+		}
+	}
+	/* sns */
+	.social{
+		li{
+			&:hover{
+				.homepage:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_homepage', $main-green);
+					}
+				}
+				.facebook:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_facebook', $main-green);
+					}
+				}
+				.twitter:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_twitter', $main-green);
+					}
+				}
+				.instagram:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_instagram', $main-green);
+					}
+				}
+				.youtube:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_youtube', $main-green);
+					}
+				}
+				.twitch:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_twitch', $main-green);
+					}
+				}
+				.copy:not(.disabled){
+					&:before{
+						background-image:inline-svg('icon_copy', $main-green);
+					}
+				}
+			}
+		}
+	}
+	.layer_wrap{
+		.btn_close{
+			&:after{
+				background-image:inline-svg('btn_close', $main-green);
+			}
+		}
+	}
+	#layer_team{
+		&:before{
+			border-color:$main-green;
+		}
+		.h_tit{
+			border-color:$main-green;
+		}
+		.info{
+			border-color:$main-green;
+		}
+		.ico{
+			background-image:inline-svg('bg_hexa',$main-green);
+		}
+	}
+} // green

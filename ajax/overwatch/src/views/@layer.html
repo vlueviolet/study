@@ -1,0 +1,193 @@
+@@include('./include/head.html',{"title": "레이어 팝업 : 레이어 팝업 : 오버워치 e스포츠", "type" : "01"})
+<body>
+@@include('./include/skipnavigation.html')
+<div id="wrap" class="main">
+	<!--[D] HEADER -->
+@@include('./include/header.html',{"common": "01"})
+	<!--//[D] HEADER -->
+
+	<!-- [D] CONTENTS -->
+	<main id="content">
+		<div style="text-align:center;">
+			<a href="#" class="btn_call" style="display:inline-block;height:100px;margin-top:120px;background:green;font-size:30px;color:#fff;line-height:100px;text-align:center">호출 버튼 테스트</a>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br><br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br><br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</main>
+	<!-- // [D] CONTENTS -->
+
+	<!--[D] FOOTER -->
+@@include('./include/footer.html',{"type": "01"})
+	<!--// [D] FOOTER -->
+</div>
+
+<!-- [D] LAYER -->
+@@include('./include/layer_score.html')
+@@include('./include/layer_team.html')
+@@include('./include/layer_media.html')
+<!-- [D] LAYER -->
+
+@@include('./include/script.html')
+<script>
+$(function () {
+	$('.btn_call').on('click', $.proxy(function () {
+		$('.btn_highlight').data({
+			'videoType' : 'twitch', 
+			'videoUrl': 'https://www.twitch.tv/videos/233995545',
+			'videoNo': '1',
+			'matchNo': '1'
+		});
+		window.commonLayer.layerView('#layer_score');
+	}, this));
+	$('.btn_highlight').on('click', $.proxy(function () {
+		window.commonLayer.layerView('#layer_media');
+	}, this));
+	// 	window.commonLayer.layerView('#layer_team');
+
+});
+</script>
+</body>
+</html>

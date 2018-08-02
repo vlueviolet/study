@@ -1,0 +1,37 @@
+@@include('./include/head.html',{"title": "영상 : 컨텐더스 트라이얼 : 오버워치 e스포츠", "type" : "04"})
+<body>
+@@include('./include/skipnavigation.html')
+<div id="wrap" class="media">
+	<!--[D] HEADER -->
+@@include('./include/header.html',{"common": "02", "nav" : "04"})
+	<!--//[D] HEADER -->
+
+	<!-- [D] CONTENTS -->
+	<main id="content">
+		@@include('./include/top_content.html', {"htype" : "03", "type" : "04"})
+		<div class="sub_menu">
+			<div class="sub_menuin">
+				<h3 class="sub_tit">영상</h3>
+			</div>
+		</div>
+		<div class="media_wrap">
+			<div class="media_area">
+				<h4 class="s_tit">최근영상</h4>
+				<ul class="media_lst media_cont2"></ul>
+			</div>
+		</div>
+	</main>
+	<!-- // [D] CONTENTS -->
+
+	<!--[D] FOOTER -->
+@@include('./include/footer.html',{"type": "01"})
+	<!--// [D] FOOTER -->
+</div>
+
+<!-- [D] LAYER -->
+@@include('./include/layer_media.html')
+<!-- [D] LAYER -->
+
+@@include('./include/script.html')
+</body>
+</html>

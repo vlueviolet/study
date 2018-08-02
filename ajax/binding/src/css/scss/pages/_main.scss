@@ -1,0 +1,47 @@
+#wrap{
+    #container{
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #content{
+        width: 1280px;
+        margin: 0 auto;
+        padding: 80px 0 80px;
+    }
+}
+
+.h_tit {
+    margin-top: 50px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.inner {
+    width: $content-width;
+    margin: 0 auto;
+}
+.info_house {
+    padding: 100px 0;
+}
+.tbl {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid;
+    border-color:  #000 transparent #e5e5e5 transparent;
+    th {
+        padding: 20px 5px;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #fafafa;
+        font-size: 16px;
+        color: #777;
+        text-align: center;
+    }
+    td {
+        padding: 10px 17px;
+        border-top: 1px solid #e5e5e5;
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+    }
+}

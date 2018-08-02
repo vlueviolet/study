@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>단지정보 : 메인 : 더비즈</title>
+<link rel="stylesheet" href="../css/libs.min.css">	
+<link rel="stylesheet" href="../css/overwatch.css">
+</head>
+<body>
+<div id="wrap">
+	<!-- [D] contents -->
+	<main id="container">
+		<section class="info_house">
+			<div class="inner">
+				<h1 class="h_tit">단지정보 (static)</h1>
+				<div class="tbl_area">
+					<table class="tbl">
+					<caption><span>매물 정보</span></caption>
+					<thead>
+					<tr>
+						<th scope="col">지역</th>
+						<th scope="col">업데이트 날짜</th>
+						<th scope="col">전세/매매</th>
+						<th scope="col">가격</th>
+						<th scope="col">조회수</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>84.45</td>
+						<td>3</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+
+				<h1 class="h_tit">단지정보 (by for in loop)</h1>
+				<div id="forInLoop" class="tbl_area"></div>
+				
+				<h1 class="h_tit">단지정보 (by handelbars)</h1>
+				<div id="handlebars" class="tbl_area"></div>
+
+				<h1 class="h_tit">단지정보 (by handelbars with, as)</h1>
+				<div class="" id="handlebars_withas" class="tbl_area"></div>
+				
+				<h1 class="h_tit">단지정보 (by promise)</h1>
+				<div id="promise" class="tbl_area"></div>
+			</div>
+		</section>
+	</main>
+	<!-- //[D] contents -->
+
+	<hr>
+
+	<!-- [D] FOOTER -->
+
+	<!-- //[D] FOOTER -->
+</div>
+
+
+<!-- Javascript -->
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="../js/libs/vendor.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js'></script>
+<script type="text/x-handlebars-template" id="handlebars-template">
+    <table class="tbl">
+        <caption>
+            <span>테이블 정보</span>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">순번</th>
+                <th scope="col">지역</th>
+                <th scope="col">업데이트 날짜</th>
+                <th scope="col">전세/매매</th>
+                <th scope="col">가격</th>
+                <th scope="col">예금</th>
+                <th scope="col">Partial</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        {{#each data}} {{!-- {{#each data}} 는 {{#data}} 로도 대체 가능하다 --}}
+        <tr>
+            {{#if @first}}
+            <td>첫 {{@key}}번째</td>
+            {{else if @last}}
+            <td>마지막 {{@key}}번째</td>
+            {{else}}
+            <td>중간 {{@key}}번째</td>
+            {{/if}}
+            <td>{{this.area}}</td>{{!-- area는 this.area와 같다 --}}
+            <td>{{year}}</td>
+            <td>{{division}}</td>
+            <td>{{price}}</td>
+            <td>{{bank deposit}}</td>{{!-- 사용자 정의 헬퍼인 bank에 deposit을 인자로 넘긴다 --}}
+            <td>{{> partialText}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</script>
+
+<script type="text/x-handlebars-template" id="partial-template">
+    Partial Test : {{year}}
+</script>
+
+<script type="text/x-handlebars-template" id="with-as-template">
+    <table class="tbl">
+    <thead>
+    <tr>
+        <th>이름</th>
+        <th>아이디</th>
+        <th>취미</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{!-- {{#each users}} 는 {{#users}} 로도 대체 가능하다 --}}
+    {{#each users as |user userId|}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{id}}</td>
+        <td>
+            {{#each hobbys as |hobby hobbyId|}}
+
+                {{!-- 처음이 아닌 경우에는 br태그 넣기 --}}
+                {{#unless @first}}<br>{{/unless}}
+                
+                {{!-- 상위 이터레이션의 인덱스 넘버를 가져올 때 --}} 
+                {{@../index}}
+                ==
+                {{!-- 상위 이터레이션의 인덱스 넘버는 아래와 같은 방식도 가능하다 --}}
+                {{userId}}
+                
+                {{!-- 상대경로로 참조한 name을 myName 이라는 변수로 할당 --}}
+                {{#with ../this.name as |myName|}}
+                
+                {{!-- 상대경로를 참조해서 #hobby의 현재값 출력 --}}
+                {{myName}}의 {{hobbyId}}번 취미 {{hobby}}
+                {{/with}}
+                
+            {{/each}}
+        </td>
+    </tr>
+    {{/each}}
+    </tbody>
+    </table>
+</script>
+<script src="../js/apps/binding.js"></script>
+<!-- // Javascript -->
+</body>
+</html>

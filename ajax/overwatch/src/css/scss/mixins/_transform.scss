@@ -1,0 +1,64 @@
+@mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
+    @include css3-prefix('transform', rotate($deg + deg));
+    filter: progid:DXImageTransform.Microsoft.Matrix( M11=#{$m11}, M12=#{$m12}, M21=#{$m21}, M22=#{$m22}, sizingMethod='auto expand');
+    zoom: 1;
+}
+
+@mixin flip($scaleX: -1) {
+    @include css3-prefix('transform', scaleX($scaleX));
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+@mixin transform($transforms) {
+       -moz-transform: $transforms;
+         -o-transform: $transforms;
+        -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+     @include transform(scale($scale));
+}
+
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+//skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin($params) {
+    @include css3-prefix('transform-origin', $params);
+}
+
+//transform style
+@mixin transform-style($style: preserve-3d) {
+    @include css3-prefix('transform-style', $style);
+}
+
+//transition
+@mixin transition($properties...) {
+    @if length($properties)>=1 {
+        @include css3-prefix('transition', $properties);
+    }
+    @else {
+        @include css3-prefix('transition', "all 0.2s ease-in-out 0s");
+    }
+}
+
+//matrix
+@mixin matrix($scaleX, $skewY, $skewX, $scaleY, $translateX, $translateY) {
+    @include transform(matrix(#{$scaleX}, #{$skewY}, #{$skewX}, #{$scaleY}, #{$translateX}, #{$translateY}));
+}

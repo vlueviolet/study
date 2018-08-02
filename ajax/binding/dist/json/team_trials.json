@@ -1,0 +1,493 @@
+{
+    "teams": [
+        {
+            "team_no": "1",
+            "team_name": "BSG",
+            "logo_img": "../images/trials/trial_bsg_200.png",
+            "mobile_img": "../images/trials/trial_bsg_58.png",
+            "team_introduction": "안녕하세요, BSG입니다",
+            "location": "",
+            "team_picture": "../images/trials/BSG.png",
+            "players": [{
+                "player_name": "김성준",
+                "battle_tag": "SLIME",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/BSG_01.png"
+            }, {
+                "player_name": "박성욱",
+                "battle_tag": "Ria",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/BSG_02.png"
+            }, {
+                "player_name": "서민수",
+                "battle_tag": "seominsoo",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/BSG_03.png"
+            }, {
+                "player_name": "신재현",
+                "battle_tag": "Alpha",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/BSG_04.png"
+            }, {
+                "player_name": "이원재",
+                "battle_tag": "WonJaeLee",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/BSG_06.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : ""},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "2",
+            "team_name": "CRusher",
+            "logo_img": "../images/trials/trial_crusher_200.png",
+            "mobile_img": "../images/trials/trial_crusher_58.png",
+            "team_introduction": "안녕하세요, CRusher 입니다",
+            "location": "",
+            "team_picture": "../images/trials/Crusher.png",
+            "players": [{
+                "player_name": "김대현",
+                "battle_tag": "JaMonge",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/Crusher_01.png"
+            }, {
+                "player_name": "김민찬",
+                "battle_tag": "jindol",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Crusher_02.png"
+            }, {
+                "player_name": "김태완",
+                "battle_tag": "brush",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Crusher_03.png"
+            }, {
+                "player_name": "서원중",
+                "battle_tag": "NAMED",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Crusher_04.png"
+            },{
+                "player_name": "오상민",
+                "battle_tag": "INSIGHT",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Crusher_05.png"
+            }, {
+                "player_name": "유영재",
+                "battle_tag": "StapFaJN",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Crusher_06.png"
+            }, {
+                "player_name": "정영훈",
+                "battle_tag": "Krillin",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Crusher_07.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : ""},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "3",
+            "team_name": "EXL-CLEA",
+            "logo_img": "../images/trials/trial_exl-clea_200.png",
+            "mobile_img": "../images/trials/trial_exl-clea_58.png",
+            "team_introduction": "안녕하세요, EXL-CLEA 입니다",
+            "location": "",
+            "team_picture": "../images/trials/EXL-CLEA.png",
+            "players": [{
+                "player_name": "고건주",
+                "battle_tag": "FRoPPy",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/EXL-CLEA_01.png"
+            }, {
+                "player_name": "김건",
+                "battle_tag": "espresso",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/EXL-CLEA_02.png"
+            }, {
+                "player_name": "김영완",
+                "battle_tag": "creative",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/EXL-CLEA_03.png"
+            }, {
+                "player_name": "김준",
+                "battle_tag": "AlphaYi",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/EXL-CLEA_04.png"
+            },{
+                "player_name": "신정호",
+                "battle_tag": "Melon",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/EXL-CLEA_05.png"
+            }, {
+                "player_name": "이동훈",
+                "battle_tag": "Xer0eR",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/EXL-CLEA_06.png"
+            }, {
+                "player_name": "임재혁",
+                "battle_tag": "F4zE",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+
+                "image_file_path": "../images/trials/EXL-CLEA_07.png"
+            }, {
+                "player_name": "임지헌",
+                "battle_tag": "ION",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/EXL-CLEA_08.png"
+            }, {
+                "player_name": "최세환",
+                "battle_tag": "choisehwan",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/EXL-CLEA_09.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : ""},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "4",
+            "team_name": "Meta Athena",
+            "logo_img": "../images/trials/trial_meta-athena_200.png",
+            "mobile_img": "../images/trials/trial_meta-athena_58.png",
+            "team_introduction": "안녕하세요, Meta Athena입니다",
+            "location": "",
+            "team_picture": "",
+            "players": [{
+                "player_name": "권순빈",
+                "battle_tag": "BigBox",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Meta-Athena_01.png"
+            }, {
+                "player_name": "김지석",
+                "battle_tag": "LukB",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Meta-Athena_11.png"
+            }, {
+                "player_name": "김향기",
+                "battle_tag": "Sansam",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Meta-Athena_04.png"
+            }, {
+                "player_name": "오석현",
+                "battle_tag": "Innovation",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Meta-Athena_10.png"
+            }, {
+                "player_name": "윤창식",
+                "battle_tag": "dissme",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Meta-Athena_08.png"
+            }, {
+                "player_name": "최성환",
+                "battle_tag": "SonGBoos",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Meta-Athena_09.png"
+            }, {
+                "player_name": "최준수",
+                "battle_tag": "Kris",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Meta-Athena_06.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/themetagaming/"},
+                {"twitter" : "https://twitter.com/TheMetaGaming"},
+                {"instagram" : "https://www.instagram.com/themetagaming/"},
+                {"youtube" : ""},
+                {"twitch" : "https://www.twitch.tv/the_metagaming"}
+            ]
+        },
+        {
+            "team_no": "5",
+            "team_name": "Meta Bellum",
+            "logo_img": "../images/trials/trial_meta-bellum_200.png",
+            "mobile_img": "../images/trials/trial_meta-bellum_58.png",
+            "team_introduction": "안녕하세요, Meta Bellum입니다",
+            "location": "",
+            "team_picture": "../images/trials/Meta-Bellum.png",
+            "players": [{
+                "player_name": "권민석",
+                "battle_tag": "AimGod",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Meta-Bellum_01.png"
+            }, {
+                "player_name": "김정연",
+                "battle_tag": "Chara",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Meta-Bellum_02.png"
+            }, {
+                "player_name": "오승표",
+                "battle_tag": "Rio",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Meta-Bellum_03.png"
+            }, {
+                "player_name": "이호성",
+                "battle_tag": "Na1st",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/Meta-Bellum_04.png"
+            }, {
+                "player_name": "장민기",
+                "battle_tag": "CCJ",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/Meta-Bellum_05.png"
+            }, {
+                "player_name": "조현우",
+                "battle_tag": "Hyeonu",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Meta-Bellum_06.png"
+            }, {
+                "player_name": "최재훈",
+                "battle_tag": "Hoon",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Meta-Bellum_07.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/themetagaming/"},
+                {"twitter" : "https://twitter.com/TheMetaGaming"},
+                {"instagram" : "https://www.instagram.com/themetagaming/"},
+                {"youtube" : ""},
+                {"twitch" : "https://www.twitch.tv/the_metagaming"}
+            ]
+        },
+        {
+            "team_no": "6",
+            "team_name": "MVP Space",
+            "logo_img": "../images/trials/trial_mvp-space_200.png",
+            "mobile_img": "../images/trials/trial_mvp-space_58.png",
+            "team_introduction": "안녕하세요, MVP Space 입니다",
+            "location": "",
+            "team_picture": "../images/trials/MVP.png",
+            "players": [{
+                "player_name": "김동욱",
+                "battle_tag": "BiaNcA",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/MVP_01.png"
+            }, {
+                "player_name": "김준기",
+                "battle_tag": "Yaki",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/MVP_02.png"
+            }, {
+                "player_name": "김진흥",
+                "battle_tag": "OneFact",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/MVP_03.png"
+            }, {
+                "player_name": "김태훈",
+                "battle_tag": "Fuze",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/MVP_04.png"
+            }, {
+                "player_name": "손영우",
+                "battle_tag": "Undine",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/MVP_05.png"
+            }, {
+                "player_name": "유성준",
+                "battle_tag": "QoQ",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/MVP_06.png"
+            },  {
+                "player_name": "정승민",
+                "battle_tag": "Tydolla",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/MVP_07.png"
+            }, {
+                "player_name": "함은상",
+                "battle_tag": "Oberon",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/MVP_09.png"
+            }],
+            "social" :
+            [
+                {"homepage" : "http://teammvp.gg/"},
+                {"facebook" : "https://www.facebook.com/MVPSC2"},
+                {"twitter" : "https://twitter.com/mvp_gg"},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "7",
+            "team_name": "Requiem Six",
+            "logo_img": "../images/trials/trial_requiem-six_200.png",
+            "mobile_img": "../images/trials/trial_requiem-six_58.png",
+            "team_introduction": "우린 최강이다.",
+            "location": "",
+            "team_picture": "../images/trials/Requiem-Six.png",
+            "players": [{
+                "player_name": "심석호",
+                "battle_tag": "R6Tyg",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Requiem-Six_01.png"
+            }, {
+                "player_name": "오윤성",
+                "battle_tag": "R6HeiMish",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Requiem-Six_03.png"
+            }, {
+                "player_name": "윤기환",
+                "battle_tag": "R6UnI",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/Requiem-Six_04.png"
+            },{
+                "player_name": "이상현",
+                "battle_tag": "R6Waffle",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Requiem-Six_05.png"
+            }, {
+                "player_name": "임환",
+                "battle_tag": "R6FixMe",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Requiem-Six_06.png"
+            }, {
+                "player_name": "최종혁",
+                "battle_tag": "R6Ta1ent",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Requiem-Six_07.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : ""},
+                {"twitter" : ""},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        },
+        {
+            "team_no": "8",
+            "team_name": "Seven",
+            "logo_img": "../images/trials/trial_seven_200.png",
+            "mobile_img": "../images/trials/trial_seven_58.png",
+            "team_introduction": "안녕하세요, Seven 입니다",
+            "location": "",
+            "team_picture": "../images/trials/Seven.png",
+            "players": [{
+                "player_name": "김영준",
+                "battle_tag": "Mika",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Seven_01.png"
+            }, {
+                "player_name": "박준기",
+                "battle_tag": "Bazzi",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Seven_02.png"
+            }, {
+                "player_name": "신윤호",
+                "battle_tag": "Ukn0w",
+                "role_code": "CG0006010",
+                "role_code_name": "공격",
+                "image_file_path": "../images/trials/Seven_04.png"
+            },{
+                "player_name": "안형근",
+                "battle_tag": "Revenge",
+                "role_code": "CG0006040",
+                "role_code_name": "지원",
+                "image_file_path": "../images/trials/Seven_05.png"
+            }, {
+                "player_name": "윤태인",
+                "battle_tag": "FR3E",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/Seven_06.png"
+            }, {
+                "player_name": "이유석",
+                "battle_tag": "eVo",
+                "role_code": "CG0006020",
+                "role_code_name": "돌격",
+                "image_file_path": "../images/trials/Seven_07.png"
+            }, {
+                "player_name": "이호성",
+                "battle_tag": "Ttuba",
+                "role_code": "CG0006030",
+                "role_code_name": "플렉스",
+                "image_file_path": "../images/trials/Seven_08.png"
+            }],
+            "social" :
+            [
+                {"homepage" : ""},
+                {"facebook" : "https://www.facebook.com/sevengaiming/"},
+                {"twitter" : "https://twitter.com/TeamSeven7_"},
+                {"instagram" : ""},
+                {"youtube" : ""},
+                {"twitch" : ""}
+            ]
+        }
+    ]
+}

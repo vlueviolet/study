@@ -1,0 +1,28 @@
+@mixin aln {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+@mixin alnBottom {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    content: '';
+}
+
+@mixin alnTop {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    content: '';
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

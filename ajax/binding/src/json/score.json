@@ -1,0 +1,599 @@
+{
+    "score": [
+        {
+            "no": "1",
+            "title" : "16강 1경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "Team Nexus",
+            "teamA_no": "14",
+            "teamA_img" : "/resources/images/division/OpenDivision_TeamNexus_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "RMG",
+            "teamB_no": "13",
+            "teamB_img" : "/resources/images/division/OpenDivision_RMG_200.png",
+            "teamB_score" : "0",
+            "video_no" : "1",
+            "video_type" : "twitch",
+            "video_url" : "https://www.twitch.tv/videos/233995545",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "3",
+                "scoreB": "3",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "일리오스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }]
+        },{
+            "no": "2",
+            "title" : "16강 2경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "The Face",
+            "teamA_no": "15",
+            "teamA_img" : "/resources/images/division/OpenDivision_TheFace_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Extream Gamer",
+            "teamB_no": "6",
+            "teamB_img" : "/resources/images/division/OpenDivision_ExtreamGamer_200.png",
+            "teamB_score" : "0",
+            "video_no" : "6",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번 국도",
+                "scoreA": "3",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }]
+        },{
+            "no": "3",
+            "title" : "16강 3경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "LEOS",
+            "teamA_no": "8",
+            "teamA_img" : "/resources/images/division/OpenDivision_LEOS_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/division/OpenDivision_RequiemSix_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "1",
+                "scoreB": "3",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }]
+        },{
+            "no": "4",
+            "title" : "16강 4경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "veritas",
+            "teamA_no": "16",
+            "teamA_img" : "/resources/images/division/OpenDivision_veritas_200.png",
+            "teamA_score" : "2",
+            "teamB_name": "Mad Dogs",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/division/OpenDivision_MadDogs_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "1",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "일리오스",
+                "field_type" : "tie",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "5",
+                "field_name": "할리우드",
+                "scoreA": "3",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "6",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }]
+        },{
+            "no": "5",
+            "title" : "16강 5경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "Milky way",
+            "teamA_no": "11",
+            "teamA_img" : "/resources/images/division/OpenDivision_Milkyway_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "BWW",
+            "teamB_no": "2",
+            "teamB_img" : "/resources/images/division/OpenDivision_BWW_200.png",
+            "teamB_score" : "0",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }]
+        },{
+            "no": "6",
+            "title" : "16강 6경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "코코 양치해또",
+            "teamA_no": "3",
+            "teamA_img" : "/resources/images/division/OpenDivision_coco_200.png",
+            "teamA_score" : "0",
+            "teamB_name": "CRusher",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/division/OpenDivision_CRusher_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }]
+        },{
+            "no": "7",
+            "title" : "16강 7경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "MAXTILL TK",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/division/OpenDivision_MAXTILLTK_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Afresh",
+            "teamB_no": "1",
+            "teamB_img" : "/resources/images/division/OpenDivision_Afresh_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "왕의 길",
+                "scoreA": "1",
+                "scoreB": "3",
+                "video_no" : ""
+            }]
+        },{
+            "no": "8",
+            "title" : "16강 8경기",
+            "date" : "2018.01.28 12:00PM",
+            "teamA_name": "FatCat",
+            "teamA_no": "7",
+            "teamA_img" : "/resources/images/division/OpenDivision_FatCat_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/division/OpenDivision_EXLCLEA_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "5",
+                "scoreB": "6",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달기지",
+                "scoreA": "2",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "일리오스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "5",
+                "field_name": "왕의 길",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_no" : ""
+            }]
+        },{
+            "no": "9",
+            "title" : "8강 1경기",
+            "date" : "2018.01.28 3:00PM",
+            "teamA_name": "Team Nexus",
+            "teamA_no": "14",
+            "teamA_img" : "/resources/images/division/OpenDivision_TeamNexus_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "The Face",
+            "teamB_no": "15",
+            "teamB_img" : "/resources/images/division/OpenDivision_TheFace_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번 국도",
+                "scoreA": "0",
+                "scoreB": "3",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "3",
+                "scoreB": "4",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "왕의길",
+                "scoreA": "4",
+                "scoreB": "5",
+                "video_no" : ""
+            }]
+        },{
+            "no": "10",
+            "title" : "8강 2경기",
+            "date" : "2018.01.28 3:00PM",
+            "teamA_name": "Requiem Six",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/division/OpenDivision_RequiemSix_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "Mad Dogs",
+            "teamB_no": "9",
+            "teamB_img" : "/resources/images/division/OpenDivision_MadDogs_200.png",
+            "teamB_score" : "2",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "호라이즌 달 기지",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "아이헨발데",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "5",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }]
+        },{
+            "no": "11",
+            "title" : "8강 3경기",
+            "date" : "2018.01.28 3:00PM",
+            "teamA_name": "Milky way",
+            "teamA_no": "11",
+            "teamA_img" : "/resources/images/division/OpenDivision_Milkyway_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "CRusher",
+            "teamB_no": "4",
+            "teamB_img" : "/resources/images/division/OpenDivision_CRusher_200.png",
+            "teamB_score" : "3",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번국도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }]
+        },{
+            "no": "12",
+            "title" : "8강 4경기",
+            "date" : "2018.01.28 3:00PM",
+            "teamA_name": "MAXTILL TK",
+            "teamA_no": "10",
+            "teamA_img" : "/resources/images/division/OpenDivision_MAXTILLTK_200.png",
+            "teamA_score" : "3",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/division/OpenDivision_EXLCLEA_200.png",
+            "teamB_score" : "0",
+            "video_no" : "11",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번 국도",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "5",
+                "scoreB": "4",
+                "video_no" : ""
+            }]
+        },{
+            "no": "13",
+            "title" : "준결승 1경기",
+            "date" : "2018.02.03 4:00PM",
+            "teamA_name": "The Face",
+            "teamA_no": "15",
+            "teamA_img" : "/resources/images/division/OpenDivision_TheFace_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "Requiem Six",
+            "teamB_no": "12",
+            "teamB_img" : "/resources/images/division/OpenDivision_RequiemSix_200.png",
+            "teamB_score" : "3",
+            "video_no" : "13",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "0",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번 국도",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "3",
+                "scoreB": "3",
+                "video_no" : "14"
+            }, {
+                "field_no": "4",
+                "field_name": "일리오스",
+                "field_type" : "tie",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "5",
+                "field_name": "아이헨발데",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }]
+        },{
+            "no": "14",
+            "title" : "준결승 2경기",
+            "date" : "2018.02.03 4:00PM",
+            "teamA_name": "CRusher",
+            "teamA_no": "4",
+            "teamA_img" : "/resources/images/division/OpenDivision_CRusher_200.png",
+            "teamA_score" : "1",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/division/OpenDivision_EXLCLEA_200.png",
+            "teamB_score" : "3",
+            "video_no" : "14",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "리장타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "66번 국도",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "아누비스 신전",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "아이헨 발데",
+                "scoreA": "2",
+                "scoreB": "3",
+                "video_no" : ""
+            }]
+        },{
+            "no": "15",
+            "title" : "결승",
+            "date" : "2018.02.04 2:00PM",
+            "teamA_name": "Requiem Six",
+            "teamA_no": "12",
+            "teamA_img" : "/resources/images/division/OpenDivision_RequiemSix_200.png",
+            "teamA_score" : "4",
+            "teamB_name": "EXL-CLEA",
+            "teamB_no": "5",
+            "teamB_img" : "/resources/images/division/OpenDivision_EXLCLEA_200.png",
+            "teamB_score" : "3",
+            "video_no" : "15",
+            "detail": [{
+                "field_no": "1",
+                "field_name": "네팔",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "2",
+                "field_name": "아이헨 발데",
+                "scoreA": "1",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "3",
+                "field_name": "66번 국도",
+                "scoreA": "0",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "4",
+                "field_name": "아누비스 신전",
+                "scoreA": "2",
+                "scoreB": "1",
+                "video_no" : ""
+            }, {
+                "field_no": "5",
+                "field_name": "리장 타워",
+                "scoreA": "2",
+                "scoreB": "0",
+                "video_no" : ""
+            }, {
+                "field_no": "6",
+                "field_name": "왕의 길",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_no" : ""
+            }, {
+                "field_no": "7",
+                "field_name": "66번 국도",
+                "scoreA": "3",
+                "scoreB": "2",
+                "video_no" : ""
+            }]
+        }
+    ]
+}

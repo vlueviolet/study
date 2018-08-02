@@ -1,50 +1,12 @@
 {
     "medias": [
-         {
-        "media_type": "news",
-        "sort": "컨텐더스",
-        "season_no" : "10",
-        "date": "2018.04.20",
-        "title" : "‘오버워치 컨텐더스 코리아’ 꿈의 무대 PO 관전 포인트는?",
-        "thumbnail": "/resources/images/news/thumbnail_img_0420.jpg",
-        "url": "/newsDetail6"
-    },
-    {
-        "media_type": "video",
-        "sort": "컨텐더스",
-        "season_no" : "10",
-        "date": "2018.04.16",
-        "title" : "용봉탕의 CCTV~! 2화",
-        "video_type": "youtube",
-        "thumbnail": "/resources/images/thumb/cctv.png",
-        "url": "https://www.youtube.com/watch?v=N6NXQ_gELJM"
-    },
-    {
-        "media_type": "video",
-        "sort": "컨텐더스",
-        "season_no" : "10",
-        "date": "2018.04.08",
-        "title" : "용봉탕의 CCTV~! 1화",
-        "video_type": "youtube",
-        "thumbnail": "/resources/images/thumb/cctv.png",
-        "url": "https://www.youtube.com/watch?v=HNPaaBCLWBM"
-    },
-    {
-        "media_type": "news",
-        "sort": "오픈 디비전",
-        "season_no" : "30",
-        "date": "2018.03.30",
-        "title" : "블리자드, ‘2018 오버워치 오픈 디비전 코리아 시즌2’ 참가 모집 개시",
-        "thumbnail": "/resources/images/news/open_division1.jpg",
-        "url": "/newsDetail3"
-    },
     {
         "media_type": "news",
         "sort": "컨텐더스",
         "season_no" : "10",
         "date": "2018.03.16",
         "title" : "오버워치 컨텐더스 코리아, 3월 19일 개막! Runaway 티켓 3분 만에 매진",
-        "thumbnail": "/resources/images/news/thumbnail_img_1.jpg",
+        "thumbnail": "../images/news/thumbnail_img_1.jpg",
         "url": "/newsDetail5"
     },
     {
@@ -53,7 +15,7 @@
         "season_no" : "10",
         "date": "2018.03.12",
         "title" : "오버워치 컨텐더스 코리아 쇼케이스 뜨거운 환호 속 종료",
-        "thumbnail": "/resources/images/thumb/2018_contenders_news1.jpg",
+        "thumbnail": "../images/thumb/2018_contenders_news1.jpg",
         "url": "/newsDetail4"
     },
     {
@@ -62,7 +24,7 @@
         "season_no" : "10",
         "date": "2018.03.12",
         "title" : "오버워치 컨텐더스 소개자료",
-        "thumbnail": "/resources/images/thumb/2018_contenders_news2.png",
+        "thumbnail": "../images/thumb/2018_contenders_news2.png",
         "url": "/newsDetail3"
     },
     {
@@ -71,7 +33,56 @@
         "season_no" : "10",
         "date": "2018.03.09",
         "title" : "국내 최고의 팀을 가릴 '오버워치 컨텐더스 코리아', 12일부터 티켓 판매",
-        "thumbnail": "/resources/images/news/thumb_contenders2.jpg",
+        "thumbnail": "../images/news/thumb_contenders2.jpg",
         "url": "/newsDetail2"
+    },
+    {
+        "media_type": "news",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.03.06",
+        "title" : "국내 최정상 오버워치팀을 가린다! 2018 오버워치 컨텐더스 코리아, 3월 19일 화려한 개막... MBC스포츠플러스2 생중계",
+        "thumbnail": "../images/thumb_default.png",
+        "url": "/newsDetail"
+    }, {
+        "media_type": "video",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2017.12.21",
+        "title" : "[오버워치 컨텐더스 코리아] e스포츠의 진화, MBC스포츠플러스에서!",
+        "video_type": "youtube",
+        "thumbnail": "../images/thumb/2018_contenders_1set.png",
+        "url": "https://www.youtube.com/watch?v=hNTBNfVPx8s"
+    }, {
+        "media_type": "video",
+        "sort": "관련영상",
+        "season_no" : "99",
+        "date": "2017.11.27",
+        "title" : "프로가 되는 길 2018 | 오버워치 이스포츠",
+        "video_type": "youtube",
+        "thumbnail": "../images/thumb/thumb_mov01.jpg",
+        "url": "https://www.youtube.com/watch?v=wV3eCbLHMNI"
+    }, {
+        "media_type": "video",
+        "sort": "관련영상",
+        "season_no" : "99",
+        "date": "2018.01.11",
+        "title" : "2017 오버워치 이스포츠 다시보기",
+        "video_type": "youtube",
+        "thumbnail": "../images/thumb/thumb_mov02.jpg",
+        "url": "https://www.youtube.com/watch?v=DsmTHlz_ADs"
+    }, {
+        "media_type": "video",
+        "sort": "트라이얼",
+        "season_no" : "20",
+        "date": "2018.02.28",
+        "teamA_name": "MVP SPACE",
+        "teamB_name": "Requiem Six",
+        "teamA_score": "4",
+        "teamB_score": "0",
+        "title" : "2018 오버워치 컨텐더스 트라이얼 시즌1 9일차 3경기 4세트 MVP SPACE vs Requiem Six",
+        "video_type": "twitch",
+        "thumbnail": "../images/thumb/2018_trials_4set.png",
+        "url": "https://www.twitch.tv/videos/236115827"
     }]
 }

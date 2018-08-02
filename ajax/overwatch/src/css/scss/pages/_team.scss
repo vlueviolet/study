@@ -1,0 +1,98 @@
+.team_ow{
+	.team_wrap{
+		position:relative;
+		width:$desktop-content-width;
+		min-height:1024px;
+		margin:0 auto;
+		padding:37px 0 200px;
+		@include box-sizing;
+	}
+	.list_team{
+		overflow:hidden;
+		@include clearfix;
+		border:1px solid;
+		border-width:1px 0 0 1px;
+		border-color:#e5e5e5;
+	}
+	.team_item{
+		float:left;
+		width:25%;
+		margin-top:-1px;
+		border:1px solid;
+		border-width:1px 1px 1px 0;
+		border-color:#e5e5e5;
+		background-color:#fff;
+		text-align:center;
+		@include box-sizing;
+		&:hover{
+			background-color:#fcfcfc;
+			.btn_view{
+				color:$main-grey;
+				&:before{
+					border-color:#606167;
+				}
+			}
+		}
+	}
+	.team_logo{
+		display:block;
+		height:392px;
+		padding-top:40px;
+		@include box-sizing;
+	}
+	.team_img{
+		display:block;
+		width:200px;
+		height:200px;
+		margin:0 auto;
+		img{
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	}
+	.team{
+		display:block;
+		max-width:260px;
+		max-height:78px;
+		margin:24px auto 0;
+		font-family:$koverwatch;
+		font-size:36px;
+		color:$main-grey;
+		@include text-ellipsis;
+	}
+	.btn_view{
+		display:inline-block;
+		position:relative;
+		width:113px;
+		height:34px;
+		margin-top:7px;
+		padding:0 10px;
+		font-size:14px;
+		color:#999;
+		line-height:34px;
+		letter-spacing:-.6px;
+		text-align:left;
+		@include box-sizing;
+		&:before{
+			@include position(absolute,0,0);
+			width:100%;
+			height:100%;
+			border:1px solid;
+			border-color:#eee;
+			@include border-radius(6px);
+			@include skew(-15, 0);
+			@include box-sizing;
+			content:'';
+		}
+		&:after{
+			@include position(absolute,50%,12px);
+			width:6px;
+			height:10px;
+			margin-top:-5px;
+			background-image:inline-svg('icon_arr_right', $main-grey2);
+			background-repeat:no-repeat;
+			content:'';
+		}
+	}
+}

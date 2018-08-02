@@ -1,23 +1,55 @@
+/* Webfont */
+
+/*
+- 필요에 따라 선택적 활용 사용 - css 최상단 선언
+- 모바일/IE8 이하 웹폰트 미지원 일 경우 .eot 선언 제거 및 src:local(*); 추가
+- 미사용시 삭제 */
+
+/* koverwatch */
 @font-face {
-    font-family: $nanumsquare;
-    @include font-face($nanumsquare, $fontPath, 'Light');
-    font-weight: 300;
+  font-family: 'koverwatch';
+  src: url(../font/koverwatch.eot);
+  src: url(../font/koverwatch.eot?#iefix) format('embedded-opentype'), url(../font/koverwatch.woff) format('woff'), url(../font/koverwatch.ttf) format('truetype');
+}
+
+/* notosans */
+@font-face {
+  font-family: 'notokr';
+  src: url(../font/notokr-regular.eot);
+  src: url(../font/notokr-regular.eot?#iefix) format('embedded-opentype'), url(../font/notokr-regular.woff) format('woff'), url(../font/notokr-regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: $nanumsquare;
-    @include font-face($nanumsquare, $fontPath, 'Regular');
-    font-weight: 400;
+  font-family: 'notokr';
+  font-weight: 600;
+  src: url(../font/notokr-bold.eot);
+  src: url(../font/notokr-bold.eot?#iefix) format('embedded-opentype'), url(../font/notokr-bold.woff) format('woff'), url(../font/notokr-bold.ttf) format('truetype');
+}
+
+
+/* Shentox */
+@font-face {
+  font-family: 'Shentox';
+  src: url(../font/Shentox-Regular.eot);
+  src: url(../font/Shentox-Regular.eot?#iefix) format('embedded-opentype'), url(../font/Shentox-Regular.woff) format('woff'), url(../font/Shentox-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: $nanumsquare;
-    @include font-face($nanumsquare, $fontPath, 'Bold');
-    font-weight: 700;
+  font-family: 'Shentox';
+  font-weight:bold;
+  src: url(../font/Shentox-Bold.eot);
+  src: url(../font/Shentox-Bold.eot?#iefix) format('embedded-opentype'), url(../font/Shentox-Bold.woff) format('woff'), url(../font/Shentox-Bold.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: $nanumsquare;
-    @include font-face($nanumsquare, $fontPath, 'Extrabold');
-    font-weight: 800;
+  font-family: 'Shentox-SemiBoldItalic';
+  src: url(../font/Shentox-SemiBoldItalic.eot);
+  src: url(../font/Shentox-SemiBoldItalic.eot?#iefix) format('embedded-opentype'), url(../font/Shentox-SemiBoldItalic.woff) format('woff'), url(../font/Shentox-SemiBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Shentox-SemiBoldItalic';
+  font-weight:bold;
+  src: url(../font/Shentox-BoldItalic.eot);
+  src: url(../font/Shentox-BoldItalic.eot?#iefix) format('embedded-opentype'), url(../font/Shentox-BoldItalic.woff) format('woff'), url(../font/Shentox-BoldItalic.ttf) format('truetype');
 }

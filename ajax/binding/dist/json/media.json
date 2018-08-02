@@ -1,0 +1,77 @@
+{
+    "medias": [
+         {
+        "media_type": "news",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.04.20",
+        "title" : "‘오버워치 컨텐더스 코리아’ 꿈의 무대 PO 관전 포인트는?",
+        "thumbnail": "/resources/images/news/thumbnail_img_0420.jpg",
+        "url": "/newsDetail6"
+    },
+    {
+        "media_type": "video",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.04.16",
+        "title" : "용봉탕의 CCTV~! 2화",
+        "video_type": "youtube",
+        "thumbnail": "/resources/images/thumb/cctv.png",
+        "url": "https://www.youtube.com/watch?v=N6NXQ_gELJM"
+    },
+    {
+        "media_type": "video",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.04.08",
+        "title" : "용봉탕의 CCTV~! 1화",
+        "video_type": "youtube",
+        "thumbnail": "/resources/images/thumb/cctv.png",
+        "url": "https://www.youtube.com/watch?v=HNPaaBCLWBM"
+    },
+    {
+        "media_type": "news",
+        "sort": "오픈 디비전",
+        "season_no" : "30",
+        "date": "2018.03.30",
+        "title" : "블리자드, ‘2018 오버워치 오픈 디비전 코리아 시즌2’ 참가 모집 개시",
+        "thumbnail": "/resources/images/news/open_division1.jpg",
+        "url": "/newsDetail3"
+    },
+    {
+        "media_type": "news",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.03.16",
+        "title" : "오버워치 컨텐더스 코리아, 3월 19일 개막! Runaway 티켓 3분 만에 매진",
+        "thumbnail": "/resources/images/news/thumbnail_img_1.jpg",
+        "url": "/newsDetail5"
+    },
+    {
+        "media_type": "news",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.03.12",
+        "title" : "오버워치 컨텐더스 코리아 쇼케이스 뜨거운 환호 속 종료",
+        "thumbnail": "/resources/images/thumb/2018_contenders_news1.jpg",
+        "url": "/newsDetail4"
+    },
+    {
+        "media_type": "news",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.03.12",
+        "title" : "오버워치 컨텐더스 소개자료",
+        "thumbnail": "/resources/images/thumb/2018_contenders_news2.png",
+        "url": "/newsDetail3"
+    },
+    {
+        "media_type": "news",
+        "sort": "컨텐더스",
+        "season_no" : "10",
+        "date": "2018.03.09",
+        "title" : "국내 최고의 팀을 가릴 '오버워치 컨텐더스 코리아', 12일부터 티켓 판매",
+        "thumbnail": "/resources/images/news/thumb_contenders2.jpg",
+        "url": "/newsDetail2"
+    }]
+}

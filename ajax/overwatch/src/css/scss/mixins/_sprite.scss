@@ -1,0 +1,16 @@
+@mixin sprite($type : pc, $width : auto, $height : auto) {
+    display:inline-block;
+    overflow:hidden;
+    @if $type == pc {
+        background:$pc-sp-url;
+        font-size:1px;
+        text-indent:9999px;
+    }
+    @else if $type == mobile {
+        background:$mobile-sp-url;
+        @include background-size($width, $height);
+        color:transparent;
+    }
+    vertical-align:top;
+    white-space:nowrap;
+}

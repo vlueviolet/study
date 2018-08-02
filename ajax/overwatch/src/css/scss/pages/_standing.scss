@@ -1,0 +1,446 @@
+/* 경기현황 */
+.standing{
+	.standing_wrap{
+		position:relative;
+		padding:60px 0 80px;
+	}
+	.standing_area{
+		position:relative;
+		width:$desktop-content-width;
+		margin:0 auto;
+		.group_box_wrap{
+			position:relative;
+			@include clearfix;
+			&:before{
+				@include position(absolute,60px,0,0,0);
+				width:1px;
+				margin:0 auto;
+				background:#e5e5e5;
+				content:'';
+			}
+		}
+		.line{
+			display:none;
+			position:absolute;
+			left:0;
+			z-index:10;
+			width:100%;
+			height:1px;
+			background-color:#ff8900;
+			letter-spacing:-0.02px;
+			text-align:center;
+			em{
+				display:inline-block;
+				@include position(absolute,50%,auto,auto,50%);
+				padding:5px 6px;
+				@include border-radius(6px);
+				background-color:#ff8900;
+				color:#fff;
+				@include translate(-50%, -50%);
+				&:before{
+					@include position(absolute,auto,0,28px,1px);
+					width:7px;
+					height:20px;
+					margin:0 auto;
+					background:url(../images/bg_arrow1.png) no-repeat 0 0;
+					content:'';
+				}
+			}
+		}
+		.group_box{
+			float:left;
+			width:50%;
+			padding-left:44px;
+			@include box-sizing;
+			&:first-child{
+				padding-right:44px;
+				padding-left:0;
+			}
+			&:only-child{
+				width:100%;
+				padding:0;
+				.team_item{
+					&.item_w2,&.item_w3{
+						width:85px;
+					}
+				}
+			}
+			.tit{
+				font-family:$koverwatch;
+				font-size:36px;
+				color:$main-grey;
+			}
+		}
+	}
+	.list_standing{
+		margin-top:20px;
+	}
+	.standing_item{
+		position:relative;
+		min-height:167px;
+		padding:3px 0;
+		@include clearfix;
+		&:first-child{
+			margin-top:0;
+			.team_lst{
+				&:before{
+					background-color:#e5e5e5;
+				}
+			}
+		}
+		&.on{
+			.btn_view{
+				&:before{
+					@include background-horizontal(#bababd);
+				}
+				&:after{
+					background-image:inline-svg('icon_arr_up', #fff);
+					background-size:100%;
+				}
+			}
+			.detail_lst{
+				display:block;
+			}
+		}
+	}
+	.label{
+		@include position(absolute,0,auto,auto,0);
+		z-index:10;
+		width:152px;
+		height:167px;
+		background:url(../images/bg_hexa1.png) no-repeat 0 0;
+		text-align:center;
+		img{
+			@include position(absolute,50%,0,0,50%);
+			width:106px;
+			max-height:106px;
+			@include translate(-50%, -50%);
+		}
+		&:hover{
+			.team_link{
+				display:block;
+				@include position(absolute,3px,3px,auto,3px);
+				width:146px;
+				height:161px;
+				background:url(../images/bg_hexa1_dim.png) no-repeat 0 0;
+				font-size:14px;
+				color:#878890;
+				line-height:161px;
+			}
+		}
+	}
+	.rank{
+		@include position(absolute,0,auto,auto,0);
+		z-index:1;
+		width:42px;
+		height:46px;
+		font-size:24px;
+		font-family:$shentox-italic;
+		color:#fff;
+		line-height:46px;
+		text-align:center;
+		&:before{
+			@include position(absolute,0,auto,auto,0);
+			z-index:-1;
+			width:100%;
+			height:100%;
+			background-image:inline-svg('bg_hexa_line',#bababd);
+			background-size:100%;
+			content:'';
+		}
+		&.rank1:before{
+			background-image:inline-svg('bg_hexa_line',$main-orange);
+		}
+		&.rank_top:before{
+			background-image:inline-svg('bg_hexa_line',#ff8900);
+		}
+	}
+	.team_link{
+		display:none;
+		&:after{
+			@include position(absolute,50%,23px);
+			width:6px;
+			height:11px;
+			background-image:inline-svg('icon_arr_right', $main-orange);
+			background-size:100%;
+			@include translate(-50%, -50%);
+			content:'';
+		}
+	}
+	.current_info{
+		padding:32px 0 0 152px;
+	}
+	.team_lst{
+		display:table;
+		width:100%;
+		padding:0 10px 0 20px;
+		@include box-sizing;
+		@include clearfix;
+
+		&:before{
+			@include position(absolute,32px,0,auto);
+			width:100%;
+			height:1px;
+			background-color:#eee;
+			content:'';
+		}
+		&.tit_view dt{
+			display:block;
+		}
+	}
+	.team_item{
+		display:table-cell;
+		position:relative;
+		height:59px;
+		text-align:left;
+		vertical-align:middle;
+		text-align:center;
+		@include box-sizing;
+		&.item_w1{
+			text-align:left;
+		}
+		&.item_w2{
+			width:55px;
+			text-align:left;
+		}
+		&.item_w3{
+			width:55px;
+			text-align:left;
+		}
+		&.item_w4{
+			width:25px;
+			text-align:center;
+		}
+		&.item_w5{
+			width:25px;
+			text-align:center;
+		}
+		dt{
+			display:none;
+			@include position(absolute,-21px,0,0,0);
+			font-size:14px;
+			color:#b8b9bd;
+		}
+		dd{
+			display:inline-block;
+			position:relative;
+			max-height:59px;
+			vertical-align:middle;
+			&:before{
+				@include aln;
+			}
+			&.team{
+				font-size:18px;
+				font-weight:bold;
+				color:$main-grey;
+			}
+			&.set{
+				font-size:16px;
+				font-family:$shentox-italic;
+				color:#878890;
+			}
+			&.score{
+				font-size:16px;
+				font-family:$shentox-italic;
+				color:#878890;
+			}
+			&.win{
+				font-size:36px;
+				font-family:$shentox-italic;
+				color:$main-orange;
+			}
+			&.lose{
+				font-size:36px;
+				font-family:$shentox-italic;
+				color:$main-grey2;
+			}
+		}
+	}
+	.versus{
+		display:table-cell;
+		width:14px;
+		margin-top:36px;
+		font-size:36px;
+		font-family:$shentox-italic;
+		color:$main-grey2;
+		text-align:center;
+		vertical-align:middle;
+	}
+	.btn_view{
+		position:relative;
+		z-index:1;
+		width:95%;
+		height:42px;
+		margin-left:4%;
+		padding-right:50px;
+		font-size:16px;
+		font-weight:bold;
+		color:#fff;
+		line-height:42px;
+		text-align:right;
+		span{
+			@include css3-prefix(text-stroke, 1px rgba(0,0,0,.05));
+		}
+		&:before{
+			@include position(absolute,0,0,auto,0);
+			z-index:-1;
+			width:100%;
+			height:100%;
+			@include background-horizontal2(#bababd,#dbdcde,72%,#bababd,100%);
+			@include border-radius(7px);
+			@include skew(-15, 0);
+			content:'';
+
+		}
+		&:after{
+			@include position(absolute,50%,23px);
+			width:11px;
+			height:6px;
+			background:inline-svg('icon_arr_down', $main-grey2) no-repeat;
+			@include translate(-50%, -50%);
+			content:'';
+		}
+		&:hover{
+			&:before{
+				@include background-horizontal(#bababd);
+			}
+			&:after{
+				background-image:inline-svg('icon_arr_down', #fff);
+				background-size:100%;
+			}
+		}
+	}
+	.detail_lst{
+		display:none;
+		margin:20px 0 30px;
+	    background-color:#fff;
+	}
+	.detail_item{
+		display:table;
+		width:100%;
+		height:67px;
+		margin-top:1px;
+		padding:0 20px 0 40px;
+		background-color:#fafafa;
+		@include box-sizing;
+		border:1px solid;
+		border-color:transparent;
+		@include clearfix;
+		dl{
+			display:table-cell;
+			vertical-align:middle;
+			&.item_w1{
+				width:60px;
+			}
+			&.item_w2{
+				width:90px;
+				text-align:center;
+			}
+			&.item_right{
+				.team_tit{
+					float:right;
+				}
+			}
+			dd{
+				display:inline-block;
+				position:relative;
+				height:100%;
+				color:#878890;
+				&:before{
+					@include aln;
+				}
+				&.record{
+					font-size:13px;
+					font-family:$shentox-italic;
+					font-weight:bold;
+					&.win{
+						color:$main-orange;
+						&:after{
+							display:inline-block;
+							width:9px;
+							height:10px;
+							margin:-1px 0 0 5px;
+							background-image:inline-svg('icon_win', $main-orange);
+							vertical-align:middle;
+							content:'';
+						}
+					}
+				}
+				&.score{
+					font-size:20px;
+					font-family:$shentox-italic;
+					font-weight:bold;
+					color:#bababd;
+					text-align:center;
+					.num{
+						color:$main-orange;
+					}
+					.txt{
+						margin:0 6px;
+						font-family:"Shentox";
+						font-weight:bold;
+					}
+				}
+				&.match_date{
+					font-family:$shentox-italic;
+					font-weight:bold;
+				}
+				&.team_tit{
+					.team{
+						display:inline-block;
+						max-width:206px;
+						padding-right:70px;
+						font-size:14px;
+						font-weight:bold;
+						text-align:right;
+						vertical-align:middle;
+						@include box-sizing;
+					}
+					.team_logo{
+						@include position(absolute,50%,0,0,auto);
+						width:58px;
+						height:58px;
+						vertical-align:middle;
+						@include translate(0, -50%);
+						cursor:pointer;
+						img{
+							width:100%;
+						}
+					}
+				}
+			}
+		}
+		&:hover{
+			background-color:#fff;
+			border-color:#dbdcde;
+			@include box-sizing;
+		}
+		&:hover .team_tit{
+			color:$main-grey2;
+		}
+	}
+}
+/* 경기 하이라이트 */
+.highlight_wrap{
+	padding:90px 0 60px;
+	background-color:#f9fafc;
+	.media_area{
+		position:relative;
+		width:$desktop-content-width;
+		margin:0 auto;
+		@include clearfix;
+	}
+}
+.trials{
+	.standing{
+		.standing_wrap{
+			.standing_area{
+				.group_box_wrap{
+					&:before{
+						display:none;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,385 @@
+@@include('./include/head.html',{"title": "경기현황(플레이오프) : 경기현황 &gt; 토너먼트 (4컬럼) : 오버워치 e스포츠", "type" : "02"})
+<body>
+@@include('./include/skipnavigation.html')
+@@include('./include/banner3.html')
+<div id="wrap" class="bracket">
+	<!--[D] HEADER -->
+@@include('./include/header.html',{"common": "02", "nav" : "02"})
+	<!--//[D] HEADER -->
+	<!-- [D] CONTENTS -->
+	<main id="content">
+		@@include('./include/top_content.html', {"htype" : "01", "type" : "01"})
+		<div class="sub_menu">
+			<div class="sub_menuin">
+				<h3 class="sub_tit">경기현황</h3>
+				<ul class="list_menu">
+				<li><a href="#">정규시즌</a></li>
+				<li class="on"><a href="#">플레이오프</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bracket_wrap">
+			<div class="bracket_area">
+				<div class="round_area">
+					<div class="round round4"><!--[D] 경기 진행중인 경우 .on 추가-->
+						<h4 class="tit">16강</h4>
+						<div class="team_area">
+							<div class="team_wrap">
+								<div class="team_bx team_bx1" data-match-no="1">
+									<span class="match_num">1</span>
+									<div class="team team_a win"><!--[D] .ing 경기 진행중 | .win 승자 | .lose 패자 | .bye 부전승 | .out 실격 | .finalwinner 최종우승시 첫 라운드부터 추가-->
+										<span class="team_logo"><img src="../images/team/@team_logo_sm.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAMTEAMTEAMTEAMTEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top"></use></svg> -->
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">0</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">2</span>
+									<div class="team team_a lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2"></use></svg> -->
+									</div>
+									<div class="team team_b win" data-team-no="3">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm3.png" alt=""></span>
+										<span class="team_name"><span class="in">WinnerTeam Test</span></span>
+										<span class="team_score">4</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx1">
+									<span class="match_num">1</span>
+									<div class="team team_a win bye"><!--[D] .ing 경기 진행중 | .win 승자 | .lose 패자 | .bye 부전승 | .out 실격 | .finalwinner 최종우승시 첫 라운드부터 추가-->
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAMTEAMTEAMTEAMTEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top"></use></svg> -->
+									</div>
+									<div class="team team_b lose out">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">1</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">2</span>
+									<div class="team team_a lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2"></use></svg> -->
+									</div>
+									<div class="team team_b win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">4</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx1">
+									<span class="match_num">1</span>
+									<div class="team team_a win"><!--[D] .ing 경기 진행중 | .win 승자 | .lose 패자 | .bye 부전승 | .out 실격 | .finalwinner 최종우승시 첫 라운드부터 추가-->
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAMTEAMTEAMTEAMTEAM</span></span>
+										<span class="team_score">3</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top"></use></svg> -->
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">0</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">2</span>
+									<div class="team team_a lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2"></use></svg> -->
+									</div>
+									<div class="team team_b win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">4</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx1">
+									<span class="match_num">1</span>
+									<div class="team team_a win"><!--[D] .ing 경기 진행중 | .win 승자 | .lose 패자 | .bye 부전승 | .out 실격 | .finalwinner 최종우승시 첫 라운드부터 추가-->
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAMTEAMTEAMTEAMTEAM</span></span>
+										<span class="team_score">1</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top"></use></svg> -->
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">0</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">2</span>
+									<div class="team team_a lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2"></use></svg> -->
+									</div>
+									<div class="team team_b win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">5</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="round round3">
+						<h4 class="tit">8강</h4>
+						<div class="team_area">
+							<div class="team_wrap">
+								<div class="team_bx team_bx1">
+									<span class="match_num">1</span>
+									<div class="team team_a lose"><!--[D] .ing 경기 진행중 | .win 승자 | .lose 패자 | .bye 부전승 | .out 실격 | .finalwinner 최종우승시 첫 라운드부터 추가-->
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAMTEAMTEAMTEAMTEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top_2"></use></svg> -->
+									</div>
+									<div class="team team_b win" data-team-no="3">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm3.png" alt=""></span>
+										<span class="team_name"><span class="in">WinnerTeam Test</span></span>
+										<span class="team_score">4</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom_2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">2</span>
+									<div class="team team_a win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">4</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2_2"></use></svg> -->
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2_2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx1">
+									<span class="match_num">1</span>
+									<div class="team team_a lose"><!--[D] .ing 경기 진행중 | .win 승자 | .lose 패자 | .bye 부전승 | .out 실격 | .finalwinner 최종우승시 첫 라운드부터 추가-->
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAMTEAMTEAMTEAMTEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top_2"></use></svg> -->
+									</div>
+									<div class="team team_b win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">3</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom_2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">2</span>
+									<div class="team team_a lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2_2"></use></svg> -->
+									</div>
+									<div class="team team_b win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">5</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2_2"></use></svg> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="round round2">
+						<h4 class="tit">준결승</h4>
+						<div class="team_area">
+							<div class="team_wrap">
+								<div class="team_bx team_bx1">
+									<span class="match_num">5</span>
+									<div class="team team_a win" data-team-no="3">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm3.png" alt=""></span>
+										<span class="team_name"><span class="in">WinnerTeam Test</span></span>
+										<span class="team_score">5</span>
+										<span class="connector connector1"></span>
+										<!-- <svg class="connector connector1"><use xlink:href="#top_3"></use></svg> -->
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector2"></span>
+										<!-- <svg class="connector connector2"><use xlink:href="#bottom_3"></use></svg> -->
+									</div>
+								</div>
+							</div>
+							<div class="team_wrap">
+								<div class="team_bx team_bx2">
+									<span class="match_num">6</span>
+									<div class="team team_a win">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm4.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector3"></span>
+										<!-- <svg class="connector connector3"><use xlink:href="#top2_3"></use></svg> -->
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">TEAM</span></span>
+										<span class="team_score">2</span>
+										<span class="connector connector4"></span>
+										<!-- <svg class="connector connector4"><use xlink:href="#bottom2_3"></use></svg> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="round round1">
+						<h4 class="tit">결승</h4>
+						<div class="team_area">
+							<div class="team_wrap">
+								<div class="team_bx">
+									<div class="team team_a win" data-team-no="3">
+										<span class="team_logo"><img src="../images/team/@team_logo_big3.png" alt=""></span>
+										<span class="team_name"><span class="in">WinnerTeam Test</span></span>
+										<span class="team_score">2</span>
+									</div>
+									<div class="team team_b lose">
+										<span class="team_logo"><img src="../images/team/@team_logo_sm2.png" alt=""></span>
+										<span class="team_name"><span class="in">준결승 2경기 승리 팀</span></span>
+										<span class="team_score">1</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="highlight_wrap">
+			<div class="media_area">
+				<h4 class="s_tit">경기 하이라이트</h4>
+				<div class="main_bx media_cont1">
+					<a href="#" class="video btn_play">
+						<span class="thumb"><img src="../images/@main_video.jpg" alt="이미지"></span>
+						<div class="media_info">
+							<ul class="list">
+								<li class="sort">컨텐더스</li>
+								<li class="time">4시간전</li>
+							</ul>
+							<span class="tit">오버워치 월드컵 8강 한국 vs 미국 경기영상</span>
+						</div>
+					</a>
+				</div>
+				<div class="sub_bx media_cont1">
+					<a href="#" class="video btn_play">
+						<span class="thumb"><img src="../images/@main_video.jpg" alt="이미지"></span>
+						<div class="media_info">
+							<ul class="list">
+								<li class="sort">컨텐더스</li>
+								<li class="time">4시간전</li>
+							</ul>
+							<span class="tit">오버워치 월드컵 8강 한국 vs 미국 경기영상</span>
+						</div>
+					</a>
+					<a href="#" class="video btn_play">
+						<span class="thumb"><img src="../images/@main_video.jpg" alt="이미지"></span>
+						<div class="media_info">
+							<ul class="list">
+								<li class="sort">컨텐더스</li>
+								<li class="time">4시간전</li>
+							</ul>
+							<span class="tit">오버워치 월드컵 8강 한국 vs 미국 경기영상</span>
+						</div>
+					</a>
+				</div>
+				<a href="#" class="btn_more2">더보기</a>
+			</div>
+		</div>
+		@@include('./include/banner2.html')
+	</main>
+	<!-- // [D] CONTENTS -->
+
+	<!--[D] FOOTER -->
+@@include('./include/footer.html',{"type": "01"})
+	<!--// [D] FOOTER -->
+</div>
+
+<!-- [D] LAYER -->
+@@include('./include/layer_score.html')
+@@include('./include/layer_media.html')
+@@include('./include/layer_team.html')
+<!-- [D] LAYER -->
+
+@@include('./include/script.html')
+<script></script>
+</body>
+</html>

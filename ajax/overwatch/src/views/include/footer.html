@@ -1,15 +1,87 @@
-    <footer id="footer">
-        <div class="inner">
-            <ul class="list_partner">
-            <li class="paypal"><a href="#">PayPal</a></li>
-            <li class="comodo"><a href="#">COMODO</a></li>
-            <li class="gamecare"><a href="#">gamecare</a></li>
-            <li class="pci"><a href="#">pci</a></li>
-            <li class="age18"><a href="#">18+</a></li>
-            </ul>
+	@@if (type == 01) {<footer id="footer">
+		<div class="footer_area">
+			<ul class="menu">
+			<li class="menu_item"><a href="http://kr.blizzard.com/ko-kr/company/about/privacy.html" class="menu_txt" target="_blank">PRIVACY</a></li>
+			<li class="menu_item"><a href="http://kr.blizzard.com/ko-kr/company/legal/" class="menu_txt" target="_blank">TERMS</a></li>
+			<li class="menu_item"><a href="https://playoverwatch.com/ko-kr/esports/" class="menu_txt" target="_blank">오버워치 e스포츠</a></li>
+			<li class="menu_item family"> <!-- [D] 패밀리사이트 클릭할 때 클래스 on 추가 -->
+				<a href="#" class="menu_txt">패밀리 사이트</a>
+				<ul class="family_lst">
+					<li class="family_item"><a href="https://overwatchleague.com/ko-kr/" target="_blank" class="family_txt">오버워치 리그</a></li>
+					<li class="family_item"><a href="https://www.overwatchcontenders.com" target="_blank" class="family_txt">오버워치 컨텐더스 글로벌</a></li>
+					<li class="family_item"><a href="https://worldcup.playoverwatch.com/ko-kr/" target="_blank" class="family_txt">오버워치 월드컵 글로벌</a></li>
+					<li class="family_item"><a href="https://www.blizzard.com/ko-kr/" target="_blank" class="family_txt">블리자드</a></li>
+				</ul>
+			</li>
+			</ul>
+			<div class="footer_info">
+				<em>블리자드 엔터테인먼트 유한 회사</em>
+				<ul class="info_lst">
+					<li class="first">주소 : 06164 서울시 강남구 테헤란로 521 파르나스타워 15층</li>
+					<li>대표 번호 : 1644-0727</li>
+					<li>팩스 번호 : (02)544-3038</li>
+					<li>이메일 : <a href="mailto:websupport@blizzard.co.kr">websupport@blizzard.co.kr</a></li>
+					<li class="first">사업자 등록 번호 : 211-87-49910 </li>
+					<li>통신 판매업 신고 번호 : 강남-6017호</li>
+					<li class="link"><a href="http://ftc.go.kr/bizCommPop.do?wrkr_no=&apv_perm_no=2004322008330206017" target="_blank">사업자정보확인</a></li>
+					<li class="first">대표이사 :  마이클 모하임, 전동진</li>
+					<li>개인정보 보호책임자 : 전동진 대표이사</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_content">
+			<ul class="social">
+			<li><a href="https://www.facebook.com/OverwatchKR" class="facebook" target="_blank"><span class="blind">페이스북</span></a></li>
+			<li><a href="https://twitter.com/OverwatchKR" class="twitter" target="_blank"><span class="blind">트위터</span></a></li>
+			<li><a href="https://www.youtube.com/OverwatchKR" class="youtube" target="_blank"><span class="blind">유투브</span></a></li>
+			<li><a href="https://www.twitch.tv/playoverwatch_kr" class="twitch" target="_blank"><span class="blind">트위치</span></a></li>
+			<li><a href="http://tv.naver.com/overwatchkr" class="naver" target="_blank"><span class="blind">네이버TV</span></a></li>
+			</ul>
+			<p class="copyright">&copy;2018 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All trademarks referenced herein are the properties of their respective owners.</p>
+			<a href="#" class="logo">오버워치</a>
+		</div>
+	</footer>} @@if (type == 02) {<footer id="footer">
+		<div class="footer_area">
+			<ul class="menu">
+			<li class="menu_item"><a href="http://kr.blizzard.com/ko-kr/company/about/privacy.html" class="menu_txt" target="_blank">PRIVACY</a></li>
+			<li class="menu_item"><a href="http://kr.blizzard.com/ko-kr/company/legal/" class="menu_txt" target="_blank">TERMS</a></li>
+			<li class="menu_item"><a href="https://playoverwatch.com/ko-kr/esports/" class="menu_txt" target="_blank">오버워치 e스포츠</a></li>
+			<li class="menu_item family"> <!-- [D] 패밀리사이트 클릭할 때 클래스 on 추가 -->
+				<a href="#" class="menu_txt">패밀리 사이트</a>
+				<ul class="family_lst">
+					<li class="family_item"><a href="https://overwatchleague.com/ko-kr/" target="_blank" class="family_txt">오버워치 리그</a></li>
+					<li class="family_item"><a href="https://www.overwatchcontenders.com" target="_blank" class="family_txt">오버워치 컨텐더스 글로벌</a></li>
+					<li class="family_item"><a href="https://worldcup.playoverwatch.com/ko-kr/" target="_blank" class="family_txt">오버워치 월드컵 글로벌</a></li>
+					<li class="family_item"><a href="https://www.blizzard.com/ko-kr/" target="_blank" class="family_txt">블리자드</a></li>
+				</ul>
+			</li>
+			</ul>
+			<div class="footer_info">
+				<em>블리자드 엔터테인먼트 유한 회사</em>
+				<ul class="info_lst">
+					<li class="first">주소 : 06164 서울시 강남구 테헤란로 521 파르나스타워 15층</li>
+					<li>대표 번호 : 1644-0727</li>
+					<li>팩스 번호 : (02)544-3038</li>
+					<li>이메일 : <a href="mailto:websupport@blizzard.co.kr">websupport@blizzard.co.kr</a></li>
+					<li class="first">사업자 등록 번호 : 211-87-49910 </li>
+					<li>통신 판매업 신고 번호 : 강남-6017호</li>
+					<li class="link"><a href="http://ftc.go.kr/bizCommPop.do?wrkr_no=&apv_perm_no=2004322008330206017" target="_blank">사업자정보확인</a></li>
+					<li class="first">대표이사 :  마이클 모하임, 전동진</li>
+					<li>개인정보 보호책임자 : 전동진 대표이사</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_content">
+			<ul class="social">
+			<li><a href="https://www.facebook.com/OverwatchKR" class="facebook" target="_blank"><span class="blind">페이스북</span></a></li>
+			<li><a href="https://twitter.com/OverwatchKR" class="twitter" target="_blank"><span class="blind">트위터</span></a></li>
+			<li><a href="https://www.youtube.com/OverwatchKR" class="youtube" target="_blank"><span class="blind">유투브</span></a></li>
+			<li><a href="https://www.twitch.tv/playoverwatch_kr" class="twitch" target="_blank"><span class="blind">트위치</span></a></li>
+			<li><a href="http://tv.naver.com/overwatchkr" class="naver" target="_blank"><span class="blind">네이버TV</span></a></li>
+			</ul>
+			<p class="copyright">&copy;2018 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All trademarks referenced herein are the properties of their respective owners.</p>
+			<a href="#" class="logo">오버워치</a>
+		</div>
+	</footer>}
 
-            <p class="notice">In the event that You withdraw funds in respect of which You have received a Bonus, without having met any applicable release rey applicable release requirements,<br>withdrawal restrictions or general eligibility criteria, You shall forfeit the entire sum of the Bonus and any winnings resulting from this Bonus<br>The 50 Free Spins will also be automatically credited on your first deposit. Wagering requirement for Free Spins is 20 x wins generg requirement for Free Spins is 20 x wins generg requirement<br>When you accept the Free Spins, a popup will display a list of games on which they can be played.<br>Free Spin winnings can only be played on the slot games that were allotted for free spins for the specific promotions until wagering requireme<br>You will have 30 days to complete wagering requirements of this offer. If wagering is not completed within this period</p>
-
-            <p class="warning">Gambling can be addictive, please play responsibly.</p>
-        </div>
-    </footer>
+	<a href="#" class="btn_top">TOP</a>
