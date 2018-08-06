@@ -108,11 +108,8 @@
                 dataType : 'json',
                 url : this.opts.url,
                 success : function (response) {
-                    Handlebars.registerHelper('teamName', function (options) {
-                        if(options === '') {
-                            console.log(2)
-                        }
-                        return console.log(1);
+                    Handlebars.registerHelper('teamName', function (arg1, options) {
+                        return (arg1 !== '') ? options.fn(this) : options.inverse(this);
                     });
                     var html = template(response);
                     _this.wrap.append(html);

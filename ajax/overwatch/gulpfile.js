@@ -329,7 +329,7 @@ gulp.task('server', ['watch'], function () {
 			baseDir: bases.dest
 		},
 		reloadDelay: 250,
-		port: 3030,
+		port: 1111,
 		notify: false
 	});
 });
