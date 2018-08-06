@@ -81,7 +81,6 @@
     win.OVERWATCH.Team.TeamList = function(args) {
         var defParams = {
             wrap : '.team_wrap',
-            url : '../json/team_contenders.json',
             defaultTeamImg : '../images/team/@team_logo_big_default.png'
         };
         this.opts = $.extend({}, defParams, (args || {}));
@@ -97,6 +96,7 @@
             
         },
         initLayout : function () {
+            this.url = '../json/team_' + this.wrap.data('league') + '.json';
             this.bindData();
         },
         bindData : function () {
@@ -106,7 +106,7 @@
 
             $.ajax({
                 dataType : 'json',
-                url : this.opts.url,
+                url : this.url,
                 success : function (response) {
                     Handlebars.registerHelper('teamName', function (arg1, options) {
                         return (arg1 !== '') ? options.fn(this) : options.inverse(this);
@@ -118,9 +118,6 @@
                     console.error(e);
                 }
             });
-        },
-        test : function () {
-            console.log(1)
         }
     };
 

@@ -1,4 +1,4 @@
-@@include('./include/head.html',{"title": "팀 : 오픈 디비전 : 오버워치 e스포츠", "type" : "03"})
+@@include('./include/head.html',{"title": "팀(handelbars) : 오픈 디비전 : 오버워치 e스포츠", "type" : "03"})
 <body>
 @@include('./include/skipnavigation.html')
 <div id="wrap" class="team_ow">
@@ -14,7 +14,7 @@
 				<h3 class="sub_tit">팀</h3>
 			</div>
 		</div>
-		<div class="team_wrap"></div>
+		<div class="team_wrap" data-league="division"></div>
 		@@include('./include/banner2.html')
 	</main>
 	<!-- // [D] CONTENTS -->
@@ -28,6 +28,8 @@
 @@include('./include/layer_team.html')
 <!-- [D] LAYER -->
 
+<!--Template-->
+@@include('./include/template.html')
 @@include('./include/script.html')
 <script></script>
 </body>

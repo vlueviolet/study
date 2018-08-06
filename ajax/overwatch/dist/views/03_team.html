@@ -5,7 +5,7 @@
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="robots" content="all">
-<title>팀 : 컨텐더스 : 오버워치 e스포츠</title>
+<title>팀(handelbars) : 컨텐더스 : 오버워치 e스포츠</title>
 <meta name="keywords" content="오버워치">
 <meta name="description" content="오버워치의 박진감 넘치는 게임플레이를 자세히 살펴보세요.">
 <meta property="og:url" content="">
@@ -149,7 +149,7 @@
 				<h3 class="sub_tit">팀</h3>
 			</div>
 		</div>
-		<div class="team_wrap"></div>
+		<div class="team_wrap" data-league="contenders"></div>
 		<!-- 띠배너 -->
 		<a href="https://playoverwatch.com/ko-kr/" target="_blank" class="banner_wrap2" style="background-color:#839cd9">
 			<div class="inner">
@@ -281,18 +281,8 @@
 <!-- //팀 정보 레이어-->
 <!-- [D] LAYER -->
 
-	<!-- Javascript -->
-	<script src="../js/libs/jquery-1.12.4.min.js"></script>
-	<!--Libs-->
-	<script src="../js/libs/jquery.animate-enhanced.custom.js"></script>
-	<script src="../js/libs/jquery.ba-outside-events.js"></script>
-	<script src="../js/libs/slick.js"></script>
-	<script src="../js/libs/jquery.bxslider.js"></script>
-	<script src="../js/libs/swiper.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-	<script src="../js/libs/moment.js"></script>
-	<!--Template-->
-	<script id="teamList-template" type="text/x-handlebars-template">
+<!--Template-->
+<script id="teamList-template" type="text/x-handlebars-template">
 <ul class="list_team">
 {{#each teams}}
 <li class="team_item">
@@ -307,7 +297,7 @@
         {{#teamName team_name}}
         <em class="team">{{team_name}}</em>
         {{else}}
-        <em class="team">팀명이 없습니다.</em>
+        <em class="team">팀명이 없습니다.(handlebars)</em>
         {{/teamName}}
         <span class="btn_view">상세 정보 보기</span>
     </a>
@@ -315,6 +305,17 @@
 {{/each}}
 </ul>
 </script>
+	<!-- Javascript -->
+	<script src="../js/libs/jquery-1.12.4.min.js"></script>
+	<!--Libs-->
+	<script src="../js/libs/jquery.animate-enhanced.custom.js"></script>
+	<script src="../js/libs/jquery.ba-outside-events.js"></script>
+	<script src="../js/libs/slick.js"></script>
+	<script src="../js/libs/jquery.bxslider.js"></script>
+	<script src="../js/libs/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+	<script src="../js/libs/moment.js"></script>
+
 	<!--Apps-->
 	<script src="../js/apps/common.js"></script>
 	<script src="../js/apps/common_ui.js"></script>
