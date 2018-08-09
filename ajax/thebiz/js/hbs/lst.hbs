@@ -1,0 +1,31 @@
+<a href="#" class="lst_item_type2">
+    <span class="bx_img">
+        {{#xif "memul_photo != ''"}}
+        <img src="{{memul_photo}}" alt="" width="150" height="150">
+        {{/xif}}
+        {{#xif "memul_photo == ''"}}
+        <img src="http://via.placeholder.com/150x150" alt="" width="150" height="150">
+        {{/xif}}
+    </span>
+    <div class="bx_item_dsc">
+        <div class="bx_align">
+            <em class="tit ellipsis">{{sido}} {{gugun}} {{dong}} {{danji_name}}</em>
+            <span class="dsc price">
+                {{business_div_str}}
+                
+                {{#xif "sale_price != 0"}}
+                <span class="unit">{{sale_price}}</span>
+                {{/xif}}
+                {{#xif "lease_price != 0"}}
+                <span class="unit">{{lease_price}}</span>
+                {{/xif}}
+                {{#xif "month_deposit_price != 0"}}
+                <span class="unit">{{month_deposit_price}}</span> / <span class="unit">{{month_price}}</span>
+                {{/xif}}
+                </span>
+            <span class="dsc extent">{{contract_meter}} / {{use_meter}}㎡ {{corrp_flr}} / {{ground_flr}}층 방{{room_count}} 욕실{{bath_count}}</span>
+            <p class="dsc txt">{{memul_ad}}</p>
+            <span class="tag_type">확인매물 18,06,25</span>
+        </div>
+    </div>
+</a>

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* HIVELAB (http://www.hivelab.co.kr) */
+
+/* IE8 대응 */
+.inner{position:relative;width:1360px;height:100%;margin:0 auto;padding: 0 40px;box-sizing: border-box}
+.area_map .bx_navi{border:1px solid #e5e5e5}
+
+/* Slider */
+.slick-slider .slick-dots li button{background-color:#b2b2b2}
+
+/* Footer */
+.lst_wing_btn .btn_top{border:1px solid #e1e1e1}

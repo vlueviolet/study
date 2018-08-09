@@ -209,7 +209,42 @@
         }
     };
 
+    win.OVERWATCH.Media.MediaJson = function (args) {
+        var defParams = {
+            wrap : '.media_lst'
+        };
+        this.opts = $.extend({}, defParams, (args || {}));
+        if(!(this.wrap = $(this.opts.wrap)).length) return;
+        this.init();
+    };
+    win.OVERWATCH.Media.MediaJson.prototype = {
+        init : function () {
+            this.initLayout();
+        },
+        initLayout : function () {
+            var promise = $.ajax({
+                dataType : 'json',
+                url : '../json/media_contenders.json'
+            });
+
+            var whenSuccess = function(data) {
+                console.log(data);
+            }
+            var whenError = function(e) {
+                console.error(e);
+            }
+            var whenComplete = function () {
+                console.log('complete');
+            }
+
+            promise.then(whenSuccess, whenError);
+            promise.always(whenComplete);
+        }
+    };
+
     $(function () {
-        win.MediaView = new win.OVERWATCH.Media.MediaView();
+        // win.MediaView = new win.OVERWATCH.Media.MediaView();
+        win.MediaJson = new win.OVERWATCH.Media.MediaJson();
+
     });
 })(window, window.jQuery, window.document);

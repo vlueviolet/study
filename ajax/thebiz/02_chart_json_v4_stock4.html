@@ -1,0 +1,261 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>더비즈 공인중개사</title>
+<link rel="stylesheet" type="text/css" href="https://www.highcharts.com/media/com_demo/css/highslide.css">
+<style type="text/css">
+#chart {
+    width: 1200px;
+    height: 640px;
+}
+.highcharts-xaxis-labels text{
+	display:none;
+}
+
+@media screen and (max-width: 768px) {
+	#chart {
+		display: none;
+	}
+}
+	</style>
+</head>
+
+<body>
+	<div id="chart"> </div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.highcharts.com/stock/highstock.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/drag-panes.js"></script>
+	<script src="https://code.highcharts.com/stock/indicators/indicators.js"></script>
+	<script src="https://code.highcharts.com/stock/indicators/volume-by-price.js"></script> <!-- // HighChart -->
+	<script type="text/javascript">
+// 차트 제어를 위한 변수 선언
+var chart = '';
+// JSON 데이터의 매매/전세 구분을 위한 인덱스 배열
+var idx = [];
+// JSON Key를 기준으로한 데이터 배열
+var area = [];
+var year = [];
+var month = [];
+var yearMon = [];
+var division = [];
+var price = [];
+var deposit = [];
+var monthly = [];
+var count = [];
+// 1,000 단위 콤마 추가 함수
+var comma = function(str) {
+	str = String(str);
+	return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+}
+// 데이터를 배열에 저장하는 함수
+var putData = function(arr, key, key2, value2, area, year, month, division, price, deposit, monthly, count) {
+	switch (key2) {
+		case 'area':
+			area.push(value2);
+			break;
+		case 'year':
+			year.push(String(value2));
+			break;
+		case 'month':
+			if (String(value2).length > 1) {
+				month.push(String(value2));
+			}
+			else {
+				month.push('0' + String(value2));
+			}
+			break;
+		case 'division':
+			division.push(value2);
+			break;
+		case 'price':
+			price.push(value2);
+			break;
+		case 'deposit':
+			deposit.push(value2);
+			break;
+		case 'monthly':
+			monthly.push(value2);
+			break;
+		case 'count':
+			count.push(value2);
+			break;
+	}
+}
+var chart = Highcharts.chart('chart', {
+	// Chart 에니메이션 여부
+	chart: {
+		animation: false,
+	},
+	// 필터 영역
+	rangeSelector: {
+		enabled: false
+	},
+	credits: {
+		enabled: false
+	},
+	// 스크롤 바 노출 유무
+	scrollbar: {
+		enabled: false
+	},
+	title: {
+		text: null
+	},
+	subtitle: {
+		text: null
+	},
+	tooltip: {
+		shared: true,
+		crosshairs: true,
+		// 마우스 오버시 툴팁 노출 여부
+		enabled: true,
+		formatter: function() {
+			return this.x + ' - ' + comma(this.y) + ' 만원';
+		}
+    },
+    plotOptions: {
+        column: {
+            // stacking: 'normal',
+            dataLabels: {
+                enabled: false,
+                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+            },
+        }
+    },
+    xAxis: {
+        categories : yearMon
+    },
+	yAxis: [{
+		startOnTick: false,
+		endOnTick: false,
+		labels: {
+			align: 'right',
+			x: -3,
+			formatter: function() {
+				return this.value / 10000 + '억';
+			}
+		},
+		height: '80%',
+		lineWidth: 2,
+		resize: {
+			enabled: true
+		}
+	}, {
+		labels: {
+			align: 'right',
+			x: -3
+		},
+		top: '85%',
+		height: '15%',
+		offset: 0,
+		lineWidth: 2
+	}],
+	navigator: {
+		enabled: false
+	},
+});
+// 그래프에 데이터를 추가하는 함수
+var series = function(chart, cName, cData, cType, cYaxis, color, width, symbol) {
+	chart.addSeries({
+		name: cName,
+		data: cData,
+		type: cType,
+		yAxis: cYaxis,
+		color: color,
+		lineWidth: width,
+		marker: {
+			symbol : symbol,
+			// lineColor: '#ff0000',
+            // lineWidth: 2
+        }
+	});
+}
+
+// 인덱스 배열을 저장하고, 그래프를 구현하는 함수
+var getData = function(json, type2, type3) {
+	var injectData = $.ajax({
+        url: 'js/json/' + json + '.json',
+        dataType: 'json'
+	});
+	var success = function(res) {
+		price = [];
+		deposit = [];
+		count = [];
+		
+		$.map(res, function(value, key){
+			$.map(value, function(value2, key2){
+				key2 == type2 ? idx.push(key) : '';
+				putData(idx, key, key2, value2, area, year, month, division, price, deposit, monthly, count);
+			});
+		});
+
+		// 년+월 텍스트 처리
+		for (var i in year) {
+			yearMon.push(year[i] + '/' + month[i]);
+		}
+		
+		// 배열 내에 존재하는 0 Value > Null Value 치환
+		price = price.map(function(val, i){return val === 0 ? null : val});
+		deposit = deposit.map(function(val, i){return val === 0 ? null : val});
+		count = count.map(function(val, i){return val === 0 ? null : val});
+
+		// 인덱스 배열 처리 완료 후 차트 기본 설정 수행
+		// 매매, 전세 데이터 구성 완료시 Series 추가 후 차트 다시 렌더링
+		switch(type3){
+			case 1: series(chart, '매매 실거래가', price, 'scatter', 0, '', 2, 'circle'); break;
+			case 2: series(chart, '매매 추이', price, 'line', 0, '#ff0000', 5, 'square'); break;
+			case 3: series(chart, '매매 거래건수', count, 'column', 1, '', 2, 'cross'); break;
+			case 4: series(chart, '전세 실거래가', deposit, 'scatter', 0, '', 2, ''); break;
+			case 5: series(chart, '전세 추이', deposit, 'line', 0, '', 2, ''); break;
+			case 6: series(chart, '전세 거래건수', count, 'column', 1, '#0000ff', 2, ''); break;
+		}
+		yearMon = [];
+	}
+	
+	var error = function(e){
+		console.log(e);
+	}
+
+	injectData.then(success, error);
+}
+var processFunc = function(url, type, type2) {
+	// 데이터 배열 수집, 차트 데이터 추가 및 렌더링
+    getData(url, type, type2);
+	chart.redraw();
+}
+
+// 인덱스 배열 수집, 차트 설정
+processFunc('sampleData_sale_real', 'price', 1); // 매매 실거래가
+processFunc('sampleData_sale_trend', 'price', 2); // 매매 추이
+processFunc('sampleData_sale_count', 'count', 3); // 매매 거래건수
+processFunc('sampleData_rental_real', 'deposit', 4); // 전세 실거래가
+processFunc('sampleData_rental_trend', 'deposit', 5); // 전세 추이
+processFunc('sampleData_rental_count', 'count', 6); // 전세 거래건수
+
+setTimeout(function(){
+	var label = $('.highcharts-xaxis-labels text');
+	var lblArr = [];
+	var lblArr2 = [];
+
+	for(var i=0;i<label.length;i++){
+		lblArr.push(label.eq(i).text().substr(0, 4));
+		if(lblArr[i-1] != undefined && lblArr[i-1] == lblArr[i]){
+			lblArr2.push('');
+		}else{
+			lblArr2.push(lblArr[i]);
+		}
+	}
+	for(var i=0;i<label.length;i++){
+		label.eq(i).text(lblArr2[i]);
+	}
+	label.show();
+});
+</script>
+<!-- // [D] JS -->
+</body>
+
+</html>

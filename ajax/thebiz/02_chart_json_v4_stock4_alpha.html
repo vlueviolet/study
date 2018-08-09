@@ -1,0 +1,1759 @@
+
+<!Doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>더비즈 공인중개사</title>
+<link rel="stylesheet" type="text/css" href="css/ie8.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/contents.css">
+</head>
+<body>
+<ul id="skip">
+<li><a href="#gnb">주메뉴 바로가기</a></li>
+<li><a href="#container">본문 바로가기</a></li>
+</ul>
+
+<div id="wrap" class="wrap">
+	<div id="header" class="header">
+		<div class="inner">
+			<div class="gnb">
+				<!-- [D] 로고 활성화 시 : display: inline-block 으로 활성화 -->
+				<h1 class="logo" style="display:inline-block"><a href="#" class="btn_link">골든키 공인중개소</a></h1>
+				<!-- [D] 로고가 이미지인 경우 : logo에 img_type 클래스 추가 -->
+				<h1 class="logo img_type" style="display:none"><a href="#" class="btn_link">
+					<img src="img/temp/@logo.png" alt="" width="220" height="48">
+				</a></h1>
+				<ul id="gnb" class="gnb_cate">
+				<li><a href="#">업소 소개</a></li>
+				<li class="on"><a href="#">단지 정보</a></li>
+				<li><a href="#">매물 정보</a></li>
+				<li><a href="#">최근 본 매물</a></li>	
+				</ul>
+			</div>
+
+			<div class="m gnb">
+				<h1 class="logo" style="display:_none"><a href="#" class="btn_link">골든키 공인중개소</a></h1>
+				<h1 class="logo img_type" style="display:none"><a href="#" class="btn_link">
+					<img src="img/temp/@logo.png" alt="" width="220" height="48">
+				</a></h1>
+				<strong class="page_tit">단지정보</strong>
+				<a href="#" class="btn_back" style="display:none">
+					<span class="sp">뒤로가기</span>
+				</a>
+				<a href="#" class="btn_home">
+					<span class="sp">메인으로</span>
+				</a>
+				<button type="button" class="btn_menu">
+					<span class="sp">하위메뉴 열기</span>
+				</button>
+				<!-- [D] GNB Depth
+					1. Depth 활성화 시, body에 no_scroll 클래스 추가 필요 
+					2. dimmed 활성화 필요
+				-->
+				<div class="dimmed" style="display:none"></div>
+				<div class="m gnb_cate" style="display:none">
+					<div class="bx_tit">
+						<strong class="tit">골든키 공인중개소</strong>
+						<button type="button" class="btn_close">
+							<span class="sp">하위메뉴 닫기</span>
+						</button>
+					</div>
+					<ul class="lst_category">
+					<!-- [D] 메뉴 활성화 시 : on클래스 추가 -->
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">업소 소개</a></li>
+					<li class="on"><a href="#">단지 정보</a></li>
+					<li><a href="#">매물 정보</a></li>
+					<li><a href="#">최근 본 매물</a></li>
+					</ul>
+					<ul class="lst_bottom_btn">
+					<li><a href="#" class="btn btn_call"><span class="ico"></span>전화하기</a></li>
+					<li><a href="#" class="btn btn_sms"><span class="ico"></span>문자문의</a></li>
+					<li><a href="#" class="btn btn_kakaotalk"><span class="ico"></span>카카오톡</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- [D]  단지정보 페이지 : container 에 apt_info 클래스 추가 -->
+	<div role="main" id="container" class="apt_info">
+		<div class="section area_recommend">
+			<div class="inner">
+				<h2 class="section_tit">프리미엄 추천 단지</h2>
+
+				<!-- [D] (모바일) 탭메뉴가 3개 이상인 경우 : .bx_tabmenu 에 add_btn 클래스 추가 -->
+				<div class="bx_tabmenu add_btn">
+					<!-- [D]  탭메뉴가 4개 이상일 때 : .lst_tabmenu에 more 클래스 추가 -->
+					<div class="lst_tabmenu">
+					<div class="bx_dummy">
+						<!-- [D] 활성화 된 메뉴 : .bx_btn 에 on 클래스 추가 -->
+						<div class="bx_btn on"><a href="#"><span class="txt ellipsis">서해 그랑블 아파트</span></a></div>
+						<div class="bx_btn"><a href="#"><span class="txt ellipsis">금호 어울림 타운</span></a></div>
+						<div class="bx_btn"><a href="#"><span class="txt ellipsis">대원 칸타빌 아파트</span></a></div>
+						<div class="bx_btn"><a href="#"><span class="txt ellipsis">단지명단지명단지명</span></a></div>
+						<div class="bx_btn"><a href="#"><span class="txt ellipsis">단지명은최대여덟</span></a></div>
+						<div class="bx_btn" style="display:none"><a href="#"><span class="txt ellipsis">단지명은최대여덟글자</span></a></div>
+						<div class="bx_btn" style="display:none"><a href="#"><span class="txt ellipsis">단지명은최대여덟글자</span></a></div>
+					</div>
+					</div>
+					<button type="button" class="btn_open"><span class="sp">메뉴 열기</span></button>
+				</div>
+
+				<!-- [D] PC 썸네일 & 이미지 영역 (.lst_thumb, .big_thumb 서로 이미지에 맞게 연동 필요) -->
+				<div class="lst_thumb slider slider-nav">
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<!-- [D] 동영상 타입 : .bx_img에 video_type 클래스 추가 -->
+						<span class="bx_img video_type">
+							<iframe width="100" height="100" src="https://www.youtube.com/embed/D4Z2nEdzkdc" allowfullscreen></iframe>
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb3.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb5.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb6.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb7.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<!-- [D] 이미지 없는 경우 -->
+						<span class="bx_img">
+							<img src="img/temp/@thumb_no_image.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+				</div>
+				<div class="big_thumb slider slider-for">
+					<div>
+						<div id="map" class="map_info">
+						</div>
+					</div>
+					<div>
+						<!-- [D] 동영상 타입 : video_type 클래스 추가 -->
+						<span class="bx_img video_type">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/D4Z2nEdzkdc" allowfullscreen></iframe>
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb3.jpg" alt="">
+						</span>
+					</div>					
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb5.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb6.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb7.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@thumb_no_image.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+					<div>
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb4.jpg" alt="">
+						</span>
+					</div>
+				</div>
+
+				<!-- [D] 모바일 썸네일 영역 -->
+				<div class="m lst_thumb">
+					<div class="first">
+						<span class="bx_img">
+							<img src="img/temp/@m_lst_thumb.jpg" alt="">
+							<span class="sp ico_apt">아파트</span>
+						</span>
+					</div>
+					<!-- [D] 동영상인 경우 : video_type 클래스 추가 -->
+					<a href="#" class="second video_type">
+						<span class="bx_img">
+							<img src="img/temp/@m_lst_thumb2.jpg" alt="">
+						</span>
+					</a>
+					<!-- [D] 사진이 3개 이상인 경우 : more_view 클래스 추가 -->
+					<a href="#" class="last more_view">
+						<span class="bx_img"><img src="img/temp/@m_lst_thumb2.jpg" alt=""></span>
+					</a>
+				</div>
+			</div>
+
+			<!-- [D] 아이템 타이틀 (상단 고정인 경우 : .group_item_dsc에 top_fixed 클래스 추가) -->
+			<div class="group_item_dsc">
+				<div class="inner">
+					<div class="item_info">
+						<span class="tag_bubbletype">중개소 추천</span>
+						<em class="name">서해 그랑블 아파트</em>
+						<!-- [D] 아파트명 클릭 시 : .bx_name에 .open 클래스 추가 (하위메뉴 열림) -->
+						<div class="bx_name">
+							<a href="#" class="name">서해 그랑블 아파트
+								<!-- [D] open 클래스 추가된 경우, 문구 변경 필요 (메뉴 열기 -> 메뉴 닫기) -->
+								<span class="blind">메뉴 열기</span>
+							</a>
+							<ul class="lst_item">
+							<!-- [D] 활성화 된 메뉴 : li에 on 클래스 추가 -->
+							<li><a href="#">서해 그랑블 아파트</a></li>
+							<li><a href="#">금호 어울림 타운하우스</a></li>
+							<li class="on"><a href="#">대원 칸타빌 아파트</a></li>
+							<li><a href="#">월드 메르디앙 아파트</a></li>
+							<li><a href="#">단지명단지명단지명단지명단지명단지명단지명단지명132</a></li>
+							<li><a href="#">대원 칸타빌 아파트 2차</a></li>
+							</ul>
+						</div>
+						<a href="#" class="btn_share"><span class="sp"></span><span class="txt">URL 복사</span></a>
+						<p class="dsc">단지가 넓고 쾌적하며 학군이 좋아 아이를 키우는데 최적의 단지입니다.</p>
+					</div>
+					<ul class="lst_menu2">
+					<!-- [D] 메뉴 활성화 시 : li에 on 클래스 추가 -->
+					<li class="on"><a href="#menu1">단지개요</a></li>
+					<li><a href="#menu2">면적 및 시세</a></li>
+					<li><a href="#menu3">주변 편의시설</a></li>
+					<li><a href="#menu4">매물정보</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="section area_item_info">
+			<!-- [D] 단지정보 -->
+			<div class="inner">
+				<div id="menu1" class="bx_tit">
+					<strong class="tbl_tit">
+						<span class="tit_txt">단지정보</span>
+					</strong>
+				</div>
+				<div class="tbl_type2">
+					<table>
+						<caption>단지 정보</caption>
+						<colgroup><col style="width:160px"><col><col style="width:160px"><col></colgroup>
+						<tbody>
+						<tr>
+						<th scope="row">취급 중개소</th>
+						<td>
+							골든키 공인중개사사무소 032-4870-0653<br>
+							대표 : 박소영
+						</td>
+						<th scope="row">단지 주소</th>
+						<td>
+							경기도 용인시 기흥구 중동 860 2줄 노출 2줄 노출 2줄 노출 2줄 노출 2줄 노출<br>
+							<span class="tag">도로명</span>경기도 용인시 기흥구 중동 동백4로 26 경기도 용인시 기흥구 중동 동백4로 26 경기도 용인시 기흥구 중동 동백4로 26</td>
+						</tr>
+						<tr>
+						<th scope="row">총 세대 / 동수</th>
+						<td>2890세대 / 44동</td>
+						<th scope="row">최저 / 최고층</th>
+						<td>20층 / 29층</td>
+						</tr>
+						<tr>
+						<th scope="row">총 세대 주차수</th>
+						<td>4790대 / 세대당 1.26대</td>
+						<th scope="row">난방방식 / 연료</th>
+						<td>지역난방 / 열병합</td>
+						</tr>
+						<tr>
+						<th scope="row">용적률</th>
+						<td>270%</td>
+						<th scope="row">건폐율</th>
+						<td>13%</td>
+						</tr>
+						<tr>
+						<th scope="row">건설사명</th>
+						<td>삼성물산 (주)</td>
+						<th scope="row">준공년월</th>
+						<td>2003년 12월</td>
+						</tr>
+						<tr>
+						<th scope="row">공급 면적</th>
+						<td colspan="3">79A㎡, 79B㎡, 106㎡, 152A㎡, 79A㎡, 79B㎡, 106㎡, 152A㎡, 152A1㎡, 152A2㎡, 152B㎡, 154AT㎡</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="m tbl_type2">
+					<table>
+						<caption>단지 정보</caption>
+						<colgroup><col style="width:30%"><col></colgroup>
+						<tbody>
+						<tr>
+						<th scope="row">취급 중개소</th>
+						<td>
+							골든키 공인중개사사무소 032-4870-0653<br>
+							대표 : 박소영
+						</td>
+						</tr>
+						<tr>
+						<th scope="row">단지 주소</th>
+						<td>
+							경기도 용인시 기흥구 중동 860 2줄 노출 2줄 노출 2줄 노출 2줄 노출 2줄 노출<br>
+							<span class="tag">도로명</span>경기도 용인시 기흥구 중동 동백4로 26 경기도 용인시 기흥구 중동 동백4로 26 경기도 용인시 기흥구 중동 동백4로 26</td>
+						</tr>
+						<tr>
+						<th scope="row">총 세대 / 동수</th>
+						<td>2890세대 / 44동</td>
+						</tr>
+						<tr>
+						<th scope="row">최저 / 최고층</th>
+						<td>20층 / 29층</td>
+						</tr>
+						<tr>
+						<th scope="row">총 세대 주차수</th>
+						<td>4790대 / 세대당 1.26대</td>
+						</tr>
+						<tr>
+						<th scope="row">난방방식 / 연료</th>
+						<td>지역난방 / 열병합</td>
+						</tr>
+						<tr>
+						<th scope="row">용적률</th>
+						<td>270%</td>
+						</tr>
+						<tr>
+						<th scope="row">건폐율</th>
+						<td>13%</td>
+						</tr>
+						<tr>
+						<th scope="row">건설사명</th>
+						<td>삼성물산 (주)</td>
+						</tr>
+						<tr>
+						<th scope="row">준공년월</th>
+						<td>2003년 12월</td>
+						</tr>
+						<tr>
+						<th scope="row">공급 면적</th>
+						<td>79A㎡, 79B㎡, 106㎡, 152A㎡, 79A㎡, 79B㎡, 106㎡, 152A㎡, 152A1㎡, 152A2㎡, 152B㎡, 154AT㎡</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- [D] 평형정보 -->
+			<div class="group_space_info">
+				<div id="menu2" class="bx_tit">
+					<strong class="tbl_tit">
+						<span class="tit_txt">평형 정보</span>
+					</strong>
+					<div class="bx_lst_menu">
+						<div class="lst_menu">
+							<a href="#" class="on">152A1㎡</a>
+							<a href="#">152A2㎡</a>
+							<a href="#">152B㎡</a>
+							<a href="#">154AT㎡</a>
+							<a href="#">154BT㎡</a>
+						</div>
+						<!-- [D] 메뉴 개수에 따라 숫자 변경 필요 -->
+						<span class="txt">외 19개</span>
+						<!-- [D] 더보기 있는 경우 (버튼 클릭 시 : .bx_submenu 활성화 필요) -->
+						<button type="button" class="btn_open">
+							<span class="txt">더보기</span>
+						</button>
+						<div class="bx_submenu" style="display:none">
+							<ul class="lst_submenu">
+							<!-- [D] 메뉴활성화 시 : li 에 on 클래스 추가 -->
+							<li class="on"><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							</ul>
+							<button type="button" class="btn_close">
+								<span class="txt">닫기</span>
+								<span class="sp"></span>
+							</button>
+						</div>
+					</div>
+					<div class="m bx_lst_menu">
+						<!-- [D] 하위메뉴 오픈 : .lst_menu에 sub_open 클래스 추가 -->
+						<div class="lst_menu sub_open">
+							<a href="#">
+								<span class="option_txt ellipsis">152A1㎡</span>
+								<span class="sp">메뉴 열기</span>
+							</a>
+						</div>
+						<div class="bx_submenu">
+							<ul class="lst_submenu">
+							<!-- [D] 메뉴활성화 시 : li 에 on 클래스 추가 -->
+							<li class="on"><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							<li><a href="#">152A1㎡</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- [D] 면적정보 -->
+				<div class="space_detail_info">
+					<!-- [D] 모바일 타이틀 -->
+					<div class="m bx_tit">
+						<em class="tbl_tit">
+							<span class="tit_txt">공급면적 152.07㎡ (46A평)</span>
+						</em>
+					</div>
+					<!-- [D] 평면도 클릭 시 이미지 갤러리 노출 -->
+					<span class="bx_img">	
+						<img src="img/temp/@item_info.jpg" alt="">
+						<a href="#" class="btn_zoom"><span class="sp">이미지 크게보기</span></a>
+					</span>
+					<div class="bx_txt_info">
+						<div class="bx_tit">
+							<em class="tbl_tit">
+								<span class="tit_txt">공급면적 152.07㎡ (46A평)</span>
+							</em>
+						</div>
+						<div class="tbl_type2">
+							<table>
+							<caption>면적 정보</caption>
+							<colgroup><col><col></colgroup>
+							<tbody>
+							<tr>
+							<th scope="row">전용면적</th>
+							<td>130.43㎡ (전용률 86%)</td>
+							</tr>
+							<tr>
+							<th scope="row">방 수</th>
+							<td>4개</td>
+							</tr>
+							<tr>
+							<th scope="row">욕실 수</th>
+							<td>2개</td>
+							</tr>
+							<tr>
+							<th scope="row">현관구조</th>
+							<td>계단식</td>
+							</tr>
+							<tr>
+							<th scope="row">세대수</th>
+							<td>265세대</td>
+							</tr>
+							<tr>
+							<th scope="row">연평균 관리비</th>
+							<td>279,588원 (하절기 : 24만원 / 동절기 : 36만원)</td>
+							</tr>
+							<tr>
+							<!-- [D] 타이틀 강조인 경우 : em 태그로 한 번 감쌈 -->
+							<th scope="row"><em class="em">실 보유매물</em></th>
+							<td>
+								<!-- [D] 테이블 내 리스트 유형 -->
+								<ul class="lst_dsc">
+								<li><a href="#">매매 <span class="txt_color">11</span></a></li>
+								<li> <a href="#">전세 <span class="txt_color">5</span></a></li>
+								<li><a href="#">월세 <span class="txt_color">7</span></a></li>
+								<li><a href="#">단기임대 <span class="txt_color">0</span></a></li>
+								</ul>
+							</td>
+							</tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- [D] 가격정보 -->
+				<div class="space_price_info">
+					<!-- [D] 시세평균가 -->
+					<div class="dummy_inner">
+						<div class="item_price">
+							<div class="bx_tit">
+								<strong class="tbl_tit">
+									<span class="tit_txt">시세 평균가</span>
+									<span class="tit_dsc">/ 2018년 06월 06일 한국감정원 기준</span>
+								</strong>
+								<div class="lst_menu tab_type">
+									<!-- [D] 메뉴 활성화 시 : a 에 on 클래스 추가 -->
+									<a href="#" class="btn_menu on">시세</a>
+									<a href="#" class="btn_menu">평당가</a>
+								</div>
+							</div>
+							<div class="bx_chart">
+								<div class="chart_remark">
+									<span class="remark_info">
+										<span class="tag">매매</span>
+										<span class="txt">최고 12억 1,000</span>
+									</span>
+									<span class="remark_info">
+										<!-- [D] 전세 태그 : .tag에 charter 클래스 추가 -->
+										<span class="tag charter">전세</span>
+										<span class="txt">최고 10억</span>
+									</span>
+								</div>
+								<div id="chart1" class="chart_graph"></div>
+							</div>
+							<div class="tbl_type3">
+								<table>
+								<caption>시세 평균가 정보</caption>
+								<colgroup><col><col><col><col><col></colgroup>
+								<thead>
+								<tr>
+								<th scope="col" class="date">기준일</th>
+								<th scope="col" class="data_type">형태</th>
+								<th scope="col" class="minimum">하한가</th>
+								<th scope="col" class="maximum">상한가</th>
+								<th scope="col" class="last_diff">전주 대비 변동</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+								<th rowspan="2" scope="col">2018.06.03</th>
+								<!-- [D] 매매 : td 에 txt_color 추가 (가운데정렬 : txt_align 추가) -->
+								<td class="txt_color txt_align">매매</td>
+								<td>12억 1,000</td>
+								<td>12억 1,000</td>
+								<td class="txt_color">+ 1,000</td>
+								</tr>
+								<tr>
+								<!-- [D] 전세값 : td 에 txt_color2 클래스 추가 (가운데정렬 : txt_align 추가) -->
+								<td class="txt_color2 txt_align">전세</td>
+								<td>9억 5,000</td>
+								<td>9억 5,000</td>
+								<td class="txt_color2">- 5,000</td>
+								</tr>
+								<tr>
+								<th rowspan="2" scope="col">2018.05.27</th>
+								<td class="txt_color txt_align">매매</td>
+								<td>999억 9,999</td>
+								<td>999억 9,999</td>
+								<td class="txt_color">- 1억 5,000</td>
+								</tr>
+								<tr>
+								<td class="txt_color2 txt_align">전세</td>
+								<td>9억</td>
+								<td>9억</td>
+								<td class="txt_color2">+ 5,000</td>
+								</tr>
+								<tr>
+								<th rowspan="2" scope="col">2018.05.20</th>
+								<td class="txt_color txt_align">매매</td>
+								<td>-</td>
+								<td>-</td>
+								<td class="txt_color">-</td>
+								</tr>
+								<tr>
+								<td class="txt_color2 txt_align">전세</td>
+								<td>-</td>
+								<td>-</td>
+								<td class="txt_color2">-</td>
+								</tr>
+								<tr>
+								<th rowspan="2" scope="col">2018.06.03</th>
+								<td class="txt_color txt_align">매매</td>
+								<td>12억 1,000</td>
+								<td>12억 1,000</td>
+								<td class="txt_color">+ 1,000</td>
+								</tr>
+								<tr>
+								<td class="txt_color2 txt_align">전세</td>
+								<td>9억 5,000</td>
+								<td>9억 5,000</td>
+								<td class="txt_color2">- 5,000</td>
+								</tr>
+								</tbody>
+								</table>
+							</div>
+							<span class="tbl_dsc">/ 실거래가 : 기준일에서 최근 거래된 10건 통계</span>
+						</div>
+					</div>
+					<!-- [D] 실거래정보 영역 -->
+					<div class="dummy_inner">
+						<!-- [D] 실거래가 영역 : .item_price에 transaction 클래스 추가 -->
+						<div class="item_price transaction">
+							<div class="bx_tit">
+								<strong class="tbl_tit">
+									<span class="tit_txt">국토교통부 실거래 정보</span>
+									<span class="tit_dsc">/ 2018년 06월 06일 기준</span>
+								</strong>
+							</div>
+							<div class="bx_chart">
+								<div class="chart_remark">
+									<span class="remark_info">
+										<span class="tag">매매</span>
+										<span class="txt">최고 12억 1,000 / 1층</span>
+									</span>
+									<span class="remark_info">
+										<!-- [D] 전세 태그 : .tag에 charter 클래스 추가 -->
+										<span class="tag charter">전세</span>
+										<span class="txt">최고 10억 / 10층</span>
+									</span>
+								</div>
+								<div id="chart2" class="chart_graph"></div>
+							</div>
+							<div class="bx_tit">
+								<strong class="tbl_tit">
+									<span class="tit_txt">최근 실거래가 내역</span>
+									<span class="tit_dsc">/ 단위 : 만원</span>
+								</strong>
+							</div>
+							<div class="tbl_type3">
+								<table>
+								<caption>최근 실거래가 내역</caption>
+								<colgroup><col><col><col><col></colgroup>
+								<thead>
+								<tr>
+								<th scope="col" class="deal_type">거래형태</th>
+								<th scope="col" class="lowest">최저가</th>
+								<th scope="col" class="highest">최고가</th>
+								<th scope="col" class="per">거래건수</th>								
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+								<th scope="row">매매가</th>
+								<td>2억 9,450<br>(8층)</td>
+								<td>2억 9,450<br>(8층)</td>
+								<!-- [D] 거래건수 : td 에 txt_color 클래스 추가 -->
+								<td class="txt_color">9건</td>
+								</tr>
+								<tr>
+								<th scope="row">전세가</th>
+								<td>2억<br>(8층)</td>
+								<td>2억 9,450<br>(8층)</td>
+								<td class="txt_color">9건</td>
+								</tr>
+								<tr>
+								<th scope="row">월세가</th>
+								<td>5,000 / 70<br>(1층)</td>
+								<td>1억2,000 / 35<br>(2층)</td>
+								<td class="txt_color">9건</td>
+								</tr>
+								</tbody>
+								</table>
+							</div>
+							<span class="tbl_dsc">/ 실거래가 : 기준일에서 최근 거래된 10건 통계</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- [D] 학군정보 / 주변 대중교통 -->
+			<div class="inner">
+				<div id="menu3" class="bx_tit">
+					<strong class="tbl_tit">
+						<span class="tit_txt">학군 정보</span>
+						<span class="tit_dsc">/ 기준 : 2018년 03월 20일</span>
+					</strong>
+					<div class="bx_lst_menu">
+						<div class="lst_menu">
+							<a href="#" class="on">석성초등학교</a>
+							<a href="#">동백초등학교</a>
+							<a href="#">중일초등학교</a>
+						</div>
+					</div>
+					<div class="m bx_lst_menu">
+						<!-- [D] 하위메뉴 오픈 : .lst_menu에 sub_open 클래스 추가 -->
+						<div class="lst_menu sub_open">
+							<a href="#">
+								<span class="option_txt ellipsis">석성초등학교</span>
+								<span class="sp">메뉴 열기</span>
+							</a>
+						</div>
+						<!-- [D] 하위메뉴 타입2 :  .bx_submenu에 type2 클래스 추가 -->
+						<div class="bx_submenu type2">
+							<ul class="lst_submenu">
+							<!-- [D] 메뉴활성화 시 : li 에 on 클래스 추가 -->
+							<li class="on"><a href="#">석성초등학교</a></li>
+							<li><a href="#">동백초등학교</a></li>
+							<li><a href="#">동백초등학교</a></li>
+							<li><a href="#">동백초등학교동백초등학교</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!-- [D] 학군정보 : .tbl_type2에 .tbl_school_info 클래스 추가 -->
+				<div class="tbl_type2 tbl_school_info">
+					<table>
+					<caption>학군 정보</caption>
+					<colgroup><col style="width:12.5%"><col><col style="width:12.5%"><col></colgroup>
+					<tbody>
+					<tr>
+					<th scope="row">학교명</th>
+					<td>석성초등학교</td>
+					<th scope="row">교육청</th>
+					<td>경기도 용인 교육지원청</td>
+					</tr>
+					<tr>
+					<th scope="row">학교 주소</th>
+					<td>경기도 용인시 기흥구 동백2로 53</td>
+					<th scope="row">대표 전화</th>
+					<td>행정과 : 031-693-8821</td>
+					</tr>
+					<tr>
+					<th scope="row">설립</th>
+					<td>공립 (단설) / 1983년 12월 03일</td>
+					<th scope="row">총 교원수</th>
+					<td>71명 / 남 4명, 여 67명</td>
+					</tr>
+					<tr>
+					<th scope="row">총 재학생 수</th>
+					<td>1134명 / 남 579명, 여 555명</td>
+					<th scope="row">학급당 학생 수</th>
+					<td>20.9명</td>
+					</tr>
+					<tr>
+					<!-- [D] 이너 테이블이 들어갈 경우 : td에 insert_inner_tbl 클래스 추가 -->
+					<td colspan="4" class="insert_inner_tbl">
+					<div class="tbl_type_inner ">
+						<table>
+						<caption>학년당 재학생 수 안내</caption>
+						<colgroup><col><col><col><col><col><col><col><col></colgroup>
+						<thead>
+						<tr>
+						<th scope="col" class="txt_align">학년당 <span class="blind">재학생 수</span></th>
+						<th scope="col">1학년</th>
+						<th scope="col">2학년</th>
+						<th scope="col">3학년</th>
+						<th scope="col">4학년</th>
+						<th scope="col">5학년</th>
+						<th scope="col">6학년</th>
+						<th scope="col">특수학급</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+						<th scope="row" class="txt_align">학급수</th>
+						<td>7</td>
+						<td>6</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>7</td>
+						<td>1</td>
+						</tr>
+						<tr>
+						<th scope="row" class="txt_align">학생수</th>
+						<td>195</td>
+						<td>175</td>
+						<td>170</td>
+						<td>180</td>
+						<td>245</td>
+						<td>201</td>
+						<td>-</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+				<div class="m tbl_type2 school_info">
+					<table>
+						<caption>학군 정보</caption>
+						<colgroup><col style="width:30%"><col></colgroup>
+						<tbody>
+						<tr>
+						<th scope="row">학교명</th>
+						<td>석성초등학교</td>
+						</tr>
+						<tr>
+						<th scope="row">교육청</th>
+						<td>경기도 용인 교육지원청</td>
+						</tr>
+						<tr>
+						<th scope="row">학교주소</th>
+						<td>경기도 용인시 기흥구 동백2로 53</td>
+						</tr>
+						<tr>
+						<th scope="row">대표 전화</th>
+						<td>행정과 : 031-693-8821</td>
+						</tr>
+						<tr>
+						<th scope="row">설립</th>
+						<td>공립(단설) / 1983년 12월 03일</td>
+						</tr>
+						<tr>
+						<th scope="row">총 교원수</th>
+						<td>71명 / 남 4명, 여 67명</td>
+						</tr>
+						<tr>
+						<th scope="row">총 재학생수</th>
+						<td>1134명 / 남 579명, 여 555명</td>
+						</tr>
+						<tr>
+						<th scope="row">학급당 학생수</th>
+						<td>20.9명</td>
+						</tr>
+						<tr>
+						<td colspan="2" class="insert_inner_tbl">
+							<div class="tbl_type_inner">
+							<table>
+							<caption>학년당 재학생 수 안내</caption>
+							<colgroup><col style="width:30%"><col><col></colgroup>
+							<thead>
+							<tr>
+							<th scope="col" class="txt_align">학년별 <span class="blind">재학생 수</span></th>
+							<th scope="col">학급수</th>
+							<th scope="col">학생수</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							<th scope="row" class="txt_align">1학년</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							<tr>
+							<th scope="row" class="txt_align">2학년</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							<tr>
+							<th scope="row" class="txt_align">3학년</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							<tr>
+							<th scope="row" class="txt_align">4학년</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							<tr>
+							<th scope="row" class="txt_align">5학년</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							<tr>
+							<th scope="row" class="txt_align">6학년</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							<tr>
+							<th scope="row" class="txt_align">특수학급</th>
+							<td>7</td>
+							<td>195</td>
+							</tr>
+							</tbody>
+							</table>
+							</div>
+						</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- [D] 주변 대중교통 -->
+				<div class="bx_tit">
+					<strong class="tbl_tit">
+						<span class="tit_txt">주변 대중교통</span>
+					</strong>
+				</div>
+				<!-- [D] 주변 대중교통 : .tbl_type2에 .tbl_navigation 클래스 추가 -->
+				<div class="tbl_type2 tbl_navigation">
+					<table>
+					<caption>주변 대중교통 안내</caption>
+					<colgroup><col><col></colgroup>
+					<tbody>
+					<tr>
+					<th scope="row">지하철</th>
+					<!-- [D] 대중교통 안내 : td 에 map_navi, transport_info 클래스 추가 -->
+					<td class="map_navi transport_info">
+						<ul class="lst_way">
+						<li><a href="#" target="_blank">
+							<!-- [D] 태그
+								1. 노선에 맞게 배경색 변경 필요
+								2. 지하철인 경우 : .tag에 .subway 클래스 추가 -->
+							<span class="tag subway" style="background:#71d071">에버라인</span>
+							<div class="direction">
+								<span class="dsc">동백역 1번 출구</span>
+								<span class="dsc txt_color">도보 5분</span>
+							</div>
+						</a></li>
+						</ul>
+					</td>
+					</tr>
+					<tr>
+					<th scope="row">버스</th>
+					<td class="map_navi transport_info">
+						<ul class="lst_way">
+						<li><a href="#" target="_blank">
+							<!-- [D] 태그 (공통) 버스 : .tag에 .bus 클래스 추가	-->
+							<span class="tag bus" style="background:#70b0e0">공항</span>
+							<div class="direction">
+								<span class="dsc">9407, 3600, 9507, 9607</span>
+								<span class="dsc txt_color">어은목 사거리 앞 하차</span>
+							</div>
+						</a></li>
+						<li><a href="#" target="_blank">
+							<span class="tag bus" style="background:#dc1219">직행</span>
+							<div class="direction">
+								<span class="dsc">9407, 3600, 9507, 9607</span>
+								<span class="dsc txt_color">어은목 사거리 앞 하차</span>
+							</div>
+						</a></li>
+						<li><a href="#" target="_blank">
+							<span class="tag bus" style="background:#395cb4">간선</span>
+							<div class="direction">
+								<span class="dsc">143, 145, 301, 440, 472, 362, 240, 342,141, 148</span>
+								<span class="dsc txt_color">어은목 사거리 앞 하차</span>
+							</div>
+						</a></li>
+						<li><a href="#" target="_blank">
+							<span class="tag bus" style="background:#50a232">지선</span>
+							<div class="direction">
+								<span class="dsc">4412, 4318, 4419, 3011</span>
+								<span class="dsc txt_color">어은목 사거리 앞 하차</span>
+							</div>
+						</a></li>
+						</ul>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- [D] 단지매물 : section에 area_for_sale 클래스 추가 -->
+		<div class="section area_for_sale">
+			<div class="inner">
+				<div id="menu4" class="bx_tit">
+					<h2 class="tit">단지 매물</h2>
+					<div class="group_filter">
+						<div class="bx_filter">
+							<!-- [D] 옵션 누를 시 open 클래스 추가 (옵션창 열림) -->
+							<!-- [D] 옵션 선택된 화면 : option 에 selected 클래스 추가 -->
+							<a href="#" class="option selected">매매, 전세, 단기임대</a>
+							<div class="filter_option">
+								<em class="option_tit">거래방식</em>
+								<ul class="lst_option">
+								<li>
+									<!-- [D] 체크박스 활성화 시 : .bx_input_chk에 checked 클래스 추가 (IE8대응) -->
+									<span class="bx_input_chk checked">
+										<input type="checkbox" id="choice_type1" checked>
+										<label for="choice_type1">매매</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type2" checked>
+										<label for="choice_type2">전세</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type3">
+										<label for="choice_type3">월세</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type4">
+										<label for="choice_type4">단기임대</label>
+									</span>
+								</li>
+								</ul>
+								<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+							</div>
+						</div>
+						<div class="bx_filter">
+							<a href="#" class="option">면적 선택</a>
+							<div class="filter_option">
+								<em class="option_tit">면적</em>
+								<ul class="lst_option">
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type5">
+										<label for="choice_type5">~10평 이하</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type6">
+										<label for="choice_type6">20평</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type7">
+										<label for="choice_type7">30평</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type8">
+										<label for="choice_type8">40평</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type9">
+										<label for="choice_type9">50평</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type10">
+										<label for="choice_type10">60평</label>
+									</span>
+								</li>
+								<li>
+									<span class="bx_input_chk">
+										<input type="checkbox" id="choice_type11">
+										<label for="choice_type11">70평 이상~</label>
+									</span>
+								</li>
+								</ul>
+								<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [D] 모바일 필터영역 -->
+				<!-- [D] 상세필터 노출 시 : .bx_filter_result 에 view_detail 클래스 추가 -->
+				<div class="m bx_filter_result view_detail">
+					<div class="bx_inner">
+						<a href="#" class="option_tag">
+							<span class="txt">면적 선택</span>
+							<span class="btn_del"><span class="sp">삭제</span></span>
+						</a>
+						<!-- [D] 선택된 결과값 : .option_tag 에 selected 클래스 추가 -->
+						<a href="#" class="option_tag selected">
+							<span class="txt ellipsis">매매</span>
+							<span class="btn_del"><span class="sp">삭제</span></span>
+						</a>						
+						<a href="#" class="option_tag selected">
+							<span class="txt ellipsis">아파트 외 7건</span>
+							<span class="btn_del"><span class="sp">삭제</span></span>
+						</a>
+						<a href="#" class="option_tag selected">
+							<span class="txt ellipsis">10평</span>
+							<span class="btn_del"><span class="sp">삭제</span></span>
+						</a>
+					</div>
+					<!-- [D] 상세필터 : option_tag 에 .detail 클래스 추가 -->
+					<a href="#" class="option_tag detail">
+						<span class="sp"></span>
+						<span class="txt">상세 필터</span>
+					</a>
+				</div>
+
+				<div class="result_search">
+					<p class="dsc">총 <em class="txt_color">5건</em>의 검색 매물이 있습니다.</p>
+					<span class="slide_pagination">
+						<button type="button" class="btn_prev">prev</button>
+						<span class="all_page"></span>
+						<button type="button" class="btn_next">next</button>
+					</span>
+				</div>
+
+				<!-- [D] PC 슬라이드 영역 -->
+				<div class="regular slick-slider">
+					<div>
+						<a href="#" class="lst_item_type">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="bx_item_dsc">
+								<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 1단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<span class="dsc price">월세 300</span>
+								<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+								<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다.</p>
+								<span class="tag_type">확인매물 18,06,25</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="lst_item_type">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="bx_item_dsc">
+								<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 2단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<span class="dsc price">월세 300</span>
+								<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+								<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다.</p>
+								<span class="tag_type">확인매물 18,06,25</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="lst_item_type">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="bx_item_dsc">
+								<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 3단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<span class="dsc price">월세 300</span>
+								<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+								<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다.</p>
+								<span class="tag_type">확인매물 18,06,25</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="lst_item_type">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="bx_item_dsc">
+								<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 4단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<span class="dsc price">월세 300</span>
+								<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+								<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다.</p>
+								<span class="tag_type">확인매물 18,06,25</span>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="lst_item_type">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="bx_item_dsc">
+								<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 5단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<span class="dsc price">월세 300</span>
+								<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+								<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다.</p>
+								<span class="tag_type">확인매물 18,06,25</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- [D] 모바일 리스트 영역 -->
+				<div class="m bx_lst_item_type">
+					<a href="#" class="lst_item_type">
+						<span class="bx_img">
+							<img src="img/temp/@main_item_slide.jpg" width="630" height="340" alt="">
+						</span>
+						<div class="bx_item_dsc">
+							<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 1단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+							<span class="dsc price">월세 300</span>
+							<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+							<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다. 저렴하게 나왔습니다.설명 두줄 말줄임 처리 필요필요필요필요필요필요필요필요
+
+필요</p>
+							<span class="tag_type">확인매물 18,06,25</span>
+						</div>
+					</a>
+					<a href="#" class="lst_item_type">
+						<span class="bx_img">
+							<img src="img/temp/@main_item_slide.jpg" width="630" height="340" alt="">
+						</span>
+						<div class="bx_item_dsc">
+							<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 1단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+							<span class="dsc price">월세 300</span>
+							<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+							<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다. 저렴하게 나왔습니다.설명 두줄 말줄임 처리 필요필요필요필요필요필요필요필요
+
+필요</p>
+							<span class="tag_type">확인매물 18,06,25</span>
+						</div>
+					</a>
+					<a href="#" class="lst_item_type">
+						<span class="bx_img">
+							<img src="img/temp/@main_item_slide.jpg" width="630" height="340" alt="">
+						</span>
+						<div class="bx_item_dsc">
+							<em class="tit ellipsis">중동 성산마을 서해그랑블 아파트 1단지 104동 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+							<span class="dsc price">월세 300</span>
+							<span class="dsc extent">87/55㎡ 33/24평 8/12층 방3욕실2</span>
+							<p class="dsc txt">공원뷰, 올수리, 즉시 입주가능하며 시세보다 저렴하게 나왔습니다. 저렴하게 나왔습니다.설명 두줄 말줄임 처리 필요필요필요필요필요필요필요필요
+
+필요</p>
+							<span class="tag_type">확인매물 18,06,25</span>
+						</div>
+					</a>
+				</div>
+
+				<a href="#" class="btn_type btn_round"><span class="sp ico_list"></span><span class="txt">매물 전체보기</span></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="lst_wing_btn"></div>
+	<div class="m lst_bottom_tab"></div>
+	<div id="footer" class="footer"></div>
+
+	<!-- [D] 레이어팝업 -->
+	<div class="dimmed type2" style="display:none"></div>
+	<div class="ly_pop_wrap ly_share" style="display:none">
+		<div class="dummy_bx">
+			<div class="pop_contents">
+				<div class="bx_align">
+					<em class="pop_tit">단지정보 URL</em>
+					<em class="m pop_tit">공유하기</em>
+					<div class="bx_contents">
+						<p class="dsc">링크를 성공적으로 복사하였습니다.</p>
+						<p class="m dsc">링크를 공유할 경로 선택을 해주세요.</p>
+						<a href="#" class="btn_url">
+							http://land.mk.co.kr/memul/list.php?bubcode=414954149541495
+						</a>
+						<ul class="m lst_share">
+						<li><a href="#" class="btn_sms">
+							<span class="txt">문자발송</span>
+						</a></li>
+						<li><a href="#" class="btn_kakao">
+							<span class="txt">카카오톡</span>
+						</a></li>
+						<li><a href="#" class="btn_share">
+							<span class="txt">링크복사</span>
+						</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- [D] JS -->
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/slick.min.js"></script>
+<!-- <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=2N1dxq5fbsbzUiYOUcxb&amp;submodules=geocoder"></script> -->
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<!-- slick -->
+<script type="text/javascript">
+	$(function() {
+		var $slickRegular = $('.regular'),
+		$slickRegularAll = $('.result_search .all_page'),
+		prevBtn = $('.slide_pagination .btn_prev'),
+		nextBtn = $('.slide_pagination .btn_next');
+
+		$('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 11,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			dots: false,
+			arrows: true,
+			centerMode: false,
+			focusOnSelect: true,
+			// infinite: false
+		});
+		$slickRegular.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+			var i = (currentSlide ? currentSlide : 0) + 1;
+			$slickRegularAll.html('<span class="now">' + i + '</span>' +' / ' + slick.slideCount);
+		});
+		$slickRegular.slick({
+			arrows: true,
+			infinite: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			prevArrow: prevBtn,
+			nextArrow: nextBtn
+		});
+	})
+</script>
+<!-- highchart -->
+<script type="text/javascript">
+	var chart1 = '';
+	var chart = '';
+	var idx = [];
+	var area = [];
+	var year = [];
+	var month = [];
+	var yearMon = [];
+	var division = [];
+	var price = [];
+	var deposit = [];
+	var monthly = [];
+    var count = [];
+    
+    // 1,000 단위 콤마 추가 함수
+	var comma = function(str) {
+		str = String(str);
+		return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+    }
+    
+    // 데이터를 배열에 저장하는 함수
+	var putData = function(arr, key, key2, value2, area, year, month, division, price, deposit, monthly, count) {
+        switch (key2) {
+            case 'area':
+                area.push(value2);
+                break;
+            case 'year':
+                year.push(String(value2));
+                break;
+            case 'month':
+                if (String(value2).length > 1) {
+                    month.push(String(value2));
+                }
+                else {
+                    month.push('0' + value2);
+                }
+                break;
+            case 'division':
+                division.push(value2);
+                break;
+            case 'price':
+                price.push(value2);
+                break;
+            case 'deposit':
+                deposit.push(value2);
+                break;
+            case 'monthly':
+                monthly.push(value2);
+                break;
+            case 'count':
+                count.push(value2);
+                break;
+        }
+	}
+	var chart1 = Highcharts.chart('chart1', {
+		chart: {
+			animation: false,
+		},
+		rangeSelector: {
+			enabled: false
+		},
+		credits: {
+			enabled: false
+		},
+		scrollbar: {
+			enabled: false
+		},
+		title: {
+			text: null
+		},
+		subtitle: {
+			text: null
+		},
+		tooltip: {
+		    formatter: function() {
+		        return this.series.name + ':' + comma(this.y);
+		    }
+	    },
+	    legend: { 
+			enabled: false
+	    },
+	    plotOptions: {
+	        line: {
+	            marker: {
+	            	enabled: false
+	            }
+	        }
+	    },
+	    xAxis: {
+	        categories : yearMon
+	    },
+		yAxis: {
+			title: 'null',
+			startOnTick: false,
+			endOnTick: false,
+			labels: {
+				align: 'right',
+				x: -5,
+				y: 0,
+				formatter: function() {
+					return this.value / 10000 + '억';
+				}
+			}
+		},
+		navigator: {
+			enabled: false
+		},
+	});
+
+	var chart = Highcharts.chart('chart2', {
+		chart: {
+			animation: false,
+		},
+		rangeSelector: {
+			enabled: false
+		},
+		credits: {
+			enabled: false
+		},
+		scrollbar: {
+			enabled: false
+		},
+		title: {
+			text: null
+		},
+		subtitle: {
+			text: null
+		},
+		tooltip: {
+		    formatter: function() {
+		        return this.series.name + ':' + comma(this.y);
+		    }
+	    },
+	    legend: { 
+			enabled: false
+	    },
+	    plotOptions: {
+	        line: {
+	            marker: {
+	            	enabled: false
+	            }
+	        },
+	        column: {
+	            dataLabels: {
+	                enabled: false,
+	                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+	            },
+	        },
+	        scatter : {
+	        	tooltip: {
+	                enabled: false,
+					formatter: function() {
+					}
+	        	}
+	        }
+	    },
+	    xAxis: {
+	        categories : yearMon
+	    },
+		yAxis: [{
+			title: 'null',
+			startOnTick: false,
+			endOnTick: false,
+			labels: {
+				align: 'right',
+				x: -5,
+				y: 0,
+				formatter: function() {
+					return this.value / 10000 + '억';
+				}
+			},
+			height: '80%'
+		}, {
+			title: {
+				text: '거래량',
+				rotation: 0,
+				margin: 0,
+				x: -15
+			},
+			labels: {
+				enabled: false
+			},
+			top: '85%',
+			height: '15%',
+			offset: 0
+		}],
+		navigator: {
+			enabled: false
+		},
+	});
+	// 그래프에 데이터를 추가하는 함수
+	var series1 = function(chart, cName, cData, cType, cYaxis, cZindex, color, width, symbol, mColor, mRadius) {
+			chart1.addSeries({
+			name: cName,
+			data: cData,
+			type: cType,
+			yAxis: cYaxis,
+			zIndex: cZindex,
+			color: color,
+			lineWidth: width,
+			marker: {
+				symbol : symbol,
+				fillColor: mColor,
+				lineColor: null,
+	            lineWidth: 2,
+	            radius: mRadius
+	        }
+		});
+	}
+	var series = function(chart, cName, cData, cType, cYaxis, cZindex, color, width, symbol, mColor, mRadius) {
+		chart.addSeries({
+			name: cName,
+			data: cData,
+			type: cType,
+			yAxis: cYaxis,
+			zIndex: cZindex,
+			color: color,
+			lineWidth: width,
+			marker: {
+				symbol : symbol,
+				fillColor: mColor,
+				lineColor: null,
+	            lineWidth: 2,
+	            radius: mRadius
+	        }
+		});
+	}
+
+	// 인덱스 배열을 저장하고, 그래프를 구현하는 함수
+	var getData = function(json, type2, type3) {
+		var injectData = $.ajax({
+	        url: 'js/json/' + json + '.json',
+	        dataType: 'json'
+		});
+		var success = function(res) {
+			price = [];
+			deposit = [];
+			count = [];
+			
+            $.map(res, function(value, key){
+				$.map(value, function(value2, key2){
+					key2 == type2 ? idx.push(key) : '';
+					putData(idx, key, key2, value2, area, year, month, division, price, deposit, monthly, count);
+				});
+			});
+			
+            // 년+월 텍스트 처리
+            for (var i in year) {
+                yearMon.push(year[i] + '/' + month[i]);
+            }
+            
+			// 배열 내에 존재하는 0 Value > Null Value 치환
+			price = price.map(function(val, i){return val === 0 ? null : val});
+			deposit = deposit.map(function(val, i){return val === 0 ? null : val});
+			count = count.map(function(val, i){return val === 0 ? null : val});
+
+			// 인덱스 배열 처리 완료 후 차트 기본 설정 수행
+			
+            // 매매, 전세 데이터 구성 완료시 Series 추가 후 차트 다시 렌더링
+            switch(type3){
+                case 1: series(
+                    chart, 
+                    '매매 실거래가', 
+                    price, 
+                    'scatter', // type
+                    0, // yAxis
+                    4, // chart zindex
+                    '#21aef6', // color
+                    null, // border width
+                    'circle', // symbol type
+                    null, // marker line color
+                    2, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 2: series(
+                    chart, 
+                    '매매 추이', 
+                    price, 
+                    'line', // type
+                    0, // yAxis
+                    0, // chart zindex
+                    '#4c94e8', // color
+                    2, // border width
+                    'circle', // symbol type
+                    '#fff', // marker line color
+                    3, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 3: series(chart, 
+                    '매매 거래건수', 
+                    count, 
+                    'column', // type
+                    1, // yAxis
+                    0, // chart zindex
+                    '#4c94e8', // color
+                    2, // border width
+                    null, // symbol type
+                    null, // marker line color
+                    null, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 4: series(chart, 
+                    '전세 실거래가', 
+                    deposit, 
+                    'scatter', // type
+                    0, // yAxis
+                    3, // chart zindex
+                    '#31e1a1', // color
+                    null, // border width
+                    '', // symbol type
+                    null, // marker line color
+                    2, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 5: series(chart, 
+                    '전세 추이', 
+                    deposit, 
+                    'line', // type
+                    0, // yAxis
+                    1, // chart zindex
+                    '#0bcda1', // color
+                    2, // border width
+                    'circle', // symbol type
+                    '#fff', // marker line color
+                    3, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 6: series(chart, 
+                    '전세 거래건수', 
+                    count, 
+                    'column', // type
+                    1, // yAxis
+                    0, // chart zindex
+                    '#0bcda1', // color
+                    2, // border width
+                    null, // symbol type
+                    null, // marker line color
+                    null, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 7: series1(
+                    chart, 
+                    '매매 시세', 
+                    price, 
+                    'line', // type
+                    0, // yAxis
+                    2, // chart zindex
+                    '#4c94e8', // color
+                    2, // border width
+                    'circle', // symbol type
+                    '#fff', // marker line color
+                    3, // marker raidus
+                    false // tooltip show?
+                    ); break;
+                case 8: series(chart1, 
+                    '전세 시세', 
+                    deposit, 
+                    'line', // type
+                    0, // yAxis
+                    null, // chart zindex
+                    '#0bcda1', // color
+                    2, // border width
+                    'circle', // symbol type
+                    '#fff', // marker line color
+                    3, // marker raidus
+                    false // tooltip show?
+                    ); break;
+            }
+            yearMon = [];
+        }
+		
+		var error = function(e){
+			console.log(e);
+		}
+
+		injectData.then(success, error);
+	}
+	var processFunc = function(url, type, type2) {
+		// 데이터 배열 수집, 차트 데이터 추가 및 렌더링
+	    getData(url, type, type2);
+		chart.redraw();
+	}
+
+	// 인덱스 배열 수집, 차트 설정
+	processFunc('sampleData_sale_real', 'price', 1); // 매매 실거래가
+	processFunc('sampleData_sale_trend', 'price', 2); // 매매 추이
+	processFunc('sampleData_sale_count', 'count', 3); // 매매 거래건수
+	processFunc('sampleData_rental_real', 'deposit', 4); // 전세 실거래가
+	processFunc('sampleData_rental_trend', 'deposit', 5); // 전세 추이
+	processFunc('sampleData_rental_count', 'count', 6); // 전세 거래건수
+	processFunc('sampleData_sale_trend', 'price', 7); // 매매 추이
+    processFunc('sampleData_rental_trend', 'deposit', 8); // 전세 추이
+    
+	setTimeout(function(){
+		var label = $('.highcharts-xaxis-labels text');
+		var lblArr = [];
+        var lblArr2 = [];
+        
+		for(var i=0;i<label.length;i++){
+			lblArr.push(label.eq(i).text().substr(0, 4));
+			if(lblArr[i-1] != undefined && lblArr[i-1] == lblArr[i]){
+				lblArr2.push('');
+			}else{
+                if(lblArr[i].length == 4){
+                    lblArr2.push(lblArr[i]);
+                }else{
+                    lblArr2.push('');
+                }
+			}
+		}
+		for(var i=0;i<label.length;i++){
+			label.eq(i).text(lblArr2[i]);
+		}
+		label.show();
+	});
+</script>
+<!-- common -->
+<script type="text/javascript" src="js/thebiz.js"></script>
+<!-- // [D] JS -->
+
+</body>
+</html>

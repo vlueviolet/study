@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* HIVELAB (http://www.hivelab.co.kr) */
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button{margin:0;padding:0}
+html,body{height:100%;-webkit-text-size-adjust:none}
+body{overflow-wrap:break-word;word-break:break-all}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+fieldset,li{border:0;vertical-align:top}
+ul,ol{list-style:none}
+img{border:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer;-webkit-appearance:none;-webkit-border-radius:0}
+button::-moz-focus-inner{padding:0;border:0}
+button, input, textarea{outline:none}
+address,caption,em{font-style:normal}
+a,a:focus,a:active,a:hover{text-decoration:none}
+table{border-spacing:0}
+hr{display:none}
+.blind,legend{overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0;white-space:nowrap}
+caption{visibility:hidden;overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+#skip{height:0}
+#skip a{display:block;position:absolute;left:0;top:-100px;width:100%;height:25px;text-align:center}
+#skip a:focus,#skip a:active{position:absolute;top:0;z-index:100;padding:10px 0;background:#ff5675;font-weight:bold;color:#fff;font-size:20px;text-decoration:none}
+
+/* font */
+@font-face {
+	font-family: ng;
+	font-weight: 400;
+	src: url(fonts/NanumGothic.eot); /* IE 호환성 보기*/
+	src: url(fonts/NanumGothic.eot#iefix) format("embedded-opentype"), url(fonts/NanumGothic.woff) format("woff"); 
+}
+
+@font-face {
+	font-family: ng;
+	font-weight: 700;
+	src: url(fonts/NanumGothicBold.eot); /* IE 호환성 보기*/
+	src: url(fonts/NanumGothicBold.eot#iefix) format("embedded-opentype"), url(fonts/NanumGothicBold.woff) format("woff"); 
+}
+
+@font-face {
+	font-family: ns;
+	font-weight: 300;
+	src: url(fonts/NanumSquareL.eot); /* IE 호환성 보기*/
+	src: url(fonts/NanumSquareL.eot#iefix) format("embedded-opentype"), url(fonts/NanumSquareL.woff) format("woff"); 	
+}
+
+@font-face {
+	font-family: ns;
+	font-weight: 400;
+	src: url(fonts/NanumSquareR.eot); /* IE 호환성 보기*/
+	src: url(fonts/NanumSquareR.eot#iefix) format("embedded-opentype"), url(fonts/NanumSquareR.woff) format("woff"); 
+}
+
+@font-face {
+	font-family: ns;
+	font-weight: 700;
+	src: url(fonts/NanumSquareB.eot); /* IE 호환성 보기*/
+	src: url(fonts/NanumSquareB.eot#iefix) format("embedded-opentype"), url(fonts/NanumSquareB.woff) format("woff");
+}
+
+
+/* layout_common ---------------------------------------- */
+body, input, button, a, p, table, textarea{
+	font-family: ng, 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+/* Mobile ---------------------------------------- */
+@media screen and (max-width: 768px) {
+	body,div,dl,dt,dd,ul,ol,li,input,button,a,p,table,th,td,textarea,strong,em,h1,h2,h3,h4,h5,h6,form,fieldset,legend,select,span,label {
+		font-family: 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif !important;
+		font-weight: normal;
+		font-size: 12px;
+	}	
+}
