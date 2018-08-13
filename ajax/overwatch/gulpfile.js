@@ -329,8 +329,9 @@ gulp.task('server', ['watch'], function () {
 			baseDir: bases.dest
 		},
 		reloadDelay: 250,
-		port: 1111,
-		notify: false
+		port: 3030,
+		notify: false,
+		browser: "chrome"
 	});
 });
 

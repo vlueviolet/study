@@ -501,7 +501,7 @@
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
 <!-- <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=oTwds0P2_9nhkYI3l4EP&amp;submodules=geocoder"></script> -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ea1fa1f899a01d368a0cdcb1e3b09b20&libraries=clusterer"></script>
-<script type="text/javascript" src="js/data/estateInfo.js"></script>
+<!-- <script type="text/javascript" src="js/data/estateInfo.js"></script> -->
 <!-- <script type="text/javascript" src="js/lib/MarkerClustering.js"></script> -->
 <!-- common -->
 <script type="text/javascript" src="js/thebiz.js"></script>
@@ -613,26 +613,25 @@ var bind = function(arr){
 $.get('js/data/estateInfo.json', function(data) {
     // 재사용을 위해 JSON 데이터 객체에 저장
     struct = data;
-
     // 마커 생성
     var markers = $(struct).map(function(i, position) {
         return new daum.maps.Marker({
             position : new daum.maps.LatLng(position.ypos, position.xpos)
         });
-    });
-    
+	});
+	    
     // 단지 식별을 위해 danjiSeq 배열에 danji_seq 키에 해당하는 value 삽입
     $.map(struct, function(value, key){
         $.map(value, function(value2, key2){
-            key2 == 'danji_seq' ? danjiSeq.push(value2) : '';
+			key2 == 'danji_seq' ? danjiSeq.push(value2) : '';
         });
-    });
+	});
     
     // 마커 클릭 이벤트
-    var lstArr = [];
+	var lstArr = [];
     $(data).map(function(i) {
-        // 마크 객체의 Xd 키에 단지 식별값 danjiSeq 배열 대입
-        markers[i].Xd = danjiSeq[i];
+		// 마크 객체의 Xd 키에 단지 식별값 danjiSeq 배열 대입
+		markers[i].Xd = danjiSeq[i];
         daum.maps.event.addListener(markers[i], 'click', function() {
             // 클릭시 이전 배열 정보 초기화
             lstArr = [];
@@ -652,14 +651,13 @@ $.get('js/data/estateInfo.json', function(data) {
             bind(lstArr);
         });
     });
-    clusterer.addMarkers(markers);    
+    clusterer.addMarkers(markers);
 });
 
 // 마커 클러스터러 클릭 이벤트
 daum.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
     // 매물 리스트 초기화
     $('.bx_lst_item_type2').empty();
-
     // 단지 식별값을 저장할 배열 선언
     var idxArr = [];
     $.map(cluster._markers, function(value, key){

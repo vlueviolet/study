@@ -234,7 +234,21 @@
 </div>
 <!-- //미디어 레이어 -->
 <!-- [D] LAYER -->
-
+<script id="mediaList-template" type="text/x-handlebars-template">
+{{#each medias}}
+<li class="media_item">
+<a href="#" class="video btn_play">
+        <span class="thumb"><img src="{{thumbnail}}" alt=""></span>
+        <div class="media_info">
+            <span class="tit">{{title}}</span>
+            <ul class="list">
+                <li class="sort">{{sort}}</li>
+            </ul>
+        </div>
+    </a>
+</li>
+{{/each}}
+</script>
 	<!-- Javascript -->
 	<script src="../js/libs/jquery-1.12.4.min.js"></script>
 	<!--Libs-->
@@ -255,6 +269,7 @@
 	<script src="../js/apps/schedule.js"></script>
 	<script src="../js/apps/team.js"></script>
 	<script src="../js/apps/media.js"></script>
+	<script src="../js/apps/score.js"></script>
 	<!-- // Javascript -->
 </body>
 </html>

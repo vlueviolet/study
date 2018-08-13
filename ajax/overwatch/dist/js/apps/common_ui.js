@@ -1199,28 +1199,28 @@
         win.FooterFamily = new win.OVERWATCH.Common.FooterFamily();
 
 
-        if($('html').hasClass('division')) {
-            var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team_division.json');
-            var commonScoreJSON = win.OVERWATCH.Common.DataCall.getData('../json/score_division.json');
-        } else if($('html').hasClass('trials')) {
-            var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team_trials.json');
-            var commonScoreJSON = win.OVERWATCH.Common.DataCall.getData('../json/score_trials.json');
-        } else if($('html').hasClass('contenders')) {
-            var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team_contenders.json');
-            var commonScoreJSON = win.OVERWATCH.Common.DataCall.getData('../json/score_contenders.json');
-        } else {
-            var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team.json');
-        }
-        commonTeamJSON.done(function (json) {
-           win.commonTeamJSON = json;
-           $('body').trigger('page.reposition');
-        });
+        // if($('html').hasClass('division')) {
+        //     var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team_division.json');
+        //     var commonScoreJSON = win.OVERWATCH.Common.DataCall.getData('../json/score_division.json');
+        // } else if($('html').hasClass('trials')) {
+        //     var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team_trials.json');
+        //     var commonScoreJSON = win.OVERWATCH.Common.DataCall.getData('../json/score_trials.json');
+        // } else if($('html').hasClass('contenders')) {
+        //     var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team_contenders.json');
+        //     var commonScoreJSON = win.OVERWATCH.Common.DataCall.getData('../json/score_contenders.json');
+        // } else {
+        //     var commonTeamJSON = win.OVERWATCH.Common.DataCall.getData('../json/team.json');
+        // }
+        // commonTeamJSON.done(function (json) {
+        //    win.commonTeamJSON = json;
+        //    $('body').trigger('page.reposition');
+        // });
 
-        if($('html').hasClass('division') || $('html').hasClass('trials') || $('html').hasClass('contenders')) {
-            commonScoreJSON.done(function (json) {
-               win.commonScoreJSON = json;
-            });
-        }
+        // if($('html').hasClass('division') || $('html').hasClass('trials') || $('html').hasClass('contenders')) {
+        //     commonScoreJSON.done(function (json) {
+        //        win.commonScoreJSON = json;
+        //     });
+        // }
         win.ScoreLayer = new win.OVERWATCH.Common.ScoreLayer();  //전적보기 레이어
         // win.TeamLayer = new win.OVERWATCH.Common.TeamLayer();
         // win.OVERWATCH.Common.Pageobj.push(win.TeamLayer); //팀정보 레이어

@@ -220,15 +220,26 @@
     win.OVERWATCH.Media.MediaJson.prototype = {
         init : function () {
             this.initLayout();
+            this.buildJSON();
         },
         initLayout : function () {
+            
+        },
+        buildJSON : function () {
+            if($('html').attr('class') !== 'esports') {
+                var url = $('html').attr('class');
+            }
             var promise = $.ajax({
                 dataType : 'json',
-                url : '../json/media_contenders.json'
+                url : '../json/media_' + url + '.json'
             });
-
-            var whenSuccess = function(data) {
-                console.log(data);
+            
+            var whenSuccess = function(res) {
+                $.map(res, function(value, key) {
+                    $.map(value, function (value2, key2) {
+                        //do something
+                    });
+                });
             }
             var whenError = function(e) {
                 console.error(e);
@@ -238,7 +249,6 @@
             }
 
             promise.then(whenSuccess, whenError);
-            promise.always(whenComplete);
         }
     };
 

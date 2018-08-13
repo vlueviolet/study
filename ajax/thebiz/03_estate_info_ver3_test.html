@@ -1,0 +1,714 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>더비즈 공인중개사</title>
+<link rel="stylesheet" type="text/css" href="css/ie8.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/contents.css">
+</head>
+<body>
+<ul id="skip">
+<li><a href="#gnb">주메뉴 바로가기</a></li>
+<li><a href="#container">본문 바로가기</a></li>
+</ul>
+
+<!-- [D]  매물정보 페이지 : .wrap 에 page_type2, estate_info 클래스 추가 -->
+<div id="wrap" class="wrap page_type2">
+	<div id="header" class="header">
+		<div class="inner">
+			<div class="gnb">
+				<!-- [D] 로고 활성화 시 : display: inline-block 으로 활성화 -->
+				<h1 class="logo" style="display:inline-block"><a href="#" class="btn_link">골든키 공인중개소</a></h1>
+				<!-- [D] 로고가 이미지인 경우 : logo에 img_type 클래스 추가 -->
+				<h1 class="logo img_type" style="display:none"><a href="#" class="btn_link">
+					<img src="img/temp/@logo.png" alt="" width="220" height="48">
+				</a></h1>
+				<ul id="gnb" class="gnb_cate">
+				<li><a href="#">업소 소개</a></li>
+				<li><a href="#">단지 정보</a></li>
+				<li class="on"><a href="#">매물 정보</a></li>
+				<li><a href="#">최근 본 매물</a></li>	
+				</ul>
+			</div>
+
+			<div class="m gnb">
+				<h1 class="logo" style="display:_none"><a href="#" class="btn_link">골든키 공인중개소</a></h1>
+				<h1 class="logo img_type" style="display:none"><a href="#" class="btn_link">
+					<img src="img/temp/@logo.png" alt="" width="220" height="48">
+				</a></h1>
+				<strong class="page_tit">매물 정보</strong>
+				<a href="#" class="btn_back" style="display:none">
+					<span class="sp">뒤로가기</span>
+				</a>
+				<a href="#" class="btn_home">
+					<span class="sp">메인으로</span>
+				</a>
+				<button type="button" class="btn_menu">
+					<span class="sp">하위메뉴 열기</span>
+				</button>
+				<!-- [D] GNB Depth
+					1. Depth 활성화 시, body에 no_scroll 클래스 추가 필요 
+					2. dimmed 활성화 필요
+				-->
+				<div class="dimmed" style="display:none"></div>
+				<div class="m gnb_cate" style="display:none">
+					<div class="bx_tit">
+						<strong class="tit">골든키 공인중개소</strong>
+						<button type="button" class="btn_close">
+							<span class="sp">하위메뉴 닫기</span>
+						</button>
+					</div>
+					<ul class="lst_category">
+					<!-- [D] 메뉴 활성화 시 : on클래스 추가 -->
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">업소 소개</a></li>
+					<li><a href="#">단지 정보</a></li>
+					<li class="on"><a href="#">매물 정보</a></li>
+					<li><a href="#">최근 본 매물</a></li>
+					</ul>
+					<ul class="lst_bottom_btn">
+					<li><a href="#" class="btn btn_call"><span class="ico"></span>전화하기</a></li>
+					<li><a href="#" class="btn btn_sms"><span class="ico"></span>문자문의</a></li>
+					<li><a href="#" class="btn btn_kakaotalk"><span class="ico"></span>카카오톡</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- [D]  매물정보 페이지 : container 에 estate_info 클래스 추가 -->
+	<div role="main" id="container" class="estate_info">
+		<h2 class="blind">매물 정보</h2>
+		<div class="group_filter">
+			<div class="bx_filter">
+				<!-- [D] 옵션 누를 시 open 클래스 추가 (옵션창 열림) -->
+				<!-- [D] 옵션 선택된 화면 : option 에 selected 클래스 추가 -->
+				<a href="#" class="option">지역 선택</a>
+				<div class="filter_option">
+					<em class="option_tit">지역</em>
+					<ul class="lst_option">
+					<li>
+						<!-- [D] 체크박스 활성화 시 : .bx_input_chk에 checked 클래스 추가 (IE8대응) -->
+						<span class="bx_input_chk checked">
+							<input type="checkbox" id="choice_type1">
+							<label for="choice_type1">강남구</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type2">
+							<label for="choice_type2">중랑구</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type3">
+							<label for="choice_type3">도봉구</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type4">
+							<label for="choice_type4">예시4</label>
+						</span>
+					</li>
+					</ul>
+					<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+				</div>
+			</div>
+			<div class="bx_filter">
+				<a href="#" class="option selected">아파트 외 9개 선택</a>
+				<div class="filter_option">
+					<em class="option_tit">매물종류</em>
+					<ul class="lst_option">
+					<li>
+						<span class="bx_input_chk checked">
+							<input type="checkbox" id="choice_type5" checked>
+							<label for="choice_type5">옵션1</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type6" checked>
+							<label for="choice_type6">옵션2</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type7">
+							<label for="choice_type7">옵션3</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type8">
+							<label for="choice_type8">옵션4</label>
+						</span>
+					</li>
+					</ul>
+					<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+				</div>
+			</div>
+			<div class="bx_filter">
+				<a href="#" class="option">매매, 전세, 단기임대</a>
+				<div class="filter_option">
+					<em class="option_tit">거래방식</em>
+					<ul class="lst_option">
+					<li>
+						<span class="bx_input_chk checked">
+							<input type="checkbox" id="choice_type9" checked>
+							<label for="choice_type9">매매</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type10" checked>
+							<label for="choice_type10">전세</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type11">
+							<label for="choice_type11">월세</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type12">
+							<label for="choice_type12">단기임대</label>
+						</span>
+					</li>
+					</ul>
+					<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+				</div>
+			</div>
+			<div class="bx_filter">
+				<a href="#" class="option">면적 선택</a>
+				<div class="filter_option">
+					<em class="option_tit">면적</em>
+					<ul class="lst_option">
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type13">
+							<label for="choice_type13">~10평 이하</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type14">
+							<label for="choice_type14">20평</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type15">
+							<label for="choice_type15">30평</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type16">
+							<label for="choice_type16">40평</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type17">
+							<label for="choice_type17">50평</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type18">
+							<label for="choice_type18">60평</label>
+						</span>
+					</li>
+					<li>
+						<span class="bx_input_chk">
+							<input type="checkbox" id="choice_type19">
+							<label for="choice_type19">70평 이상~</label>
+						</span>
+					</li>
+					</ul>
+					<button type="button" class="btn_close"><span class="sp">닫기</span></button>
+				</div>
+			</div>
+		</div>
+		<!-- [D] 모바일 필터영역 -->
+		<!-- [D] 상세필터 + 초기화 버튼 노출 : all_btn 클래스 추가 -->
+		<div class="m bx_filter_result view_detail all_btn">
+			<div class="bx_inner">
+				<a href="#" class="option_tag">
+					<span class="txt">면적 선택</span>
+					<span class="btn_del"><span class="sp">삭제</span></span>
+				</a>
+				<!-- [D] 선택된 결과값 : .option_tag 에 selected 클래스 추가 -->
+				<a href="#" class="option_tag selected">
+					<span class="txt ellipsis">매매</span>
+					<span class="btn_del"><span class="sp">삭제</span></span>
+				</a>						
+				<a href="#" class="option_tag selected">
+					<span class="txt ellipsis">아파트 외 7건</span>
+					<span class="btn_del"><span class="sp">삭제</span></span>
+				</a>
+			</div>
+			<!-- [D] 상세필터 : option_tag 에 .detail 클래스 추가 -->
+			<a href="#" class="option_tag detail">
+				<span class="sp"></span>
+				<span class="txt">상세 필터</span>
+			</a>
+			<button type="button" class="btn_reset">
+				<span class="sp ico_reset2"></span>
+				<span class="txt">초기화</span>
+			</button>
+		</div>
+
+		<!-- [D] (모바일) 
+			1. 목록 펼칠 경우 : .section 에 view_list 클래스 추가
+			2. 지도 펼칠 경우 : .section 에 view_map 클래스 추가 (기본)
+		-->
+		<div class="section view_list">
+			<div class="result_search">
+				<p class="dsc">총 <span class="num"></span>건의 검색 매물이 있습니다.</p>
+				<button type="button" class="btn_type2 btn_round btn_reset">
+					<span class="sp"></span><span class="txt">초기화</span>
+				</button>
+				<button type="button" class="m btn_type2 btn_round btn_list">
+					<span class="sp ico_list2"></span><span class="txt">목록보기</span>
+				</button>
+				<button type="button" class="m btn_type2 btn_round btn_map">
+					<span class="sp"></span><span class="txt">지도보기</span>
+				</button>
+			</div>			
+			<!-- [D] 지도 -->
+			<div id="map" class="map_info">
+			</div>
+		</div>
+
+		<!-- [D] 조회결과 없는 경우 : .area_item 에 nodata 클래스 추가 -->
+		<div class="area_item">
+			<!-- [D] 추천단지 (활성화 시 display:block 처리) -->
+			<div class="bx_recommend">
+				<div class="bx_tit">
+					<strong class="tbl_tit">
+						<span class="tit_txt">추천 단지</span>
+					</strong>
+					<span class="slide_pagination">
+						<button type="button" class="btn_prev slick-arrow" style="display: block;">prev</button>
+						<span class="all_page"></span>
+						<button type="button" class="btn_next slick-arrow" style="display: block;">next</button>
+					</span>
+				</div>
+				<div class="regular slick-slider">
+					<div>
+						<div class="lst_item_type3">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="group_item_dsc2">
+								<div class="item_info">
+									<span class="tag_bubbletype">중개소 추천</span>
+									<em class="tit ellipsis">1 중동 성산마을 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+									<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태 : </span>아파트</span>
+									<span class="ellipsis"><span class="blind">주소 :</span>경기도 용인시 기흥구 중동 동백4로 26 한줄말줄임처리한줄말줄임처리한줄말줄임처리</span>
+									</div>
+								</div>
+								<a href="#" class="btn_type2 btn_round btn_link">
+									<span class="txt">단지 정보</span>
+									<span class="sp"></span>
+								</a>
+								<p class="dsc">
+									<span class="txt">입주시기 : 2003.12</span>
+									<span class="txt">공급면적 : 97.92㎡~198.33㎡</span>
+									<span class="txt">단지구성 : 679세대 / 44동</span>
+								</p>
+								<ul class="item_count">
+								<li><a href="#">매매 <span class="txt_color">11</span></a></li>
+								<li><a href="#">전세 <span class="txt_color">105</span></a></li>
+								<li><a href="#">월세 <span class="txt_color">3</span></a></li>
+								<li><a href="#">단기임대 <span class="txt_color">10</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="lst_item_type3">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="group_item_dsc2">
+								<div class="item_info">
+									<span class="tag_bubbletype">중개소 추천</span>
+									<em class="tit ellipsis">2 중동 성산마을 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+									<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태 : </span>아파트</span>
+									<span class="ellipsis"><span class="blind">주소 :</span>경기도 용인시 기흥구 중동 동백4로 26 한줄말줄임처리한줄말줄임처리한줄말줄임처리</span>
+									</div>
+								</div>
+								<a href="#" class="btn_type2 btn_round btn_link">
+									<span class="txt">단지 정보</span>
+									<span class="sp"></span>
+								</a>
+								<p class="dsc">
+									<span class="txt">입주시기 : 2003.12</span>
+									<span class="txt">공급면적 : 97.92㎡~198.33㎡</span>
+									<span class="txt">단지구성 : 679세대 / 44동</span>
+								</p>
+								<ul class="item_count">
+								<li><a href="#">매매 <span class="txt_color">11</span></a></li>
+								<li><a href="#">전세 <span class="txt_color">105</span></a></li>
+								<li><a href="#">월세 <span class="txt_color">3</span></a></li>
+								<li><a href="#">단기임대 <span class="txt_color">10</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="lst_item_type3">
+							<span class="bx_img">
+								<img src="img/temp/@main_item_slide.jpg" alt="">
+							</span>
+							<div class="group_item_dsc2">
+								<div class="item_info">
+									<span class="tag_bubbletype">중개소 추천</span>
+									<em class="tit ellipsis">3 중동 성산마을 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+									<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태 : </span>아파트</span>
+									<span class="ellipsis"><span class="blind">주소 :</span>경기도 용인시 기흥구 중동 동백4로 26 한줄말줄임처리한줄말줄임처리한줄말줄임처리</span>
+									</div>
+								</div>
+								<a href="#" class="btn_type2 btn_round btn_link">
+									<span class="txt">단지 정보</span>
+									<span class="sp"></span>
+								</a>
+								<p class="dsc">
+									<span class="txt">입주시기 : 2003.12</span>
+									<span class="txt">공급면적 : 97.92㎡~198.33㎡</span>
+									<span class="txt">단지구성 : 679세대 / 44동</span>
+								</p>
+								<ul class="item_count">
+								<li><a href="#">매매 <span class="txt_color">11</span></a></li>
+								<li><a href="#">전세 <span class="txt_color">105</span></a></li>
+								<li><a href="#">월세 <span class="txt_color">3</span></a></li>
+								<li><a href="#">단기임대 <span class="txt_color">10</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [D] 아이템 리스트-->
+			<div class="bx_lst_item_type2"></div>
+
+			<!-- [D] 조회결과 없는 경우 -->
+			<div class="bx_nodata">
+				<p class="dsc">
+					<em class="txt_tit">조건에 맞는 매물이 없습니다.</em>
+					<span class="txt">지역을 변경하시거나, 조건을 초기화 해주세요.</span>
+				</p>
+			</div>
+		</div>
+
+		<!-- [D] 배너영역 -->
+		<div class="bx_banner">
+			<div class="auto_slide slick-slider">
+				<div>
+					<a href="#" class="lst_item_type2">
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb2.jpg" alt="">
+						</span>
+						<div class="group_item_dsc2">
+							<div class="item_info">
+								<span class="tag_bubbletype">중개소 추천</span>
+								<em class="tit ellipsis">중동 성산마을 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태</span>아파트</span>											
+									<span class="ellipsis"><span class="blind">주소</span>경기도 용인시 기흥구 중동 동백4로 26 한줄말줄임처리한줄말줄임처리한줄말줄임처리</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="lst_item_type2">
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb7.jpg" alt="">
+						</span>
+						<div class="group_item_dsc2">
+							<div class="item_info">
+								<span class="tag_bubbletype">중개소 추천</span>
+								<em class="tit ellipsis">중동 성산마을 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태</span>아파트</span>											
+									<span class="ellipsis"><span class="blind">주소</span>경기도 용인시 기흥구 중동 동백4로 26 한줄말줄임처리한줄말줄임처리한줄말줄임처리</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="lst_item_type2">
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb6.jpg" alt="">
+						</span>
+						<div class="group_item_dsc2">
+							<div class="item_info">
+								<span class="tag_bubbletype">중개소 추천</span>
+								<em class="tit ellipsis">중동 성산마을 제목 한줄 말줄임 처리했습니다 처리했습니다</em>
+								<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태</span>아파트</span>											
+									<span class="ellipsis"><span class="blind">주소</span>경기도 용인시 기흥구 중동 동백4로 26 한줄말줄임처리한줄말줄임처리한줄말줄임처리</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="lst_item_type2">
+						<span class="bx_img">
+							<img src="img/temp/@recommend_thumb5.jpg" alt="">
+						</span>
+						<div class="group_item_dsc2">
+							<div class="item_info">
+								<span class="tag_bubbletype">중개소 추천</span>
+								<em class="tit ellipsis">중동 성산마을 제목</em>
+								<div class="info_detail">
+									<span class="item_type"><span class="blind">매물형태</span>아파트</span>											
+									<span class="ellipsis"><span class="blind">주소</span>경기도 용인시 기흥구 중동 동백4로</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<span class="slide_pagination">
+				<span class="all_page"></span>
+			</span>
+			<button type="button" class="btn_close">
+				<span class="sp">닫기</span>
+			</button>
+		</div>
+	</div>
+
+</div>
+<!-- [D] JS -->
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/slick.min.js"></script>
+<!-- <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=oTwds0P2_9nhkYI3l4EP&amp;submodules=geocoder"></script> -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ea1fa1f899a01d368a0cdcb1e3b09b20&libraries=clusterer"></script>
+<script type="text/javascript" src="js/data/estateInfo.js"></script>
+<!-- <script type="text/javascript" src="js/lib/MarkerClustering.js"></script> -->
+<!-- common -->
+<script type="text/javascript" src="js/thebiz.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script type="text/javascript" src="js/lib/handlebars-helper-x.js"></script>
+<script type="text/javascript">
+var $slickRegular = $('.regular'),
+    $slickRegularAll = $('.bx_recommend .all_page'),
+    prevBtn = $('.slide_pagination .btn_prev'),
+    nextBtn = $('.slide_pagination .btn_next'),
+    $slickAuto = $('.auto_slide'),
+    $slickAutoAll = $('.bx_banner .all_page');
+
+$slickRegular.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $slickRegularAll.html('<span class="now">' + i + '</span>' +' / ' + slick.slideCount);
+});
+
+$slickRegular.slick({
+    infinite: true,
+    arrows: true,
+    dot: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: prevBtn,
+    nextArrow: nextBtn
+});
+
+$slickAuto.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $slickAutoAll.html(i + '/' + slick.slideCount);
+});
+
+$slickAuto.slick({
+    infinite: true,
+    arrows: false,
+    dot: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
+var map = new daum.maps.Map(document.getElementById('map'), { // 지도를 표시할 div
+    center: new daum.maps.LatLng(37.4850556, 127.0592951),
+    level : 6 // 지도의 확대 레벨
+});
+
+// 마커 클러스터러 생성
+
+var clusterer = new daum.maps.MarkerClusterer({
+    map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체
+    averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정
+    minLevel: 4, // 클러스터 할 최소 지도 레벨
+    disableClickZoom: true // 클러스터 마커를 클릭했을 때 지도가 확대되지 않도록 설정한다
+});
+
+// JSON 데이터 저장 객체
+var struct = {}
+// 단지 시퀀스 저장 배열
+var danjiSeq = [];
+
+// 콤마 처리
+var comma = function(str) {
+    str = String(str);
+    return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+}
+
+// 화폐 단위 조정
+var setUnit = function(){
+    var unit = $('.unit');
+    for(var i=0;i<unit.length;i++){
+        if(unit.eq(i).text().length > 4){
+            var base = Math.floor(Number(unit.eq(i).text())/10000);
+            var rest = Number(unit.eq(i).text())%10000;
+            if(rest == 0){
+                unit.eq(i).text(comma(base+'억'));
+            }else{
+                unit.eq(i).text(String(base)+'억'+comma(rest));
+            }
+        }
+        unit.eq(i).text(comma(unit.eq(i).text()));
+    }
+}
+
+// Handlebars.js를 활용한 데이터 바인딩
+var bind = function(arr){
+	console.log(arr)
+    var hbs = $.ajax({
+        url: 'js/hbs/lst.hbs'
+	});
+	
+    var hbsThen = function(hbs){
+		console.log(hbs)
+        var template = Handlebars.compile(hbs);
+        var target = $('.bx_lst_item_type2');
+        $('.num').text(arr.length);
+        for(var i in arr){
+            var html = template(arr[i]);
+            target.append(html);
+        }
+        // 화폐 단위 조정
+        setUnit();
+    }
+    
+    hbs.then(hbsThen);
+}
+
+// JSON 데이터 호출
+$.get('js/data/estateInfo.json', function(data) {
+    // 재사용을 위해 JSON 데이터 객체에 저장
+	struct = data;
+	console.log(data)
+
+    // 마커 생성
+    var markers = $(struct).map(function(i, position) {
+        return new daum.maps.Marker({
+            position : new daum.maps.LatLng(position.ypos, position.xpos)
+        });
+    });
+    
+    // 단지 식별을 위해 danjiSeq 배열에 danji_seq 키에 해당하는 value 삽입
+    $.map(struct, function(value, key){
+        $.map(value, function(value2, key2){
+            key2 == 'danji_seq' ? danjiSeq.push(value2) : '';
+        });
+    });
+    
+    // 마커 클릭 이벤트
+    var lstArr = [];
+    $(data).map(function(i) {
+        // 마크 객체의 Xd 키에 단지 식별값 danjiSeq 배열 대입
+        markers[i].Xd = danjiSeq[i];
+        daum.maps.event.addListener(markers[i], 'click', function() {
+            // 클릭시 이전 배열 정보 초기화
+            lstArr = [];
+            // 매물 리스트 초기화
+            $('.bx_lst_item_type2').empty();
+            $.map(markers[i], function(value, key){
+                if(key == 'Xd'){
+                    for(var j in danjiSeq){
+                        if(value == danjiSeq[j]){
+                            //클릭한 단지의 식별값과 danjiSeq 배열의 위치가 일치하는 경우 lstArr에 데이터 배열 삽입
+                            lstArr.push(data[j]);
+                        }
+                    }
+                }
+            })
+            // 정제 데이터 바인딩
+			bind(lstArr);
+        });
+    });
+    clusterer.addMarkers(markers);    
+});
+
+// 마커 클러스터러 클릭 이벤트
+daum.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
+    // 매물 리스트 초기화
+    $('.bx_lst_item_type2').empty();
+
+    // 단지 식별값을 저장할 배열 선언
+    var idxArr = [];
+    $.map(cluster._markers, function(value, key){
+        $.map(value, function(value2, key2){
+            if(key2 == 'Xd'){
+                // 선택한 마커 클러스터의 단지 식별값을 idxArr 배열에 저장
+                idxArr.push(value2);
+            }
+        })
+    })
+
+    // 중복 배열 값 제거
+    idxArr = idxArr.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
+    
+    // 리스트에 보여질 정보를 담을 배열 선언
+    var lstArr = [];
+
+    // 클러스터 클릭
+    for(var i in idxArr){
+        $.map(struct, function(value, key){
+            $.map(value, function(value2, key2){
+                if(key2 == 'danji_seq' && value2 == idxArr[i]){
+                    // 단지 식별값 idxArr의 값과 같은 경우 lstArr 배열에 데이터 저장
+                    lstArr.push(struct[key]);
+                }
+            });
+        });
+    }
+    // 정제 데이터 바인딩
+    bind(lstArr);
+});
+
+</script>
+<!-- // [D] JS -->
+
+<!-- [D] 마크업 레이어 뷰용 // 개발시 제거 필요 -->
+<style>
+	.case_review{position:fixed;top:50px;right:15px;padding:8px 10px;background:#000;opacity:.5;filter:alpha(opacity=50);-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';z-index:1010;font-size:12px;color:#fff;line-height:14px}
+	.case_review a{display:block;padding:4px 0;font-size:12px;color:#fff}
+</style>
+<div class="case_review">
+<a href="#" onclick="$('.area_item').addClass('nodata')">1. 데이터 없는 경우</a>
+<a href="#" onclick="$('.area_item').removeClass('nodata')">2. 데이터 있는 경우</a>
+</div>
+<!-- [D] 마크업 레이어 뷰용 // 개발시 제거 필요 -->
+
+</body>
+</html>
