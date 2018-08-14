@@ -9,28 +9,104 @@
     padding: 80px;
     @include box-sizing;
 }
-.section {
+.page_transition {
+    position: relative;
+    height: 100%;
+}
+section {
     width: 100%;
     height: 100%;
-    &#home {
+    height: 300px;
+    font-size: 50px;
+    text-align: center;
+    &.home {
         background-color: red;
+        .section1 {
+            background-color: #ed4e4e;
+        }
+        .section2 {
+            background-color: #f17070;
+        }
+        .section3 {
+            background-color: #f89595;
+        }
+        .section4 {
+            background-color: #f8b8b8;
+        }
+        .section5 {
+            background-color: #f8d2d2;
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
     }
-    &#story {
-        background-color: red;
+    &.story {
+        background-color: orange;
     }
-    &#about {
-        background-color: red;
+    &.about {
+        background-color: yellow;
     }
-    &#gallery {
-        background-color: red;
+    &.gallery {
+        background-color: green;
     }
-    &#news {
-        background-color: red;
+    &.news {
+        background-color: blue;
     }
     .text {
         display: block;
         font-size: 30px;
         color: #fff;
         text-align: center;
+    }
+}
+.home_slide {
+    .section {
+        font-size: 30px;
+    }
+}
+.slick-slide {
+    border: 0 !important;
+    @include box-sizing;
+    div {
+        font-size: 0;
+    }
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    z-index: 1;
+    &.slick-next {
+        right: -50px;
+        left: auto;
+    }
+}
+.slick-dots {
+    font-size: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin-left: 5px;
+        button {
+            display: block;
+            overflow: hidden;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            background-color: #fff;
+            line-height: 999px;
+        }
+        &.slick-active {
+            button {
+                background-color: black;
+            }
+        }
     }
 }
