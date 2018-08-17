@@ -4,9 +4,9 @@
     var UTIL = win.OPPY.Common.util;
 
     
-    win.OPPY.Interact = function (args) {
+    win.OPPY.SlickInteract = function (args) {
         var defParams = {
-            wrap : '.main',
+            wrap : '.slick',
             content : '#content',
             section : 'section',
             slideWrap : '.page_transition',
@@ -18,9 +18,8 @@
         if (!(this.wrap = $(this.opts.wrap)).length) return;
         this.init();
     };
-    win.OPPY.Interact.prototype = {
+    win.OPPY.SlickInteract.prototype = {
         init : function () {
-            console.log(1)
             this.setElements();
             this.initLayout();
             this.bindEvents();
@@ -185,6 +184,6 @@
     };
 
     $(function () {
-        win.Interact = new win.OPPY.Interact();
+        win.SlickInteract = new win.OPPY.SlickInteract();
     });
 })(window, window.jQuery, window.docoument);
