@@ -60,7 +60,6 @@
             this.sectionWrap.fadeIn(500);
         },
         mouseWheelHandler : function (e) {
-            console.log(this.isScroll)
             this.curTime = new Date().getTime();
 
             var e = window.event || e;
@@ -68,7 +67,7 @@
             var delta = Math.max(-1, Math.min(1, (value)));
             
             this.horizontalDetection = typeof e.wheelDeltaX !== 'undefined' || typeof e.deltaX !== 'undefined';
-            this.isScrollingVertically = (Math.abs(e.wheelDeltaX) < Math.abs(e.wheelDelta)) || (Math.abs(e.deltaX ) < Math.abs(e.deltaY) || !horizontalDetection);
+            // this.isScrollingVertically = (Math.abs(e.wheelDeltaX) < Math.abs(e.wheelDelta)) || (Math.abs(e.deltaX ) < Math.abs(e.deltaY) || !horizontalDetection);
 
             if(this.scrollArr.length > 149){
                 this.scrollArr.shift();
@@ -87,7 +86,6 @@
                 this.scrollArr = [];
             }
             
-            console.log(this.isScroll)
             if(this.isScroll) {
                 if (delta < 0) {
                     this.setDirectFunc('down');
@@ -97,8 +95,8 @@
             }
         },
         setDirectFunc : function (direct) {
+            console.log(this.isScroll)
             if(!this.isScroll) return;
-            console.log('??????????????????')
             this.isScroll = false;
             switch (direct) {
                 case 'down' : 
@@ -116,41 +114,79 @@
                     }
                     break;
             }
-            console.log(direct)
             this.moveSection(this.section.eq(this.currentIndex));
         },
         moveSection : function(element) {
-            console.log('exe')
             var elementHeight = element.outerHeight();
             var elementTop = element.offset().top - 80;
-            
-            var position = elementTop;
-            var isScrollingDown =  elementTop > this.previousDestTop;
-            
-            console.log(position, this.currentIndex, element, this.isScroll)
-
-
-            var sectionBottom = position - this.windowsHeight + elementHeight;
-            // if(isScrollingDown) {
-            //     position = sectionBottom;
-            // }
-            var translate3d = 'translate3d(0px, -' + Math.round(elementTop) + 'px, 0px)';
+            // var translate3d = 'translate3d(0px, -' + Math.round(elementTop) + 'px, 0px)';
             var transition = 'all ' + 700 + 'ms ' + 'ease';
-
-            this.sectionObj.css({
-                'transform' : translate3d,
-                '-webkit-transition': transition,
-                'transition': transition
-            });
             var _this = this;
+            var transition = {x : 0, y : (-1)*Math.round(elementTop), z : 0};
+            console.log(elementTop)
+            var fn = function () {
+                _this.isScroll = true;
+            }
+            this.sectionObj.translate3d(transition, 500, 'linear', fn);
+            // this.sectionObj.css({
+            //     'transform' : translate3d,
+            //     '-webkit-transition': transition,
+            //     'transition': transition
+            // });
+            // var _this = this;
+            // this.sectionObj.stop().animate({
+            //     'opacity' : 1
+            // },{
+            //     step : function (now, fx) {
+            //         $(this).css({
+            //             'transform' : translate3d,
+            //             '-webkit-transition': transition,
+            //             'transition': transition
+            //         });
+            //     },
+            //     complete : function () {
+            //         win.clearTimeout(win.timer);
+            //         win.timer = win.setTimeout(function () {
+            //             console.log('end')
+            //             _this.isScroll = true;
+            //         }, 200);
+            //     }
+            // }, 500);
         }
     };
     $(function () {
         win.CustomInteract = new win.OPPY.CustomInteract();
 
-        // $('#custom_section').fullpage({
-        //     autoScrolling:true,
-        //     scrollHorizontally: true
-        // });
+        $('.fullpage #custom_section').fullpage({
+            autoScrolling:true,
+            scrollHorizontally: true
+        });
+
+        var delay = 200;
+        $.fn.translate3d = function(translations, speed, easing, complete) {
+            console.log('exe')
+            var opt = $.speed(speed, easing, complete);
+            opt.easing = opt.easing || 'ease';
+            translations = $.extend({x: 0, y: 0, z: 0}, translations);
+
+            return this.each(function() {
+                var $this = $(this);
+
+                $this.css({ 
+                    transitionDuration: opt.duration + 'ms',
+                    transitionTimingFunction: opt.easing,
+                    transform: 'translate3d(' + translations.x + 'px, ' + translations.y + 'px, ' + translations.z + 'px)'
+                });
+
+                setTimeout(function() { 
+                    $this.css({ 
+                        transitionDuration: '0s', 
+                        transitionTimingFunction: 'ease'
+                    });
+
+                    opt.complete();
+                }, opt.duration + (delay || 0));
+            });
+        };
     });
 }(window, window.jQuery, window.document));

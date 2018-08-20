@@ -1081,7 +1081,6 @@
                         slideAnchorLink = activeSlide.getAttribute('data-anchor');
                         slideIndex = index(activeSlide);
                     }
-
                     if(canScroll){
                         addClass(currentSection, ACTIVE);
                         removeClass(siblings(currentSection), ACTIVE);
@@ -1179,7 +1178,6 @@
         */
         function scrolling(type){
             if (!isScrollAllowed.m[type]){
-                console.log(type)
                 return;
             }
 
@@ -1312,10 +1310,8 @@
             //끝에서 'number' 엘리먼트를 취해서 평균을 만든다. 만약 충분치 않으면 1
             var lastElements = elements.slice(Math.max(elements.length - number, 1));
             for(var i = 0; i < lastElements.length; i++){
-                // console.log(lastElements[lastElements.length-1], sum)
                 sum = sum + lastElements[i];
             }
-
             return Math.ceil(sum/number);
         }
 
@@ -1330,7 +1326,7 @@
         function MouseWheelHandler(e) {
             var curTime = new Date().getTime();
             var isNormalScroll = hasClass($(COMPLETELY_SEL)[0], NORMAL_SCROLL);
-
+            
             //autoscrolling and not zooming?
             if(options.autoScrolling && !controlPressed && !isNormalScroll){
                 // cross-browser wheel delta
@@ -1345,7 +1341,7 @@
                 if(scrollings.length > 149){
                     scrollings.shift();
                 }
-
+                
                 //keeping record of the previous scrollings
                 // 이전 scrollings의 기록을 유지
                 scrollings.push(Math.abs(value));
@@ -1369,7 +1365,7 @@
                     //emptying the array, we dont care about old scrollings for our averages
                     scrollings = [];
                 }
-
+                console.log(canScroll)
                 if(canScroll){
                     var averageEnd = getAverage(scrollings, 10);
                     var averageMiddle = getAverage(scrollings, 70);
@@ -1461,14 +1457,11 @@
             //top of the desination will be at the top of the viewport
             var position = elementTop;
             var isScrollingDown =  elementTop > previousDestTop;
-            console.log(isScrollingDown)
             var sectionBottom = position - windowsHeight + elementHeight;
             var bigSectionsDestination = options.bigSectionsDestination;
-            console.log(options.bigSectionsDestination)
 
             //is the destination element bigger than the viewport?
             if(elementHeight > windowsHeight){
-                console.log(222222)
                 //scrolling up?
                 if(!isScrollingDown && !bigSectionsDestination || bigSectionsDestination === 'bottom' ){
                     position = sectionBottom;
@@ -1500,7 +1493,6 @@
             var dtop = getDestinationPosition(element);
             var slideAnchorLink;
             var slideIndex;
-            console.log(dtop)
 
             //local variables
             var v = {
@@ -1686,7 +1678,6 @@
                 // that's why we round it to 0.
                 var translate3d = 'translate3d(0px, -' + Math.round(v.dtop) + 'px, 0px)';
                 transformContainer(translate3d, true);
-                console.log(v)
 
                 //even when the scrollingSpeed is 0 there's a little delay, which might cause the
                 //scrollingSpeed to change in case of using silentMoveTo();
@@ -1825,7 +1816,6 @@
 
             addClass(v.element, COMPLETELY);
             removeClass(siblings(v.element), COMPLETELY);
-
             canScroll = true;
 
             if(isFunction(v.callback)){
@@ -2517,7 +2507,6 @@
         }
 
         function getTableHeight(element){
-            console.log(windowsHeight)
             var sectionHeight = windowsHeight;
 
             if(options.paddingTop || options.paddingBottom){
