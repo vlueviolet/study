@@ -1,9 +1,10 @@
-### handlebars template
+## handlebars template
 #### 공식 사이트
      https://handlebarsjs.com/
 #### github
      https://gist.github.com/chrislkeller/3230081
 
+### about handlebars
 * Handlebar.js에 대하여
   http://sailboat-d.tistory.com/40
 
@@ -20,7 +21,7 @@
 * Angularjs vs Handlebars
   https://blog.joostory.net/378
 
-#### helper
+### helper
 * Handlebars helpers
   https://code-maven.com/handlebars-helpers
     
