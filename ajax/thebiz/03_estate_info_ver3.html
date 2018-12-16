@@ -603,7 +603,8 @@ var bind = function(arr){
             target.append(html);
         }
         // 화폐 단위 조정
-        setUnit();
+		setUnit();
+		console.log(arr)
     }
     
     hbs.then(hbsThen);
@@ -647,7 +648,8 @@ $.get('js/data/estateInfo.json', function(data) {
                     }
                 }
             })
-            // 정제 데이터 바인딩
+			// 정제 데이터 바인딩
+			console.log(lstArr)
             bind(lstArr);
         });
     });
