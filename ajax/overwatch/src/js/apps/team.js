@@ -108,6 +108,7 @@
                 dataType : 'json',
                 url : this.url,
                 success : function (response) {
+                    console.log(response)
                     Handlebars.registerHelper('teamName', function (arg1, options) {
                         return (arg1 !== '') ? options.fn(this) : options.inverse(this);
                     });
