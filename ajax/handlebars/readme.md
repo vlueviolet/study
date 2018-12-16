@@ -1,6 +1,8 @@
 ### handlebars template
-공식 사이트 https://handlebarsjs.com/
-github https://gist.github.com/chrislkeller/3230081
+#### 공식 사이트
+     https://handlebarsjs.com/
+#### github
+     https://gist.github.com/chrislkeller/3230081
 
 * Handlebar.js에 대하여
   http://sailboat-d.tistory.com/40
